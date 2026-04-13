@@ -19,5 +19,15 @@
     "allow-plugins": {
       "symfony/flex": true
     }
+  },
+  "autoload": {
+    "psr-4": {
+      "Scraper\\Scraper\\": "packages/scraper/src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Scraper\\Scraper\\Tests\\": "packages/scraper/tests/"
+    }
   }
 }
