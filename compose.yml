@@ -1,0 +1,10 @@
+services:
+  php:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    volumes:
+      - .:/app
+    user: "1000:1000"
+    tty: true # Garde le container ouvert
+    restart: always
