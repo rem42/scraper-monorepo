@@ -1,0 +1,23 @@
+{
+  "name": "rem42/scraper-monorepo",
+  "description": "Scraper monorepo for PHP packages",
+  "license": "MIT",
+  "require-dev": {
+    "symplify/monorepo-builder": "^12.5"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "packages/*",
+      "options": {
+        "symlink": true
+      }
+    }
+  ],
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "symfony/flex": true
+    }
+  }
+}
