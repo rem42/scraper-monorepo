@@ -15,7 +15,7 @@ final class ExtractAttribute
     private bool $hasScraperAttribute = false;
 
     public function __construct(
-        private ScraperRequest $request,
+        private readonly ScraperRequest $request,
     ) {
         $this->reflexionClass = new \ReflectionClass($request::class);
         $this->scraperAttribute = new Scraper();
