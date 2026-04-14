@@ -9,7 +9,7 @@
         "wsdltophp/packagebase": "~5.0"
     },
     "require-dev": {
-        "rem42/php-cs-fixer-config": "^3.5"
+        "rem42/php-cs-fixer-config": "^4.1"
     },
     "autoload": {
         "psr-4": {
