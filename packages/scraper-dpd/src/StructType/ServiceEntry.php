@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ServiceEntry StructType
+ * This class stands for ServiceEntry StructType.
  */
 #[\AllowDynamicProperties]
 class ServiceEntry extends AbstractStructBase
@@ -14,47 +16,52 @@ class ServiceEntry extends AbstractStructBase
      * The Name
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Name = null;
+
     /**
      * The Type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Type = null;
+
     /**
      * The Attribute
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Attribute = null;
+
     /**
      * The Value
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Value = null;
+
     /**
      * The Detail
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Detail = null;
+
     /**
      * The Status
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Status = null;
 
     /**
-     * Constructor method for ServiceEntry
+     * Constructor method for ServiceEntry.
      *
      * @uses ServiceEntry::setName()
      * @uses ServiceEntry::setType()
@@ -76,7 +83,7 @@ class ServiceEntry extends AbstractStructBase
     }
 
     /**
-     * Get Name value
+     * Get Name value.
      */
     public function getName(): ?string
     {
@@ -84,7 +91,7 @@ class ServiceEntry extends AbstractStructBase
     }
 
     /**
-     * Set Name value
+     * Set Name value.
      */
     public function setName(?string $name = null): self
     {
@@ -98,7 +105,7 @@ class ServiceEntry extends AbstractStructBase
     }
 
     /**
-     * Get Type value
+     * Get Type value.
      */
     public function getType(): ?string
     {
@@ -106,7 +113,7 @@ class ServiceEntry extends AbstractStructBase
     }
 
     /**
-     * Set Type value
+     * Set Type value.
      */
     public function setType(?string $type = null): self
     {
@@ -120,7 +127,7 @@ class ServiceEntry extends AbstractStructBase
     }
 
     /**
-     * Get Attribute value
+     * Get Attribute value.
      */
     public function getAttribute(): ?string
     {
@@ -128,7 +135,7 @@ class ServiceEntry extends AbstractStructBase
     }
 
     /**
-     * Set Attribute value
+     * Set Attribute value.
      */
     public function setAttribute(?string $attribute = null): self
     {
@@ -142,7 +149,7 @@ class ServiceEntry extends AbstractStructBase
     }
 
     /**
-     * Get Value value
+     * Get Value value.
      */
     public function getValue(): ?string
     {
@@ -150,7 +157,7 @@ class ServiceEntry extends AbstractStructBase
     }
 
     /**
-     * Set Value value
+     * Set Value value.
      */
     public function setValue(?string $value = null): self
     {
@@ -164,7 +171,7 @@ class ServiceEntry extends AbstractStructBase
     }
 
     /**
-     * Get Detail value
+     * Get Detail value.
      */
     public function getDetail(): ?string
     {
@@ -172,7 +179,7 @@ class ServiceEntry extends AbstractStructBase
     }
 
     /**
-     * Set Detail value
+     * Set Detail value.
      */
     public function setDetail(?string $detail = null): self
     {
@@ -186,7 +193,7 @@ class ServiceEntry extends AbstractStructBase
     }
 
     /**
-     * Get Status value
+     * Get Status value.
      */
     public function getStatus(): ?string
     {
@@ -194,7 +201,7 @@ class ServiceEntry extends AbstractStructBase
     }
 
     /**
-     * Set Status value
+     * Set Status value.
      */
     public function setStatus(?string $status = null): self
     {

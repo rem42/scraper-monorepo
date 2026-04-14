@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetReverseOnDemandModeResponse StructType
+ * This class stands for GetReverseOnDemandModeResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetReverseOnDemandModeResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetReverseOnDemandModeResponse extends AbstractStructBase
      * The GetReverseOnDemandModeResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $GetReverseOnDemandModeResult;
 
     /**
-     * Constructor method for GetReverseOnDemandModeResponse
+     * Constructor method for GetReverseOnDemandModeResponse.
      *
      * @uses GetReverseOnDemandModeResponse::setGetReverseOnDemandModeResult()
      */
@@ -31,7 +33,7 @@ class GetReverseOnDemandModeResponse extends AbstractStructBase
     }
 
     /**
-     * Get GetReverseOnDemandModeResult value
+     * Get GetReverseOnDemandModeResult value.
      */
     public function getGetReverseOnDemandModeResult(): int
     {
@@ -39,7 +41,7 @@ class GetReverseOnDemandModeResponse extends AbstractStructBase
     }
 
     /**
-     * Set GetReverseOnDemandModeResult value
+     * Set GetReverseOnDemandModeResult value.
      */
     public function setGetReverseOnDemandModeResult(int $getReverseOnDemandModeResult): self
     {

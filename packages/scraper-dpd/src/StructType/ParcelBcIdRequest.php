@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ParcelBcIdRequest StructType
+ * This class stands for ParcelBcIdRequest StructType.
  */
 #[\AllowDynamicProperties]
 class ParcelBcIdRequest extends BcIdBaseRequest
@@ -12,12 +14,12 @@ class ParcelBcIdRequest extends BcIdBaseRequest
      * The Parcel
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Parcel $Parcel = null;
 
     /**
-     * Constructor method for ParcelBcIdRequest
+     * Constructor method for ParcelBcIdRequest.
      *
      * @uses ParcelBcIdRequest::setParcel()
      */
@@ -29,7 +31,7 @@ class ParcelBcIdRequest extends BcIdBaseRequest
     }
 
     /**
-     * Get Parcel value
+     * Get Parcel value.
      */
     public function getParcel(): ?Parcel
     {
@@ -37,7 +39,7 @@ class ParcelBcIdRequest extends BcIdBaseRequest
     }
 
     /**
-     * Set Parcel value
+     * Set Parcel value.
      */
     public function setParcel(?Parcel $parcel = null): self
     {

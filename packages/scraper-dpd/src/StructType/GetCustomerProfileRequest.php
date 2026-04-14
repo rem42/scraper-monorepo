@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetCustomerProfileRequest StructType
+ * This class stands for GetCustomerProfileRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GetCustomerProfileRequest extends AbstractStructBase
@@ -14,19 +16,20 @@ class GetCustomerProfileRequest extends AbstractStructBase
      * The Customers
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfCustomer $Customers = null;
+
     /**
      * The Language
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Language = null;
 
     /**
-     * Constructor method for GetCustomerProfileRequest
+     * Constructor method for GetCustomerProfileRequest.
      *
      * @uses GetCustomerProfileRequest::setCustomers()
      * @uses GetCustomerProfileRequest::setLanguage()
@@ -40,7 +43,7 @@ class GetCustomerProfileRequest extends AbstractStructBase
     }
 
     /**
-     * Get Customers value
+     * Get Customers value.
      */
     public function getCustomers(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfCustomer
     {
@@ -48,7 +51,7 @@ class GetCustomerProfileRequest extends AbstractStructBase
     }
 
     /**
-     * Set Customers value
+     * Set Customers value.
      */
     public function setCustomers(?\Scraper\ScraperDPD\ArrayType\ArrayOfCustomer $customers = null): self
     {
@@ -58,7 +61,7 @@ class GetCustomerProfileRequest extends AbstractStructBase
     }
 
     /**
-     * Get Language value
+     * Get Language value.
      */
     public function getLanguage(): ?string
     {
@@ -66,7 +69,7 @@ class GetCustomerProfileRequest extends AbstractStructBase
     }
 
     /**
-     * Set Language value
+     * Set Language value.
      */
     public function setLanguage(?string $language = null): self
     {

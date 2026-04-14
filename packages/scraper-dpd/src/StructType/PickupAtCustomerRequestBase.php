@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for PickupAtCustomerRequestBase StructType
+ * This class stands for PickupAtCustomerRequestBase StructType.
  */
 #[\AllowDynamicProperties]
 class PickupAtCustomerRequestBase extends AbstractStructBase
@@ -14,33 +16,36 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
      * The shipperaddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $shipperaddress = null;
+
     /**
      * The customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $customer = null;
+
     /**
      * The pick_date
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $pick_date = null;
+
     /**
      * The data
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?PickupData $data = null;
 
     /**
-     * Constructor method for PickupAtCustomerRequestBase
+     * Constructor method for PickupAtCustomerRequestBase.
      *
      * @uses PickupAtCustomerRequestBase::setShipperaddress()
      * @uses PickupAtCustomerRequestBase::setCustomer()
@@ -58,7 +63,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get shipperaddress value
+     * Get shipperaddress value.
      */
     public function getShipperaddress(): ?Address
     {
@@ -66,7 +71,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set shipperaddress value
+     * Set shipperaddress value.
      */
     public function setShipperaddress(?Address $shipperaddress = null): self
     {
@@ -76,7 +81,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get customer value
+     * Get customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -84,7 +89,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set customer value
+     * Set customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {
@@ -94,7 +99,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get pick_date value
+     * Get pick_date value.
      */
     public function getPick_date(): ?string
     {
@@ -102,7 +107,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set pick_date value
+     * Set pick_date value.
      */
     public function setPick_date(?string $pick_date = null): self
     {
@@ -116,7 +121,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get data value
+     * Get data value.
      */
     public function getData(): ?PickupData
     {
@@ -124,7 +129,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set data value
+     * Set data value.
      */
     public function setData(?PickupData $data = null): self
     {

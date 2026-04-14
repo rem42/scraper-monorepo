@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for RetourShipmentBcRequest StructType
+ * This class stands for RetourShipmentBcRequest StructType.
  */
 #[\AllowDynamicProperties]
 class RetourShipmentBcRequest extends RetourShipmentBaseRequest
@@ -12,34 +14,37 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
      * The customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $customer = null;
+
     /**
      * The originalBarcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $originalBarcode = null;
+
     /**
      * The originalBarcodeId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $originalBarcodeId = null;
+
     /**
      * The originalBarcodeSource
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?int $originalBarcodeSource;
 
     /**
-     * Constructor method for RetourShipmentBcRequest
+     * Constructor method for RetourShipmentBcRequest.
      *
      * @uses RetourShipmentBcRequest::setCustomer()
      * @uses RetourShipmentBcRequest::setOriginalBarcode()
@@ -57,7 +62,7 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Get customer value
+     * Get customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -65,7 +70,7 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Set customer value
+     * Set customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {
@@ -75,7 +80,7 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Get originalBarcode value
+     * Get originalBarcode value.
      */
     public function getOriginalBarcode(): ?string
     {
@@ -83,7 +88,7 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Set originalBarcode value
+     * Set originalBarcode value.
      */
     public function setOriginalBarcode(?string $originalBarcode = null): self
     {
@@ -97,7 +102,7 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Get originalBarcodeId value
+     * Get originalBarcodeId value.
      */
     public function getOriginalBarcodeId(): ?string
     {
@@ -105,7 +110,7 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Set originalBarcodeId value
+     * Set originalBarcodeId value.
      */
     public function setOriginalBarcodeId(?string $originalBarcodeId = null): self
     {
@@ -119,7 +124,7 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Get originalBarcodeSource value
+     * Get originalBarcodeSource value.
      */
     public function getOriginalBarcodeSource(): int
     {
@@ -127,7 +132,7 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Set originalBarcodeSource value
+     * Set originalBarcodeSource value.
      */
     public function setOriginalBarcodeSource(?int $originalBarcodeSource): self
     {

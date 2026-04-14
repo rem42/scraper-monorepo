@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CreateCollectionRequestBc StructType
+ * This class stands for CreateCollectionRequestBc StructType.
  */
 #[\AllowDynamicProperties]
 class CreateCollectionRequestBc extends AbstractStructBase
@@ -14,12 +16,12 @@ class CreateCollectionRequestBc extends AbstractStructBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?CollectionRequestRequest $request = null;
 
     /**
-     * Constructor method for CreateCollectionRequestBc
+     * Constructor method for CreateCollectionRequestBc.
      *
      * @uses CreateCollectionRequestBc::setRequest()
      */
@@ -31,7 +33,7 @@ class CreateCollectionRequestBc extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?CollectionRequestRequest
     {
@@ -39,7 +41,7 @@ class CreateCollectionRequestBc extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?CollectionRequestRequest $request = null): self
     {

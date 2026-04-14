@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ShipmentRequestBase StructType
+ * This class stands for ShipmentRequestBase StructType.
  */
 #[\AllowDynamicProperties]
 class ShipmentRequestBase extends AbstractStructBase
@@ -14,68 +16,76 @@ class ShipmentRequestBase extends AbstractStructBase
      * The customer_countrycode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $customer_countrycode;
+
     /**
      * The customer_centernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $customer_centernumber;
+
     /**
      * The customer_number
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $customer_number;
+
     /**
      * The receiveraddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $receiveraddress = null;
+
     /**
      * The receiverinfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?AddressInfo $receiverinfo = null;
+
     /**
      * The shipperaddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $shipperaddress = null;
+
     /**
      * The shipperinfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?AddressInfo $shipperinfo = null;
+
     /**
      * The retourAddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $retourAddress = null;
+
     /**
      * The shippingdate
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $shippingdate = null;
 
     /**
-     * Constructor method for ShipmentRequestBase
+     * Constructor method for ShipmentRequestBase.
      *
      * @uses ShipmentRequestBase::setCustomer_countrycode()
      * @uses ShipmentRequestBase::setCustomer_centernumber()
@@ -103,7 +113,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get customer_countrycode value
+     * Get customer_countrycode value.
      */
     public function getCustomer_countrycode(): int
     {
@@ -111,7 +121,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set customer_countrycode value
+     * Set customer_countrycode value.
      */
     public function setCustomer_countrycode(int $customer_countrycode): self
     {
@@ -125,7 +135,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get customer_centernumber value
+     * Get customer_centernumber value.
      */
     public function getCustomer_centernumber(): int
     {
@@ -133,7 +143,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set customer_centernumber value
+     * Set customer_centernumber value.
      */
     public function setCustomer_centernumber(int $customer_centernumber): self
     {
@@ -147,7 +157,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get customer_number value
+     * Get customer_number value.
      */
     public function getCustomer_number(): int
     {
@@ -155,7 +165,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set customer_number value
+     * Set customer_number value.
      */
     public function setCustomer_number(int $customer_number): self
     {
@@ -169,7 +179,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get receiveraddress value
+     * Get receiveraddress value.
      */
     public function getReceiveraddress(): ?Address
     {
@@ -177,7 +187,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set receiveraddress value
+     * Set receiveraddress value.
      */
     public function setReceiveraddress(?Address $receiveraddress = null): self
     {
@@ -187,7 +197,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get receiverinfo value
+     * Get receiverinfo value.
      */
     public function getReceiverinfo(): ?AddressInfo
     {
@@ -195,7 +205,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set receiverinfo value
+     * Set receiverinfo value.
      */
     public function setReceiverinfo(?AddressInfo $receiverinfo = null): self
     {
@@ -205,7 +215,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get shipperaddress value
+     * Get shipperaddress value.
      */
     public function getShipperaddress(): ?Address
     {
@@ -213,7 +223,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set shipperaddress value
+     * Set shipperaddress value.
      */
     public function setShipperaddress(?Address $shipperaddress = null): self
     {
@@ -223,7 +233,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get shipperinfo value
+     * Get shipperinfo value.
      */
     public function getShipperinfo(): ?AddressInfo
     {
@@ -231,7 +241,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set shipperinfo value
+     * Set shipperinfo value.
      */
     public function setShipperinfo(?AddressInfo $shipperinfo = null): self
     {
@@ -241,7 +251,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get retourAddress value
+     * Get retourAddress value.
      */
     public function getRetourAddress(): ?Address
     {
@@ -249,7 +259,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set retourAddress value
+     * Set retourAddress value.
      */
     public function setRetourAddress(?Address $retourAddress = null): self
     {
@@ -259,7 +269,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get shippingdate value
+     * Get shippingdate value.
      */
     public function getShippingdate(): ?string
     {
@@ -267,7 +277,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set shippingdate value
+     * Set shippingdate value.
      */
     public function setShippingdate(?string $shippingdate = null): self
     {

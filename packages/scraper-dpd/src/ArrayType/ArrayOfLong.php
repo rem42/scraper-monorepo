@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\ArrayType;
 
 use WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
 /**
- * This class stands for ArrayOfLong ArrayType
+ * This class stands for ArrayOfLong ArrayType.
  */
 class ArrayOfLong extends AbstractStructArrayBase
 {
@@ -13,14 +15,14 @@ class ArrayOfLong extends AbstractStructArrayBase
      * The long
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * - minOccurs: 0
+     * - minOccurs: 0.
      *
      * @var array<int>
      */
     protected ?array $long = null;
 
     /**
-     * Constructor method for ArrayOfLong
+     * Constructor method for ArrayOfLong.
      *
      * @uses ArrayOfLong::setLong()
      *
@@ -34,7 +36,7 @@ class ArrayOfLong extends AbstractStructArrayBase
     }
 
     /**
-     * Get long value
+     * Get long value.
      *
      * @return array<int>
      */
@@ -46,7 +48,7 @@ class ArrayOfLong extends AbstractStructArrayBase
     /**
      * This method is responsible for validating the value(s) passed to the setLong method
      * This method is willingly generated in order to preserve the one-line inline validation within the setLong method
-     * This has to validate that each item contained by the array match the itemType constraint
+     * This has to validate that each item contained by the array match the itemType constraint.
      *
      * @return string A non-empty message if the values does not match the validation rules
      */
@@ -74,7 +76,7 @@ class ArrayOfLong extends AbstractStructArrayBase
     }
 
     /**
-     * Set long value
+     * Set long value.
      *
      * @param array<int> $long
      *
@@ -92,7 +94,7 @@ class ArrayOfLong extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the current element
+     * Returns the current element.
      *
      * @see AbstractStructArrayBase::current()
      */
@@ -102,7 +104,7 @@ class ArrayOfLong extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the indexed element
+     * Returns the indexed element.
      *
      * @see AbstractStructArrayBase::item()
      *
@@ -114,7 +116,7 @@ class ArrayOfLong extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the first element
+     * Returns the first element.
      *
      * @see AbstractStructArrayBase::first()
      */
@@ -124,7 +126,7 @@ class ArrayOfLong extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the last element
+     * Returns the last element.
      *
      * @see AbstractStructArrayBase::last()
      */
@@ -134,7 +136,7 @@ class ArrayOfLong extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the element at the offset
+     * Returns the element at the offset.
      *
      * @see AbstractStructArrayBase::offsetGet()
      *
@@ -146,7 +148,7 @@ class ArrayOfLong extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the attribute name
+     * Returns the attribute name.
      *
      * @see AbstractStructArrayBase::getAttributeName()
      *

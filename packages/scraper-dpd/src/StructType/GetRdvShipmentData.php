@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetRdvShipmentData StructType
+ * This class stands for GetRdvShipmentData StructType.
  */
 #[\AllowDynamicProperties]
 class GetRdvShipmentData extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetRdvShipmentData extends AbstractStructBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetRdvShipmentDataRequest $request = null;
 
     /**
-     * Constructor method for GetRdvShipmentData
+     * Constructor method for GetRdvShipmentData.
      *
      * @uses GetRdvShipmentData::setRequest()
      */
@@ -31,7 +33,7 @@ class GetRdvShipmentData extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?GetRdvShipmentDataRequest
     {
@@ -39,7 +41,7 @@ class GetRdvShipmentData extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?GetRdvShipmentDataRequest $request = null): self
     {

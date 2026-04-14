@@ -1,35 +1,39 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 
 /**
- * This class stands for eBic3Mode EnumType
+ * This class stands for eBic3Mode EnumType.
  */
 class EBic3Mode extends AbstractStructEnumBase
 {
     /**
-     * Constant for value 'OnlyStdLabels'
+     * Constant for value 'OnlyStdLabels'.
      *
      * @return string 'OnlyStdLabels'
      */
     public const VALUE_ONLY_STD_LABELS = 'OnlyStdLabels';
+
     /**
-     * Constant for value 'OnlyBic3'
+     * Constant for value 'OnlyBic3'.
      *
      * @return string 'OnlyBic3'
      */
     public const VALUE_ONLY_BIC_3 = 'OnlyBic3';
+
     /**
-     * Constant for value 'All'
+     * Constant for value 'All'.
      *
      * @return string 'All'
      */
     public const VALUE_ALL = 'All';
 
     /**
-     * Return allowed values
+     * Return allowed values.
      *
      * @uses self::VALUE_ONLY_STD_LABELS
      * @uses self::VALUE_ONLY_BIC_3

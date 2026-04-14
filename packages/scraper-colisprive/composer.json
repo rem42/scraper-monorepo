@@ -9,6 +9,8 @@
         "wsdltophp/packagebase": "~5.0"
     },
     "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^13.1",
         "rem42/php-cs-fixer-config": "^4.1"
     },
     "autoload": {

@@ -1,13 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CancelServiceNoticeResponse StructType
+ * This class stands for CancelServiceNoticeResponse StructType.
  */
 #[\AllowDynamicProperties]
-class CancelServiceNoticeResponse extends AbstractStructBase
-{
-}
+class CancelServiceNoticeResponse extends AbstractStructBase {}

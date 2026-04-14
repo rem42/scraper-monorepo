@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for NumberRangeBcRequest StructType
+ * This class stands for NumberRangeBcRequest StructType.
  */
 #[\AllowDynamicProperties]
 class NumberRangeBcRequest extends NumberRangeBcBaseRequest
@@ -12,12 +14,12 @@ class NumberRangeBcRequest extends NumberRangeBcBaseRequest
      * The NumberType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $NumberType = null;
 
     /**
-     * Constructor method for NumberRangeBcRequest
+     * Constructor method for NumberRangeBcRequest.
      *
      * @uses NumberRangeBcRequest::setNumberType()
      */
@@ -29,7 +31,7 @@ class NumberRangeBcRequest extends NumberRangeBcBaseRequest
     }
 
     /**
-     * Get NumberType value
+     * Get NumberType value.
      */
     public function getNumberType(): ?string
     {
@@ -37,7 +39,7 @@ class NumberRangeBcRequest extends NumberRangeBcBaseRequest
     }
 
     /**
-     * Set NumberType value
+     * Set NumberType value.
      */
     public function setNumberType(?string $numberType = null): self
     {

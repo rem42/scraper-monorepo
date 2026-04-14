@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for UpdateRdvShipmentDataForShopRequest StructType
+ * This class stands for UpdateRdvShipmentDataForShopRequest StructType.
  */
 #[\AllowDynamicProperties]
 class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
@@ -12,33 +14,36 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
      * The ShopID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ShopID = null;
+
     /**
      * The Receiver_ContactName
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Receiver_ContactName = null;
+
     /**
      * The DeliveryDate
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DeliveryDate = null;
+
     /**
      * The EsnInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvEsnInfo $EsnInfo = null;
 
     /**
-     * Constructor method for UpdateRdvShipmentDataForShopRequest
+     * Constructor method for UpdateRdvShipmentDataForShopRequest.
      *
      * @uses UpdateRdvShipmentDataForShopRequest::setShopID()
      * @uses UpdateRdvShipmentDataForShopRequest::setReceiver_ContactName()
@@ -56,7 +61,7 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get ShopID value
+     * Get ShopID value.
      */
     public function getShopID(): ?string
     {
@@ -64,7 +69,7 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set ShopID value
+     * Set ShopID value.
      */
     public function setShopID(?string $shopID = null): self
     {
@@ -78,7 +83,7 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get Receiver_ContactName value
+     * Get Receiver_ContactName value.
      */
     public function getReceiver_ContactName(): ?string
     {
@@ -86,7 +91,7 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set Receiver_ContactName value
+     * Set Receiver_ContactName value.
      */
     public function setReceiver_ContactName(?string $receiver_ContactName = null): self
     {
@@ -100,7 +105,7 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get DeliveryDate value
+     * Get DeliveryDate value.
      */
     public function getDeliveryDate(): ?string
     {
@@ -108,7 +113,7 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set DeliveryDate value
+     * Set DeliveryDate value.
      */
     public function setDeliveryDate(?string $deliveryDate = null): self
     {
@@ -122,7 +127,7 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get EsnInfo value
+     * Get EsnInfo value.
      */
     public function getEsnInfo(): ?RdvEsnInfo
     {
@@ -130,7 +135,7 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set EsnInfo value
+     * Set EsnInfo value.
      */
     public function setEsnInfo(?RdvEsnInfo $esnInfo = null): self
     {

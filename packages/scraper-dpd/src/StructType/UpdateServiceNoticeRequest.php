@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for UpdateServiceNoticeRequest StructType
+ * This class stands for UpdateServiceNoticeRequest StructType.
  */
 #[\AllowDynamicProperties]
 class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
@@ -12,26 +14,28 @@ class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
      * The answerID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $answerID;
+
     /**
      * The text
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $text = null;
+
     /**
      * The address
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $address = null;
 
     /**
-     * Constructor method for UpdateServiceNoticeRequest
+     * Constructor method for UpdateServiceNoticeRequest.
      *
      * @uses UpdateServiceNoticeRequest::setAnswerID()
      * @uses UpdateServiceNoticeRequest::setText()
@@ -47,7 +51,7 @@ class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
     }
 
     /**
-     * Get answerID value
+     * Get answerID value.
      */
     public function getAnswerID(): int
     {
@@ -55,7 +59,7 @@ class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
     }
 
     /**
-     * Set answerID value
+     * Set answerID value.
      */
     public function setAnswerID(int $answerID): self
     {
@@ -69,7 +73,7 @@ class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
     }
 
     /**
-     * Get text value
+     * Get text value.
      */
     public function getText(): ?string
     {
@@ -77,7 +81,7 @@ class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
     }
 
     /**
-     * Set text value
+     * Set text value.
      */
     public function setText(?string $text = null): self
     {
@@ -91,7 +95,7 @@ class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
     }
 
     /**
-     * Get address value
+     * Get address value.
      */
     public function getAddress(): ?Address
     {
@@ -99,7 +103,7 @@ class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
     }
 
     /**
-     * Set address value
+     * Set address value.
      */
     public function setAddress(?Address $address = null): self
     {

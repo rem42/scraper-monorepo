@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for SlaveServicesBase StructType
+ * This class stands for SlaveServicesBase StructType.
  */
 #[\AllowDynamicProperties]
 class SlaveServicesBase extends ServiceBaseList
@@ -12,12 +14,12 @@ class SlaveServicesBase extends ServiceBaseList
      * The extraInsurance
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ExtraInsurance $extraInsurance = null;
 
     /**
-     * Constructor method for SlaveServicesBase
+     * Constructor method for SlaveServicesBase.
      *
      * @uses SlaveServicesBase::setExtraInsurance()
      */
@@ -29,7 +31,7 @@ class SlaveServicesBase extends ServiceBaseList
     }
 
     /**
-     * Get extraInsurance value
+     * Get extraInsurance value.
      */
     public function getExtraInsurance(): ?ExtraInsurance
     {
@@ -37,7 +39,7 @@ class SlaveServicesBase extends ServiceBaseList
     }
 
     /**
-     * Set extraInsurance value
+     * Set extraInsurance value.
      */
     public function setExtraInsurance(?ExtraInsurance $extraInsurance = null): self
     {

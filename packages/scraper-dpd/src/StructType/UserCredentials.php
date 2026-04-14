@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
@@ -7,7 +9,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for UserCredentials StructType
  * Meta information extracted from the WSDL
- * - type: tns:UserCredentials
+ * - type: tns:UserCredentials.
  */
 #[\AllowDynamicProperties]
 class UserCredentials extends AbstractStructBase
@@ -16,19 +18,20 @@ class UserCredentials extends AbstractStructBase
      * The userid
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $userid = null;
+
     /**
      * The password
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $password = null;
 
     /**
-     * Constructor method for UserCredentials
+     * Constructor method for UserCredentials.
      *
      * @uses UserCredentials::setUserid()
      * @uses UserCredentials::setPassword()
@@ -42,7 +45,7 @@ class UserCredentials extends AbstractStructBase
     }
 
     /**
-     * Get userid value
+     * Get userid value.
      */
     public function getUserid(): ?string
     {
@@ -50,7 +53,7 @@ class UserCredentials extends AbstractStructBase
     }
 
     /**
-     * Set userid value
+     * Set userid value.
      */
     public function setUserid(?string $userid = null): self
     {
@@ -64,7 +67,7 @@ class UserCredentials extends AbstractStructBase
     }
 
     /**
-     * Get password value
+     * Get password value.
      */
     public function getPassword(): ?string
     {
@@ -72,7 +75,7 @@ class UserCredentials extends AbstractStructBase
     }
 
     /**
-     * Set password value
+     * Set password value.
      */
     public function setPassword(?string $password = null): self
     {

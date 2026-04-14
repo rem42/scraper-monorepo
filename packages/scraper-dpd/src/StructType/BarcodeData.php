@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for BarcodeData StructType
+ * This class stands for BarcodeData StructType.
  */
 #[\AllowDynamicProperties]
 class BarcodeData extends AbstractStructBase
@@ -14,33 +16,36 @@ class BarcodeData extends AbstractStructBase
      * The Identifier
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $Identifier;
+
     /**
      * The BarcodeValue
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BarcodeValue = null;
+
     /**
      * The BarcodeText
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BarcodeText = null;
+
     /**
      * The bcImage
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $bcImage = null;
 
     /**
-     * Constructor method for BarcodeData
+     * Constructor method for BarcodeData.
      *
      * @uses BarcodeData::setIdentifier()
      * @uses BarcodeData::setBarcodeValue()
@@ -58,7 +63,7 @@ class BarcodeData extends AbstractStructBase
     }
 
     /**
-     * Get Identifier value
+     * Get Identifier value.
      */
     public function getIdentifier(): string
     {
@@ -66,7 +71,7 @@ class BarcodeData extends AbstractStructBase
     }
 
     /**
-     * Set Identifier value
+     * Set Identifier value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\BcIdentifier::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\BcIdentifier::getValidValues()
@@ -85,7 +90,7 @@ class BarcodeData extends AbstractStructBase
     }
 
     /**
-     * Get BarcodeValue value
+     * Get BarcodeValue value.
      */
     public function getBarcodeValue(): ?string
     {
@@ -93,7 +98,7 @@ class BarcodeData extends AbstractStructBase
     }
 
     /**
-     * Set BarcodeValue value
+     * Set BarcodeValue value.
      */
     public function setBarcodeValue(?string $barcodeValue = null): self
     {
@@ -107,7 +112,7 @@ class BarcodeData extends AbstractStructBase
     }
 
     /**
-     * Get BarcodeText value
+     * Get BarcodeText value.
      */
     public function getBarcodeText(): ?string
     {
@@ -115,7 +120,7 @@ class BarcodeData extends AbstractStructBase
     }
 
     /**
-     * Set BarcodeText value
+     * Set BarcodeText value.
      */
     public function setBarcodeText(?string $barcodeText = null): self
     {
@@ -129,7 +134,7 @@ class BarcodeData extends AbstractStructBase
     }
 
     /**
-     * Get bcImage value
+     * Get bcImage value.
      */
     public function getBcImage(): ?string
     {
@@ -137,7 +142,7 @@ class BarcodeData extends AbstractStructBase
     }
 
     /**
-     * Set bcImage value
+     * Set bcImage value.
      */
     public function setBcImage(?string $bcImage = null): self
     {

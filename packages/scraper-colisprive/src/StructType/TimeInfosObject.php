@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for TimeInfosObject StructType
+ * This class stands for TimeInfosObject StructType.
  */
 #[\AllowDynamicProperties]
 class TimeInfosObject extends AbstractStructBase
@@ -14,40 +16,44 @@ class TimeInfosObject extends AbstractStructBase
      * The weekday
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $weekday = null;
+
     /**
      * The timefrom1
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $timefrom1 = null;
+
     /**
      * The timeto1
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $timeto1 = null;
+
     /**
      * The timefrom2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $timefrom2 = null;
+
     /**
      * The timeto2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $timeto2 = null;
 
     /**
-     * Constructor method for TimeInfosObject
+     * Constructor method for TimeInfosObject.
      *
      * @uses TimeInfosObject::setWeekday()
      * @uses TimeInfosObject::setTimefrom1()
@@ -67,7 +73,7 @@ class TimeInfosObject extends AbstractStructBase
     }
 
     /**
-     * Get weekday value
+     * Get weekday value.
      */
     public function getWeekday(): ?string
     {
@@ -75,7 +81,7 @@ class TimeInfosObject extends AbstractStructBase
     }
 
     /**
-     * Set weekday value
+     * Set weekday value.
      */
     public function setWeekday(?string $weekday = null): self
     {
@@ -89,7 +95,7 @@ class TimeInfosObject extends AbstractStructBase
     }
 
     /**
-     * Get timefrom1 value
+     * Get timefrom1 value.
      */
     public function getTimefrom1(): ?string
     {
@@ -97,7 +103,7 @@ class TimeInfosObject extends AbstractStructBase
     }
 
     /**
-     * Set timefrom1 value
+     * Set timefrom1 value.
      */
     public function setTimefrom1(?string $timefrom1 = null): self
     {
@@ -111,7 +117,7 @@ class TimeInfosObject extends AbstractStructBase
     }
 
     /**
-     * Get timeto1 value
+     * Get timeto1 value.
      */
     public function getTimeto1(): ?string
     {
@@ -119,7 +125,7 @@ class TimeInfosObject extends AbstractStructBase
     }
 
     /**
-     * Set timeto1 value
+     * Set timeto1 value.
      */
     public function setTimeto1(?string $timeto1 = null): self
     {
@@ -133,7 +139,7 @@ class TimeInfosObject extends AbstractStructBase
     }
 
     /**
-     * Get timefrom2 value
+     * Get timefrom2 value.
      */
     public function getTimefrom2(): ?string
     {
@@ -141,7 +147,7 @@ class TimeInfosObject extends AbstractStructBase
     }
 
     /**
-     * Set timefrom2 value
+     * Set timefrom2 value.
      */
     public function setTimefrom2(?string $timefrom2 = null): self
     {
@@ -155,7 +161,7 @@ class TimeInfosObject extends AbstractStructBase
     }
 
     /**
-     * Get timeto2 value
+     * Get timeto2 value.
      */
     public function getTimeto2(): ?string
     {
@@ -163,7 +169,7 @@ class TimeInfosObject extends AbstractStructBase
     }
 
     /**
-     * Set timeto2 value
+     * Set timeto2 value.
      */
     public function setTimeto2(?string $timeto2 = null): self
     {

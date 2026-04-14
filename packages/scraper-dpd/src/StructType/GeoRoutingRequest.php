@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for GeoRoutingRequest StructType
+ * This class stands for GeoRoutingRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GeoRoutingRequest extends GeoRoutingBaseRequest
@@ -12,12 +14,12 @@ class GeoRoutingRequest extends GeoRoutingBaseRequest
      * The serviceCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $serviceCode = null;
 
     /**
-     * Constructor method for GeoRoutingRequest
+     * Constructor method for GeoRoutingRequest.
      *
      * @uses GeoRoutingRequest::setServiceCode()
      */
@@ -29,7 +31,7 @@ class GeoRoutingRequest extends GeoRoutingBaseRequest
     }
 
     /**
-     * Get serviceCode value
+     * Get serviceCode value.
      */
     public function getServiceCode(): ?string
     {
@@ -37,7 +39,7 @@ class GeoRoutingRequest extends GeoRoutingBaseRequest
     }
 
     /**
-     * Set serviceCode value
+     * Set serviceCode value.
      */
     public function setServiceCode(?string $serviceCode = null): self
     {

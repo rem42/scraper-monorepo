@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for LabelDataPn StructType
+ * This class stands for LabelDataPn StructType.
  */
 #[\AllowDynamicProperties]
 class LabelDataPn extends LabelDataBase
@@ -12,82 +14,92 @@ class LabelDataPn extends LabelDataBase
      * The OSortInverse
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $OSortInverse;
+
     /**
      * The OSort2Inverse
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $OSort2Inverse;
+
     /**
      * The DSortInverse
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $DSortInverse;
+
     /**
      * The IsShop
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $IsShop;
+
     /**
      * The ReverseHint
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $ReverseHint;
+
     /**
      * The DutiableHint
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DutiableHint = null;
+
     /**
      * The Hint
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Hint = null;
+
     /**
      * The Routingtext
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Routingtext = null;
+
     /**
      * The Servicetext
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Servicetext = null;
+
     /**
      * The ServiceMark
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ServiceMark = null;
+
     /**
      * The ReceiverCenterLine
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ReceiverCenterLine = null;
 
     /**
-     * Constructor method for LabelDataPn
+     * Constructor method for LabelDataPn.
      *
      * @uses LabelDataPn::setOSortInverse()
      * @uses LabelDataPn::setOSort2Inverse()
@@ -119,7 +131,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Get OSortInverse value
+     * Get OSortInverse value.
      */
     public function getOSortInverse(): bool
     {
@@ -127,7 +139,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Set OSortInverse value
+     * Set OSortInverse value.
      */
     public function setOSortInverse(bool $oSortInverse): self
     {
@@ -141,7 +153,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Get OSort2Inverse value
+     * Get OSort2Inverse value.
      */
     public function getOSort2Inverse(): bool
     {
@@ -149,7 +161,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Set OSort2Inverse value
+     * Set OSort2Inverse value.
      */
     public function setOSort2Inverse(bool $oSort2Inverse): self
     {
@@ -163,7 +175,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Get DSortInverse value
+     * Get DSortInverse value.
      */
     public function getDSortInverse(): bool
     {
@@ -171,7 +183,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Set DSortInverse value
+     * Set DSortInverse value.
      */
     public function setDSortInverse(bool $dSortInverse): self
     {
@@ -185,7 +197,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Get IsShop value
+     * Get IsShop value.
      */
     public function getIsShop(): bool
     {
@@ -193,7 +205,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Set IsShop value
+     * Set IsShop value.
      */
     public function setIsShop(bool $isShop): self
     {
@@ -207,7 +219,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Get ReverseHint value
+     * Get ReverseHint value.
      */
     public function getReverseHint(): bool
     {
@@ -215,7 +227,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Set ReverseHint value
+     * Set ReverseHint value.
      */
     public function setReverseHint(bool $reverseHint): self
     {
@@ -229,7 +241,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Get DutiableHint value
+     * Get DutiableHint value.
      */
     public function getDutiableHint(): ?string
     {
@@ -237,7 +249,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Set DutiableHint value
+     * Set DutiableHint value.
      */
     public function setDutiableHint(?string $dutiableHint = null): self
     {
@@ -251,7 +263,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Get Hint value
+     * Get Hint value.
      */
     public function getHint(): ?string
     {
@@ -259,7 +271,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Set Hint value
+     * Set Hint value.
      */
     public function setHint(?string $hint = null): self
     {
@@ -273,7 +285,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Get Routingtext value
+     * Get Routingtext value.
      */
     public function getRoutingtext(): ?string
     {
@@ -281,7 +293,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Set Routingtext value
+     * Set Routingtext value.
      */
     public function setRoutingtext(?string $routingtext = null): self
     {
@@ -295,7 +307,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Get Servicetext value
+     * Get Servicetext value.
      */
     public function getServicetext(): ?string
     {
@@ -303,7 +315,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Set Servicetext value
+     * Set Servicetext value.
      */
     public function setServicetext(?string $servicetext = null): self
     {
@@ -317,7 +329,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Get ServiceMark value
+     * Get ServiceMark value.
      */
     public function getServiceMark(): ?string
     {
@@ -325,7 +337,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Set ServiceMark value
+     * Set ServiceMark value.
      */
     public function setServiceMark(?string $serviceMark = null): self
     {
@@ -339,7 +351,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Get ReceiverCenterLine value
+     * Get ReceiverCenterLine value.
      */
     public function getReceiverCenterLine(): ?string
     {
@@ -347,7 +359,7 @@ class LabelDataPn extends LabelDataBase
     }
 
     /**
-     * Set ReceiverCenterLine value
+     * Set ReceiverCenterLine value.
      */
     public function setReceiverCenterLine(?string $receiverCenterLine = null): self
     {

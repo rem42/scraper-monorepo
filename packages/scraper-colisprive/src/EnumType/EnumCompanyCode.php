@@ -1,35 +1,39 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 
 /**
- * This class stands for EnumCompanyCode EnumType
+ * This class stands for EnumCompanyCode EnumType.
  */
 class EnumCompanyCode extends AbstractStructEnumBase
 {
     /**
-     * Constant for value 'C'
+     * Constant for value 'C'.
      *
      * @return string 'C'
      */
     public const VALUE_C = 'C';
+
     /**
-     * Constant for value 'P'
+     * Constant for value 'P'.
      *
      * @return string 'P'
      */
     public const VALUE_P = 'P';
+
     /**
-     * Constant for value 'T'
+     * Constant for value 'T'.
      *
      * @return string 'T'
      */
     public const VALUE_T = 'T';
 
     /**
-     * Return allowed values
+     * Return allowed values.
      *
      * @uses self::VALUE_C
      * @uses self::VALUE_P

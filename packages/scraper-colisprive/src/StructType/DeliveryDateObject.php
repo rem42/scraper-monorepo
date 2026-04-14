@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for DeliveryDateObject StructType
+ * This class stands for DeliveryDateObject StructType.
  */
 #[\AllowDynamicProperties]
 class DeliveryDateObject extends AbstractStructBase
@@ -14,19 +16,20 @@ class DeliveryDateObject extends AbstractStructBase
      * The DlvrTimeF
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $DlvrTimeF;
+
     /**
      * The DlvrDate
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DlvrDate = null;
 
     /**
-     * Constructor method for DeliveryDateObject
+     * Constructor method for DeliveryDateObject.
      *
      * @uses DeliveryDateObject::setDlvrTimeF()
      * @uses DeliveryDateObject::setDlvrDate()
@@ -40,7 +43,7 @@ class DeliveryDateObject extends AbstractStructBase
     }
 
     /**
-     * Get DlvrTimeF value
+     * Get DlvrTimeF value.
      */
     public function getDlvrTimeF(): string
     {
@@ -48,7 +51,7 @@ class DeliveryDateObject extends AbstractStructBase
     }
 
     /**
-     * Set DlvrTimeF value
+     * Set DlvrTimeF value.
      *
      * @uses \Scraper\ScraperColisPrive\EnumType\EnumDeliveryTimeFrame::valueIsValid()
      * @uses \Scraper\ScraperColisPrive\EnumType\EnumDeliveryTimeFrame::getValidValues()
@@ -67,7 +70,7 @@ class DeliveryDateObject extends AbstractStructBase
     }
 
     /**
-     * Get DlvrDate value
+     * Get DlvrDate value.
      */
     public function getDlvrDate(): ?string
     {
@@ -75,7 +78,7 @@ class DeliveryDateObject extends AbstractStructBase
     }
 
     /**
-     * Set DlvrDate value
+     * Set DlvrDate value.
      */
     public function setDlvrDate(?string $dlvrDate = null): self
     {

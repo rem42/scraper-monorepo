@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CustomerProfile StructType
+ * This class stands for CustomerProfile StructType.
  */
 #[\AllowDynamicProperties]
 class CustomerProfile extends AbstractStructBase
@@ -14,33 +16,36 @@ class CustomerProfile extends AbstractStructBase
      * The Locked
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $Locked;
+
     /**
      * The Customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $Customer = null;
+
     /**
      * The Addresses
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfProfileAddress $Addresses = null;
+
     /**
      * The Services
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfCustomerService $Services = null;
 
     /**
-     * Constructor method for CustomerProfile
+     * Constructor method for CustomerProfile.
      *
      * @uses CustomerProfile::setLocked()
      * @uses CustomerProfile::setCustomer()
@@ -58,7 +63,7 @@ class CustomerProfile extends AbstractStructBase
     }
 
     /**
-     * Get Locked value
+     * Get Locked value.
      */
     public function getLocked(): bool
     {
@@ -66,7 +71,7 @@ class CustomerProfile extends AbstractStructBase
     }
 
     /**
-     * Set Locked value
+     * Set Locked value.
      */
     public function setLocked(bool $locked): self
     {
@@ -80,7 +85,7 @@ class CustomerProfile extends AbstractStructBase
     }
 
     /**
-     * Get Customer value
+     * Get Customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -88,7 +93,7 @@ class CustomerProfile extends AbstractStructBase
     }
 
     /**
-     * Set Customer value
+     * Set Customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {
@@ -98,7 +103,7 @@ class CustomerProfile extends AbstractStructBase
     }
 
     /**
-     * Get Addresses value
+     * Get Addresses value.
      */
     public function getAddresses(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfProfileAddress
     {
@@ -106,7 +111,7 @@ class CustomerProfile extends AbstractStructBase
     }
 
     /**
-     * Set Addresses value
+     * Set Addresses value.
      */
     public function setAddresses(?\Scraper\ScraperDPD\ArrayType\ArrayOfProfileAddress $addresses = null): self
     {
@@ -116,7 +121,7 @@ class CustomerProfile extends AbstractStructBase
     }
 
     /**
-     * Get Services value
+     * Get Services value.
      */
     public function getServices(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfCustomerService
     {
@@ -124,7 +129,7 @@ class CustomerProfile extends AbstractStructBase
     }
 
     /**
-     * Set Services value
+     * Set Services value.
      */
     public function setServices(?\Scraper\ScraperDPD\ArrayType\ArrayOfCustomerService $services = null): self
     {

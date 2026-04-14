@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for VerifyConfiguration StructType
+ * This class stands for VerifyConfiguration StructType.
  */
 #[\AllowDynamicProperties]
 class VerifyConfiguration extends AbstractStructBase
@@ -14,12 +16,12 @@ class VerifyConfiguration extends AbstractStructBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?VerifyConfigurationRequest $request = null;
 
     /**
-     * Constructor method for VerifyConfiguration
+     * Constructor method for VerifyConfiguration.
      *
      * @uses VerifyConfiguration::setRequest()
      */
@@ -31,7 +33,7 @@ class VerifyConfiguration extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?VerifyConfigurationRequest
     {
@@ -39,7 +41,7 @@ class VerifyConfiguration extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?VerifyConfigurationRequest $request = null): self
     {

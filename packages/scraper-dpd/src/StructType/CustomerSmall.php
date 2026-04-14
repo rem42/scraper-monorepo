@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CustomerSmall StructType
+ * This class stands for CustomerSmall StructType.
  */
 #[\AllowDynamicProperties]
 class CustomerSmall extends AbstractStructBase
@@ -14,19 +16,20 @@ class CustomerSmall extends AbstractStructBase
      * The centernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $centernumber;
+
     /**
      * The number
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $number;
 
     /**
-     * Constructor method for CustomerSmall
+     * Constructor method for CustomerSmall.
      *
      * @uses CustomerSmall::setCenternumber()
      * @uses CustomerSmall::setNumber()
@@ -40,7 +43,7 @@ class CustomerSmall extends AbstractStructBase
     }
 
     /**
-     * Get centernumber value
+     * Get centernumber value.
      */
     public function getCenternumber(): int
     {
@@ -48,7 +51,7 @@ class CustomerSmall extends AbstractStructBase
     }
 
     /**
-     * Set centernumber value
+     * Set centernumber value.
      */
     public function setCenternumber(int $centernumber): self
     {
@@ -62,7 +65,7 @@ class CustomerSmall extends AbstractStructBase
     }
 
     /**
-     * Get number value
+     * Get number value.
      */
     public function getNumber(): int
     {
@@ -70,7 +73,7 @@ class CustomerSmall extends AbstractStructBase
     }
 
     /**
-     * Set number value
+     * Set number value.
      */
     public function setNumber(int $number): self
     {

@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetNationalTransitTimeRequest StructType
+ * This class stands for GetNationalTransitTimeRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GetNationalTransitTimeRequest extends AbstractStructBase
@@ -14,40 +16,44 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
      * The SC_CountryCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $SC_CountryCode;
+
     /**
      * The SC_CenterNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $SC_CenterNumber;
+
     /**
      * The RC_CountryCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $RC_CountryCode;
+
     /**
      * The RC_CenterNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $RC_CenterNumber;
+
     /**
      * The TransitTime_Type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $TransitTime_Type;
 
     /**
-     * Constructor method for GetNationalTransitTimeRequest
+     * Constructor method for GetNationalTransitTimeRequest.
      *
      * @uses GetNationalTransitTimeRequest::setSC_CountryCode()
      * @uses GetNationalTransitTimeRequest::setSC_CenterNumber()
@@ -67,7 +73,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     }
 
     /**
-     * Get SC_CountryCode value
+     * Get SC_CountryCode value.
      */
     public function getSC_CountryCode(): int
     {
@@ -75,7 +81,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     }
 
     /**
-     * Set SC_CountryCode value
+     * Set SC_CountryCode value.
      */
     public function setSC_CountryCode(int $sC_CountryCode): self
     {
@@ -89,7 +95,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     }
 
     /**
-     * Get SC_CenterNumber value
+     * Get SC_CenterNumber value.
      */
     public function getSC_CenterNumber(): int
     {
@@ -97,7 +103,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     }
 
     /**
-     * Set SC_CenterNumber value
+     * Set SC_CenterNumber value.
      */
     public function setSC_CenterNumber(int $sC_CenterNumber): self
     {
@@ -111,7 +117,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     }
 
     /**
-     * Get RC_CountryCode value
+     * Get RC_CountryCode value.
      */
     public function getRC_CountryCode(): int
     {
@@ -119,7 +125,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     }
 
     /**
-     * Set RC_CountryCode value
+     * Set RC_CountryCode value.
      */
     public function setRC_CountryCode(int $rC_CountryCode): self
     {
@@ -133,7 +139,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     }
 
     /**
-     * Get RC_CenterNumber value
+     * Get RC_CenterNumber value.
      */
     public function getRC_CenterNumber(): int
     {
@@ -141,7 +147,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     }
 
     /**
-     * Set RC_CenterNumber value
+     * Set RC_CenterNumber value.
      */
     public function setRC_CenterNumber(int $rC_CenterNumber): self
     {
@@ -155,7 +161,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     }
 
     /**
-     * Get TransitTime_Type value
+     * Get TransitTime_Type value.
      */
     public function getTransitTime_Type(): string
     {
@@ -163,7 +169,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     }
 
     /**
-     * Set TransitTime_Type value
+     * Set TransitTime_Type value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\TransitTimeType::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\TransitTimeType::getValidValues()

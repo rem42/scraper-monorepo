@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CreateShipmentResponse StructType
+ * This class stands for CreateShipmentResponse StructType.
  */
 #[\AllowDynamicProperties]
 class CreateShipmentResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class CreateShipmentResponse extends AbstractStructBase
      * The CreateShipmentResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfShipment $CreateShipmentResult = null;
 
     /**
-     * Constructor method for CreateShipmentResponse
+     * Constructor method for CreateShipmentResponse.
      *
      * @uses CreateShipmentResponse::setCreateShipmentResult()
      */
@@ -31,7 +33,7 @@ class CreateShipmentResponse extends AbstractStructBase
     }
 
     /**
-     * Get CreateShipmentResult value
+     * Get CreateShipmentResult value.
      */
     public function getCreateShipmentResult(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfShipment
     {
@@ -39,7 +41,7 @@ class CreateShipmentResponse extends AbstractStructBase
     }
 
     /**
-     * Set CreateShipmentResult value
+     * Set CreateShipmentResult value.
      */
     public function setCreateShipmentResult(?\Scraper\ScraperDPD\ArrayType\ArrayOfShipment $createShipmentResult = null): self
     {

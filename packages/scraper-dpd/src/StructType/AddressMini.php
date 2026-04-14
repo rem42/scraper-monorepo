@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for AddressMini StructType
+ * This class stands for AddressMini StructType.
  */
 #[\AllowDynamicProperties]
 class AddressMini extends AbstractStructBase
@@ -14,33 +16,36 @@ class AddressMini extends AbstractStructBase
      * The countryPrefix
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $countryPrefix = null;
+
     /**
      * The zipCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $zipCode = null;
+
     /**
      * The city
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $city = null;
+
     /**
      * The street
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $street = null;
 
     /**
-     * Constructor method for AddressMini
+     * Constructor method for AddressMini.
      *
      * @uses AddressMini::setCountryPrefix()
      * @uses AddressMini::setZipCode()
@@ -58,7 +63,7 @@ class AddressMini extends AbstractStructBase
     }
 
     /**
-     * Get countryPrefix value
+     * Get countryPrefix value.
      */
     public function getCountryPrefix(): ?string
     {
@@ -66,7 +71,7 @@ class AddressMini extends AbstractStructBase
     }
 
     /**
-     * Set countryPrefix value
+     * Set countryPrefix value.
      */
     public function setCountryPrefix(?string $countryPrefix = null): self
     {
@@ -80,7 +85,7 @@ class AddressMini extends AbstractStructBase
     }
 
     /**
-     * Get zipCode value
+     * Get zipCode value.
      */
     public function getZipCode(): ?string
     {
@@ -88,7 +93,7 @@ class AddressMini extends AbstractStructBase
     }
 
     /**
-     * Set zipCode value
+     * Set zipCode value.
      */
     public function setZipCode(?string $zipCode = null): self
     {
@@ -102,7 +107,7 @@ class AddressMini extends AbstractStructBase
     }
 
     /**
-     * Get city value
+     * Get city value.
      */
     public function getCity(): ?string
     {
@@ -110,7 +115,7 @@ class AddressMini extends AbstractStructBase
     }
 
     /**
-     * Set city value
+     * Set city value.
      */
     public function setCity(?string $city = null): self
     {
@@ -124,7 +129,7 @@ class AddressMini extends AbstractStructBase
     }
 
     /**
-     * Get street value
+     * Get street value.
      */
     public function getStreet(): ?string
     {
@@ -132,7 +137,7 @@ class AddressMini extends AbstractStructBase
     }
 
     /**
-     * Set street value
+     * Set street value.
      */
     public function setStreet(?string $street = null): self
     {

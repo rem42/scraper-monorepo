@@ -1,65 +1,74 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 
 /**
- * This class stands for eLabelType EnumType
+ * This class stands for eLabelType EnumType.
  */
 class ELabelType extends AbstractStructEnumBase
 {
     /**
-     * Constant for value 'Default'
+     * Constant for value 'Default'.
      *
      * @return string 'Default'
      */
     public const VALUE_DEFAULT = 'Default';
+
     /**
-     * Constant for value 'PDF'
+     * Constant for value 'PDF'.
      *
      * @return string 'PDF'
      */
     public const VALUE_PDF = 'PDF';
+
     /**
-     * Constant for value 'PDF_A6'
+     * Constant for value 'PDF_A6'.
      *
      * @return string 'PDF_A6'
      */
     public const VALUE_PDF_A_6 = 'PDF_A6';
+
     /**
-     * Constant for value 'ZPL'
+     * Constant for value 'ZPL'.
      *
      * @return string 'ZPL'
      */
     public const VALUE_ZPL = 'ZPL';
+
     /**
-     * Constant for value 'ZPL300'
+     * Constant for value 'ZPL300'.
      *
      * @return string 'ZPL300'
      */
     public const VALUE_ZPL_300 = 'ZPL300';
+
     /**
-     * Constant for value 'ZPL_A6'
+     * Constant for value 'ZPL_A6'.
      *
      * @return string 'ZPL_A6'
      */
     public const VALUE_ZPL_A_6 = 'ZPL_A6';
+
     /**
-     * Constant for value 'ZPL300_A6'
+     * Constant for value 'ZPL300_A6'.
      *
      * @return string 'ZPL300_A6'
      */
     public const VALUE_ZPL_300_A_6 = 'ZPL300_A6';
+
     /**
-     * Constant for value 'EPL'
+     * Constant for value 'EPL'.
      *
      * @return string 'EPL'
      */
     public const VALUE_EPL = 'EPL';
 
     /**
-     * Return allowed values
+     * Return allowed values.
      *
      * @uses self::VALUE_DEFAULT
      * @uses self::VALUE_PDF

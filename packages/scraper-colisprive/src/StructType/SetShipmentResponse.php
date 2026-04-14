@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for SetShipmentResponse StructType
+ * This class stands for SetShipmentResponse StructType.
  */
 #[\AllowDynamicProperties]
 class SetShipmentResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class SetShipmentResponse extends AbstractStructBase
      * The SetShipmentResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?SetShipmentReturn $SetShipmentResult = null;
 
     /**
-     * Constructor method for SetShipmentResponse
+     * Constructor method for SetShipmentResponse.
      *
      * @uses SetShipmentResponse::setSetShipmentResult()
      */
@@ -31,7 +33,7 @@ class SetShipmentResponse extends AbstractStructBase
     }
 
     /**
-     * Get SetShipmentResult value
+     * Get SetShipmentResult value.
      */
     public function getSetShipmentResult(): ?SetShipmentReturn
     {
@@ -39,7 +41,7 @@ class SetShipmentResponse extends AbstractStructBase
     }
 
     /**
-     * Set SetShipmentResult value
+     * Set SetShipmentResult value.
      */
     public function setSetShipmentResult(?SetShipmentReturn $setShipmentResult = null): self
     {

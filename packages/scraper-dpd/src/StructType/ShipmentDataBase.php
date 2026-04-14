@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ShipmentDataBase StructType
+ * This class stands for ShipmentDataBase StructType.
  */
 #[\AllowDynamicProperties]
 class ShipmentDataBase extends AbstractStructBase
@@ -14,40 +16,44 @@ class ShipmentDataBase extends AbstractStructBase
      * The customer_centernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $customer_centernumber = null;
+
     /**
      * The customernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $customernumber = null;
+
     /**
      * The shipperaddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $shipperaddress = null;
+
     /**
      * The customeraddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $customeraddress = null;
+
     /**
      * The receiveraddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $receiveraddress = null;
 
     /**
-     * Constructor method for ShipmentDataBase
+     * Constructor method for ShipmentDataBase.
      *
      * @uses ShipmentDataBase::setCustomer_centernumber()
      * @uses ShipmentDataBase::setCustomernumber()
@@ -67,7 +73,7 @@ class ShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get customer_centernumber value
+     * Get customer_centernumber value.
      */
     public function getCustomer_centernumber(): ?string
     {
@@ -75,7 +81,7 @@ class ShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set customer_centernumber value
+     * Set customer_centernumber value.
      */
     public function setCustomer_centernumber(?string $customer_centernumber = null): self
     {
@@ -89,7 +95,7 @@ class ShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get customernumber value
+     * Get customernumber value.
      */
     public function getCustomernumber(): ?string
     {
@@ -97,7 +103,7 @@ class ShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set customernumber value
+     * Set customernumber value.
      */
     public function setCustomernumber(?string $customernumber = null): self
     {
@@ -111,7 +117,7 @@ class ShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get shipperaddress value
+     * Get shipperaddress value.
      */
     public function getShipperaddress(): ?Address
     {
@@ -119,7 +125,7 @@ class ShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set shipperaddress value
+     * Set shipperaddress value.
      */
     public function setShipperaddress(?Address $shipperaddress = null): self
     {
@@ -129,7 +135,7 @@ class ShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get customeraddress value
+     * Get customeraddress value.
      */
     public function getCustomeraddress(): ?Address
     {
@@ -137,7 +143,7 @@ class ShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set customeraddress value
+     * Set customeraddress value.
      */
     public function setCustomeraddress(?Address $customeraddress = null): self
     {
@@ -147,7 +153,7 @@ class ShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get receiveraddress value
+     * Get receiveraddress value.
      */
     public function getReceiveraddress(): ?Address
     {
@@ -155,7 +161,7 @@ class ShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set receiveraddress value
+     * Set receiveraddress value.
      */
     public function setReceiveraddress(?Address $receiveraddress = null): self
     {

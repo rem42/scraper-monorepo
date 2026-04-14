@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for GetShipmentBcMultiRequest StructType
+ * This class stands for GetShipmentBcMultiRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GetShipmentBcMultiRequest extends ShipmentRequestBc
@@ -13,12 +15,12 @@ class GetShipmentBcMultiRequest extends ShipmentRequestBc
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $LinkedType;
 
     /**
-     * Constructor method for GetShipmentBcMultiRequest
+     * Constructor method for GetShipmentBcMultiRequest.
      *
      * @uses GetShipmentBcMultiRequest::setLinkedType()
      */
@@ -30,7 +32,7 @@ class GetShipmentBcMultiRequest extends ShipmentRequestBc
     }
 
     /**
-     * Get LinkedType value
+     * Get LinkedType value.
      */
     public function getLinkedType(): string
     {
@@ -38,7 +40,7 @@ class GetShipmentBcMultiRequest extends ShipmentRequestBc
     }
 
     /**
-     * Set LinkedType value
+     * Set LinkedType value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\ELinkedType::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\ELinkedType::getValidValues()

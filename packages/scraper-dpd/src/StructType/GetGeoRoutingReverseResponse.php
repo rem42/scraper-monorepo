@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetGeoRoutingReverseResponse StructType
+ * This class stands for GetGeoRoutingReverseResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetGeoRoutingReverseResponse extends AbstractStructBase
@@ -14,26 +16,28 @@ class GetGeoRoutingReverseResponse extends AbstractStructBase
      * The GetGeoRoutingReverseResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetGeoRoutingReverseResponse $GetGeoRoutingReverseResult = null;
+
     /**
      * The Reverse
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GeoRouting $Reverse = null;
+
     /**
      * The ReverseRetour
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GeoRouting $ReverseRetour = null;
 
     /**
-     * Constructor method for GetGeoRoutingReverseResponse
+     * Constructor method for GetGeoRoutingReverseResponse.
      *
      * @uses GetGeoRoutingReverseResponse::setGetGeoRoutingReverseResult()
      * @uses GetGeoRoutingReverseResponse::setReverse()
@@ -49,7 +53,7 @@ class GetGeoRoutingReverseResponse extends AbstractStructBase
     }
 
     /**
-     * Get GetGeoRoutingReverseResult value
+     * Get GetGeoRoutingReverseResult value.
      */
     public function getGetGeoRoutingReverseResult(): ?self
     {
@@ -57,7 +61,7 @@ class GetGeoRoutingReverseResponse extends AbstractStructBase
     }
 
     /**
-     * Set GetGeoRoutingReverseResult value
+     * Set GetGeoRoutingReverseResult value.
      */
     public function setGetGeoRoutingReverseResult(?self $getGeoRoutingReverseResult = null): self
     {
@@ -67,7 +71,7 @@ class GetGeoRoutingReverseResponse extends AbstractStructBase
     }
 
     /**
-     * Get Reverse value
+     * Get Reverse value.
      */
     public function getReverse(): ?GeoRouting
     {
@@ -75,7 +79,7 @@ class GetGeoRoutingReverseResponse extends AbstractStructBase
     }
 
     /**
-     * Set Reverse value
+     * Set Reverse value.
      */
     public function setReverse(?GeoRouting $reverse = null): self
     {
@@ -85,7 +89,7 @@ class GetGeoRoutingReverseResponse extends AbstractStructBase
     }
 
     /**
-     * Get ReverseRetour value
+     * Get ReverseRetour value.
      */
     public function getReverseRetour(): ?GeoRouting
     {
@@ -93,7 +97,7 @@ class GetGeoRoutingReverseResponse extends AbstractStructBase
     }
 
     /**
-     * Set ReverseRetour value
+     * Set ReverseRetour value.
      */
     public function setReverseRetour(?GeoRouting $reverseRetour = null): self
     {

@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CheckIfReverseInverseShipmentExistsBcIdResponse StructType
+ * This class stands for CheckIfReverseInverseShipmentExistsBcIdResponse StructType.
  */
 #[\AllowDynamicProperties]
 class CheckIfReverseInverseShipmentExistsBcIdResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class CheckIfReverseInverseShipmentExistsBcIdResponse extends AbstractStructBase
      * The CheckIfReverseInverseShipmentExistsBcIdResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $CheckIfReverseInverseShipmentExistsBcIdResult;
 
     /**
-     * Constructor method for CheckIfReverseInverseShipmentExistsBcIdResponse
+     * Constructor method for CheckIfReverseInverseShipmentExistsBcIdResponse.
      *
      * @uses CheckIfReverseInverseShipmentExistsBcIdResponse::setCheckIfReverseInverseShipmentExistsBcIdResult()
      */
@@ -31,7 +33,7 @@ class CheckIfReverseInverseShipmentExistsBcIdResponse extends AbstractStructBase
     }
 
     /**
-     * Get CheckIfReverseInverseShipmentExistsBcIdResult value
+     * Get CheckIfReverseInverseShipmentExistsBcIdResult value.
      */
     public function getCheckIfReverseInverseShipmentExistsBcIdResult(): string
     {
@@ -39,7 +41,7 @@ class CheckIfReverseInverseShipmentExistsBcIdResponse extends AbstractStructBase
     }
 
     /**
-     * Set CheckIfReverseInverseShipmentExistsBcIdResult value
+     * Set CheckIfReverseInverseShipmentExistsBcIdResult value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\CheckReverseInverseShipmentReturn::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\CheckReverseInverseShipmentReturn::getValidValues()

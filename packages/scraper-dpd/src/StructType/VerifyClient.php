@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for VerifyClient StructType
+ * This class stands for VerifyClient StructType.
  */
 #[\AllowDynamicProperties]
 class VerifyClient extends AbstractStructBase
@@ -14,12 +16,12 @@ class VerifyClient extends AbstractStructBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?VerifyRequest $request = null;
 
     /**
-     * Constructor method for VerifyClient
+     * Constructor method for VerifyClient.
      *
      * @uses VerifyClient::setRequest()
      */
@@ -31,7 +33,7 @@ class VerifyClient extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?VerifyRequest
     {
@@ -39,7 +41,7 @@ class VerifyClient extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?VerifyRequest $request = null): self
     {

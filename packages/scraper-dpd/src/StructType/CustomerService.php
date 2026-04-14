@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CustomerService StructType
+ * This class stands for CustomerService StructType.
  */
 #[\AllowDynamicProperties]
 class CustomerService extends AbstractStructBase
@@ -14,65 +16,72 @@ class CustomerService extends AbstractStructBase
      * The Type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $Type;
+
     /**
      * The Export
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $Export;
+
     /**
      * The LimitType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $LimitType;
+
     /**
      * The Name
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Name = null;
+
     /**
      * The Attribute
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?int $Attribute;
+
     /**
      * The Mode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?int $Mode;
+
     /**
      * The LimitMin
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?float $LimitMin;
+
     /**
      * The LimitMax
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?float $LimitMax;
 
     /**
-     * Constructor method for CustomerService
+     * Constructor method for CustomerService.
      *
      * @uses CustomerService::setType()
      * @uses CustomerService::setExport()
@@ -98,7 +107,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Get Type value
+     * Get Type value.
      */
     public function getType(): int
     {
@@ -106,7 +115,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Set Type value
+     * Set Type value.
      */
     public function setType(int $type): self
     {
@@ -120,7 +129,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Get Export value
+     * Get Export value.
      */
     public function getExport(): string
     {
@@ -128,7 +137,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Set Export value
+     * Set Export value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\EExportService::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\EExportService::getValidValues()
@@ -147,7 +156,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Get LimitType value
+     * Get LimitType value.
      */
     public function getLimitType(): string
     {
@@ -155,7 +164,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Set LimitType value
+     * Set LimitType value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\ELimitTypeService::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\ELimitTypeService::getValidValues()
@@ -174,7 +183,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Get Name value
+     * Get Name value.
      */
     public function getName(): ?string
     {
@@ -182,7 +191,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Set Name value
+     * Set Name value.
      */
     public function setName(?string $name = null): self
     {
@@ -196,7 +205,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Get Attribute value
+     * Get Attribute value.
      */
     public function getAttribute(): int
     {
@@ -204,7 +213,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Set Attribute value
+     * Set Attribute value.
      */
     public function setAttribute(?int $attribute): self
     {
@@ -218,7 +227,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Get Mode value
+     * Get Mode value.
      */
     public function getMode(): int
     {
@@ -226,7 +235,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Set Mode value
+     * Set Mode value.
      */
     public function setMode(?int $mode): self
     {
@@ -240,7 +249,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Get LimitMin value
+     * Get LimitMin value.
      */
     public function getLimitMin(): float
     {
@@ -248,7 +257,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Set LimitMin value
+     * Set LimitMin value.
      */
     public function setLimitMin(?float $limitMin): self
     {
@@ -262,7 +271,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Get LimitMax value
+     * Get LimitMax value.
      */
     public function getLimitMax(): float
     {
@@ -270,7 +279,7 @@ class CustomerService extends AbstractStructBase
     }
 
     /**
-     * Set LimitMax value
+     * Set LimitMax value.
      */
     public function setLimitMax(?float $limitMax): self
     {

@@ -1,35 +1,39 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 
 /**
- * This class stands for etypeConsolidation EnumType
+ * This class stands for etypeConsolidation EnumType.
  */
 class EtypeConsolidation extends AbstractStructEnumBase
 {
     /**
-     * Constant for value 'CombinedDelivery'
+     * Constant for value 'CombinedDelivery'.
      *
      * @return string 'CombinedDelivery'
      */
     public const VALUE_COMBINED_DELIVERY = 'CombinedDelivery';
+
     /**
-     * Constant for value 'CombinedInvoicing'
+     * Constant for value 'CombinedInvoicing'.
      *
      * @return string 'CombinedInvoicing'
      */
     public const VALUE_COMBINED_INVOICING = 'CombinedInvoicing';
+
     /**
-     * Constant for value 'CombinedDeliveryAndInvoicing'
+     * Constant for value 'CombinedDeliveryAndInvoicing'.
      *
      * @return string 'CombinedDeliveryAndInvoicing'
      */
     public const VALUE_COMBINED_DELIVERY_AND_INVOICING = 'CombinedDeliveryAndInvoicing';
 
     /**
-     * Return allowed values
+     * Return allowed values.
      *
      * @uses self::VALUE_COMBINED_DELIVERY
      * @uses self::VALUE_COMBINED_INVOICING

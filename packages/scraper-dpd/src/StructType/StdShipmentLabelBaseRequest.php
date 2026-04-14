@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for StdShipmentLabelBaseRequest StructType
+ * This class stands for StdShipmentLabelBaseRequest StructType.
  */
 #[\AllowDynamicProperties]
 class StdShipmentLabelBaseRequest extends StdShipmentRequest
@@ -12,19 +14,20 @@ class StdShipmentLabelBaseRequest extends StdShipmentRequest
      * The customLabelText
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $customLabelText = null;
+
     /**
      * The labelType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?LabelType $labelType = null;
 
     /**
-     * Constructor method for StdShipmentLabelBaseRequest
+     * Constructor method for StdShipmentLabelBaseRequest.
      *
      * @uses StdShipmentLabelBaseRequest::setCustomLabelText()
      * @uses StdShipmentLabelBaseRequest::setLabelType()
@@ -38,7 +41,7 @@ class StdShipmentLabelBaseRequest extends StdShipmentRequest
     }
 
     /**
-     * Get customLabelText value
+     * Get customLabelText value.
      */
     public function getCustomLabelText(): ?string
     {
@@ -46,7 +49,7 @@ class StdShipmentLabelBaseRequest extends StdShipmentRequest
     }
 
     /**
-     * Set customLabelText value
+     * Set customLabelText value.
      */
     public function setCustomLabelText(?string $customLabelText = null): self
     {
@@ -60,7 +63,7 @@ class StdShipmentLabelBaseRequest extends StdShipmentRequest
     }
 
     /**
-     * Get labelType value
+     * Get labelType value.
      */
     public function getLabelType(): ?LabelType
     {
@@ -68,7 +71,7 @@ class StdShipmentLabelBaseRequest extends StdShipmentRequest
     }
 
     /**
-     * Set labelType value
+     * Set labelType value.
      */
     public function setLabelType(?LabelType $labelType = null): self
     {

@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ReverseShipmentLabelRequest StructType
+ * This class stands for ReverseShipmentLabelRequest StructType.
  */
 #[\AllowDynamicProperties]
 class ReverseShipmentLabelRequest extends ReverseShipmentRequest
@@ -12,33 +14,36 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
      * The refasbarcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $refasbarcode;
+
     /**
      * The receiver_contact_name
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $receiver_contact_name = null;
+
     /**
      * The customLabelText
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $customLabelText = null;
+
     /**
      * The labelType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?LabelType $labelType = null;
 
     /**
-     * Constructor method for ReverseShipmentLabelRequest
+     * Constructor method for ReverseShipmentLabelRequest.
      *
      * @uses ReverseShipmentLabelRequest::setRefasbarcode()
      * @uses ReverseShipmentLabelRequest::setReceiver_contact_name()
@@ -56,7 +61,7 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
     }
 
     /**
-     * Get refasbarcode value
+     * Get refasbarcode value.
      */
     public function getRefasbarcode(): bool
     {
@@ -64,7 +69,7 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
     }
 
     /**
-     * Set refasbarcode value
+     * Set refasbarcode value.
      */
     public function setRefasbarcode(bool $refasbarcode): self
     {
@@ -78,7 +83,7 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
     }
 
     /**
-     * Get receiver_contact_name value
+     * Get receiver_contact_name value.
      */
     public function getReceiver_contact_name(): ?string
     {
@@ -86,7 +91,7 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
     }
 
     /**
-     * Set receiver_contact_name value
+     * Set receiver_contact_name value.
      */
     public function setReceiver_contact_name(?string $receiver_contact_name = null): self
     {
@@ -100,7 +105,7 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
     }
 
     /**
-     * Get customLabelText value
+     * Get customLabelText value.
      */
     public function getCustomLabelText(): ?string
     {
@@ -108,7 +113,7 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
     }
 
     /**
-     * Set customLabelText value
+     * Set customLabelText value.
      */
     public function setCustomLabelText(?string $customLabelText = null): self
     {
@@ -122,7 +127,7 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
     }
 
     /**
-     * Get labelType value
+     * Get labelType value.
      */
     public function getLabelType(): ?LabelType
     {
@@ -130,7 +135,7 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
     }
 
     /**
-     * Set labelType value
+     * Set labelType value.
      */
     public function setLabelType(?LabelType $labelType = null): self
     {

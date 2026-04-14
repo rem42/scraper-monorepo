@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for PhoneCall StructType
+ * This class stands for PhoneCall StructType.
  */
 #[\AllowDynamicProperties]
 class PhoneCall extends AbstractStructBase
@@ -14,33 +16,36 @@ class PhoneCall extends AbstractStructBase
      * The DurationSec
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $DurationSec;
+
     /**
      * The Date
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $Date;
+
     /**
      * The Number
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Number = null;
+
     /**
      * The Type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Type = null;
 
     /**
-     * Constructor method for PhoneCall
+     * Constructor method for PhoneCall.
      *
      * @uses PhoneCall::setDurationSec()
      * @uses PhoneCall::setDate()
@@ -58,7 +63,7 @@ class PhoneCall extends AbstractStructBase
     }
 
     /**
-     * Get DurationSec value
+     * Get DurationSec value.
      */
     public function getDurationSec(): int
     {
@@ -66,7 +71,7 @@ class PhoneCall extends AbstractStructBase
     }
 
     /**
-     * Set DurationSec value
+     * Set DurationSec value.
      */
     public function setDurationSec(int $durationSec): self
     {
@@ -80,7 +85,7 @@ class PhoneCall extends AbstractStructBase
     }
 
     /**
-     * Get Date value
+     * Get Date value.
      */
     public function getDate(): string
     {
@@ -88,7 +93,7 @@ class PhoneCall extends AbstractStructBase
     }
 
     /**
-     * Set Date value
+     * Set Date value.
      */
     public function setDate(string $date): self
     {
@@ -102,7 +107,7 @@ class PhoneCall extends AbstractStructBase
     }
 
     /**
-     * Get Number value
+     * Get Number value.
      */
     public function getNumber(): ?string
     {
@@ -110,7 +115,7 @@ class PhoneCall extends AbstractStructBase
     }
 
     /**
-     * Set Number value
+     * Set Number value.
      */
     public function setNumber(?string $number = null): self
     {
@@ -124,7 +129,7 @@ class PhoneCall extends AbstractStructBase
     }
 
     /**
-     * Get Type value
+     * Get Type value.
      */
     public function getType(): ?string
     {
@@ -132,7 +137,7 @@ class PhoneCall extends AbstractStructBase
     }
 
     /**
-     * Set Type value
+     * Set Type value.
      */
     public function setType(?string $type = null): self
     {

@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for LocalizationObject StructType
+ * This class stands for LocalizationObject StructType.
  */
 #[\AllowDynamicProperties]
 class LocalizationObject extends AbstractStructBase
@@ -14,19 +16,20 @@ class LocalizationObject extends AbstractStructBase
      * The Lat
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected float $Lat;
+
     /**
      * The Long
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected float $Long;
 
     /**
-     * Constructor method for LocalizationObject
+     * Constructor method for LocalizationObject.
      *
      * @uses LocalizationObject::setLat()
      * @uses LocalizationObject::setLong()
@@ -40,7 +43,7 @@ class LocalizationObject extends AbstractStructBase
     }
 
     /**
-     * Get Lat value
+     * Get Lat value.
      */
     public function getLat(): float
     {
@@ -48,7 +51,7 @@ class LocalizationObject extends AbstractStructBase
     }
 
     /**
-     * Set Lat value
+     * Set Lat value.
      */
     public function setLat(float $lat): self
     {
@@ -62,7 +65,7 @@ class LocalizationObject extends AbstractStructBase
     }
 
     /**
-     * Get Long value
+     * Get Long value.
      */
     public function getLong(): float
     {
@@ -70,7 +73,7 @@ class LocalizationObject extends AbstractStructBase
     }
 
     /**
-     * Set Long value
+     * Set Long value.
      */
     public function setLong(float $long): self
     {

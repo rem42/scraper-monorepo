@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetPickupPointsListReturn StructType
+ * This class stands for GetPickupPointsListReturn StructType.
  */
 #[\AllowDynamicProperties]
 class GetPickupPointsListReturn extends AbstractStructBase
@@ -14,26 +16,27 @@ class GetPickupPointsListReturn extends AbstractStructBase
      * The WSResp
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ResponseObject $WSResp = null;
+
     /**
      * The PcksList
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * - minOccurs: 0
+     * - minOccurs: 0.
      *
-     * @var array<\Scraper\ScraperColisPrive\StructType\PickupPointDeliveryObject>
+     * @var array<PickupPointDeliveryObject>
      */
     protected ?array $PcksList = null;
 
     /**
-     * Constructor method for GetPickupPointsListReturn
+     * Constructor method for GetPickupPointsListReturn.
      *
      * @uses GetPickupPointsListReturn::setWSResp()
      * @uses GetPickupPointsListReturn::setPcksList()
      *
-     * @param array<\Scraper\ScraperColisPrive\StructType\PickupPointDeliveryObject> $pcksList
+     * @param array<PickupPointDeliveryObject> $pcksList
      */
     public function __construct(?ResponseObject $wSResp = null, ?array $pcksList = null)
     {
@@ -44,7 +47,7 @@ class GetPickupPointsListReturn extends AbstractStructBase
     }
 
     /**
-     * Get WSResp value
+     * Get WSResp value.
      */
     public function getWSResp(): ?ResponseObject
     {
@@ -52,7 +55,7 @@ class GetPickupPointsListReturn extends AbstractStructBase
     }
 
     /**
-     * Set WSResp value
+     * Set WSResp value.
      */
     public function setWSResp(?ResponseObject $wSResp = null): self
     {
@@ -62,9 +65,9 @@ class GetPickupPointsListReturn extends AbstractStructBase
     }
 
     /**
-     * Get PcksList value
+     * Get PcksList value.
      *
-     * @return array<\Scraper\ScraperColisPrive\StructType\PickupPointDeliveryObject>
+     * @return array<PickupPointDeliveryObject>
      */
     public function getPcksList(): ?array
     {
@@ -74,7 +77,7 @@ class GetPickupPointsListReturn extends AbstractStructBase
     /**
      * This method is responsible for validating the value(s) passed to the setPcksList method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPcksList method
-     * This has to validate that each item contained by the array match the itemType constraint
+     * This has to validate that each item contained by the array match the itemType constraint.
      *
      * @return string A non-empty message if the values does not match the validation rules
      */
@@ -102,9 +105,9 @@ class GetPickupPointsListReturn extends AbstractStructBase
     }
 
     /**
-     * Set PcksList value
+     * Set PcksList value.
      *
-     * @param array<\Scraper\ScraperColisPrive\StructType\PickupPointDeliveryObject> $pcksList
+     * @param array<PickupPointDeliveryObject> $pcksList
      *
      * @throws \InvalidArgumentException
      */
@@ -120,7 +123,7 @@ class GetPickupPointsListReturn extends AbstractStructBase
     }
 
     /**
-     * Add item to PcksList value
+     * Add item to PcksList value.
      *
      * @throws \InvalidArgumentException
      */

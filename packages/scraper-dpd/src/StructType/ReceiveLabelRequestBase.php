@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ReceiveLabelRequestBase StructType
+ * This class stands for ReceiveLabelRequestBase StructType.
  */
 #[\AllowDynamicProperties]
 abstract class ReceiveLabelRequestBase extends AbstractStructBase
@@ -14,47 +16,52 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
      * The overrideShipperLabelAddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $overrideShipperLabelAddress = null;
+
     /**
      * The refnrasbarcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?bool $refnrasbarcode = null;
+
     /**
      * The referenceInBarcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ReferenceInBarcode $referenceInBarcode = null;
+
     /**
      * The bic3data
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Bic3LabelData $bic3data = null;
+
     /**
      * The injectionHub
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $injectionHub = null;
+
     /**
      * The labelType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?LabelType $labelType = null;
 
     /**
-     * Constructor method for ReceiveLabelRequestBase
+     * Constructor method for ReceiveLabelRequestBase.
      *
      * @uses ReceiveLabelRequestBase::setOverrideShipperLabelAddress()
      * @uses ReceiveLabelRequestBase::setRefnrasbarcode()
@@ -76,7 +83,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get overrideShipperLabelAddress value
+     * Get overrideShipperLabelAddress value.
      */
     public function getOverrideShipperLabelAddress(): ?Address
     {
@@ -84,7 +91,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set overrideShipperLabelAddress value
+     * Set overrideShipperLabelAddress value.
      */
     public function setOverrideShipperLabelAddress(?Address $overrideShipperLabelAddress = null): self
     {
@@ -94,7 +101,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get refnrasbarcode value
+     * Get refnrasbarcode value.
      */
     public function getRefnrasbarcode(): ?bool
     {
@@ -102,7 +109,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set refnrasbarcode value
+     * Set refnrasbarcode value.
      */
     public function setRefnrasbarcode(?bool $refnrasbarcode = null): self
     {
@@ -116,7 +123,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get referenceInBarcode value
+     * Get referenceInBarcode value.
      */
     public function getReferenceInBarcode(): ?ReferenceInBarcode
     {
@@ -124,7 +131,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set referenceInBarcode value
+     * Set referenceInBarcode value.
      */
     public function setReferenceInBarcode(?ReferenceInBarcode $referenceInBarcode = null): self
     {
@@ -134,7 +141,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get bic3data value
+     * Get bic3data value.
      */
     public function getBic3data(): ?Bic3LabelData
     {
@@ -142,7 +149,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set bic3data value
+     * Set bic3data value.
      */
     public function setBic3data(?Bic3LabelData $bic3data = null): self
     {
@@ -152,7 +159,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get injectionHub value
+     * Get injectionHub value.
      */
     public function getInjectionHub(): ?string
     {
@@ -160,7 +167,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set injectionHub value
+     * Set injectionHub value.
      */
     public function setInjectionHub(?string $injectionHub = null): self
     {
@@ -174,7 +181,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get labelType value
+     * Get labelType value.
      */
     public function getLabelType(): ?LabelType
     {
@@ -182,7 +189,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set labelType value
+     * Set labelType value.
      */
     public function setLabelType(?LabelType $labelType = null): self
     {

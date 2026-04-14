@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for AddressName StructType
+ * This class stands for AddressName StructType.
  */
 #[\AllowDynamicProperties]
 class AddressName extends AddressMini
@@ -12,12 +14,12 @@ class AddressName extends AddressMini
      * The name
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $name = null;
 
     /**
-     * Constructor method for AddressName
+     * Constructor method for AddressName.
      *
      * @uses AddressName::setName()
      */
@@ -29,7 +31,7 @@ class AddressName extends AddressMini
     }
 
     /**
-     * Get name value
+     * Get name value.
      */
     public function getName(): ?string
     {
@@ -37,7 +39,7 @@ class AddressName extends AddressMini
     }
 
     /**
-     * Set name value
+     * Set name value.
      */
     public function setName(?string $name = null): self
     {

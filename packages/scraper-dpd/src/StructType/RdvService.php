@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for RdvService StructType
+ * This class stands for RdvService StructType.
  */
 #[\AllowDynamicProperties]
 class RdvService extends AbstractStructBase
@@ -14,26 +16,28 @@ class RdvService extends AbstractStructBase
      * The Type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $Type;
+
     /**
      * The Attribute
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $Attribute;
+
     /**
      * The Status
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $Status;
 
     /**
-     * Constructor method for RdvService
+     * Constructor method for RdvService.
      *
      * @uses RdvService::setType()
      * @uses RdvService::setAttribute()
@@ -49,7 +53,7 @@ class RdvService extends AbstractStructBase
     }
 
     /**
-     * Get Type value
+     * Get Type value.
      */
     public function getType(): int
     {
@@ -57,7 +61,7 @@ class RdvService extends AbstractStructBase
     }
 
     /**
-     * Set Type value
+     * Set Type value.
      */
     public function setType(int $type): self
     {
@@ -71,7 +75,7 @@ class RdvService extends AbstractStructBase
     }
 
     /**
-     * Get Attribute value
+     * Get Attribute value.
      */
     public function getAttribute(): int
     {
@@ -79,7 +83,7 @@ class RdvService extends AbstractStructBase
     }
 
     /**
-     * Set Attribute value
+     * Set Attribute value.
      */
     public function setAttribute(int $attribute): self
     {
@@ -93,7 +97,7 @@ class RdvService extends AbstractStructBase
     }
 
     /**
-     * Get Status value
+     * Get Status value.
      */
     public function getStatus(): int
     {
@@ -101,7 +105,7 @@ class RdvService extends AbstractStructBase
     }
 
     /**
-     * Set Status value
+     * Set Status value.
      */
     public function setStatus(int $status): self
     {

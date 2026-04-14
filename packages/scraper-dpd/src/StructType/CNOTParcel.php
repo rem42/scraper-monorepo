@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CNOTParcel StructType
+ * This class stands for CNOTParcel StructType.
  */
 #[\AllowDynamicProperties]
 class CNOTParcel extends AbstractStructBase
@@ -14,90 +16,101 @@ class CNOTParcel extends AbstractStructBase
      * The Prio
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $Prio;
+
     /**
      * The DeliveryRecordPosition
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $DeliveryRecordPosition;
+
     /**
      * The OnTourAppended
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $OnTourAppended;
+
     /**
      * The TDVHit
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $TDVHit;
+
     /**
      * The BcId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BcId = null;
+
     /**
      * The Barcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Barcode = null;
+
     /**
      * The DeliveryNotificationNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DeliveryNotificationNumber = null;
+
     /**
      * The Comment
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Comment = null;
+
     /**
      * The TimeWindowFrom
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TimeWindowFrom = null;
+
     /**
      * The TimeWindowTo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TimeWindowTo = null;
+
     /**
      * The TDVAddressRef
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TDVAddressRef = null;
+
     /**
      * The BcSrc
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?int $BcSrc;
 
     /**
-     * Constructor method for CNOTParcel
+     * Constructor method for CNOTParcel.
      *
      * @uses CNOTParcel::setPrio()
      * @uses CNOTParcel::setDeliveryRecordPosition()
@@ -131,7 +144,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Get Prio value
+     * Get Prio value.
      */
     public function getPrio(): bool
     {
@@ -139,7 +152,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Set Prio value
+     * Set Prio value.
      */
     public function setPrio(bool $prio): self
     {
@@ -153,7 +166,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Get DeliveryRecordPosition value
+     * Get DeliveryRecordPosition value.
      */
     public function getDeliveryRecordPosition(): int
     {
@@ -161,7 +174,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Set DeliveryRecordPosition value
+     * Set DeliveryRecordPosition value.
      */
     public function setDeliveryRecordPosition(int $deliveryRecordPosition): self
     {
@@ -175,7 +188,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Get OnTourAppended value
+     * Get OnTourAppended value.
      */
     public function getOnTourAppended(): bool
     {
@@ -183,7 +196,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Set OnTourAppended value
+     * Set OnTourAppended value.
      */
     public function setOnTourAppended(bool $onTourAppended): self
     {
@@ -197,7 +210,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Get TDVHit value
+     * Get TDVHit value.
      */
     public function getTDVHit(): bool
     {
@@ -205,7 +218,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Set TDVHit value
+     * Set TDVHit value.
      */
     public function setTDVHit(bool $tDVHit): self
     {
@@ -219,7 +232,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Get BcId value
+     * Get BcId value.
      */
     public function getBcId(): ?string
     {
@@ -227,7 +240,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Set BcId value
+     * Set BcId value.
      */
     public function setBcId(?string $bcId = null): self
     {
@@ -241,7 +254,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Get Barcode value
+     * Get Barcode value.
      */
     public function getBarcode(): ?string
     {
@@ -249,7 +262,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Set Barcode value
+     * Set Barcode value.
      */
     public function setBarcode(?string $barcode = null): self
     {
@@ -263,7 +276,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Get DeliveryNotificationNumber value
+     * Get DeliveryNotificationNumber value.
      */
     public function getDeliveryNotificationNumber(): ?string
     {
@@ -271,7 +284,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Set DeliveryNotificationNumber value
+     * Set DeliveryNotificationNumber value.
      */
     public function setDeliveryNotificationNumber(?string $deliveryNotificationNumber = null): self
     {
@@ -285,7 +298,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Get Comment value
+     * Get Comment value.
      */
     public function getComment(): ?string
     {
@@ -293,7 +306,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Set Comment value
+     * Set Comment value.
      */
     public function setComment(?string $comment = null): self
     {
@@ -307,7 +320,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Get TimeWindowFrom value
+     * Get TimeWindowFrom value.
      */
     public function getTimeWindowFrom(): ?string
     {
@@ -315,7 +328,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Set TimeWindowFrom value
+     * Set TimeWindowFrom value.
      */
     public function setTimeWindowFrom(?string $timeWindowFrom = null): self
     {
@@ -329,7 +342,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Get TimeWindowTo value
+     * Get TimeWindowTo value.
      */
     public function getTimeWindowTo(): ?string
     {
@@ -337,7 +350,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Set TimeWindowTo value
+     * Set TimeWindowTo value.
      */
     public function setTimeWindowTo(?string $timeWindowTo = null): self
     {
@@ -351,7 +364,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Get TDVAddressRef value
+     * Get TDVAddressRef value.
      */
     public function getTDVAddressRef(): ?string
     {
@@ -359,7 +372,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Set TDVAddressRef value
+     * Set TDVAddressRef value.
      */
     public function setTDVAddressRef(?string $tDVAddressRef = null): self
     {
@@ -373,7 +386,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Get BcSrc value
+     * Get BcSrc value.
      */
     public function getBcSrc(): int
     {
@@ -381,7 +394,7 @@ class CNOTParcel extends AbstractStructBase
     }
 
     /**
-     * Set BcSrc value
+     * Set BcSrc value.
      */
     public function setBcSrc(?int $bcSrc): self
     {

@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ReverseInverseServices StructType
+ * This class stands for ReverseInverseServices StructType.
  */
 #[\AllowDynamicProperties]
 class ReverseInverseServices extends ServiceBaseList
@@ -12,19 +14,20 @@ class ReverseInverseServices extends ServiceBaseList
      * The extraInsurance
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ExtraInsurance $extraInsurance = null;
+
     /**
      * The contact
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Contact $contact = null;
 
     /**
-     * Constructor method for ReverseInverseServices
+     * Constructor method for ReverseInverseServices.
      *
      * @uses ReverseInverseServices::setExtraInsurance()
      * @uses ReverseInverseServices::setContact()
@@ -38,7 +41,7 @@ class ReverseInverseServices extends ServiceBaseList
     }
 
     /**
-     * Get extraInsurance value
+     * Get extraInsurance value.
      */
     public function getExtraInsurance(): ?ExtraInsurance
     {
@@ -46,7 +49,7 @@ class ReverseInverseServices extends ServiceBaseList
     }
 
     /**
-     * Set extraInsurance value
+     * Set extraInsurance value.
      */
     public function setExtraInsurance(?ExtraInsurance $extraInsurance = null): self
     {
@@ -56,7 +59,7 @@ class ReverseInverseServices extends ServiceBaseList
     }
 
     /**
-     * Get contact value
+     * Get contact value.
      */
     public function getContact(): ?Contact
     {
@@ -64,7 +67,7 @@ class ReverseInverseServices extends ServiceBaseList
     }
 
     /**
-     * Set contact value
+     * Set contact value.
      */
     public function setContact(?Contact $contact = null): self
     {

@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for SetParcelReturn StructType
+ * This class stands for SetParcelReturn StructType.
  */
 #[\AllowDynamicProperties]
 class SetParcelReturn extends AbstractStructBase
@@ -14,292 +16,332 @@ class SetParcelReturn extends AbstractStructBase
      * The LabelType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $LabelType;
+
     /**
      * The WSResp
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ResponseObject $WSResp = null;
+
     /**
      * The CPPclCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CPPclCode = null;
+
     /**
      * The OrderID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $OrderID = null;
+
     /**
      * The LabelUrl
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $LabelUrl = null;
+
     /**
      * The LabelZpl
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $LabelZpl = null;
+
     /**
      * The RegOffCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $RegOffCode = null;
+
     /**
      * The RoundCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $RoundCode = null;
+
     /**
      * The CarrCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CarrCode = null;
+
     /**
      * The CABCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CABCode = null;
+
     /**
      * The ZC
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ZC = null;
+
     /**
      * The TNTAcnt
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TNTAcnt = null;
+
     /**
      * The TNTCab
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TNTCab = null;
+
     /**
      * The TNTDept
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TNTDept = null;
+
     /**
      * The TNTPrd
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TNTPrd = null;
+
     /**
      * The TNTVer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TNTVer = null;
+
     /**
      * The TNTComment1
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TNTComment1 = null;
+
     /**
      * The TNTComment2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TNTComment2 = null;
+
     /**
      * The TNTComment3
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TNTComment3 = null;
+
     /**
      * The TNTComment4
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TNTComment4 = null;
+
     /**
      * The CLPAcnt
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CLPAcnt = null;
+
     /**
      * The CLPFlwCab
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CLPFlwCab = null;
+
     /**
      * The CLPFlwCabPrt
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CLPFlwCabPrt = null;
+
     /**
      * The CLPPCHCab
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CLPPCHCab = null;
+
     /**
      * The CLPPCHCabPrt
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CLPPCHCabPrt = null;
+
     /**
      * The CLPSort
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CLPSort = null;
+
     /**
      * The CLPPFCSite
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CLPPFCSite = null;
+
     /**
      * The RefCab
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $RefCab = null;
+
     /**
      * The DestRefExt
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DestRefExt = null;
+
     /**
      * The DestRef
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DestRef = null;
+
     /**
      * The DestAddr
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DestAddr = null;
+
     /**
      * The DestZip
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DestZip = null;
+
     /**
      * The DestCity
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DestCity = null;
+
     /**
      * The MRCAB
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $MRCAB = null;
+
     /**
      * The MRAgency
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $MRAgency = null;
+
     /**
      * The MRRoundCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $MRRoundCode = null;
+
     /**
      * The MRRefPudo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $MRRefPudo = null;
+
     /**
      * The MRPreTri
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $MRPreTri = null;
+
     /**
      * The MRLibPfd
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $MRLibPfd = null;
+
     /**
      * The MRNoGroup
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $MRNoGroup = null;
+
     /**
      * The MRNumExpe
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $MRNumExpe = null;
 
     /**
-     * Constructor method for SetParcelReturn
+     * Constructor method for SetParcelReturn.
      *
      * @uses SetParcelReturn::setLabelType()
      * @uses SetParcelReturn::setWSResp()
@@ -391,7 +433,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get LabelType value
+     * Get LabelType value.
      */
     public function getLabelType(): string
     {
@@ -399,7 +441,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set LabelType value
+     * Set LabelType value.
      *
      * @uses \Scraper\ScraperColisPrive\EnumType\EnumLabelType::valueIsValid()
      * @uses \Scraper\ScraperColisPrive\EnumType\EnumLabelType::getValidValues()
@@ -418,7 +460,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get WSResp value
+     * Get WSResp value.
      */
     public function getWSResp(): ?ResponseObject
     {
@@ -426,7 +468,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set WSResp value
+     * Set WSResp value.
      */
     public function setWSResp(?ResponseObject $wSResp = null): self
     {
@@ -436,7 +478,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CPPclCode value
+     * Get CPPclCode value.
      */
     public function getCPPclCode(): ?string
     {
@@ -444,7 +486,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CPPclCode value
+     * Set CPPclCode value.
      */
     public function setCPPclCode(?string $cPPclCode = null): self
     {
@@ -458,7 +500,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get OrderID value
+     * Get OrderID value.
      */
     public function getOrderID(): ?string
     {
@@ -466,7 +508,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set OrderID value
+     * Set OrderID value.
      */
     public function setOrderID(?string $orderID = null): self
     {
@@ -480,7 +522,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get LabelUrl value
+     * Get LabelUrl value.
      */
     public function getLabelUrl(): ?string
     {
@@ -488,7 +530,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set LabelUrl value
+     * Set LabelUrl value.
      */
     public function setLabelUrl(?string $labelUrl = null): self
     {
@@ -502,7 +544,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get LabelZpl value
+     * Get LabelZpl value.
      */
     public function getLabelZpl(): ?string
     {
@@ -510,7 +552,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set LabelZpl value
+     * Set LabelZpl value.
      */
     public function setLabelZpl(?string $labelZpl = null): self
     {
@@ -524,7 +566,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get RegOffCode value
+     * Get RegOffCode value.
      */
     public function getRegOffCode(): ?string
     {
@@ -532,7 +574,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set RegOffCode value
+     * Set RegOffCode value.
      */
     public function setRegOffCode(?string $regOffCode = null): self
     {
@@ -546,7 +588,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get RoundCode value
+     * Get RoundCode value.
      */
     public function getRoundCode(): ?string
     {
@@ -554,7 +596,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set RoundCode value
+     * Set RoundCode value.
      */
     public function setRoundCode(?string $roundCode = null): self
     {
@@ -568,7 +610,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CarrCode value
+     * Get CarrCode value.
      */
     public function getCarrCode(): ?string
     {
@@ -576,7 +618,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CarrCode value
+     * Set CarrCode value.
      */
     public function setCarrCode(?string $carrCode = null): self
     {
@@ -590,7 +632,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CABCode value
+     * Get CABCode value.
      */
     public function getCABCode(): ?string
     {
@@ -598,7 +640,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CABCode value
+     * Set CABCode value.
      */
     public function setCABCode(?string $cABCode = null): self
     {
@@ -612,7 +654,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get ZC value
+     * Get ZC value.
      */
     public function getZC(): ?string
     {
@@ -620,7 +662,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set ZC value
+     * Set ZC value.
      */
     public function setZC(?string $zC = null): self
     {
@@ -634,7 +676,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get TNTAcnt value
+     * Get TNTAcnt value.
      */
     public function getTNTAcnt(): ?string
     {
@@ -642,7 +684,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set TNTAcnt value
+     * Set TNTAcnt value.
      */
     public function setTNTAcnt(?string $tNTAcnt = null): self
     {
@@ -656,7 +698,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get TNTCab value
+     * Get TNTCab value.
      */
     public function getTNTCab(): ?string
     {
@@ -664,7 +706,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set TNTCab value
+     * Set TNTCab value.
      */
     public function setTNTCab(?string $tNTCab = null): self
     {
@@ -678,7 +720,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get TNTDept value
+     * Get TNTDept value.
      */
     public function getTNTDept(): ?string
     {
@@ -686,7 +728,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set TNTDept value
+     * Set TNTDept value.
      */
     public function setTNTDept(?string $tNTDept = null): self
     {
@@ -700,7 +742,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get TNTPrd value
+     * Get TNTPrd value.
      */
     public function getTNTPrd(): ?string
     {
@@ -708,7 +750,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set TNTPrd value
+     * Set TNTPrd value.
      */
     public function setTNTPrd(?string $tNTPrd = null): self
     {
@@ -722,7 +764,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get TNTVer value
+     * Get TNTVer value.
      */
     public function getTNTVer(): ?string
     {
@@ -730,7 +772,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set TNTVer value
+     * Set TNTVer value.
      */
     public function setTNTVer(?string $tNTVer = null): self
     {
@@ -744,7 +786,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get TNTComment1 value
+     * Get TNTComment1 value.
      */
     public function getTNTComment1(): ?string
     {
@@ -752,7 +794,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set TNTComment1 value
+     * Set TNTComment1 value.
      */
     public function setTNTComment1(?string $tNTComment1 = null): self
     {
@@ -766,7 +808,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get TNTComment2 value
+     * Get TNTComment2 value.
      */
     public function getTNTComment2(): ?string
     {
@@ -774,7 +816,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set TNTComment2 value
+     * Set TNTComment2 value.
      */
     public function setTNTComment2(?string $tNTComment2 = null): self
     {
@@ -788,7 +830,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get TNTComment3 value
+     * Get TNTComment3 value.
      */
     public function getTNTComment3(): ?string
     {
@@ -796,7 +838,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set TNTComment3 value
+     * Set TNTComment3 value.
      */
     public function setTNTComment3(?string $tNTComment3 = null): self
     {
@@ -810,7 +852,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get TNTComment4 value
+     * Get TNTComment4 value.
      */
     public function getTNTComment4(): ?string
     {
@@ -818,7 +860,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set TNTComment4 value
+     * Set TNTComment4 value.
      */
     public function setTNTComment4(?string $tNTComment4 = null): self
     {
@@ -832,7 +874,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CLPAcnt value
+     * Get CLPAcnt value.
      */
     public function getCLPAcnt(): ?string
     {
@@ -840,7 +882,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CLPAcnt value
+     * Set CLPAcnt value.
      */
     public function setCLPAcnt(?string $cLPAcnt = null): self
     {
@@ -854,7 +896,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CLPFlwCab value
+     * Get CLPFlwCab value.
      */
     public function getCLPFlwCab(): ?string
     {
@@ -862,7 +904,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CLPFlwCab value
+     * Set CLPFlwCab value.
      */
     public function setCLPFlwCab(?string $cLPFlwCab = null): self
     {
@@ -876,7 +918,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CLPFlwCabPrt value
+     * Get CLPFlwCabPrt value.
      */
     public function getCLPFlwCabPrt(): ?string
     {
@@ -884,7 +926,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CLPFlwCabPrt value
+     * Set CLPFlwCabPrt value.
      */
     public function setCLPFlwCabPrt(?string $cLPFlwCabPrt = null): self
     {
@@ -898,7 +940,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CLPPCHCab value
+     * Get CLPPCHCab value.
      */
     public function getCLPPCHCab(): ?string
     {
@@ -906,7 +948,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CLPPCHCab value
+     * Set CLPPCHCab value.
      */
     public function setCLPPCHCab(?string $cLPPCHCab = null): self
     {
@@ -920,7 +962,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CLPPCHCabPrt value
+     * Get CLPPCHCabPrt value.
      */
     public function getCLPPCHCabPrt(): ?string
     {
@@ -928,7 +970,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CLPPCHCabPrt value
+     * Set CLPPCHCabPrt value.
      */
     public function setCLPPCHCabPrt(?string $cLPPCHCabPrt = null): self
     {
@@ -942,7 +984,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CLPSort value
+     * Get CLPSort value.
      */
     public function getCLPSort(): ?string
     {
@@ -950,7 +992,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CLPSort value
+     * Set CLPSort value.
      */
     public function setCLPSort(?string $cLPSort = null): self
     {
@@ -964,7 +1006,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CLPPFCSite value
+     * Get CLPPFCSite value.
      */
     public function getCLPPFCSite(): ?string
     {
@@ -972,7 +1014,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CLPPFCSite value
+     * Set CLPPFCSite value.
      */
     public function setCLPPFCSite(?string $cLPPFCSite = null): self
     {
@@ -986,7 +1028,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get RefCab value
+     * Get RefCab value.
      */
     public function getRefCab(): ?string
     {
@@ -994,7 +1036,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set RefCab value
+     * Set RefCab value.
      */
     public function setRefCab(?string $refCab = null): self
     {
@@ -1008,7 +1050,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get DestRefExt value
+     * Get DestRefExt value.
      */
     public function getDestRefExt(): ?string
     {
@@ -1016,7 +1058,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set DestRefExt value
+     * Set DestRefExt value.
      */
     public function setDestRefExt(?string $destRefExt = null): self
     {
@@ -1030,7 +1072,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get DestRef value
+     * Get DestRef value.
      */
     public function getDestRef(): ?string
     {
@@ -1038,7 +1080,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set DestRef value
+     * Set DestRef value.
      */
     public function setDestRef(?string $destRef = null): self
     {
@@ -1052,7 +1094,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get DestAddr value
+     * Get DestAddr value.
      */
     public function getDestAddr(): ?string
     {
@@ -1060,7 +1102,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set DestAddr value
+     * Set DestAddr value.
      */
     public function setDestAddr(?string $destAddr = null): self
     {
@@ -1074,7 +1116,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get DestZip value
+     * Get DestZip value.
      */
     public function getDestZip(): ?string
     {
@@ -1082,7 +1124,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set DestZip value
+     * Set DestZip value.
      */
     public function setDestZip(?string $destZip = null): self
     {
@@ -1096,7 +1138,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get DestCity value
+     * Get DestCity value.
      */
     public function getDestCity(): ?string
     {
@@ -1104,7 +1146,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set DestCity value
+     * Set DestCity value.
      */
     public function setDestCity(?string $destCity = null): self
     {
@@ -1118,7 +1160,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get MRCAB value
+     * Get MRCAB value.
      */
     public function getMRCAB(): ?string
     {
@@ -1126,7 +1168,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set MRCAB value
+     * Set MRCAB value.
      */
     public function setMRCAB(?string $mRCAB = null): self
     {
@@ -1140,7 +1182,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get MRAgency value
+     * Get MRAgency value.
      */
     public function getMRAgency(): ?string
     {
@@ -1148,7 +1190,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set MRAgency value
+     * Set MRAgency value.
      */
     public function setMRAgency(?string $mRAgency = null): self
     {
@@ -1162,7 +1204,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get MRRoundCode value
+     * Get MRRoundCode value.
      */
     public function getMRRoundCode(): ?string
     {
@@ -1170,7 +1212,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set MRRoundCode value
+     * Set MRRoundCode value.
      */
     public function setMRRoundCode(?string $mRRoundCode = null): self
     {
@@ -1184,7 +1226,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get MRRefPudo value
+     * Get MRRefPudo value.
      */
     public function getMRRefPudo(): ?string
     {
@@ -1192,7 +1234,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set MRRefPudo value
+     * Set MRRefPudo value.
      */
     public function setMRRefPudo(?string $mRRefPudo = null): self
     {
@@ -1206,7 +1248,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get MRPreTri value
+     * Get MRPreTri value.
      */
     public function getMRPreTri(): ?string
     {
@@ -1214,7 +1256,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set MRPreTri value
+     * Set MRPreTri value.
      */
     public function setMRPreTri(?string $mRPreTri = null): self
     {
@@ -1228,7 +1270,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get MRLibPfd value
+     * Get MRLibPfd value.
      */
     public function getMRLibPfd(): ?string
     {
@@ -1236,7 +1278,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set MRLibPfd value
+     * Set MRLibPfd value.
      */
     public function setMRLibPfd(?string $mRLibPfd = null): self
     {
@@ -1250,7 +1292,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get MRNoGroup value
+     * Get MRNoGroup value.
      */
     public function getMRNoGroup(): ?string
     {
@@ -1258,7 +1300,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set MRNoGroup value
+     * Set MRNoGroup value.
      */
     public function setMRNoGroup(?string $mRNoGroup = null): self
     {
@@ -1272,7 +1314,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get MRNumExpe value
+     * Get MRNumExpe value.
      */
     public function getMRNumExpe(): ?string
     {
@@ -1280,7 +1322,7 @@ class SetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set MRNumExpe value
+     * Set MRNumExpe value.
      */
     public function setMRNumExpe(?string $mRNumExpe = null): self
     {

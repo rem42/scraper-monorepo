@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for IsCustomerBlockedResponse StructType
+ * This class stands for IsCustomerBlockedResponse StructType.
  */
 #[\AllowDynamicProperties]
 class IsCustomerBlockedResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class IsCustomerBlockedResponse extends AbstractStructBase
      * The IsCustomerBlockedResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $IsCustomerBlockedResult;
 
     /**
-     * Constructor method for IsCustomerBlockedResponse
+     * Constructor method for IsCustomerBlockedResponse.
      *
      * @uses IsCustomerBlockedResponse::setIsCustomerBlockedResult()
      */
@@ -31,7 +33,7 @@ class IsCustomerBlockedResponse extends AbstractStructBase
     }
 
     /**
-     * Get IsCustomerBlockedResult value
+     * Get IsCustomerBlockedResult value.
      */
     public function getIsCustomerBlockedResult(): bool
     {
@@ -39,7 +41,7 @@ class IsCustomerBlockedResponse extends AbstractStructBase
     }
 
     /**
-     * Set IsCustomerBlockedResult value
+     * Set IsCustomerBlockedResult value.
      */
     public function setIsCustomerBlockedResult(bool $isCustomerBlockedResult): self
     {

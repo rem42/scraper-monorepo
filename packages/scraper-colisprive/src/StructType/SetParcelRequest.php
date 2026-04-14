@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for SetParcelRequest StructType
+ * This class stands for SetParcelRequest StructType.
  */
 #[\AllowDynamicProperties]
 class SetParcelRequest extends AbstractStructBase
@@ -14,199 +16,224 @@ class SetParcelRequest extends AbstractStructBase
      * The PclWeight
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $PclWeight;
+
     /**
      * The IsPclWithPOD
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $IsPclWithPOD;
+
     /**
      * The LabelFormat
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $LabelFormat;
+
     /**
      * The IsAdValorem
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $IsAdValorem;
+
     /**
      * The SubAcc
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $SubAcc = null;
+
     /**
      * The AutoPrintPDF
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $AutoPrintPDF = null;
+
     /**
      * The CntrCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CntrCode = null;
+
     /**
      * The DestType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DestType = null;
+
     /**
      * The DestName
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DestName = null;
+
     /**
      * The SendType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $SendType = null;
+
     /**
      * The SendName
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $SendName = null;
+
     /**
      * The CodeHub
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CodeHub = null;
+
     /**
      * The SndZC
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $SndZC = null;
+
     /**
      * The HLQ
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $HLQ = null;
+
     /**
      * The Brand
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Brand = null;
+
     /**
      * The TimeInfos
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * - minOccurs: 0
+     * - minOccurs: 0.
      *
-     * @var array<\Scraper\ScraperColisPrive\StructType\TimeInfosObject>
+     * @var array<TimeInfosObject>
      */
     protected ?array $TimeInfos = null;
+
     /**
      * The SecurityID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?IdentificationObject $SecurityID;
+
     /**
      * The OrderID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $OrderID;
+
     /**
      * The CltNum
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CltNum;
+
     /**
      * The CsgAdd
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?DeliveryAddressObject $CsgAdd;
+
     /**
      * The PclShipDate
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $PclShipDate;
+
     /**
      * The ChargeAmnt
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?float $ChargeAmnt;
+
     /**
      * The ValueAmnt
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?float $ValueAmnt;
+
     /**
      * The PclHeight
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?int $PclHeight;
+
     /**
      * The PclWidth
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?int $PclWidth;
+
     /**
      * The PclLength
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?int $PclLength;
 
     /**
-     * Constructor method for SetParcelRequest
+     * Constructor method for SetParcelRequest.
      *
      * @uses SetParcelRequest::setPclWeight()
      * @uses SetParcelRequest::setIsPclWithPOD()
@@ -235,7 +262,7 @@ class SetParcelRequest extends AbstractStructBase
      * @uses SetParcelRequest::setPclWidth()
      * @uses SetParcelRequest::setPclLength()
      *
-     * @param array<\Scraper\ScraperColisPrive\StructType\TimeInfosObject> $timeInfos
+     * @param array<TimeInfosObject> $timeInfos
      */
     public function __construct(
         int $pclWeight,
@@ -263,7 +290,7 @@ class SetParcelRequest extends AbstractStructBase
         ?float $valueAmnt,
         ?int $pclHeight,
         ?int $pclWidth,
-        ?int $pclLength
+        ?int $pclLength,
     ) {
         $this
             ->setPclWeight($pclWeight)
@@ -296,7 +323,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get PclWeight value
+     * Get PclWeight value.
      */
     public function getPclWeight(): int
     {
@@ -304,7 +331,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set PclWeight value
+     * Set PclWeight value.
      */
     public function setPclWeight(int $pclWeight): self
     {
@@ -318,7 +345,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get IsPclWithPOD value
+     * Get IsPclWithPOD value.
      */
     public function getIsPclWithPOD(): bool
     {
@@ -326,7 +353,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set IsPclWithPOD value
+     * Set IsPclWithPOD value.
      */
     public function setIsPclWithPOD(bool $isPclWithPOD): self
     {
@@ -340,7 +367,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get LabelFormat value
+     * Get LabelFormat value.
      */
     public function getLabelFormat(): string
     {
@@ -348,7 +375,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set LabelFormat value
+     * Set LabelFormat value.
      *
      * @uses \Scraper\ScraperColisPrive\EnumType\EnumLabelFormat::valueIsValid()
      * @uses \Scraper\ScraperColisPrive\EnumType\EnumLabelFormat::getValidValues()
@@ -367,7 +394,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get IsAdValorem value
+     * Get IsAdValorem value.
      */
     public function getIsAdValorem(): bool
     {
@@ -375,7 +402,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set IsAdValorem value
+     * Set IsAdValorem value.
      */
     public function setIsAdValorem(bool $isAdValorem): self
     {
@@ -389,7 +416,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get SubAcc value
+     * Get SubAcc value.
      */
     public function getSubAcc(): ?string
     {
@@ -397,7 +424,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set SubAcc value
+     * Set SubAcc value.
      */
     public function setSubAcc(?string $subAcc = null): self
     {
@@ -411,7 +438,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get AutoPrintPDF value
+     * Get AutoPrintPDF value.
      */
     public function getAutoPrintPDF(): ?string
     {
@@ -419,7 +446,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set AutoPrintPDF value
+     * Set AutoPrintPDF value.
      */
     public function setAutoPrintPDF(?string $autoPrintPDF = null): self
     {
@@ -433,7 +460,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get CntrCode value
+     * Get CntrCode value.
      */
     public function getCntrCode(): ?string
     {
@@ -441,7 +468,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set CntrCode value
+     * Set CntrCode value.
      */
     public function setCntrCode(?string $cntrCode = null): self
     {
@@ -455,7 +482,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get DestType value
+     * Get DestType value.
      */
     public function getDestType(): ?string
     {
@@ -463,7 +490,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set DestType value
+     * Set DestType value.
      */
     public function setDestType(?string $destType = null): self
     {
@@ -477,7 +504,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get DestName value
+     * Get DestName value.
      */
     public function getDestName(): ?string
     {
@@ -485,7 +512,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set DestName value
+     * Set DestName value.
      */
     public function setDestName(?string $destName = null): self
     {
@@ -499,7 +526,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get SendType value
+     * Get SendType value.
      */
     public function getSendType(): ?string
     {
@@ -507,7 +534,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set SendType value
+     * Set SendType value.
      */
     public function setSendType(?string $sendType = null): self
     {
@@ -521,7 +548,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get SendName value
+     * Get SendName value.
      */
     public function getSendName(): ?string
     {
@@ -529,7 +556,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set SendName value
+     * Set SendName value.
      */
     public function setSendName(?string $sendName = null): self
     {
@@ -543,7 +570,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get CodeHub value
+     * Get CodeHub value.
      */
     public function getCodeHub(): ?string
     {
@@ -551,7 +578,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set CodeHub value
+     * Set CodeHub value.
      */
     public function setCodeHub(?string $codeHub = null): self
     {
@@ -565,7 +592,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get SndZC value
+     * Get SndZC value.
      */
     public function getSndZC(): ?string
     {
@@ -573,7 +600,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set SndZC value
+     * Set SndZC value.
      */
     public function setSndZC(?string $sndZC = null): self
     {
@@ -587,7 +614,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get HLQ value
+     * Get HLQ value.
      */
     public function getHLQ(): ?string
     {
@@ -595,7 +622,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set HLQ value
+     * Set HLQ value.
      */
     public function setHLQ(?string $hLQ = null): self
     {
@@ -609,7 +636,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get Brand value
+     * Get Brand value.
      */
     public function getBrand(): ?string
     {
@@ -617,7 +644,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set Brand value
+     * Set Brand value.
      */
     public function setBrand(?string $brand = null): self
     {
@@ -631,9 +658,9 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get TimeInfos value
+     * Get TimeInfos value.
      *
-     * @return array<\Scraper\ScraperColisPrive\StructType\TimeInfosObject>
+     * @return array<TimeInfosObject>
      */
     public function getTimeInfos(): ?array
     {
@@ -643,7 +670,7 @@ class SetParcelRequest extends AbstractStructBase
     /**
      * This method is responsible for validating the value(s) passed to the setTimeInfos method
      * This method is willingly generated in order to preserve the one-line inline validation within the setTimeInfos method
-     * This has to validate that each item contained by the array match the itemType constraint
+     * This has to validate that each item contained by the array match the itemType constraint.
      *
      * @return string A non-empty message if the values does not match the validation rules
      */
@@ -671,9 +698,9 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set TimeInfos value
+     * Set TimeInfos value.
      *
-     * @param array<\Scraper\ScraperColisPrive\StructType\TimeInfosObject> $timeInfos
+     * @param array<TimeInfosObject> $timeInfos
      *
      * @throws \InvalidArgumentException
      */
@@ -689,7 +716,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Add item to TimeInfos value
+     * Add item to TimeInfos value.
      *
      * @throws \InvalidArgumentException
      */
@@ -705,7 +732,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get SecurityID value
+     * Get SecurityID value.
      */
     public function getSecurityID(): IdentificationObject
     {
@@ -713,7 +740,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set SecurityID value
+     * Set SecurityID value.
      */
     public function setSecurityID(?IdentificationObject $securityID): self
     {
@@ -723,7 +750,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get OrderID value
+     * Get OrderID value.
      */
     public function getOrderID(): string
     {
@@ -731,7 +758,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set OrderID value
+     * Set OrderID value.
      */
     public function setOrderID(?string $orderID): self
     {
@@ -745,7 +772,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get CltNum value
+     * Get CltNum value.
      */
     public function getCltNum(): string
     {
@@ -753,7 +780,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set CltNum value
+     * Set CltNum value.
      */
     public function setCltNum(?string $cltNum): self
     {
@@ -767,7 +794,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get CsgAdd value
+     * Get CsgAdd value.
      */
     public function getCsgAdd(): DeliveryAddressObject
     {
@@ -775,7 +802,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set CsgAdd value
+     * Set CsgAdd value.
      */
     public function setCsgAdd(?DeliveryAddressObject $csgAdd): self
     {
@@ -785,7 +812,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get PclShipDate value
+     * Get PclShipDate value.
      */
     public function getPclShipDate(): string
     {
@@ -793,7 +820,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set PclShipDate value
+     * Set PclShipDate value.
      */
     public function setPclShipDate(?string $pclShipDate): self
     {
@@ -807,7 +834,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get ChargeAmnt value
+     * Get ChargeAmnt value.
      */
     public function getChargeAmnt(): float
     {
@@ -815,7 +842,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set ChargeAmnt value
+     * Set ChargeAmnt value.
      */
     public function setChargeAmnt(?float $chargeAmnt): self
     {
@@ -829,7 +856,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get ValueAmnt value
+     * Get ValueAmnt value.
      */
     public function getValueAmnt(): float
     {
@@ -837,7 +864,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set ValueAmnt value
+     * Set ValueAmnt value.
      */
     public function setValueAmnt(?float $valueAmnt): self
     {
@@ -851,7 +878,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get PclHeight value
+     * Get PclHeight value.
      */
     public function getPclHeight(): int
     {
@@ -859,7 +886,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set PclHeight value
+     * Set PclHeight value.
      */
     public function setPclHeight(?int $pclHeight): self
     {
@@ -873,7 +900,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get PclWidth value
+     * Get PclWidth value.
      */
     public function getPclWidth(): int
     {
@@ -881,7 +908,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set PclWidth value
+     * Set PclWidth value.
      */
     public function setPclWidth(?int $pclWidth): self
     {
@@ -895,7 +922,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get PclLength value
+     * Get PclLength value.
      */
     public function getPclLength(): int
     {
@@ -903,7 +930,7 @@ class SetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set PclLength value
+     * Set PclLength value.
      */
     public function setPclLength(?int $pclLength): self
     {

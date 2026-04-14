@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for UpdateRdvShipmentDataPredictRequest StructType
+ * This class stands for UpdateRdvShipmentDataPredictRequest StructType.
  */
 #[\AllowDynamicProperties]
 class UpdateRdvShipmentDataPredictRequest extends UpdateRdvShipmentData
@@ -12,26 +14,28 @@ class UpdateRdvShipmentDataPredictRequest extends UpdateRdvShipmentData
      * The DeliveryInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvDeliveryInfo $DeliveryInfo = null;
+
     /**
      * The EsnInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvEsnInfo $EsnInfo = null;
+
     /**
      * The AdditionalData
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvData $AdditionalData = null;
 
     /**
-     * Constructor method for UpdateRdvShipmentDataPredictRequest
+     * Constructor method for UpdateRdvShipmentDataPredictRequest.
      *
      * @uses UpdateRdvShipmentDataPredictRequest::setDeliveryInfo()
      * @uses UpdateRdvShipmentDataPredictRequest::setEsnInfo()
@@ -47,7 +51,7 @@ class UpdateRdvShipmentDataPredictRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get DeliveryInfo value
+     * Get DeliveryInfo value.
      */
     public function getDeliveryInfo(): ?RdvDeliveryInfo
     {
@@ -55,7 +59,7 @@ class UpdateRdvShipmentDataPredictRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set DeliveryInfo value
+     * Set DeliveryInfo value.
      */
     public function setDeliveryInfo(?RdvDeliveryInfo $deliveryInfo = null): self
     {
@@ -65,7 +69,7 @@ class UpdateRdvShipmentDataPredictRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get EsnInfo value
+     * Get EsnInfo value.
      */
     public function getEsnInfo(): ?RdvEsnInfo
     {
@@ -73,7 +77,7 @@ class UpdateRdvShipmentDataPredictRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set EsnInfo value
+     * Set EsnInfo value.
      */
     public function setEsnInfo(?RdvEsnInfo $esnInfo = null): self
     {
@@ -83,7 +87,7 @@ class UpdateRdvShipmentDataPredictRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get AdditionalData value
+     * Get AdditionalData value.
      */
     public function getAdditionalData(): ?RdvData
     {
@@ -91,7 +95,7 @@ class UpdateRdvShipmentDataPredictRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set AdditionalData value
+     * Set AdditionalData value.
      */
     public function setAdditionalData(?RdvData $additionalData = null): self
     {

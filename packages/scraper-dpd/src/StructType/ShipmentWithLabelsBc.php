@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ShipmentWithLabelsBc StructType
+ * This class stands for ShipmentWithLabelsBc StructType.
  */
 #[\AllowDynamicProperties]
 class ShipmentWithLabelsBc extends AbstractStructBase
@@ -14,19 +16,20 @@ class ShipmentWithLabelsBc extends AbstractStructBase
      * The Shipment
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ShipmentBc $Shipment = null;
+
     /**
      * The Labels
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfLabel $Labels = null;
 
     /**
-     * Constructor method for ShipmentWithLabelsBc
+     * Constructor method for ShipmentWithLabelsBc.
      *
      * @uses ShipmentWithLabelsBc::setShipment()
      * @uses ShipmentWithLabelsBc::setLabels()
@@ -40,7 +43,7 @@ class ShipmentWithLabelsBc extends AbstractStructBase
     }
 
     /**
-     * Get Shipment value
+     * Get Shipment value.
      */
     public function getShipment(): ?ShipmentBc
     {
@@ -48,7 +51,7 @@ class ShipmentWithLabelsBc extends AbstractStructBase
     }
 
     /**
-     * Set Shipment value
+     * Set Shipment value.
      */
     public function setShipment(?ShipmentBc $shipment = null): self
     {
@@ -58,7 +61,7 @@ class ShipmentWithLabelsBc extends AbstractStructBase
     }
 
     /**
-     * Get Labels value
+     * Get Labels value.
      */
     public function getLabels(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfLabel
     {
@@ -66,7 +69,7 @@ class ShipmentWithLabelsBc extends AbstractStructBase
     }
 
     /**
-     * Set Labels value
+     * Set Labels value.
      */
     public function setLabels(?\Scraper\ScraperDPD\ArrayType\ArrayOfLabel $labels = null): self
     {

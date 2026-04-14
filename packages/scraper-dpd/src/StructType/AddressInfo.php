@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for AddressInfo StructType
+ * This class stands for AddressInfo StructType.
  */
 #[\AllowDynamicProperties]
 class AddressInfo extends AbstractStructBase
@@ -14,68 +16,76 @@ class AddressInfo extends AbstractStructBase
      * The contact
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $contact = null;
+
     /**
      * The name2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $name2 = null;
+
     /**
      * The name3
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $name3 = null;
+
     /**
      * The name4
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $name4 = null;
+
     /**
      * The digicode1
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $digicode1 = null;
+
     /**
      * The digicode2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $digicode2 = null;
+
     /**
      * The intercomid
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $intercomid = null;
+
     /**
      * The vinfo1
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $vinfo1 = null;
+
     /**
      * The vinfo2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $vinfo2 = null;
 
     /**
-     * Constructor method for AddressInfo
+     * Constructor method for AddressInfo.
      *
      * @uses AddressInfo::setContact()
      * @uses AddressInfo::setName2()
@@ -103,7 +113,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Get contact value
+     * Get contact value.
      */
     public function getContact(): ?string
     {
@@ -111,7 +121,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Set contact value
+     * Set contact value.
      */
     public function setContact(?string $contact = null): self
     {
@@ -125,7 +135,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Get name2 value
+     * Get name2 value.
      */
     public function getName2(): ?string
     {
@@ -133,7 +143,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Set name2 value
+     * Set name2 value.
      */
     public function setName2(?string $name2 = null): self
     {
@@ -147,7 +157,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Get name3 value
+     * Get name3 value.
      */
     public function getName3(): ?string
     {
@@ -155,7 +165,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Set name3 value
+     * Set name3 value.
      */
     public function setName3(?string $name3 = null): self
     {
@@ -169,7 +179,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Get name4 value
+     * Get name4 value.
      */
     public function getName4(): ?string
     {
@@ -177,7 +187,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Set name4 value
+     * Set name4 value.
      */
     public function setName4(?string $name4 = null): self
     {
@@ -191,7 +201,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Get digicode1 value
+     * Get digicode1 value.
      */
     public function getDigicode1(): ?string
     {
@@ -199,7 +209,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Set digicode1 value
+     * Set digicode1 value.
      */
     public function setDigicode1(?string $digicode1 = null): self
     {
@@ -213,7 +223,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Get digicode2 value
+     * Get digicode2 value.
      */
     public function getDigicode2(): ?string
     {
@@ -221,7 +231,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Set digicode2 value
+     * Set digicode2 value.
      */
     public function setDigicode2(?string $digicode2 = null): self
     {
@@ -235,7 +245,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Get intercomid value
+     * Get intercomid value.
      */
     public function getIntercomid(): ?string
     {
@@ -243,7 +253,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Set intercomid value
+     * Set intercomid value.
      */
     public function setIntercomid(?string $intercomid = null): self
     {
@@ -257,7 +267,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Get vinfo1 value
+     * Get vinfo1 value.
      */
     public function getVinfo1(): ?string
     {
@@ -265,7 +275,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Set vinfo1 value
+     * Set vinfo1 value.
      */
     public function setVinfo1(?string $vinfo1 = null): self
     {
@@ -279,7 +289,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Get vinfo2 value
+     * Get vinfo2 value.
      */
     public function getVinfo2(): ?string
     {
@@ -287,7 +297,7 @@ class AddressInfo extends AbstractStructBase
     }
 
     /**
-     * Set vinfo2 value
+     * Set vinfo2 value.
      */
     public function setVinfo2(?string $vinfo2 = null): self
     {

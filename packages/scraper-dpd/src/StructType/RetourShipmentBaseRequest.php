@@ -1,13 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for RetourShipmentBaseRequest StructType
+ * This class stands for RetourShipmentBaseRequest StructType.
  */
 #[\AllowDynamicProperties]
-class RetourShipmentBaseRequest extends AbstractStructBase
-{
-}
+class RetourShipmentBaseRequest extends AbstractStructBase {}

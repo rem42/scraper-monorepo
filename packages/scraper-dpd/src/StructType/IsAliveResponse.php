@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for isAliveResponse StructType
+ * This class stands for isAliveResponse StructType.
  */
 #[\AllowDynamicProperties]
 class IsAliveResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class IsAliveResponse extends AbstractStructBase
      * The isAliveResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $isAliveResult;
 
     /**
-     * Constructor method for isAliveResponse
+     * Constructor method for isAliveResponse.
      *
      * @uses IsAliveResponse::setIsAliveResult()
      */
@@ -31,7 +33,7 @@ class IsAliveResponse extends AbstractStructBase
     }
 
     /**
-     * Get isAliveResult value
+     * Get isAliveResult value.
      */
     public function getIsAliveResult(): bool
     {
@@ -39,7 +41,7 @@ class IsAliveResponse extends AbstractStructBase
     }
 
     /**
-     * Set isAliveResult value
+     * Set isAliveResult value.
      */
     public function setIsAliveResult(bool $isAliveResult): self
     {

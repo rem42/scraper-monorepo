@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for PickupAtCustomerBcRequest StructType
+ * This class stands for PickupAtCustomerBcRequest StructType.
  */
 #[\AllowDynamicProperties]
 class PickupAtCustomerBcRequest extends PickupAtCustomerRequestBase
@@ -12,12 +14,12 @@ class PickupAtCustomerBcRequest extends PickupAtCustomerRequestBase
      * The shipments
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfString $shipments = null;
 
     /**
-     * Constructor method for PickupAtCustomerBcRequest
+     * Constructor method for PickupAtCustomerBcRequest.
      *
      * @uses PickupAtCustomerBcRequest::setShipments()
      */
@@ -29,7 +31,7 @@ class PickupAtCustomerBcRequest extends PickupAtCustomerRequestBase
     }
 
     /**
-     * Get shipments value
+     * Get shipments value.
      */
     public function getShipments(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfString
     {
@@ -37,7 +39,7 @@ class PickupAtCustomerBcRequest extends PickupAtCustomerRequestBase
     }
 
     /**
-     * Set shipments value
+     * Set shipments value.
      */
     public function setShipments(?\Scraper\ScraperDPD\ArrayType\ArrayOfString $shipments = null): self
     {

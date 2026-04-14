@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for StatusObject StructType
+ * This class stands for StatusObject StructType.
  */
 #[\AllowDynamicProperties]
 class StatusObject extends AbstractStructBase
@@ -14,26 +16,28 @@ class StatusObject extends AbstractStructBase
      * The StsDate
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $StsDate = null;
+
     /**
      * The StsCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $StsCode = null;
+
     /**
      * The StsDesc
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $StsDesc = null;
 
     /**
-     * Constructor method for StatusObject
+     * Constructor method for StatusObject.
      *
      * @uses StatusObject::setStsDate()
      * @uses StatusObject::setStsCode()
@@ -49,7 +53,7 @@ class StatusObject extends AbstractStructBase
     }
 
     /**
-     * Get StsDate value
+     * Get StsDate value.
      */
     public function getStsDate(): ?string
     {
@@ -57,7 +61,7 @@ class StatusObject extends AbstractStructBase
     }
 
     /**
-     * Set StsDate value
+     * Set StsDate value.
      */
     public function setStsDate(?string $stsDate = null): self
     {
@@ -71,7 +75,7 @@ class StatusObject extends AbstractStructBase
     }
 
     /**
-     * Get StsCode value
+     * Get StsCode value.
      */
     public function getStsCode(): ?string
     {
@@ -79,7 +83,7 @@ class StatusObject extends AbstractStructBase
     }
 
     /**
-     * Set StsCode value
+     * Set StsCode value.
      */
     public function setStsCode(?string $stsCode = null): self
     {
@@ -93,7 +97,7 @@ class StatusObject extends AbstractStructBase
     }
 
     /**
-     * Get StsDesc value
+     * Get StsDesc value.
      */
     public function getStsDesc(): ?string
     {
@@ -101,7 +105,7 @@ class StatusObject extends AbstractStructBase
     }
 
     /**
-     * Set StsDesc value
+     * Set StsDesc value.
      */
     public function setStsDesc(?string $stsDesc = null): self
     {

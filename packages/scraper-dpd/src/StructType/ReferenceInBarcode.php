@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ReferenceInBarcode StructType
+ * This class stands for ReferenceInBarcode StructType.
  */
 #[\AllowDynamicProperties]
 class ReferenceInBarcode extends AbstractStructBase
@@ -14,12 +16,12 @@ class ReferenceInBarcode extends AbstractStructBase
      * The type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $type;
 
     /**
-     * Constructor method for ReferenceInBarcode
+     * Constructor method for ReferenceInBarcode.
      *
      * @uses ReferenceInBarcode::setType()
      */
@@ -31,7 +33,7 @@ class ReferenceInBarcode extends AbstractStructBase
     }
 
     /**
-     * Get type value
+     * Get type value.
      */
     public function getType(): string
     {
@@ -39,7 +41,7 @@ class ReferenceInBarcode extends AbstractStructBase
     }
 
     /**
-     * Set type value
+     * Set type value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\EReferenceType::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\EReferenceType::getValidValues()

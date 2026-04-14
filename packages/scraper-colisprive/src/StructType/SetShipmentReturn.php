@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for SetShipmentReturn StructType
+ * This class stands for SetShipmentReturn StructType.
  */
 #[\AllowDynamicProperties]
 class SetShipmentReturn extends AbstractStructBase
@@ -14,42 +16,45 @@ class SetShipmentReturn extends AbstractStructBase
      * The WSResp
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ResponseObject $WSResp = null;
+
     /**
      * The ShipCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ShipCode = null;
+
     /**
      * The PclList
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * - minOccurs: 0
+     * - minOccurs: 0.
      *
-     * @var array<\Scraper\ScraperColisPrive\StructType\LightParcelObject>
+     * @var array<LightParcelObject>
      */
     protected ?array $PclList = null;
+
     /**
      * The MnftUrl
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $MnftUrl = null;
 
     /**
-     * Constructor method for SetShipmentReturn
+     * Constructor method for SetShipmentReturn.
      *
      * @uses SetShipmentReturn::setWSResp()
      * @uses SetShipmentReturn::setShipCode()
      * @uses SetShipmentReturn::setPclList()
      * @uses SetShipmentReturn::setMnftUrl()
      *
-     * @param array<\Scraper\ScraperColisPrive\StructType\LightParcelObject> $pclList
+     * @param array<LightParcelObject> $pclList
      */
     public function __construct(?ResponseObject $wSResp = null, ?string $shipCode = null, ?array $pclList = null, ?string $mnftUrl = null)
     {
@@ -62,7 +67,7 @@ class SetShipmentReturn extends AbstractStructBase
     }
 
     /**
-     * Get WSResp value
+     * Get WSResp value.
      */
     public function getWSResp(): ?ResponseObject
     {
@@ -70,7 +75,7 @@ class SetShipmentReturn extends AbstractStructBase
     }
 
     /**
-     * Set WSResp value
+     * Set WSResp value.
      */
     public function setWSResp(?ResponseObject $wSResp = null): self
     {
@@ -80,7 +85,7 @@ class SetShipmentReturn extends AbstractStructBase
     }
 
     /**
-     * Get ShipCode value
+     * Get ShipCode value.
      */
     public function getShipCode(): ?string
     {
@@ -88,7 +93,7 @@ class SetShipmentReturn extends AbstractStructBase
     }
 
     /**
-     * Set ShipCode value
+     * Set ShipCode value.
      */
     public function setShipCode(?string $shipCode = null): self
     {
@@ -102,9 +107,9 @@ class SetShipmentReturn extends AbstractStructBase
     }
 
     /**
-     * Get PclList value
+     * Get PclList value.
      *
-     * @return array<\Scraper\ScraperColisPrive\StructType\LightParcelObject>
+     * @return array<LightParcelObject>
      */
     public function getPclList(): ?array
     {
@@ -114,7 +119,7 @@ class SetShipmentReturn extends AbstractStructBase
     /**
      * This method is responsible for validating the value(s) passed to the setPclList method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPclList method
-     * This has to validate that each item contained by the array match the itemType constraint
+     * This has to validate that each item contained by the array match the itemType constraint.
      *
      * @return string A non-empty message if the values does not match the validation rules
      */
@@ -142,9 +147,9 @@ class SetShipmentReturn extends AbstractStructBase
     }
 
     /**
-     * Set PclList value
+     * Set PclList value.
      *
-     * @param array<\Scraper\ScraperColisPrive\StructType\LightParcelObject> $pclList
+     * @param array<LightParcelObject> $pclList
      *
      * @throws \InvalidArgumentException
      */
@@ -160,7 +165,7 @@ class SetShipmentReturn extends AbstractStructBase
     }
 
     /**
-     * Add item to PclList value
+     * Add item to PclList value.
      *
      * @throws \InvalidArgumentException
      */
@@ -176,7 +181,7 @@ class SetShipmentReturn extends AbstractStructBase
     }
 
     /**
-     * Get MnftUrl value
+     * Get MnftUrl value.
      */
     public function getMnftUrl(): ?string
     {
@@ -184,7 +189,7 @@ class SetShipmentReturn extends AbstractStructBase
     }
 
     /**
-     * Set MnftUrl value
+     * Set MnftUrl value.
      */
     public function setMnftUrl(?string $mnftUrl = null): self
     {

@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ResponseObject StructType
+ * This class stands for ResponseObject StructType.
  */
 #[\AllowDynamicProperties]
 class ResponseObject extends AbstractStructBase
@@ -14,19 +16,20 @@ class ResponseObject extends AbstractStructBase
      * The RtnCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $RtnCode;
+
     /**
      * The RtnMessage
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $RtnMessage = null;
 
     /**
-     * Constructor method for ResponseObject
+     * Constructor method for ResponseObject.
      *
      * @uses ResponseObject::setRtnCode()
      * @uses ResponseObject::setRtnMessage()
@@ -40,7 +43,7 @@ class ResponseObject extends AbstractStructBase
     }
 
     /**
-     * Get RtnCode value
+     * Get RtnCode value.
      */
     public function getRtnCode(): int
     {
@@ -48,7 +51,7 @@ class ResponseObject extends AbstractStructBase
     }
 
     /**
-     * Set RtnCode value
+     * Set RtnCode value.
      */
     public function setRtnCode(int $rtnCode): self
     {
@@ -62,7 +65,7 @@ class ResponseObject extends AbstractStructBase
     }
 
     /**
-     * Get RtnMessage value
+     * Get RtnMessage value.
      */
     public function getRtnMessage(): ?string
     {
@@ -70,7 +73,7 @@ class ResponseObject extends AbstractStructBase
     }
 
     /**
-     * Set RtnMessage value
+     * Set RtnMessage value.
      */
     public function setRtnMessage(?string $rtnMessage = null): self
     {

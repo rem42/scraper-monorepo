@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for Customer StructType
+ * This class stands for Customer StructType.
  */
 #[\AllowDynamicProperties]
 class Customer extends CustomerSmall
@@ -12,12 +14,12 @@ class Customer extends CustomerSmall
      * The countrycode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $countrycode;
 
     /**
-     * Constructor method for Customer
+     * Constructor method for Customer.
      *
      * @uses Customer::setCountrycode()
      */
@@ -29,7 +31,7 @@ class Customer extends CustomerSmall
     }
 
     /**
-     * Get countrycode value
+     * Get countrycode value.
      */
     public function getCountrycode(): int
     {
@@ -37,7 +39,7 @@ class Customer extends CustomerSmall
     }
 
     /**
-     * Set countrycode value
+     * Set countrycode value.
      */
     public function setCountrycode(int $countrycode): self
     {

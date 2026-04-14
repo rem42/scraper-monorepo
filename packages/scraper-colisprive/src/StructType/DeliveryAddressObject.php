@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for DeliveryAddressObject StructType
+ * This class stands for DeliveryAddressObject StructType.
  */
 #[\AllowDynamicProperties]
 class DeliveryAddressObject extends AbstractStructBase
@@ -14,70 +16,78 @@ class DeliveryAddressObject extends AbstractStructBase
      * The DlvrEmail
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DlvrEmail = null;
+
     /**
      * The DlvrPhon
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DlvrPhon = null;
+
     /**
      * The DlvrGsm
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DlvrGsm = null;
+
     /**
      * The DlvrDCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DlvrDCode = null;
+
     /**
      * The DlvrComments
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DlvrComments = null;
+
     /**
      * The DlvrLng
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DlvrLng = null;
+
     /**
      * The DlvrCurrency
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DlvrCurrency = null;
+
     /**
      * The DlvrName
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $DlvrName;
+
     /**
      * The DlvrAddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?AddressObject $DlvrAddress;
 
     /**
-     * Constructor method for DeliveryAddressObject
+     * Constructor method for DeliveryAddressObject.
      *
      * @uses DeliveryAddressObject::setDlvrEmail()
      * @uses DeliveryAddressObject::setDlvrPhon()
@@ -98,7 +108,7 @@ class DeliveryAddressObject extends AbstractStructBase
         ?string $dlvrLng,
         ?string $dlvrCurrency,
         ?string $dlvrName,
-        ?AddressObject $dlvrAddress
+        ?AddressObject $dlvrAddress,
     ) {
         $this
             ->setDlvrEmail($dlvrEmail)
@@ -114,7 +124,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Get DlvrEmail value
+     * Get DlvrEmail value.
      */
     public function getDlvrEmail(): ?string
     {
@@ -122,7 +132,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Set DlvrEmail value
+     * Set DlvrEmail value.
      */
     public function setDlvrEmail(?string $dlvrEmail = null): self
     {
@@ -136,7 +146,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Get DlvrPhon value
+     * Get DlvrPhon value.
      */
     public function getDlvrPhon(): ?string
     {
@@ -144,7 +154,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Set DlvrPhon value
+     * Set DlvrPhon value.
      */
     public function setDlvrPhon(?string $dlvrPhon = null): self
     {
@@ -158,7 +168,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Get DlvrGsm value
+     * Get DlvrGsm value.
      */
     public function getDlvrGsm(): ?string
     {
@@ -166,7 +176,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Set DlvrGsm value
+     * Set DlvrGsm value.
      */
     public function setDlvrGsm(?string $dlvrGsm = null): self
     {
@@ -180,7 +190,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Get DlvrDCode value
+     * Get DlvrDCode value.
      */
     public function getDlvrDCode(): ?string
     {
@@ -188,7 +198,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Set DlvrDCode value
+     * Set DlvrDCode value.
      */
     public function setDlvrDCode(?string $dlvrDCode = null): self
     {
@@ -202,7 +212,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Get DlvrComments value
+     * Get DlvrComments value.
      */
     public function getDlvrComments(): ?string
     {
@@ -210,7 +220,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Set DlvrComments value
+     * Set DlvrComments value.
      */
     public function setDlvrComments(?string $dlvrComments = null): self
     {
@@ -224,7 +234,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Get DlvrLng value
+     * Get DlvrLng value.
      */
     public function getDlvrLng(): ?string
     {
@@ -232,7 +242,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Set DlvrLng value
+     * Set DlvrLng value.
      */
     public function setDlvrLng(?string $dlvrLng = null): self
     {
@@ -246,7 +256,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Get DlvrCurrency value
+     * Get DlvrCurrency value.
      */
     public function getDlvrCurrency(): ?string
     {
@@ -254,7 +264,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Set DlvrCurrency value
+     * Set DlvrCurrency value.
      */
     public function setDlvrCurrency(?string $dlvrCurrency = null): self
     {
@@ -268,7 +278,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Get DlvrName value
+     * Get DlvrName value.
      */
     public function getDlvrName(): string
     {
@@ -276,7 +286,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Set DlvrName value
+     * Set DlvrName value.
      */
     public function setDlvrName(?string $dlvrName): self
     {
@@ -290,7 +300,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Get DlvrAddress value
+     * Get DlvrAddress value.
      */
     public function getDlvrAddress(): AddressObject
     {
@@ -298,7 +308,7 @@ class DeliveryAddressObject extends AbstractStructBase
     }
 
     /**
-     * Set DlvrAddress value
+     * Set DlvrAddress value.
      */
     public function setDlvrAddress(?AddressObject $dlvrAddress): self
     {

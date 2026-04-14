@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for PickupPointDeliveryObject StructType
+ * This class stands for PickupPointDeliveryObject StructType.
  */
 #[\AllowDynamicProperties]
 class PickupPointDeliveryObject extends AbstractStructBase
@@ -14,19 +16,20 @@ class PickupPointDeliveryObject extends AbstractStructBase
      * The PckPoint
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?PickupPointObject $PckPoint = null;
+
     /**
      * The PlannedDlvrDate
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PlannedDlvrDate = null;
 
     /**
-     * Constructor method for PickupPointDeliveryObject
+     * Constructor method for PickupPointDeliveryObject.
      *
      * @uses PickupPointDeliveryObject::setPckPoint()
      * @uses PickupPointDeliveryObject::setPlannedDlvrDate()
@@ -40,7 +43,7 @@ class PickupPointDeliveryObject extends AbstractStructBase
     }
 
     /**
-     * Get PckPoint value
+     * Get PckPoint value.
      */
     public function getPckPoint(): ?PickupPointObject
     {
@@ -48,7 +51,7 @@ class PickupPointDeliveryObject extends AbstractStructBase
     }
 
     /**
-     * Set PckPoint value
+     * Set PckPoint value.
      */
     public function setPckPoint(?PickupPointObject $pckPoint = null): self
     {
@@ -58,7 +61,7 @@ class PickupPointDeliveryObject extends AbstractStructBase
     }
 
     /**
-     * Get PlannedDlvrDate value
+     * Get PlannedDlvrDate value.
      */
     public function getPlannedDlvrDate(): ?string
     {
@@ -66,7 +69,7 @@ class PickupPointDeliveryObject extends AbstractStructBase
     }
 
     /**
-     * Set PlannedDlvrDate value
+     * Set PlannedDlvrDate value.
      */
     public function setPlannedDlvrDate(?string $plannedDlvrDate = null): self
     {

@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ParcelInfoSin StructType
+ * This class stands for ParcelInfoSin StructType.
  */
 #[\AllowDynamicProperties]
 class ParcelInfoSin extends ParcelInfo
@@ -12,12 +14,12 @@ class ParcelInfoSin extends ParcelInfo
      * The Sin
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Sin = null;
 
     /**
-     * Constructor method for ParcelInfoSin
+     * Constructor method for ParcelInfoSin.
      *
      * @uses ParcelInfoSin::setSin()
      */
@@ -29,7 +31,7 @@ class ParcelInfoSin extends ParcelInfo
     }
 
     /**
-     * Get Sin value
+     * Get Sin value.
      */
     public function getSin(): ?string
     {
@@ -37,7 +39,7 @@ class ParcelInfoSin extends ParcelInfo
     }
 
     /**
-     * Set Sin value
+     * Set Sin value.
      */
     public function setSin(?string $sin = null): self
     {

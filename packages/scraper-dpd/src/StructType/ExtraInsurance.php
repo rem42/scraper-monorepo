@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ExtraInsurance StructType
+ * This class stands for ExtraInsurance StructType.
  */
 #[\AllowDynamicProperties]
 class ExtraInsurance extends DefaultService
@@ -12,19 +14,20 @@ class ExtraInsurance extends DefaultService
      * The type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $type;
+
     /**
      * The value
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $value = null;
 
     /**
-     * Constructor method for ExtraInsurance
+     * Constructor method for ExtraInsurance.
      *
      * @uses ExtraInsurance::setType()
      * @uses ExtraInsurance::setValue()
@@ -38,7 +41,7 @@ class ExtraInsurance extends DefaultService
     }
 
     /**
-     * Get type value
+     * Get type value.
      */
     public function getType(): string
     {
@@ -46,7 +49,7 @@ class ExtraInsurance extends DefaultService
     }
 
     /**
-     * Set type value
+     * Set type value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\EtypeInsurance::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\EtypeInsurance::getValidValues()
@@ -65,7 +68,7 @@ class ExtraInsurance extends DefaultService
     }
 
     /**
-     * Get value value
+     * Get value value.
      */
     public function getValue(): ?string
     {
@@ -73,7 +76,7 @@ class ExtraInsurance extends DefaultService
     }
 
     /**
-     * Set value value
+     * Set value value.
      */
     public function setValue(?string $value = null): self
     {

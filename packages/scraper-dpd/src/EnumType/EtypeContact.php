@@ -1,41 +1,46 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 
 /**
- * This class stands for etypeContact EnumType
+ * This class stands for etypeContact EnumType.
  */
 class EtypeContact extends AbstractStructEnumBase
 {
     /**
-     * Constant for value 'No'
+     * Constant for value 'No'.
      *
      * @return string 'No'
      */
     public const VALUE_NO = 'No';
+
     /**
-     * Constant for value 'Predict'
+     * Constant for value 'Predict'.
      *
      * @return string 'Predict'
      */
     public const VALUE_PREDICT = 'Predict';
+
     /**
-     * Constant for value 'AutomaticSMS'
+     * Constant for value 'AutomaticSMS'.
      *
      * @return string 'AutomaticSMS'
      */
     public const VALUE_AUTOMATIC_SMS = 'AutomaticSMS';
+
     /**
-     * Constant for value 'AutomaticMail'
+     * Constant for value 'AutomaticMail'.
      *
      * @return string 'AutomaticMail'
      */
     public const VALUE_AUTOMATIC_MAIL = 'AutomaticMail';
 
     /**
-     * Return allowed values
+     * Return allowed values.
      *
      * @uses self::VALUE_NO
      * @uses self::VALUE_PREDICT

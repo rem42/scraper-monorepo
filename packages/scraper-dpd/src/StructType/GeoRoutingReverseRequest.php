@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GeoRoutingReverseRequest StructType
+ * This class stands for GeoRoutingReverseRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GeoRoutingReverseRequest extends AbstractStructBase
@@ -14,89 +16,100 @@ class GeoRoutingReverseRequest extends AbstractStructBase
      * The originIso2Country
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $originIso2Country = null;
+
     /**
      * The originZipCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $originZipCode = null;
+
     /**
      * The originDepot
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $originDepot = null;
+
     /**
      * The destinationIso2Country
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $destinationIso2Country = null;
+
     /**
      * The destinationZipCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $destinationZipCode = null;
+
     /**
      * The soCodeReverse
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $soCodeReverse = null;
+
     /**
      * The retourShipperIso2Country
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $retourShipperIso2Country = null;
+
     /**
      * The retourShipperZipCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $retourShipperZipCode = null;
+
     /**
      * The retourIso2Country
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $retourIso2Country = null;
+
     /**
      * The retourZipCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $retourZipCode = null;
+
     /**
      * The soCodeRetour
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $soCodeRetour = null;
+
     /**
      * The date
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $date = null;
 
     /**
-     * Constructor method for GeoRoutingReverseRequest
+     * Constructor method for GeoRoutingReverseRequest.
      *
      * @uses GeoRoutingReverseRequest::setOriginIso2Country()
      * @uses GeoRoutingReverseRequest::setOriginZipCode()
@@ -130,7 +143,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Get originIso2Country value
+     * Get originIso2Country value.
      */
     public function getOriginIso2Country(): ?string
     {
@@ -138,7 +151,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Set originIso2Country value
+     * Set originIso2Country value.
      */
     public function setOriginIso2Country(?string $originIso2Country = null): self
     {
@@ -152,7 +165,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Get originZipCode value
+     * Get originZipCode value.
      */
     public function getOriginZipCode(): ?string
     {
@@ -160,7 +173,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Set originZipCode value
+     * Set originZipCode value.
      */
     public function setOriginZipCode(?string $originZipCode = null): self
     {
@@ -174,7 +187,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Get originDepot value
+     * Get originDepot value.
      */
     public function getOriginDepot(): ?string
     {
@@ -182,7 +195,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Set originDepot value
+     * Set originDepot value.
      */
     public function setOriginDepot(?string $originDepot = null): self
     {
@@ -196,7 +209,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Get destinationIso2Country value
+     * Get destinationIso2Country value.
      */
     public function getDestinationIso2Country(): ?string
     {
@@ -204,7 +217,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Set destinationIso2Country value
+     * Set destinationIso2Country value.
      */
     public function setDestinationIso2Country(?string $destinationIso2Country = null): self
     {
@@ -218,7 +231,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Get destinationZipCode value
+     * Get destinationZipCode value.
      */
     public function getDestinationZipCode(): ?string
     {
@@ -226,7 +239,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Set destinationZipCode value
+     * Set destinationZipCode value.
      */
     public function setDestinationZipCode(?string $destinationZipCode = null): self
     {
@@ -240,7 +253,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Get soCodeReverse value
+     * Get soCodeReverse value.
      */
     public function getSoCodeReverse(): ?string
     {
@@ -248,7 +261,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Set soCodeReverse value
+     * Set soCodeReverse value.
      */
     public function setSoCodeReverse(?string $soCodeReverse = null): self
     {
@@ -262,7 +275,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Get retourShipperIso2Country value
+     * Get retourShipperIso2Country value.
      */
     public function getRetourShipperIso2Country(): ?string
     {
@@ -270,7 +283,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Set retourShipperIso2Country value
+     * Set retourShipperIso2Country value.
      */
     public function setRetourShipperIso2Country(?string $retourShipperIso2Country = null): self
     {
@@ -284,7 +297,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Get retourShipperZipCode value
+     * Get retourShipperZipCode value.
      */
     public function getRetourShipperZipCode(): ?string
     {
@@ -292,7 +305,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Set retourShipperZipCode value
+     * Set retourShipperZipCode value.
      */
     public function setRetourShipperZipCode(?string $retourShipperZipCode = null): self
     {
@@ -306,7 +319,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Get retourIso2Country value
+     * Get retourIso2Country value.
      */
     public function getRetourIso2Country(): ?string
     {
@@ -314,7 +327,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Set retourIso2Country value
+     * Set retourIso2Country value.
      */
     public function setRetourIso2Country(?string $retourIso2Country = null): self
     {
@@ -328,7 +341,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Get retourZipCode value
+     * Get retourZipCode value.
      */
     public function getRetourZipCode(): ?string
     {
@@ -336,7 +349,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Set retourZipCode value
+     * Set retourZipCode value.
      */
     public function setRetourZipCode(?string $retourZipCode = null): self
     {
@@ -350,7 +363,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Get soCodeRetour value
+     * Get soCodeRetour value.
      */
     public function getSoCodeRetour(): ?string
     {
@@ -358,7 +371,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Set soCodeRetour value
+     * Set soCodeRetour value.
      */
     public function setSoCodeRetour(?string $soCodeRetour = null): self
     {
@@ -372,7 +385,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Get date value
+     * Get date value.
      */
     public function getDate(): ?string
     {
@@ -380,7 +393,7 @@ class GeoRoutingReverseRequest extends AbstractStructBase
     }
 
     /**
-     * Set date value
+     * Set date value.
      */
     public function setDate(?string $date = null): self
     {

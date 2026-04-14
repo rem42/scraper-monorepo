@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetSafePlaceDataRequest StructType
+ * This class stands for GetSafePlaceDataRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GetSafePlaceDataRequest extends AbstractStructBase
@@ -14,27 +16,29 @@ class GetSafePlaceDataRequest extends AbstractStructBase
      * The BarcodeId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BarcodeId = null;
+
     /**
      * The Customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $Customer = null;
+
     /**
      * The BarcodeSource
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?int $BarcodeSource;
 
     /**
-     * Constructor method for GetSafePlaceDataRequest
+     * Constructor method for GetSafePlaceDataRequest.
      *
      * @uses GetSafePlaceDataRequest::setBarcodeId()
      * @uses GetSafePlaceDataRequest::setCustomer()
@@ -50,7 +54,7 @@ class GetSafePlaceDataRequest extends AbstractStructBase
     }
 
     /**
-     * Get BarcodeId value
+     * Get BarcodeId value.
      */
     public function getBarcodeId(): ?string
     {
@@ -58,7 +62,7 @@ class GetSafePlaceDataRequest extends AbstractStructBase
     }
 
     /**
-     * Set BarcodeId value
+     * Set BarcodeId value.
      */
     public function setBarcodeId(?string $barcodeId = null): self
     {
@@ -72,7 +76,7 @@ class GetSafePlaceDataRequest extends AbstractStructBase
     }
 
     /**
-     * Get Customer value
+     * Get Customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -80,7 +84,7 @@ class GetSafePlaceDataRequest extends AbstractStructBase
     }
 
     /**
-     * Set Customer value
+     * Set Customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {
@@ -90,7 +94,7 @@ class GetSafePlaceDataRequest extends AbstractStructBase
     }
 
     /**
-     * Get BarcodeSource value
+     * Get BarcodeSource value.
      */
     public function getBarcodeSource(): int
     {
@@ -98,7 +102,7 @@ class GetSafePlaceDataRequest extends AbstractStructBase
     }
 
     /**
-     * Set BarcodeSource value
+     * Set BarcodeSource value.
      */
     public function setBarcodeSource(?int $barcodeSource): self
     {

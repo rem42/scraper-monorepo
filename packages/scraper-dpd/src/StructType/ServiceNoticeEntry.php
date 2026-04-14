@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ServiceNoticeEntry StructType
+ * This class stands for ServiceNoticeEntry StructType.
  */
 #[\AllowDynamicProperties]
 class ServiceNoticeEntry extends AbstractStructBase
@@ -14,75 +16,84 @@ class ServiceNoticeEntry extends AbstractStructBase
      * The Type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $Type;
+
     /**
      * The BarcodeId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BarcodeId = null;
+
     /**
      * The BarcodeSource
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BarcodeSource = null;
+
     /**
      * The Customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $Customer = null;
+
     /**
      * The Reason
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfReason $Reason = null;
+
     /**
      * The Date
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Date = null;
+
     /**
      * The Status
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Status = null;
+
     /**
      * The Weight
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Weight = null;
+
     /**
      * The Info
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Info = null;
+
     /**
      * The Counterquestion
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Counterquestion = null;
 
     /**
-     * Constructor method for ServiceNoticeEntry
+     * Constructor method for ServiceNoticeEntry.
      *
      * @uses ServiceNoticeEntry::setType()
      * @uses ServiceNoticeEntry::setBarcodeId()
@@ -112,7 +123,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Get Type value
+     * Get Type value.
      */
     public function getType(): string
     {
@@ -120,7 +131,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Set Type value
+     * Set Type value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\ServiceNoticeType::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\ServiceNoticeType::getValidValues()
@@ -139,7 +150,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Get BarcodeId value
+     * Get BarcodeId value.
      */
     public function getBarcodeId(): ?string
     {
@@ -147,7 +158,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Set BarcodeId value
+     * Set BarcodeId value.
      */
     public function setBarcodeId(?string $barcodeId = null): self
     {
@@ -161,7 +172,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Get BarcodeSource value
+     * Get BarcodeSource value.
      */
     public function getBarcodeSource(): ?string
     {
@@ -169,7 +180,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Set BarcodeSource value
+     * Set BarcodeSource value.
      */
     public function setBarcodeSource(?string $barcodeSource = null): self
     {
@@ -183,7 +194,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Get Customer value
+     * Get Customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -191,7 +202,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Set Customer value
+     * Set Customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {
@@ -201,7 +212,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Get Reason value
+     * Get Reason value.
      */
     public function getReason(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfReason
     {
@@ -209,7 +220,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Set Reason value
+     * Set Reason value.
      */
     public function setReason(?\Scraper\ScraperDPD\ArrayType\ArrayOfReason $reason = null): self
     {
@@ -219,7 +230,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Get Date value
+     * Get Date value.
      */
     public function getDate(): ?string
     {
@@ -227,7 +238,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Set Date value
+     * Set Date value.
      */
     public function setDate(?string $date = null): self
     {
@@ -241,7 +252,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Get Status value
+     * Get Status value.
      */
     public function getStatus(): ?string
     {
@@ -249,7 +260,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Set Status value
+     * Set Status value.
      */
     public function setStatus(?string $status = null): self
     {
@@ -263,7 +274,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Get Weight value
+     * Get Weight value.
      */
     public function getWeight(): ?string
     {
@@ -271,7 +282,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Set Weight value
+     * Set Weight value.
      */
     public function setWeight(?string $weight = null): self
     {
@@ -285,7 +296,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Get Info value
+     * Get Info value.
      */
     public function getInfo(): ?string
     {
@@ -293,7 +304,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Set Info value
+     * Set Info value.
      */
     public function setInfo(?string $info = null): self
     {
@@ -307,7 +318,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Get Counterquestion value
+     * Get Counterquestion value.
      */
     public function getCounterquestion(): ?string
     {
@@ -315,7 +326,7 @@ class ServiceNoticeEntry extends AbstractStructBase
     }
 
     /**
-     * Set Counterquestion value
+     * Set Counterquestion value.
      */
     public function setCounterquestion(?string $counterquestion = null): self
     {

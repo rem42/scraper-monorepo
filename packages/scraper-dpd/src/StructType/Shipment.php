@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Shipment StructType
+ * This class stands for Shipment StructType.
  */
 #[\AllowDynamicProperties]
 class Shipment extends AbstractStructBase
@@ -14,40 +16,44 @@ class Shipment extends AbstractStructBase
      * The countrycode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $countrycode;
+
     /**
      * The centernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $centernumber;
+
     /**
      * The parcelnumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $parcelnumber;
+
     /**
      * The barcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $barcode;
+
     /**
      * The type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $type;
 
     /**
-     * Constructor method for Shipment
+     * Constructor method for Shipment.
      *
      * @uses Shipment::setCountrycode()
      * @uses Shipment::setCenternumber()
@@ -67,7 +73,7 @@ class Shipment extends AbstractStructBase
     }
 
     /**
-     * Get countrycode value
+     * Get countrycode value.
      */
     public function getCountrycode(): int
     {
@@ -75,7 +81,7 @@ class Shipment extends AbstractStructBase
     }
 
     /**
-     * Set countrycode value
+     * Set countrycode value.
      */
     public function setCountrycode(int $countrycode): self
     {
@@ -89,7 +95,7 @@ class Shipment extends AbstractStructBase
     }
 
     /**
-     * Get centernumber value
+     * Get centernumber value.
      */
     public function getCenternumber(): int
     {
@@ -97,7 +103,7 @@ class Shipment extends AbstractStructBase
     }
 
     /**
-     * Set centernumber value
+     * Set centernumber value.
      */
     public function setCenternumber(int $centernumber): self
     {
@@ -111,7 +117,7 @@ class Shipment extends AbstractStructBase
     }
 
     /**
-     * Get parcelnumber value
+     * Get parcelnumber value.
      */
     public function getParcelnumber(): int
     {
@@ -119,7 +125,7 @@ class Shipment extends AbstractStructBase
     }
 
     /**
-     * Set parcelnumber value
+     * Set parcelnumber value.
      */
     public function setParcelnumber(int $parcelnumber): self
     {
@@ -133,7 +139,7 @@ class Shipment extends AbstractStructBase
     }
 
     /**
-     * Get barcode value
+     * Get barcode value.
      */
     public function getBarcode(): int
     {
@@ -141,7 +147,7 @@ class Shipment extends AbstractStructBase
     }
 
     /**
-     * Set barcode value
+     * Set barcode value.
      */
     public function setBarcode(int $barcode): self
     {
@@ -155,7 +161,7 @@ class Shipment extends AbstractStructBase
     }
 
     /**
-     * Get type value
+     * Get type value.
      */
     public function getType(): string
     {
@@ -163,7 +169,7 @@ class Shipment extends AbstractStructBase
     }
 
     /**
-     * Set type value
+     * Set type value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\Etype::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\Etype::getValidValues()

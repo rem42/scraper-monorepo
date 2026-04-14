@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetSecureData StructType
+ * This class stands for GetSecureData StructType.
  */
 #[\AllowDynamicProperties]
 class GetSecureData extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetSecureData extends AbstractStructBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetSecureDataRequest $request = null;
 
     /**
-     * Constructor method for GetSecureData
+     * Constructor method for GetSecureData.
      *
      * @uses GetSecureData::setRequest()
      */
@@ -31,7 +33,7 @@ class GetSecureData extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?GetSecureDataRequest
     {
@@ -39,7 +41,7 @@ class GetSecureData extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?GetSecureDataRequest $request = null): self
     {

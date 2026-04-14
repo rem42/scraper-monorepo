@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CreateMultiShipmentBcResponse StructType
+ * This class stands for CreateMultiShipmentBcResponse StructType.
  */
 #[\AllowDynamicProperties]
 class CreateMultiShipmentBcResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class CreateMultiShipmentBcResponse extends AbstractStructBase
      * The CreateMultiShipmentBcResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?MultiShipmentBc $CreateMultiShipmentBcResult = null;
 
     /**
-     * Constructor method for CreateMultiShipmentBcResponse
+     * Constructor method for CreateMultiShipmentBcResponse.
      *
      * @uses CreateMultiShipmentBcResponse::setCreateMultiShipmentBcResult()
      */
@@ -31,7 +33,7 @@ class CreateMultiShipmentBcResponse extends AbstractStructBase
     }
 
     /**
-     * Get CreateMultiShipmentBcResult value
+     * Get CreateMultiShipmentBcResult value.
      */
     public function getCreateMultiShipmentBcResult(): ?MultiShipmentBc
     {
@@ -39,7 +41,7 @@ class CreateMultiShipmentBcResponse extends AbstractStructBase
     }
 
     /**
-     * Set CreateMultiShipmentBcResult value
+     * Set CreateMultiShipmentBcResult value.
      */
     public function setCreateMultiShipmentBcResult(?MultiShipmentBc $createMultiShipmentBcResult = null): self
     {

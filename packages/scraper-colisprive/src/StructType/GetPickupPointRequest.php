@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetPickupPointRequest StructType
+ * This class stands for GetPickupPointRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GetPickupPointRequest extends AbstractStructBase
@@ -15,20 +17,21 @@ class GetPickupPointRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?IdentificationObject $SecurityID;
+
     /**
      * The PckCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $PckCode;
 
     /**
-     * Constructor method for GetPickupPointRequest
+     * Constructor method for GetPickupPointRequest.
      *
      * @uses GetPickupPointRequest::setSecurityID()
      * @uses GetPickupPointRequest::setPckCode()
@@ -42,7 +45,7 @@ class GetPickupPointRequest extends AbstractStructBase
     }
 
     /**
-     * Get SecurityID value
+     * Get SecurityID value.
      */
     public function getSecurityID(): IdentificationObject
     {
@@ -50,7 +53,7 @@ class GetPickupPointRequest extends AbstractStructBase
     }
 
     /**
-     * Set SecurityID value
+     * Set SecurityID value.
      */
     public function setSecurityID(?IdentificationObject $securityID): self
     {
@@ -60,7 +63,7 @@ class GetPickupPointRequest extends AbstractStructBase
     }
 
     /**
-     * Get PckCode value
+     * Get PckCode value.
      */
     public function getPckCode(): string
     {
@@ -68,7 +71,7 @@ class GetPickupPointRequest extends AbstractStructBase
     }
 
     /**
-     * Set PckCode value
+     * Set PckCode value.
      */
     public function setPckCode(?string $pckCode): self
     {

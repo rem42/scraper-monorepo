@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for GetLabelDataRequest StructType
+ * This class stands for GetLabelDataRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GetLabelDataRequest extends ShipmentRequestBcBase
@@ -12,12 +14,12 @@ class GetLabelDataRequest extends ShipmentRequestBcBase
      * The Options
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $Options;
 
     /**
-     * Constructor method for GetLabelDataRequest
+     * Constructor method for GetLabelDataRequest.
      *
      * @uses GetLabelDataRequest::setOptions()
      */
@@ -29,7 +31,7 @@ class GetLabelDataRequest extends ShipmentRequestBcBase
     }
 
     /**
-     * Get Options value
+     * Get Options value.
      */
     public function getOptions(): string
     {
@@ -37,7 +39,7 @@ class GetLabelDataRequest extends ShipmentRequestBcBase
     }
 
     /**
-     * Set Options value
+     * Set Options value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\ELabelDataOptions::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\ELabelDataOptions::getValidValues()

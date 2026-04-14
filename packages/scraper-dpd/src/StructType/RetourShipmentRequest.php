@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for RetourShipmentRequest StructType
+ * This class stands for RetourShipmentRequest StructType.
  */
 #[\AllowDynamicProperties]
 class RetourShipmentRequest extends RetourShipmentBaseRequest
@@ -12,26 +14,28 @@ class RetourShipmentRequest extends RetourShipmentBaseRequest
      * The countrycode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $countrycode = null;
+
     /**
      * The centernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $centernumber = null;
+
     /**
      * The original_parcelnumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $original_parcelnumber = null;
 
     /**
-     * Constructor method for RetourShipmentRequest
+     * Constructor method for RetourShipmentRequest.
      *
      * @uses RetourShipmentRequest::setCountrycode()
      * @uses RetourShipmentRequest::setCenternumber()
@@ -47,7 +51,7 @@ class RetourShipmentRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Get countrycode value
+     * Get countrycode value.
      */
     public function getCountrycode(): ?string
     {
@@ -55,7 +59,7 @@ class RetourShipmentRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Set countrycode value
+     * Set countrycode value.
      */
     public function setCountrycode(?string $countrycode = null): self
     {
@@ -69,7 +73,7 @@ class RetourShipmentRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Get centernumber value
+     * Get centernumber value.
      */
     public function getCenternumber(): ?string
     {
@@ -77,7 +81,7 @@ class RetourShipmentRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Set centernumber value
+     * Set centernumber value.
      */
     public function setCenternumber(?string $centernumber = null): self
     {
@@ -91,7 +95,7 @@ class RetourShipmentRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Get original_parcelnumber value
+     * Get original_parcelnumber value.
      */
     public function getOriginal_parcelnumber(): ?string
     {
@@ -99,7 +103,7 @@ class RetourShipmentRequest extends RetourShipmentBaseRequest
     }
 
     /**
-     * Set original_parcelnumber value
+     * Set original_parcelnumber value.
      */
     public function setOriginal_parcelnumber(?string $original_parcelnumber = null): self
     {

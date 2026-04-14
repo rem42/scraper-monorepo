@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for RdvEsnInfo StructType
+ * This class stands for RdvEsnInfo StructType.
  */
 #[\AllowDynamicProperties]
 class RdvEsnInfo extends AbstractStructBase
@@ -14,19 +16,20 @@ class RdvEsnInfo extends AbstractStructBase
      * The CreateEsn
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $CreateEsn;
+
     /**
      * The EsnDirective
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $EsnDirective = null;
 
     /**
-     * Constructor method for RdvEsnInfo
+     * Constructor method for RdvEsnInfo.
      *
      * @uses RdvEsnInfo::setCreateEsn()
      * @uses RdvEsnInfo::setEsnDirective()
@@ -40,7 +43,7 @@ class RdvEsnInfo extends AbstractStructBase
     }
 
     /**
-     * Get CreateEsn value
+     * Get CreateEsn value.
      */
     public function getCreateEsn(): bool
     {
@@ -48,7 +51,7 @@ class RdvEsnInfo extends AbstractStructBase
     }
 
     /**
-     * Set CreateEsn value
+     * Set CreateEsn value.
      */
     public function setCreateEsn(bool $createEsn): self
     {
@@ -62,7 +65,7 @@ class RdvEsnInfo extends AbstractStructBase
     }
 
     /**
-     * Get EsnDirective value
+     * Get EsnDirective value.
      */
     public function getEsnDirective(): ?string
     {
@@ -70,7 +73,7 @@ class RdvEsnInfo extends AbstractStructBase
     }
 
     /**
-     * Set EsnDirective value
+     * Set EsnDirective value.
      */
     public function setEsnDirective(?string $esnDirective = null): self
     {

@@ -1,29 +1,32 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 
 /**
- * This class stands for eLabelDataOptions EnumType
+ * This class stands for eLabelDataOptions EnumType.
  */
 class ELabelDataOptions extends AbstractStructEnumBase
 {
     /**
-     * Constant for value 'Default'
+     * Constant for value 'Default'.
      *
      * @return string 'Default'
      */
     public const VALUE_DEFAULT = 'Default';
+
     /**
-     * Constant for value 'Images'
+     * Constant for value 'Images'.
      *
      * @return string 'Images'
      */
     public const VALUE_IMAGES = 'Images';
 
     /**
-     * Return allowed values
+     * Return allowed values.
      *
      * @uses self::VALUE_DEFAULT
      * @uses self::VALUE_IMAGES

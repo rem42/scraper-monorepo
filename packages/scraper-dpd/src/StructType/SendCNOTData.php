@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for SendCNOTData StructType
+ * This class stands for SendCNOTData StructType.
  */
 #[\AllowDynamicProperties]
 class SendCNOTData extends AbstractStructBase
@@ -14,12 +16,12 @@ class SendCNOTData extends AbstractStructBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?CNOTData $request = null;
 
     /**
-     * Constructor method for SendCNOTData
+     * Constructor method for SendCNOTData.
      *
      * @uses SendCNOTData::setRequest()
      */
@@ -31,7 +33,7 @@ class SendCNOTData extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?CNOTData
     {
@@ -39,7 +41,7 @@ class SendCNOTData extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?CNOTData $request = null): self
     {

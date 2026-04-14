@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ReceiveRetourLabelRequestBase StructType
+ * This class stands for ReceiveRetourLabelRequestBase StructType.
  */
 #[\AllowDynamicProperties]
 abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
@@ -12,40 +14,44 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
      * The services
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RetourServices $services = null;
+
     /**
      * The weight
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $weight = null;
+
     /**
      * The shipperaddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $shipperaddress = null;
+
     /**
      * The receiveraddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $receiveraddress = null;
+
     /**
      * The customLabelText
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $customLabelText = null;
 
     /**
-     * Constructor method for ReceiveRetourLabelRequestBase
+     * Constructor method for ReceiveRetourLabelRequestBase.
      *
      * @uses ReceiveRetourLabelRequestBase::setServices()
      * @uses ReceiveRetourLabelRequestBase::setWeight()
@@ -65,7 +71,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
 
     /**
-     * Get services value
+     * Get services value.
      */
     public function getServices(): ?RetourServices
     {
@@ -73,7 +79,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
 
     /**
-     * Set services value
+     * Set services value.
      */
     public function setServices(?RetourServices $services = null): self
     {
@@ -83,7 +89,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
 
     /**
-     * Get weight value
+     * Get weight value.
      */
     public function getWeight(): ?string
     {
@@ -91,7 +97,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
 
     /**
-     * Set weight value
+     * Set weight value.
      */
     public function setWeight(?string $weight = null): self
     {
@@ -105,7 +111,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
 
     /**
-     * Get shipperaddress value
+     * Get shipperaddress value.
      */
     public function getShipperaddress(): ?Address
     {
@@ -113,7 +119,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
 
     /**
-     * Set shipperaddress value
+     * Set shipperaddress value.
      */
     public function setShipperaddress(?Address $shipperaddress = null): self
     {
@@ -123,7 +129,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
 
     /**
-     * Get receiveraddress value
+     * Get receiveraddress value.
      */
     public function getReceiveraddress(): ?Address
     {
@@ -131,7 +137,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
 
     /**
-     * Set receiveraddress value
+     * Set receiveraddress value.
      */
     public function setReceiveraddress(?Address $receiveraddress = null): self
     {
@@ -141,7 +147,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
 
     /**
-     * Get customLabelText value
+     * Get customLabelText value.
      */
     public function getCustomLabelText(): ?string
     {
@@ -149,7 +155,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
 
     /**
-     * Set customLabelText value
+     * Set customLabelText value.
      */
     public function setCustomLabelText(?string $customLabelText = null): self
     {

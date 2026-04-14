@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for UpdateRdvShipmentDataRequest StructType
+ * This class stands for UpdateRdvShipmentDataRequest StructType.
  */
 #[\AllowDynamicProperties]
 class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
@@ -12,33 +14,36 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
      * The Address
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvAddress $Address = null;
+
     /**
      * The DeliveryInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvDeliveryInfo $DeliveryInfo = null;
+
     /**
      * The EsnInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvEsnInfo $EsnInfo = null;
+
     /**
      * The AdditionalData
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvData $AdditionalData = null;
 
     /**
-     * Constructor method for UpdateRdvShipmentDataRequest
+     * Constructor method for UpdateRdvShipmentDataRequest.
      *
      * @uses UpdateRdvShipmentDataRequest::setAddress()
      * @uses UpdateRdvShipmentDataRequest::setDeliveryInfo()
@@ -56,7 +61,7 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get Address value
+     * Get Address value.
      */
     public function getAddress(): ?RdvAddress
     {
@@ -64,7 +69,7 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set Address value
+     * Set Address value.
      */
     public function setAddress(?RdvAddress $address = null): self
     {
@@ -74,7 +79,7 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get DeliveryInfo value
+     * Get DeliveryInfo value.
      */
     public function getDeliveryInfo(): ?RdvDeliveryInfo
     {
@@ -82,7 +87,7 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set DeliveryInfo value
+     * Set DeliveryInfo value.
      */
     public function setDeliveryInfo(?RdvDeliveryInfo $deliveryInfo = null): self
     {
@@ -92,7 +97,7 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get EsnInfo value
+     * Get EsnInfo value.
      */
     public function getEsnInfo(): ?RdvEsnInfo
     {
@@ -100,7 +105,7 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set EsnInfo value
+     * Set EsnInfo value.
      */
     public function setEsnInfo(?RdvEsnInfo $esnInfo = null): self
     {
@@ -110,7 +115,7 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get AdditionalData value
+     * Get AdditionalData value.
      */
     public function getAdditionalData(): ?RdvData
     {
@@ -118,7 +123,7 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set AdditionalData value
+     * Set AdditionalData value.
      */
     public function setAdditionalData(?RdvData $additionalData = null): self
     {

@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ShipmentRequestBcBase StructType
+ * This class stands for ShipmentRequestBcBase StructType.
  */
 #[\AllowDynamicProperties]
 class ShipmentRequestBcBase extends GetShipmentRequestBase
@@ -12,27 +14,29 @@ class ShipmentRequestBcBase extends GetShipmentRequestBase
      * The Barcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Barcode = null;
+
     /**
      * The BarcodeId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BarcodeId = null;
+
     /**
      * The BarcodeSource
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?int $BarcodeSource;
 
     /**
-     * Constructor method for ShipmentRequestBcBase
+     * Constructor method for ShipmentRequestBcBase.
      *
      * @uses ShipmentRequestBcBase::setBarcode()
      * @uses ShipmentRequestBcBase::setBarcodeId()
@@ -48,7 +52,7 @@ class ShipmentRequestBcBase extends GetShipmentRequestBase
     }
 
     /**
-     * Get Barcode value
+     * Get Barcode value.
      */
     public function getBarcode(): ?string
     {
@@ -56,7 +60,7 @@ class ShipmentRequestBcBase extends GetShipmentRequestBase
     }
 
     /**
-     * Set Barcode value
+     * Set Barcode value.
      */
     public function setBarcode(?string $barcode = null): self
     {
@@ -70,7 +74,7 @@ class ShipmentRequestBcBase extends GetShipmentRequestBase
     }
 
     /**
-     * Get BarcodeId value
+     * Get BarcodeId value.
      */
     public function getBarcodeId(): ?string
     {
@@ -78,7 +82,7 @@ class ShipmentRequestBcBase extends GetShipmentRequestBase
     }
 
     /**
-     * Set BarcodeId value
+     * Set BarcodeId value.
      */
     public function setBarcodeId(?string $barcodeId = null): self
     {
@@ -92,7 +96,7 @@ class ShipmentRequestBcBase extends GetShipmentRequestBase
     }
 
     /**
-     * Get BarcodeSource value
+     * Get BarcodeSource value.
      */
     public function getBarcodeSource(): int
     {
@@ -100,7 +104,7 @@ class ShipmentRequestBcBase extends GetShipmentRequestBase
     }
 
     /**
-     * Set BarcodeSource value
+     * Set BarcodeSource value.
      */
     public function setBarcodeSource(?int $barcodeSource): self
     {

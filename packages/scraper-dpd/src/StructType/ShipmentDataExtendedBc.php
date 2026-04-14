@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ShipmentDataExtendedBc StructType
+ * This class stands for ShipmentDataExtendedBc StructType.
  */
 #[\AllowDynamicProperties]
 class ShipmentDataExtendedBc extends ShipmentDataExtendedBcBase
@@ -12,12 +14,12 @@ class ShipmentDataExtendedBc extends ShipmentDataExtendedBcBase
      * The IsPostman
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $IsPostman;
 
     /**
-     * Constructor method for ShipmentDataExtendedBc
+     * Constructor method for ShipmentDataExtendedBc.
      *
      * @uses ShipmentDataExtendedBc::setIsPostman()
      */
@@ -29,7 +31,7 @@ class ShipmentDataExtendedBc extends ShipmentDataExtendedBcBase
     }
 
     /**
-     * Get IsPostman value
+     * Get IsPostman value.
      */
     public function getIsPostman(): bool
     {
@@ -37,7 +39,7 @@ class ShipmentDataExtendedBc extends ShipmentDataExtendedBcBase
     }
 
     /**
-     * Set IsPostman value
+     * Set IsPostman value.
      */
     public function setIsPostman(bool $isPostman): self
     {

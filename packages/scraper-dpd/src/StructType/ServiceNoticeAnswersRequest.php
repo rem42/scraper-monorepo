@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ServiceNoticeAnswersRequest StructType
+ * This class stands for ServiceNoticeAnswersRequest StructType.
  */
 #[\AllowDynamicProperties]
 class ServiceNoticeAnswersRequest extends AbstractStructBase
@@ -14,19 +16,20 @@ class ServiceNoticeAnswersRequest extends AbstractStructBase
      * The type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $type;
+
     /**
      * The language
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $language = null;
 
     /**
-     * Constructor method for ServiceNoticeAnswersRequest
+     * Constructor method for ServiceNoticeAnswersRequest.
      *
      * @uses ServiceNoticeAnswersRequest::setType()
      * @uses ServiceNoticeAnswersRequest::setLanguage()
@@ -40,7 +43,7 @@ class ServiceNoticeAnswersRequest extends AbstractStructBase
     }
 
     /**
-     * Get type value
+     * Get type value.
      */
     public function getType(): string
     {
@@ -48,7 +51,7 @@ class ServiceNoticeAnswersRequest extends AbstractStructBase
     }
 
     /**
-     * Set type value
+     * Set type value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\ServiceNoticeType::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\ServiceNoticeType::getValidValues()
@@ -67,7 +70,7 @@ class ServiceNoticeAnswersRequest extends AbstractStructBase
     }
 
     /**
-     * Get language value
+     * Get language value.
      */
     public function getLanguage(): ?string
     {
@@ -75,7 +78,7 @@ class ServiceNoticeAnswersRequest extends AbstractStructBase
     }
 
     /**
-     * Set language value
+     * Set language value.
      */
     public function setLanguage(?string $language = null): self
     {

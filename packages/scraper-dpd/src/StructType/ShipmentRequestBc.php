@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ShipmentRequestBc StructType
+ * This class stands for ShipmentRequestBc StructType.
  */
 #[\AllowDynamicProperties]
 class ShipmentRequestBc extends ShipmentRequestBcBase
@@ -12,20 +14,21 @@ class ShipmentRequestBc extends ShipmentRequestBcBase
      * The Language
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Language = null;
+
     /**
      * The GetServices
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?bool $GetServices;
 
     /**
-     * Constructor method for ShipmentRequestBc
+     * Constructor method for ShipmentRequestBc.
      *
      * @uses ShipmentRequestBc::setLanguage()
      * @uses ShipmentRequestBc::setGetServices()
@@ -39,7 +42,7 @@ class ShipmentRequestBc extends ShipmentRequestBcBase
     }
 
     /**
-     * Get Language value
+     * Get Language value.
      */
     public function getLanguage(): ?string
     {
@@ -47,7 +50,7 @@ class ShipmentRequestBc extends ShipmentRequestBcBase
     }
 
     /**
-     * Set Language value
+     * Set Language value.
      */
     public function setLanguage(?string $language = null): self
     {
@@ -61,7 +64,7 @@ class ShipmentRequestBc extends ShipmentRequestBcBase
     }
 
     /**
-     * Get GetServices value
+     * Get GetServices value.
      */
     public function getGetServices(): bool
     {
@@ -69,7 +72,7 @@ class ShipmentRequestBc extends ShipmentRequestBcBase
     }
 
     /**
-     * Set GetServices value
+     * Set GetServices value.
      */
     public function setGetServices(?bool $getServices): self
     {

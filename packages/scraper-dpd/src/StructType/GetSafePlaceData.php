@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetSafePlaceData StructType
+ * This class stands for GetSafePlaceData StructType.
  */
 #[\AllowDynamicProperties]
 class GetSafePlaceData extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetSafePlaceData extends AbstractStructBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetSafePlaceDataRequest $request = null;
 
     /**
-     * Constructor method for GetSafePlaceData
+     * Constructor method for GetSafePlaceData.
      *
      * @uses GetSafePlaceData::setRequest()
      */
@@ -31,7 +33,7 @@ class GetSafePlaceData extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?GetSafePlaceDataRequest
     {
@@ -39,7 +41,7 @@ class GetSafePlaceData extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?GetSafePlaceDataRequest $request = null): self
     {

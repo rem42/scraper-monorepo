@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for TerminateCollectionRequestBc StructType
+ * This class stands for TerminateCollectionRequestBc StructType.
  */
 #[\AllowDynamicProperties]
 class TerminateCollectionRequestBc extends TerminateCollectionRequestBase
@@ -12,19 +14,20 @@ class TerminateCollectionRequestBc extends TerminateCollectionRequestBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?TerminateCollectionRequestBc $request = null;
+
     /**
      * The barcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $barcode = null;
 
     /**
-     * Constructor method for TerminateCollectionRequestBc
+     * Constructor method for TerminateCollectionRequestBc.
      *
      * @uses TerminateCollectionRequestBc::setRequest()
      * @uses TerminateCollectionRequestBc::setBarcode()
@@ -38,7 +41,7 @@ class TerminateCollectionRequestBc extends TerminateCollectionRequestBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?self
     {
@@ -46,7 +49,7 @@ class TerminateCollectionRequestBc extends TerminateCollectionRequestBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?self $request = null): self
     {
@@ -56,7 +59,7 @@ class TerminateCollectionRequestBc extends TerminateCollectionRequestBase
     }
 
     /**
-     * Get barcode value
+     * Get barcode value.
      */
     public function getBarcode(): ?string
     {
@@ -64,7 +67,7 @@ class TerminateCollectionRequestBc extends TerminateCollectionRequestBase
     }
 
     /**
-     * Set barcode value
+     * Set barcode value.
      */
     public function setBarcode(?string $barcode = null): self
     {

@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for SetContainerRequest StructType
+ * This class stands for SetContainerRequest StructType.
  */
 #[\AllowDynamicProperties]
 class SetContainerRequest extends AbstractStructBase
@@ -14,27 +16,29 @@ class SetContainerRequest extends AbstractStructBase
      * The LabelFormat
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $LabelFormat;
+
     /**
      * The SubAcc
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $SubAcc = null;
+
     /**
      * The SecurityID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?IdentificationObject $SecurityID;
 
     /**
-     * Constructor method for SetContainerRequest
+     * Constructor method for SetContainerRequest.
      *
      * @uses SetContainerRequest::setLabelFormat()
      * @uses SetContainerRequest::setSubAcc()
@@ -50,7 +54,7 @@ class SetContainerRequest extends AbstractStructBase
     }
 
     /**
-     * Get LabelFormat value
+     * Get LabelFormat value.
      */
     public function getLabelFormat(): string
     {
@@ -58,7 +62,7 @@ class SetContainerRequest extends AbstractStructBase
     }
 
     /**
-     * Set LabelFormat value
+     * Set LabelFormat value.
      *
      * @uses \Scraper\ScraperColisPrive\EnumType\EnumLabelFormat::valueIsValid()
      * @uses \Scraper\ScraperColisPrive\EnumType\EnumLabelFormat::getValidValues()
@@ -77,7 +81,7 @@ class SetContainerRequest extends AbstractStructBase
     }
 
     /**
-     * Get SubAcc value
+     * Get SubAcc value.
      */
     public function getSubAcc(): ?string
     {
@@ -85,7 +89,7 @@ class SetContainerRequest extends AbstractStructBase
     }
 
     /**
-     * Set SubAcc value
+     * Set SubAcc value.
      */
     public function setSubAcc(?string $subAcc = null): self
     {
@@ -99,7 +103,7 @@ class SetContainerRequest extends AbstractStructBase
     }
 
     /**
-     * Get SecurityID value
+     * Get SecurityID value.
      */
     public function getSecurityID(): IdentificationObject
     {
@@ -107,7 +111,7 @@ class SetContainerRequest extends AbstractStructBase
     }
 
     /**
-     * Set SecurityID value
+     * Set SecurityID value.
      */
     public function setSecurityID(?IdentificationObject $securityID): self
     {

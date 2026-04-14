@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CreateCollectionRequestBcResponse StructType
+ * This class stands for CreateCollectionRequestBcResponse StructType.
  */
 #[\AllowDynamicProperties]
 class CreateCollectionRequestBcResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class CreateCollectionRequestBcResponse extends AbstractStructBase
      * The CreateCollectionRequestBcResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfShipmentBc $CreateCollectionRequestBcResult = null;
 
     /**
-     * Constructor method for CreateCollectionRequestBcResponse
+     * Constructor method for CreateCollectionRequestBcResponse.
      *
      * @uses CreateCollectionRequestBcResponse::setCreateCollectionRequestBcResult()
      */
@@ -31,7 +33,7 @@ class CreateCollectionRequestBcResponse extends AbstractStructBase
     }
 
     /**
-     * Get CreateCollectionRequestBcResult value
+     * Get CreateCollectionRequestBcResult value.
      */
     public function getCreateCollectionRequestBcResult(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfShipmentBc
     {
@@ -39,7 +41,7 @@ class CreateCollectionRequestBcResponse extends AbstractStructBase
     }
 
     /**
-     * Set CreateCollectionRequestBcResult value
+     * Set CreateCollectionRequestBcResult value.
      */
     public function setCreateCollectionRequestBcResult(?\Scraper\ScraperDPD\ArrayType\ArrayOfShipmentBc $createCollectionRequestBcResult = null): self
     {

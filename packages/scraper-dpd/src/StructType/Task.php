@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Task StructType
+ * This class stands for Task StructType.
  */
 #[\AllowDynamicProperties]
 class Task extends AbstractStructBase
@@ -14,103 +16,116 @@ class Task extends AbstractStructBase
      * The NotProcessed
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $NotProcessed;
+
     /**
      * The Finished
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $Finished;
+
     /**
      * The CreatedAt
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $CreatedAt;
+
     /**
      * The OnPositionAt
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $OnPositionAt;
+
     /**
      * The FinishedAt
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $FinishedAt;
+
     /**
      * The VisitCounter
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $VisitCounter;
+
     /**
      * The TaskId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $TaskId;
+
     /**
      * The IsB2C
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $IsB2C;
+
     /**
      * The Type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Type = null;
+
     /**
      * The Parcels
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfCNOTParcel $Parcels = null;
+
     /**
      * The ContactName
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ContactName = null;
+
     /**
      * The Location
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Location $Location = null;
+
     /**
      * The Rendezvous
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Rendezvous $Rendezvous = null;
+
     /**
      * The PhoneCalls
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfPhoneCall $PhoneCalls = null;
 
     /**
-     * Constructor method for Task
+     * Constructor method for Task.
      *
      * @uses Task::setNotProcessed()
      * @uses Task::setFinished()
@@ -148,7 +163,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get NotProcessed value
+     * Get NotProcessed value.
      */
     public function getNotProcessed(): bool
     {
@@ -156,7 +171,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set NotProcessed value
+     * Set NotProcessed value.
      */
     public function setNotProcessed(bool $notProcessed): self
     {
@@ -170,7 +185,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get Finished value
+     * Get Finished value.
      */
     public function getFinished(): bool
     {
@@ -178,7 +193,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set Finished value
+     * Set Finished value.
      */
     public function setFinished(bool $finished): self
     {
@@ -192,7 +207,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get CreatedAt value
+     * Get CreatedAt value.
      */
     public function getCreatedAt(): string
     {
@@ -200,7 +215,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set CreatedAt value
+     * Set CreatedAt value.
      */
     public function setCreatedAt(string $createdAt): self
     {
@@ -214,7 +229,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get OnPositionAt value
+     * Get OnPositionAt value.
      */
     public function getOnPositionAt(): string
     {
@@ -222,7 +237,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set OnPositionAt value
+     * Set OnPositionAt value.
      */
     public function setOnPositionAt(string $onPositionAt): self
     {
@@ -236,7 +251,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get FinishedAt value
+     * Get FinishedAt value.
      */
     public function getFinishedAt(): string
     {
@@ -244,7 +259,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set FinishedAt value
+     * Set FinishedAt value.
      */
     public function setFinishedAt(string $finishedAt): self
     {
@@ -258,7 +273,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get VisitCounter value
+     * Get VisitCounter value.
      */
     public function getVisitCounter(): int
     {
@@ -266,7 +281,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set VisitCounter value
+     * Set VisitCounter value.
      */
     public function setVisitCounter(int $visitCounter): self
     {
@@ -280,7 +295,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get TaskId value
+     * Get TaskId value.
      */
     public function getTaskId(): int
     {
@@ -288,7 +303,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set TaskId value
+     * Set TaskId value.
      */
     public function setTaskId(int $taskId): self
     {
@@ -302,7 +317,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get IsB2C value
+     * Get IsB2C value.
      */
     public function getIsB2C(): bool
     {
@@ -310,7 +325,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set IsB2C value
+     * Set IsB2C value.
      */
     public function setIsB2C(bool $isB2C): self
     {
@@ -324,7 +339,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get Type value
+     * Get Type value.
      */
     public function getType(): ?string
     {
@@ -332,7 +347,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set Type value
+     * Set Type value.
      */
     public function setType(?string $type = null): self
     {
@@ -346,7 +361,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get Parcels value
+     * Get Parcels value.
      */
     public function getParcels(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfCNOTParcel
     {
@@ -354,7 +369,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set Parcels value
+     * Set Parcels value.
      */
     public function setParcels(?\Scraper\ScraperDPD\ArrayType\ArrayOfCNOTParcel $parcels = null): self
     {
@@ -364,7 +379,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get ContactName value
+     * Get ContactName value.
      */
     public function getContactName(): ?string
     {
@@ -372,7 +387,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set ContactName value
+     * Set ContactName value.
      */
     public function setContactName(?string $contactName = null): self
     {
@@ -386,7 +401,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get Location value
+     * Get Location value.
      */
     public function getLocation(): ?Location
     {
@@ -394,7 +409,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set Location value
+     * Set Location value.
      */
     public function setLocation(?Location $location = null): self
     {
@@ -404,7 +419,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get Rendezvous value
+     * Get Rendezvous value.
      */
     public function getRendezvous(): ?Rendezvous
     {
@@ -412,7 +427,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set Rendezvous value
+     * Set Rendezvous value.
      */
     public function setRendezvous(?Rendezvous $rendezvous = null): self
     {
@@ -422,7 +437,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Get PhoneCalls value
+     * Get PhoneCalls value.
      */
     public function getPhoneCalls(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfPhoneCall
     {
@@ -430,7 +445,7 @@ class Task extends AbstractStructBase
     }
 
     /**
-     * Set PhoneCalls value
+     * Set PhoneCalls value.
      */
     public function setPhoneCalls(?\Scraper\ScraperDPD\ArrayType\ArrayOfPhoneCall $phoneCalls = null): self
     {

@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetRetourShipmentDataBcResponse StructType
+ * This class stands for GetRetourShipmentDataBcResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetRetourShipmentDataBcResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetRetourShipmentDataBcResponse extends AbstractStructBase
      * The GetRetourShipmentDataBcResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RetourShipmentDataBc $GetRetourShipmentDataBcResult = null;
 
     /**
-     * Constructor method for GetRetourShipmentDataBcResponse
+     * Constructor method for GetRetourShipmentDataBcResponse.
      *
      * @uses GetRetourShipmentDataBcResponse::setGetRetourShipmentDataBcResult()
      */
@@ -31,7 +33,7 @@ class GetRetourShipmentDataBcResponse extends AbstractStructBase
     }
 
     /**
-     * Get GetRetourShipmentDataBcResult value
+     * Get GetRetourShipmentDataBcResult value.
      */
     public function getGetRetourShipmentDataBcResult(): ?RetourShipmentDataBc
     {
@@ -39,7 +41,7 @@ class GetRetourShipmentDataBcResponse extends AbstractStructBase
     }
 
     /**
-     * Set GetRetourShipmentDataBcResult value
+     * Set GetRetourShipmentDataBcResult value.
      */
     public function setGetRetourShipmentDataBcResult(?RetourShipmentDataBc $getRetourShipmentDataBcResult = null): self
     {

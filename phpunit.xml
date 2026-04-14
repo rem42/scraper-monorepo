@@ -17,7 +17,17 @@
             <exclude>packages/scraper/tests/Fixtures</exclude>
         </testsuite>
         <testsuite name="Scrapers">
+            <directory>packages/scraper-coliprive/tests</directory>
+            <exclude>packages/scraper-coliprive/src</exclude>
             <directory>packages/scraper-colissimo/tests</directory>
+            <directory>packages/scraper-delivengo/tests</directory>
+            <directory>packages/scraper-dpd/tests</directory>
+            <directory>packages/scraper-laposte-apim/tests</directory>
+            <directory>packages/scraper-laposte-postage/tests</directory>
+            <directory>packages/scraper-prestashop/tests</directory>
+            <directory>packages/scraper-tnt/tests</directory>
+            <directory>packages/scraper-ups/tests</directory>
+            <directory>packages/scraper-zakeke/tests</directory>
         </testsuite>
     </testsuites>
 

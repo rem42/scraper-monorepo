@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for AddressIso2Name StructType
+ * This class stands for AddressIso2Name StructType.
  */
 #[\AllowDynamicProperties]
 class AddressIso2Name extends AddressName
@@ -12,12 +14,12 @@ class AddressIso2Name extends AddressName
      * The CountryPrefixIso2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CountryPrefixIso2 = null;
 
     /**
-     * Constructor method for AddressIso2Name
+     * Constructor method for AddressIso2Name.
      *
      * @uses AddressIso2Name::setCountryPrefixIso2()
      */
@@ -29,7 +31,7 @@ class AddressIso2Name extends AddressName
     }
 
     /**
-     * Get CountryPrefixIso2 value
+     * Get CountryPrefixIso2 value.
      */
     public function getCountryPrefixIso2(): ?string
     {
@@ -37,7 +39,7 @@ class AddressIso2Name extends AddressName
     }
 
     /**
-     * Set CountryPrefixIso2 value
+     * Set CountryPrefixIso2 value.
      */
     public function setCountryPrefixIso2(?string $countryPrefixIso2 = null): self
     {

@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for RetourShipmentData StructType
+ * This class stands for RetourShipmentData StructType.
  */
 #[\AllowDynamicProperties]
 class RetourShipmentData extends ShipmentData
@@ -12,12 +14,12 @@ class RetourShipmentData extends ShipmentData
      * The services
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RetourServices $services = null;
 
     /**
-     * Constructor method for RetourShipmentData
+     * Constructor method for RetourShipmentData.
      *
      * @uses RetourShipmentData::setServices()
      */
@@ -29,7 +31,7 @@ class RetourShipmentData extends ShipmentData
     }
 
     /**
-     * Get services value
+     * Get services value.
      */
     public function getServices(): ?RetourServices
     {
@@ -37,7 +39,7 @@ class RetourShipmentData extends ShipmentData
     }
 
     /**
-     * Set services value
+     * Set services value.
      */
     public function setServices(?RetourServices $services = null): self
     {

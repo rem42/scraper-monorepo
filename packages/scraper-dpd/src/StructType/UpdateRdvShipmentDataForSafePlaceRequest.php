@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for UpdateRdvShipmentDataForSafePlaceRequest StructType
+ * This class stands for UpdateRdvShipmentDataForSafePlaceRequest StructType.
  */
 #[\AllowDynamicProperties]
 class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
@@ -12,26 +14,28 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
      * The DeliveryInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvDeliveryInfoSmall $DeliveryInfo = null;
+
     /**
      * The EsnInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvEsnInfo $EsnInfo = null;
+
     /**
      * The Image
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Image = null;
 
     /**
-     * Constructor method for UpdateRdvShipmentDataForSafePlaceRequest
+     * Constructor method for UpdateRdvShipmentDataForSafePlaceRequest.
      *
      * @uses UpdateRdvShipmentDataForSafePlaceRequest::setDeliveryInfo()
      * @uses UpdateRdvShipmentDataForSafePlaceRequest::setEsnInfo()
@@ -47,7 +51,7 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get DeliveryInfo value
+     * Get DeliveryInfo value.
      */
     public function getDeliveryInfo(): ?RdvDeliveryInfoSmall
     {
@@ -55,7 +59,7 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set DeliveryInfo value
+     * Set DeliveryInfo value.
      */
     public function setDeliveryInfo(?RdvDeliveryInfoSmall $deliveryInfo = null): self
     {
@@ -65,7 +69,7 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get EsnInfo value
+     * Get EsnInfo value.
      */
     public function getEsnInfo(): ?RdvEsnInfo
     {
@@ -73,7 +77,7 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set EsnInfo value
+     * Set EsnInfo value.
      */
     public function setEsnInfo(?RdvEsnInfo $esnInfo = null): self
     {
@@ -83,7 +87,7 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get Image value
+     * Get Image value.
      */
     public function getImage(): ?string
     {
@@ -91,7 +95,7 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set Image value
+     * Set Image value.
      */
     public function setImage(?string $image = null): self
     {

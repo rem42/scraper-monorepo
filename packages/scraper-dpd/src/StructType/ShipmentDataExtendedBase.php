@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ShipmentDataExtendedBase StructType
+ * This class stands for ShipmentDataExtendedBase StructType.
  */
 #[\AllowDynamicProperties]
 class ShipmentDataExtendedBase extends AbstractStructBase
@@ -14,145 +16,164 @@ class ShipmentDataExtendedBase extends AbstractStructBase
      * The shipperCenter
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $shipperCenter;
+
     /**
      * The receiverCenter
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $receiverCenter;
+
     /**
      * The receiverTourNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $receiverTourNumber;
+
     /**
      * The customer_centernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $customer_centernumber = null;
+
     /**
      * The customernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $customernumber = null;
+
     /**
      * The weight
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $weight = null;
+
     /**
      * The shipping_date
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $shipping_date = null;
+
     /**
      * The referencenumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $referencenumber = null;
+
     /**
      * The reference2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $reference2 = null;
+
     /**
      * The reference3
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $reference3 = null;
+
     /**
      * The reference4
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $reference4 = null;
+
     /**
      * The referenceInternational
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $referenceInternational = null;
+
     /**
      * The shipperaddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $shipperaddress = null;
+
     /**
      * The customeraddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $customeraddress = null;
+
     /**
      * The receiveraddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $receiveraddress = null;
+
     /**
      * The receiver_contact
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Contact $receiver_contact = null;
+
     /**
      * The pickup_remark
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $pickup_remark = null;
+
     /**
      * The deliver_remark
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $deliver_remark = null;
+
     /**
      * The receiverinfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?AddressInfo $receiverinfo = null;
+
     /**
      * The Dimension
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ParcelDimension $Dimension = null;
 
     /**
-     * Constructor method for ShipmentDataExtendedBase
+     * Constructor method for ShipmentDataExtendedBase.
      *
      * @uses ShipmentDataExtendedBase::setShipperCenter()
      * @uses ShipmentDataExtendedBase::setReceiverCenter()
@@ -202,7 +223,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get shipperCenter value
+     * Get shipperCenter value.
      */
     public function getShipperCenter(): int
     {
@@ -210,7 +231,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set shipperCenter value
+     * Set shipperCenter value.
      */
     public function setShipperCenter(int $shipperCenter): self
     {
@@ -224,7 +245,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get receiverCenter value
+     * Get receiverCenter value.
      */
     public function getReceiverCenter(): int
     {
@@ -232,7 +253,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set receiverCenter value
+     * Set receiverCenter value.
      */
     public function setReceiverCenter(int $receiverCenter): self
     {
@@ -246,7 +267,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get receiverTourNumber value
+     * Get receiverTourNumber value.
      */
     public function getReceiverTourNumber(): int
     {
@@ -254,7 +275,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set receiverTourNumber value
+     * Set receiverTourNumber value.
      */
     public function setReceiverTourNumber(int $receiverTourNumber): self
     {
@@ -268,7 +289,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get customer_centernumber value
+     * Get customer_centernumber value.
      */
     public function getCustomer_centernumber(): ?string
     {
@@ -276,7 +297,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set customer_centernumber value
+     * Set customer_centernumber value.
      */
     public function setCustomer_centernumber(?string $customer_centernumber = null): self
     {
@@ -290,7 +311,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get customernumber value
+     * Get customernumber value.
      */
     public function getCustomernumber(): ?string
     {
@@ -298,7 +319,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set customernumber value
+     * Set customernumber value.
      */
     public function setCustomernumber(?string $customernumber = null): self
     {
@@ -312,7 +333,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get weight value
+     * Get weight value.
      */
     public function getWeight(): ?string
     {
@@ -320,7 +341,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set weight value
+     * Set weight value.
      */
     public function setWeight(?string $weight = null): self
     {
@@ -334,7 +355,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get shipping_date value
+     * Get shipping_date value.
      */
     public function getShipping_date(): ?string
     {
@@ -342,7 +363,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set shipping_date value
+     * Set shipping_date value.
      */
     public function setShipping_date(?string $shipping_date = null): self
     {
@@ -356,7 +377,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get referencenumber value
+     * Get referencenumber value.
      */
     public function getReferencenumber(): ?string
     {
@@ -364,7 +385,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set referencenumber value
+     * Set referencenumber value.
      */
     public function setReferencenumber(?string $referencenumber = null): self
     {
@@ -378,7 +399,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get reference2 value
+     * Get reference2 value.
      */
     public function getReference2(): ?string
     {
@@ -386,7 +407,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set reference2 value
+     * Set reference2 value.
      */
     public function setReference2(?string $reference2 = null): self
     {
@@ -400,7 +421,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get reference3 value
+     * Get reference3 value.
      */
     public function getReference3(): ?string
     {
@@ -408,7 +429,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set reference3 value
+     * Set reference3 value.
      */
     public function setReference3(?string $reference3 = null): self
     {
@@ -422,7 +443,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get reference4 value
+     * Get reference4 value.
      */
     public function getReference4(): ?string
     {
@@ -430,7 +451,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set reference4 value
+     * Set reference4 value.
      */
     public function setReference4(?string $reference4 = null): self
     {
@@ -444,7 +465,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get referenceInternational value
+     * Get referenceInternational value.
      */
     public function getReferenceInternational(): ?string
     {
@@ -452,7 +473,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set referenceInternational value
+     * Set referenceInternational value.
      */
     public function setReferenceInternational(?string $referenceInternational = null): self
     {
@@ -466,7 +487,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get shipperaddress value
+     * Get shipperaddress value.
      */
     public function getShipperaddress(): ?Address
     {
@@ -474,7 +495,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set shipperaddress value
+     * Set shipperaddress value.
      */
     public function setShipperaddress(?Address $shipperaddress = null): self
     {
@@ -484,7 +505,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get customeraddress value
+     * Get customeraddress value.
      */
     public function getCustomeraddress(): ?Address
     {
@@ -492,7 +513,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set customeraddress value
+     * Set customeraddress value.
      */
     public function setCustomeraddress(?Address $customeraddress = null): self
     {
@@ -502,7 +523,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get receiveraddress value
+     * Get receiveraddress value.
      */
     public function getReceiveraddress(): ?Address
     {
@@ -510,7 +531,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set receiveraddress value
+     * Set receiveraddress value.
      */
     public function setReceiveraddress(?Address $receiveraddress = null): self
     {
@@ -520,7 +541,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get receiver_contact value
+     * Get receiver_contact value.
      */
     public function getReceiver_contact(): ?Contact
     {
@@ -528,7 +549,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set receiver_contact value
+     * Set receiver_contact value.
      */
     public function setReceiver_contact(?Contact $receiver_contact = null): self
     {
@@ -538,7 +559,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get pickup_remark value
+     * Get pickup_remark value.
      */
     public function getPickup_remark(): ?string
     {
@@ -546,7 +567,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set pickup_remark value
+     * Set pickup_remark value.
      */
     public function setPickup_remark(?string $pickup_remark = null): self
     {
@@ -560,7 +581,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get deliver_remark value
+     * Get deliver_remark value.
      */
     public function getDeliver_remark(): ?string
     {
@@ -568,7 +589,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set deliver_remark value
+     * Set deliver_remark value.
      */
     public function setDeliver_remark(?string $deliver_remark = null): self
     {
@@ -582,7 +603,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get receiverinfo value
+     * Get receiverinfo value.
      */
     public function getReceiverinfo(): ?AddressInfo
     {
@@ -590,7 +611,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set receiverinfo value
+     * Set receiverinfo value.
      */
     public function setReceiverinfo(?AddressInfo $receiverinfo = null): self
     {
@@ -600,7 +621,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Get Dimension value
+     * Get Dimension value.
      */
     public function getDimension(): ?ParcelDimension
     {
@@ -608,7 +629,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
 
     /**
-     * Set Dimension value
+     * Set Dimension value.
      */
     public function setDimension(?ParcelDimension $dimension = null): self
     {

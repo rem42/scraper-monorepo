@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ReceiveRetourLabelBcRequest StructType
+ * This class stands for ReceiveRetourLabelBcRequest StructType.
  */
 #[\AllowDynamicProperties]
 class ReceiveRetourLabelBcRequest extends ReceiveRetourLabelRequestBase
@@ -12,19 +14,20 @@ class ReceiveRetourLabelBcRequest extends ReceiveRetourLabelRequestBase
      * The shipmentNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $shipmentNumber = null;
+
     /**
      * The customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $customer = null;
 
     /**
-     * Constructor method for ReceiveRetourLabelBcRequest
+     * Constructor method for ReceiveRetourLabelBcRequest.
      *
      * @uses ReceiveRetourLabelBcRequest::setShipmentNumber()
      * @uses ReceiveRetourLabelBcRequest::setCustomer()
@@ -38,7 +41,7 @@ class ReceiveRetourLabelBcRequest extends ReceiveRetourLabelRequestBase
     }
 
     /**
-     * Get shipmentNumber value
+     * Get shipmentNumber value.
      */
     public function getShipmentNumber(): ?string
     {
@@ -46,7 +49,7 @@ class ReceiveRetourLabelBcRequest extends ReceiveRetourLabelRequestBase
     }
 
     /**
-     * Set shipmentNumber value
+     * Set shipmentNumber value.
      */
     public function setShipmentNumber(?string $shipmentNumber = null): self
     {
@@ -60,7 +63,7 @@ class ReceiveRetourLabelBcRequest extends ReceiveRetourLabelRequestBase
     }
 
     /**
-     * Get customer value
+     * Get customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -68,7 +71,7 @@ class ReceiveRetourLabelBcRequest extends ReceiveRetourLabelRequestBase
     }
 
     /**
-     * Set customer value
+     * Set customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {

@@ -1,65 +1,74 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 
 /**
- * This class stands for EnumLabelType EnumType
+ * This class stands for EnumLabelType EnumType.
  */
 class EnumLabelType extends AbstractStructEnumBase
 {
     /**
-     * Constant for value 'CP'
+     * Constant for value 'CP'.
      *
      * @return string 'CP'
      */
     public const VALUE_CP = 'CP';
+
     /**
-     * Constant for value 'TT'
+     * Constant for value 'TT'.
      *
      * @return string 'TT'
      */
     public const VALUE_TT = 'TT';
+
     /**
-     * Constant for value 'CE'
+     * Constant for value 'CE'.
      *
      * @return string 'CE'
      */
     public const VALUE_CE = 'CE';
+
     /**
-     * Constant for value 'CS'
+     * Constant for value 'CS'.
      *
      * @return string 'CS'
      */
     public const VALUE_CS = 'CS';
+
     /**
-     * Constant for value 'IP'
+     * Constant for value 'IP'.
      *
      * @return string 'IP'
      */
     public const VALUE_IP = 'IP';
+
     /**
-     * Constant for value 'RL'
+     * Constant for value 'RL'.
      *
      * @return string 'RL'
      */
     public const VALUE_RL = 'RL';
+
     /**
-     * Constant for value 'MR'
+     * Constant for value 'MR'.
      *
      * @return string 'MR'
      */
     public const VALUE_MR = 'MR';
+
     /**
-     * Constant for value 'RV'
+     * Constant for value 'RV'.
      *
      * @return string 'RV'
      */
     public const VALUE_RV = 'RV';
 
     /**
-     * Return allowed values
+     * Return allowed values.
      *
      * @uses self::VALUE_CP
      * @uses self::VALUE_TT

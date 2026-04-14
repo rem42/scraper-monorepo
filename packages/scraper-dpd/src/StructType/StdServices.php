@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for StdServices StructType
+ * This class stands for StdServices StructType.
  */
 #[\AllowDynamicProperties]
 class StdServices extends ContactServices
@@ -12,75 +14,84 @@ class StdServices extends ContactServices
      * The extraInsurance
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ExtraInsurance $extraInsurance = null;
+
     /**
      * The parcelshop
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ParcelShop $parcelshop = null;
+
     /**
      * The reverse
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Reverse $reverse = null;
+
     /**
      * The reverseInverseReturn
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ReverseInverseReturn $reverseInverseReturn = null;
+
     /**
      * The reversInverseBcReturn
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ReverseInverseReturnBc $reversInverseBcReturn = null;
+
     /**
      * The autoConsolidation
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?AutoConsolidation $autoConsolidation = null;
+
     /**
      * The pickupAtCustomer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?PickupData $pickupAtCustomer = null;
+
     /**
      * The bic3
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Bic3 $bic3 = null;
+
     /**
      * The sameday
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Sameday $sameday = null;
+
     /**
      * The marketing
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Marketing $marketing = null;
 
     /**
-     * Constructor method for StdServices
+     * Constructor method for StdServices.
      *
      * @uses StdServices::setExtraInsurance()
      * @uses StdServices::setParcelshop()
@@ -110,7 +121,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Get extraInsurance value
+     * Get extraInsurance value.
      */
     public function getExtraInsurance(): ?ExtraInsurance
     {
@@ -118,7 +129,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Set extraInsurance value
+     * Set extraInsurance value.
      */
     public function setExtraInsurance(?ExtraInsurance $extraInsurance = null): self
     {
@@ -128,7 +139,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Get parcelshop value
+     * Get parcelshop value.
      */
     public function getParcelshop(): ?ParcelShop
     {
@@ -136,7 +147,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Set parcelshop value
+     * Set parcelshop value.
      */
     public function setParcelshop(?ParcelShop $parcelshop = null): self
     {
@@ -146,7 +157,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Get reverse value
+     * Get reverse value.
      */
     public function getReverse(): ?Reverse
     {
@@ -154,7 +165,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Set reverse value
+     * Set reverse value.
      */
     public function setReverse(?Reverse $reverse = null): self
     {
@@ -164,7 +175,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Get reverseInverseReturn value
+     * Get reverseInverseReturn value.
      */
     public function getReverseInverseReturn(): ?ReverseInverseReturn
     {
@@ -172,7 +183,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Set reverseInverseReturn value
+     * Set reverseInverseReturn value.
      */
     public function setReverseInverseReturn(?ReverseInverseReturn $reverseInverseReturn = null): self
     {
@@ -182,7 +193,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Get reversInverseBcReturn value
+     * Get reversInverseBcReturn value.
      */
     public function getReversInverseBcReturn(): ?ReverseInverseReturnBc
     {
@@ -190,7 +201,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Set reversInverseBcReturn value
+     * Set reversInverseBcReturn value.
      */
     public function setReversInverseBcReturn(?ReverseInverseReturnBc $reversInverseBcReturn = null): self
     {
@@ -200,7 +211,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Get autoConsolidation value
+     * Get autoConsolidation value.
      */
     public function getAutoConsolidation(): ?AutoConsolidation
     {
@@ -208,7 +219,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Set autoConsolidation value
+     * Set autoConsolidation value.
      */
     public function setAutoConsolidation(?AutoConsolidation $autoConsolidation = null): self
     {
@@ -218,7 +229,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Get pickupAtCustomer value
+     * Get pickupAtCustomer value.
      */
     public function getPickupAtCustomer(): ?PickupData
     {
@@ -226,7 +237,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Set pickupAtCustomer value
+     * Set pickupAtCustomer value.
      */
     public function setPickupAtCustomer(?PickupData $pickupAtCustomer = null): self
     {
@@ -236,7 +247,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Get bic3 value
+     * Get bic3 value.
      */
     public function getBic3(): ?Bic3
     {
@@ -244,7 +255,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Set bic3 value
+     * Set bic3 value.
      */
     public function setBic3(?Bic3 $bic3 = null): self
     {
@@ -254,7 +265,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Get sameday value
+     * Get sameday value.
      */
     public function getSameday(): ?Sameday
     {
@@ -262,7 +273,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Set sameday value
+     * Set sameday value.
      */
     public function setSameday(?Sameday $sameday = null): self
     {
@@ -272,7 +283,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Get marketing value
+     * Get marketing value.
      */
     public function getMarketing(): ?Marketing
     {
@@ -280,7 +291,7 @@ class StdServices extends ContactServices
     }
 
     /**
-     * Set marketing value
+     * Set marketing value.
      */
     public function setMarketing(?Marketing $marketing = null): self
     {

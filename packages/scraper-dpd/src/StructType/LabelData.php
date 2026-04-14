@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for LabelData StructType
+ * This class stands for LabelData StructType.
  */
 #[\AllowDynamicProperties]
 class LabelData extends LabelDataPn
@@ -12,26 +14,28 @@ class LabelData extends LabelDataPn
      * The Bic3Depot
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Bic3Depot = null;
+
     /**
      * The Bic3Number
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Bic3Number = null;
+
     /**
      * The Bic3Checkdigit
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Bic3Checkdigit = null;
 
     /**
-     * Constructor method for LabelData
+     * Constructor method for LabelData.
      *
      * @uses LabelData::setBic3Depot()
      * @uses LabelData::setBic3Number()
@@ -47,7 +51,7 @@ class LabelData extends LabelDataPn
     }
 
     /**
-     * Get Bic3Depot value
+     * Get Bic3Depot value.
      */
     public function getBic3Depot(): ?string
     {
@@ -55,7 +59,7 @@ class LabelData extends LabelDataPn
     }
 
     /**
-     * Set Bic3Depot value
+     * Set Bic3Depot value.
      */
     public function setBic3Depot(?string $bic3Depot = null): self
     {
@@ -69,7 +73,7 @@ class LabelData extends LabelDataPn
     }
 
     /**
-     * Get Bic3Number value
+     * Get Bic3Number value.
      */
     public function getBic3Number(): ?string
     {
@@ -77,7 +81,7 @@ class LabelData extends LabelDataPn
     }
 
     /**
-     * Set Bic3Number value
+     * Set Bic3Number value.
      */
     public function setBic3Number(?string $bic3Number = null): self
     {
@@ -91,7 +95,7 @@ class LabelData extends LabelDataPn
     }
 
     /**
-     * Get Bic3Checkdigit value
+     * Get Bic3Checkdigit value.
      */
     public function getBic3Checkdigit(): ?string
     {
@@ -99,7 +103,7 @@ class LabelData extends LabelDataPn
     }
 
     /**
-     * Set Bic3Checkdigit value
+     * Set Bic3Checkdigit value.
      */
     public function setBic3Checkdigit(?string $bic3Checkdigit = null): self
     {

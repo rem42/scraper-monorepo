@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ContactCollectionRequest StructType
+ * This class stands for ContactCollectionRequest StructType.
  */
 #[\AllowDynamicProperties]
 class ContactCollectionRequest extends Contact
@@ -12,27 +14,29 @@ class ContactCollectionRequest extends Contact
      * The shipper_email
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $shipper_email = null;
+
     /**
      * The shipper_mobil
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $shipper_mobil = null;
+
     /**
      * The shipperNotificationType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $shipperNotificationType;
 
     /**
-     * Constructor method for ContactCollectionRequest
+     * Constructor method for ContactCollectionRequest.
      *
      * @uses ContactCollectionRequest::setShipper_email()
      * @uses ContactCollectionRequest::setShipper_mobil()
@@ -48,7 +52,7 @@ class ContactCollectionRequest extends Contact
     }
 
     /**
-     * Get shipper_email value
+     * Get shipper_email value.
      */
     public function getShipper_email(): ?string
     {
@@ -56,7 +60,7 @@ class ContactCollectionRequest extends Contact
     }
 
     /**
-     * Set shipper_email value
+     * Set shipper_email value.
      */
     public function setShipper_email(?string $shipper_email = null): self
     {
@@ -70,7 +74,7 @@ class ContactCollectionRequest extends Contact
     }
 
     /**
-     * Get shipper_mobil value
+     * Get shipper_mobil value.
      */
     public function getShipper_mobil(): ?string
     {
@@ -78,7 +82,7 @@ class ContactCollectionRequest extends Contact
     }
 
     /**
-     * Set shipper_mobil value
+     * Set shipper_mobil value.
      */
     public function setShipper_mobil(?string $shipper_mobil = null): self
     {
@@ -92,7 +96,7 @@ class ContactCollectionRequest extends Contact
     }
 
     /**
-     * Get shipperNotificationType value
+     * Get shipperNotificationType value.
      */
     public function getShipperNotificationType(): string
     {
@@ -100,7 +104,7 @@ class ContactCollectionRequest extends Contact
     }
 
     /**
-     * Set shipperNotificationType value
+     * Set shipperNotificationType value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\EtypeShipperContact::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\EtypeShipperContact::getValidValues()

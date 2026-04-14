@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for RdvShipmentDataBase StructType
+ * This class stands for RdvShipmentDataBase StructType.
  */
 #[\AllowDynamicProperties]
 class RdvShipmentDataBase extends AbstractStructBase
@@ -14,145 +16,164 @@ class RdvShipmentDataBase extends AbstractStructBase
      * The ParcelOptional
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $ParcelOptional;
+
     /**
      * The SC_CenterNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $SC_CenterNumber;
+
     /**
      * The RC_CenterNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $RC_CenterNumber;
+
     /**
      * The Weight
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected float $Weight;
+
     /**
      * The NumberOfParcelsReal
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $NumberOfParcelsReal;
+
     /**
      * The CustomerRDVProfile
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $CustomerRDVProfile;
+
     /**
      * The SavePlaceRDVAllowed
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $SavePlaceRDVAllowed;
+
     /**
      * The RDVServiceAllowed
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $RDVServiceAllowed;
+
     /**
      * The Predict
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $Predict;
+
     /**
      * The RdvUpdateable
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $RdvUpdateable;
+
     /**
      * The ShippingDate
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ShippingDate = null;
+
     /**
      * The PredictCutOffDate
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PredictCutOffDate = null;
+
     /**
      * The ShipperName
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ShipperName = null;
+
     /**
      * The ReceiverAddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvAddress $ReceiverAddress = null;
+
     /**
      * The ReceiverEmailAddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ReceiverEmailAddress = null;
+
     /**
      * The ReceiverMobileNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ReceiverMobileNumber = null;
+
     /**
      * The ReceiverAltZipCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ReceiverAltZipCode = null;
+
     /**
      * The ShipperInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvDeliveryInfo $ShipperInfo = null;
+
     /**
      * The RdvInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvDeliveryInfo $RdvInfo = null;
+
     /**
      * The Services
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfRdvService $Services = null;
 
     /**
-     * Constructor method for RdvShipmentDataBase
+     * Constructor method for RdvShipmentDataBase.
      *
      * @uses RdvShipmentDataBase::setParcelOptional()
      * @uses RdvShipmentDataBase::setSC_CenterNumber()
@@ -202,7 +223,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get ParcelOptional value
+     * Get ParcelOptional value.
      */
     public function getParcelOptional(): bool
     {
@@ -210,7 +231,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set ParcelOptional value
+     * Set ParcelOptional value.
      */
     public function setParcelOptional(bool $parcelOptional): self
     {
@@ -224,7 +245,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get SC_CenterNumber value
+     * Get SC_CenterNumber value.
      */
     public function getSC_CenterNumber(): int
     {
@@ -232,7 +253,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set SC_CenterNumber value
+     * Set SC_CenterNumber value.
      */
     public function setSC_CenterNumber(int $sC_CenterNumber): self
     {
@@ -246,7 +267,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get RC_CenterNumber value
+     * Get RC_CenterNumber value.
      */
     public function getRC_CenterNumber(): int
     {
@@ -254,7 +275,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set RC_CenterNumber value
+     * Set RC_CenterNumber value.
      */
     public function setRC_CenterNumber(int $rC_CenterNumber): self
     {
@@ -268,7 +289,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get Weight value
+     * Get Weight value.
      */
     public function getWeight(): float
     {
@@ -276,7 +297,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set Weight value
+     * Set Weight value.
      */
     public function setWeight(float $weight): self
     {
@@ -290,7 +311,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get NumberOfParcelsReal value
+     * Get NumberOfParcelsReal value.
      */
     public function getNumberOfParcelsReal(): int
     {
@@ -298,7 +319,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set NumberOfParcelsReal value
+     * Set NumberOfParcelsReal value.
      */
     public function setNumberOfParcelsReal(int $numberOfParcelsReal): self
     {
@@ -312,7 +333,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get CustomerRDVProfile value
+     * Get CustomerRDVProfile value.
      */
     public function getCustomerRDVProfile(): bool
     {
@@ -320,7 +341,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set CustomerRDVProfile value
+     * Set CustomerRDVProfile value.
      */
     public function setCustomerRDVProfile(bool $customerRDVProfile): self
     {
@@ -334,7 +355,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get SavePlaceRDVAllowed value
+     * Get SavePlaceRDVAllowed value.
      */
     public function getSavePlaceRDVAllowed(): bool
     {
@@ -342,7 +363,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set SavePlaceRDVAllowed value
+     * Set SavePlaceRDVAllowed value.
      */
     public function setSavePlaceRDVAllowed(bool $savePlaceRDVAllowed): self
     {
@@ -356,7 +377,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get RDVServiceAllowed value
+     * Get RDVServiceAllowed value.
      */
     public function getRDVServiceAllowed(): bool
     {
@@ -364,7 +385,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set RDVServiceAllowed value
+     * Set RDVServiceAllowed value.
      */
     public function setRDVServiceAllowed(bool $rDVServiceAllowed): self
     {
@@ -378,7 +399,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get Predict value
+     * Get Predict value.
      */
     public function getPredict(): bool
     {
@@ -386,7 +407,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set Predict value
+     * Set Predict value.
      */
     public function setPredict(bool $predict): self
     {
@@ -400,7 +421,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get RdvUpdateable value
+     * Get RdvUpdateable value.
      */
     public function getRdvUpdateable(): bool
     {
@@ -408,7 +429,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set RdvUpdateable value
+     * Set RdvUpdateable value.
      */
     public function setRdvUpdateable(bool $rdvUpdateable): self
     {
@@ -422,7 +443,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get ShippingDate value
+     * Get ShippingDate value.
      */
     public function getShippingDate(): ?string
     {
@@ -430,7 +451,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set ShippingDate value
+     * Set ShippingDate value.
      */
     public function setShippingDate(?string $shippingDate = null): self
     {
@@ -444,7 +465,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get PredictCutOffDate value
+     * Get PredictCutOffDate value.
      */
     public function getPredictCutOffDate(): ?string
     {
@@ -452,7 +473,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set PredictCutOffDate value
+     * Set PredictCutOffDate value.
      */
     public function setPredictCutOffDate(?string $predictCutOffDate = null): self
     {
@@ -466,7 +487,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get ShipperName value
+     * Get ShipperName value.
      */
     public function getShipperName(): ?string
     {
@@ -474,7 +495,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set ShipperName value
+     * Set ShipperName value.
      */
     public function setShipperName(?string $shipperName = null): self
     {
@@ -488,7 +509,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get ReceiverAddress value
+     * Get ReceiverAddress value.
      */
     public function getReceiverAddress(): ?RdvAddress
     {
@@ -496,7 +517,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set ReceiverAddress value
+     * Set ReceiverAddress value.
      */
     public function setReceiverAddress(?RdvAddress $receiverAddress = null): self
     {
@@ -506,7 +527,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get ReceiverEmailAddress value
+     * Get ReceiverEmailAddress value.
      */
     public function getReceiverEmailAddress(): ?string
     {
@@ -514,7 +535,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set ReceiverEmailAddress value
+     * Set ReceiverEmailAddress value.
      */
     public function setReceiverEmailAddress(?string $receiverEmailAddress = null): self
     {
@@ -528,7 +549,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get ReceiverMobileNumber value
+     * Get ReceiverMobileNumber value.
      */
     public function getReceiverMobileNumber(): ?string
     {
@@ -536,7 +557,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set ReceiverMobileNumber value
+     * Set ReceiverMobileNumber value.
      */
     public function setReceiverMobileNumber(?string $receiverMobileNumber = null): self
     {
@@ -550,7 +571,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get ReceiverAltZipCode value
+     * Get ReceiverAltZipCode value.
      */
     public function getReceiverAltZipCode(): ?string
     {
@@ -558,7 +579,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set ReceiverAltZipCode value
+     * Set ReceiverAltZipCode value.
      */
     public function setReceiverAltZipCode(?string $receiverAltZipCode = null): self
     {
@@ -572,7 +593,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get ShipperInfo value
+     * Get ShipperInfo value.
      */
     public function getShipperInfo(): ?RdvDeliveryInfo
     {
@@ -580,7 +601,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set ShipperInfo value
+     * Set ShipperInfo value.
      */
     public function setShipperInfo(?RdvDeliveryInfo $shipperInfo = null): self
     {
@@ -590,7 +611,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get RdvInfo value
+     * Get RdvInfo value.
      */
     public function getRdvInfo(): ?RdvDeliveryInfo
     {
@@ -598,7 +619,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set RdvInfo value
+     * Set RdvInfo value.
      */
     public function setRdvInfo(?RdvDeliveryInfo $rdvInfo = null): self
     {
@@ -608,7 +629,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Get Services value
+     * Get Services value.
      */
     public function getServices(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfRdvService
     {
@@ -616,7 +637,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
 
     /**
-     * Set Services value
+     * Set Services value.
      */
     public function setServices(?\Scraper\ScraperDPD\ArrayType\ArrayOfRdvService $services = null): self
     {

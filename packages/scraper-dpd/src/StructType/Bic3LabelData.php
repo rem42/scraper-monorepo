@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Bic3LabelData StructType
+ * This class stands for Bic3LabelData StructType.
  */
 #[\AllowDynamicProperties]
 class Bic3LabelData extends AbstractStructBase
@@ -14,12 +16,12 @@ class Bic3LabelData extends AbstractStructBase
      * The mode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $mode;
 
     /**
-     * Constructor method for Bic3LabelData
+     * Constructor method for Bic3LabelData.
      *
      * @uses Bic3LabelData::setMode()
      */
@@ -31,7 +33,7 @@ class Bic3LabelData extends AbstractStructBase
     }
 
     /**
-     * Get mode value
+     * Get mode value.
      */
     public function getMode(): string
     {
@@ -39,7 +41,7 @@ class Bic3LabelData extends AbstractStructBase
     }
 
     /**
-     * Set mode value
+     * Set mode value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\EBic3Mode::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\EBic3Mode::getValidValues()

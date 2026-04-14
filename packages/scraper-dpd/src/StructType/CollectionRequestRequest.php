@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for CollectionRequestRequest StructType
+ * This class stands for CollectionRequestRequest StructType.
  */
 #[\AllowDynamicProperties]
 class CollectionRequestRequest extends CollectionRequestRequestBase
@@ -12,48 +14,53 @@ class CollectionRequestRequest extends CollectionRequestRequestBase
      * The pick_date
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $pick_date = null;
+
     /**
      * The time_from
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $time_from = null;
+
     /**
      * The time_to
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $time_to = null;
+
     /**
      * The pick_remark
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $pick_remark = null;
+
     /**
      * The delivery_remark
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $delivery_remark = null;
+
     /**
      * The dayCheckDone
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?bool $dayCheckDone;
 
     /**
-     * Constructor method for CollectionRequestRequest
+     * Constructor method for CollectionRequestRequest.
      *
      * @uses CollectionRequestRequest::setPick_date()
      * @uses CollectionRequestRequest::setTime_from()
@@ -75,7 +82,7 @@ class CollectionRequestRequest extends CollectionRequestRequestBase
     }
 
     /**
-     * Get pick_date value
+     * Get pick_date value.
      */
     public function getPick_date(): ?string
     {
@@ -83,7 +90,7 @@ class CollectionRequestRequest extends CollectionRequestRequestBase
     }
 
     /**
-     * Set pick_date value
+     * Set pick_date value.
      */
     public function setPick_date(?string $pick_date = null): self
     {
@@ -97,7 +104,7 @@ class CollectionRequestRequest extends CollectionRequestRequestBase
     }
 
     /**
-     * Get time_from value
+     * Get time_from value.
      */
     public function getTime_from(): ?string
     {
@@ -105,7 +112,7 @@ class CollectionRequestRequest extends CollectionRequestRequestBase
     }
 
     /**
-     * Set time_from value
+     * Set time_from value.
      */
     public function setTime_from(?string $time_from = null): self
     {
@@ -119,7 +126,7 @@ class CollectionRequestRequest extends CollectionRequestRequestBase
     }
 
     /**
-     * Get time_to value
+     * Get time_to value.
      */
     public function getTime_to(): ?string
     {
@@ -127,7 +134,7 @@ class CollectionRequestRequest extends CollectionRequestRequestBase
     }
 
     /**
-     * Set time_to value
+     * Set time_to value.
      */
     public function setTime_to(?string $time_to = null): self
     {
@@ -141,7 +148,7 @@ class CollectionRequestRequest extends CollectionRequestRequestBase
     }
 
     /**
-     * Get pick_remark value
+     * Get pick_remark value.
      */
     public function getPick_remark(): ?string
     {
@@ -149,7 +156,7 @@ class CollectionRequestRequest extends CollectionRequestRequestBase
     }
 
     /**
-     * Set pick_remark value
+     * Set pick_remark value.
      */
     public function setPick_remark(?string $pick_remark = null): self
     {
@@ -163,7 +170,7 @@ class CollectionRequestRequest extends CollectionRequestRequestBase
     }
 
     /**
-     * Get delivery_remark value
+     * Get delivery_remark value.
      */
     public function getDelivery_remark(): ?string
     {
@@ -171,7 +178,7 @@ class CollectionRequestRequest extends CollectionRequestRequestBase
     }
 
     /**
-     * Set delivery_remark value
+     * Set delivery_remark value.
      */
     public function setDelivery_remark(?string $delivery_remark = null): self
     {
@@ -185,7 +192,7 @@ class CollectionRequestRequest extends CollectionRequestRequestBase
     }
 
     /**
-     * Get dayCheckDone value
+     * Get dayCheckDone value.
      */
     public function getDayCheckDone(): bool
     {
@@ -193,7 +200,7 @@ class CollectionRequestRequest extends CollectionRequestRequestBase
     }
 
     /**
-     * Set dayCheckDone value
+     * Set dayCheckDone value.
      */
     public function setDayCheckDone(?bool $dayCheckDone): self
     {

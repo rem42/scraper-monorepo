@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ParcelInfo StructType
+ * This class stands for ParcelInfo StructType.
  */
 #[\AllowDynamicProperties]
 class ParcelInfo extends AbstractStructBase
@@ -14,19 +16,20 @@ class ParcelInfo extends AbstractStructBase
      * The BarcodeSource
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BarcodeSource = null;
+
     /**
      * The BarcodeId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BarcodeId = null;
 
     /**
-     * Constructor method for ParcelInfo
+     * Constructor method for ParcelInfo.
      *
      * @uses ParcelInfo::setBarcodeSource()
      * @uses ParcelInfo::setBarcodeId()
@@ -40,7 +43,7 @@ class ParcelInfo extends AbstractStructBase
     }
 
     /**
-     * Get BarcodeSource value
+     * Get BarcodeSource value.
      */
     public function getBarcodeSource(): ?string
     {
@@ -48,7 +51,7 @@ class ParcelInfo extends AbstractStructBase
     }
 
     /**
-     * Set BarcodeSource value
+     * Set BarcodeSource value.
      */
     public function setBarcodeSource(?string $barcodeSource = null): self
     {
@@ -62,7 +65,7 @@ class ParcelInfo extends AbstractStructBase
     }
 
     /**
-     * Get BarcodeId value
+     * Get BarcodeId value.
      */
     public function getBarcodeId(): ?string
     {
@@ -70,7 +73,7 @@ class ParcelInfo extends AbstractStructBase
     }
 
     /**
-     * Set BarcodeId value
+     * Set BarcodeId value.
      */
     public function setBarcodeId(?string $barcodeId = null): self
     {

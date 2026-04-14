@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for UpdateRdvShipmentDataForSafePlaceResponse StructType
+ * This class stands for UpdateRdvShipmentDataForSafePlaceResponse StructType.
  */
 #[\AllowDynamicProperties]
 class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataResponse
@@ -12,26 +14,28 @@ class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataRes
      * The UpdateRdvShipmentDataForSafePlaceResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?UpdateRdvShipmentDataForSafePlaceResponse $UpdateRdvShipmentDataForSafePlaceResult = null;
+
     /**
      * The Code
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Code = null;
+
     /**
      * The Barcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Barcode = null;
 
     /**
-     * Constructor method for UpdateRdvShipmentDataForSafePlaceResponse
+     * Constructor method for UpdateRdvShipmentDataForSafePlaceResponse.
      *
      * @uses UpdateRdvShipmentDataForSafePlaceResponse::setUpdateRdvShipmentDataForSafePlaceResult()
      * @uses UpdateRdvShipmentDataForSafePlaceResponse::setCode()
@@ -47,7 +51,7 @@ class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataRes
     }
 
     /**
-     * Get UpdateRdvShipmentDataForSafePlaceResult value
+     * Get UpdateRdvShipmentDataForSafePlaceResult value.
      */
     public function getUpdateRdvShipmentDataForSafePlaceResult(): ?self
     {
@@ -55,7 +59,7 @@ class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataRes
     }
 
     /**
-     * Set UpdateRdvShipmentDataForSafePlaceResult value
+     * Set UpdateRdvShipmentDataForSafePlaceResult value.
      */
     public function setUpdateRdvShipmentDataForSafePlaceResult(?self $updateRdvShipmentDataForSafePlaceResult = null): self
     {
@@ -65,7 +69,7 @@ class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataRes
     }
 
     /**
-     * Get Code value
+     * Get Code value.
      */
     public function getCode(): ?string
     {
@@ -73,7 +77,7 @@ class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataRes
     }
 
     /**
-     * Set Code value
+     * Set Code value.
      */
     public function setCode(?string $code = null): self
     {
@@ -87,7 +91,7 @@ class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataRes
     }
 
     /**
-     * Get Barcode value
+     * Get Barcode value.
      */
     public function getBarcode(): ?string
     {
@@ -95,7 +99,7 @@ class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataRes
     }
 
     /**
-     * Set Barcode value
+     * Set Barcode value.
      */
     public function setBarcode(?string $barcode = null): self
     {

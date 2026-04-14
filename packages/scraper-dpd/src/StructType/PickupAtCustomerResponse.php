@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for PickupAtCustomerResponse StructType
+ * This class stands for PickupAtCustomerResponse StructType.
  */
 #[\AllowDynamicProperties]
 class PickupAtCustomerResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class PickupAtCustomerResponse extends AbstractStructBase
      * The Sin
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $Sin;
 
     /**
-     * Constructor method for PickupAtCustomerResponse
+     * Constructor method for PickupAtCustomerResponse.
      *
      * @uses PickupAtCustomerResponse::setSin()
      */
@@ -31,7 +33,7 @@ class PickupAtCustomerResponse extends AbstractStructBase
     }
 
     /**
-     * Get Sin value
+     * Get Sin value.
      */
     public function getSin(): int
     {
@@ -39,7 +41,7 @@ class PickupAtCustomerResponse extends AbstractStructBase
     }
 
     /**
-     * Set Sin value
+     * Set Sin value.
      */
     public function setSin(int $sin): self
     {

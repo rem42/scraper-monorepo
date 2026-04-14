@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Location StructType
+ * This class stands for Location StructType.
  */
 #[\AllowDynamicProperties]
 class Location extends AbstractStructBase
@@ -14,26 +16,28 @@ class Location extends AbstractStructBase
      * The TimeStamp
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $TimeStamp;
+
     /**
      * The Latitude
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected float $Latitude;
+
     /**
      * The Longitude
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected float $Longitude;
 
     /**
-     * Constructor method for Location
+     * Constructor method for Location.
      *
      * @uses Location::setTimeStamp()
      * @uses Location::setLatitude()
@@ -49,7 +53,7 @@ class Location extends AbstractStructBase
     }
 
     /**
-     * Get TimeStamp value
+     * Get TimeStamp value.
      */
     public function getTimeStamp(): string
     {
@@ -57,7 +61,7 @@ class Location extends AbstractStructBase
     }
 
     /**
-     * Set TimeStamp value
+     * Set TimeStamp value.
      */
     public function setTimeStamp(string $timeStamp): self
     {
@@ -71,7 +75,7 @@ class Location extends AbstractStructBase
     }
 
     /**
-     * Get Latitude value
+     * Get Latitude value.
      */
     public function getLatitude(): float
     {
@@ -79,7 +83,7 @@ class Location extends AbstractStructBase
     }
 
     /**
-     * Set Latitude value
+     * Set Latitude value.
      */
     public function setLatitude(float $latitude): self
     {
@@ -93,7 +97,7 @@ class Location extends AbstractStructBase
     }
 
     /**
-     * Get Longitude value
+     * Get Longitude value.
      */
     public function getLongitude(): float
     {
@@ -101,7 +105,7 @@ class Location extends AbstractStructBase
     }
 
     /**
-     * Set Longitude value
+     * Set Longitude value.
      */
     public function setLongitude(float $longitude): self
     {

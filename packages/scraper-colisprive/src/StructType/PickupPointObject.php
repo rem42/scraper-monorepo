@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for PickupPointObject StructType
+ * This class stands for PickupPointObject StructType.
  */
 #[\AllowDynamicProperties]
 class PickupPointObject extends AbstractStructBase
@@ -14,89 +16,100 @@ class PickupPointObject extends AbstractStructBase
      * The PckCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PckCode = null;
+
     /**
      * The PckName
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PckName = null;
+
     /**
      * The PckAdd
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?AddressObject $PckAdd = null;
+
     /**
      * The PckPict
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PckPict = null;
+
     /**
      * The PckLocHints
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PckLocHints = null;
+
     /**
      * The PckMonHrs
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PckMonHrs = null;
+
     /**
      * The PckTueHrs
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PckTueHrs = null;
+
     /**
      * The PckWedHrs
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PckWedHrs = null;
+
     /**
      * The PckThuHrs
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PckThuHrs = null;
+
     /**
      * The PckFriHrs
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PckFriHrs = null;
+
     /**
      * The PckSatHrs
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PckSatHrs = null;
+
     /**
      * The PckSunHrs
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PckSunHrs = null;
 
     /**
-     * Constructor method for PickupPointObject
+     * Constructor method for PickupPointObject.
      *
      * @uses PickupPointObject::setPckCode()
      * @uses PickupPointObject::setPckName()
@@ -130,7 +143,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Get PckCode value
+     * Get PckCode value.
      */
     public function getPckCode(): ?string
     {
@@ -138,7 +151,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Set PckCode value
+     * Set PckCode value.
      */
     public function setPckCode(?string $pckCode = null): self
     {
@@ -152,7 +165,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Get PckName value
+     * Get PckName value.
      */
     public function getPckName(): ?string
     {
@@ -160,7 +173,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Set PckName value
+     * Set PckName value.
      */
     public function setPckName(?string $pckName = null): self
     {
@@ -174,7 +187,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Get PckAdd value
+     * Get PckAdd value.
      */
     public function getPckAdd(): ?AddressObject
     {
@@ -182,7 +195,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Set PckAdd value
+     * Set PckAdd value.
      */
     public function setPckAdd(?AddressObject $pckAdd = null): self
     {
@@ -192,7 +205,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Get PckPict value
+     * Get PckPict value.
      */
     public function getPckPict(): ?string
     {
@@ -200,7 +213,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Set PckPict value
+     * Set PckPict value.
      */
     public function setPckPict(?string $pckPict = null): self
     {
@@ -214,7 +227,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Get PckLocHints value
+     * Get PckLocHints value.
      */
     public function getPckLocHints(): ?string
     {
@@ -222,7 +235,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Set PckLocHints value
+     * Set PckLocHints value.
      */
     public function setPckLocHints(?string $pckLocHints = null): self
     {
@@ -236,7 +249,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Get PckMonHrs value
+     * Get PckMonHrs value.
      */
     public function getPckMonHrs(): ?string
     {
@@ -244,7 +257,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Set PckMonHrs value
+     * Set PckMonHrs value.
      */
     public function setPckMonHrs(?string $pckMonHrs = null): self
     {
@@ -258,7 +271,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Get PckTueHrs value
+     * Get PckTueHrs value.
      */
     public function getPckTueHrs(): ?string
     {
@@ -266,7 +279,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Set PckTueHrs value
+     * Set PckTueHrs value.
      */
     public function setPckTueHrs(?string $pckTueHrs = null): self
     {
@@ -280,7 +293,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Get PckWedHrs value
+     * Get PckWedHrs value.
      */
     public function getPckWedHrs(): ?string
     {
@@ -288,7 +301,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Set PckWedHrs value
+     * Set PckWedHrs value.
      */
     public function setPckWedHrs(?string $pckWedHrs = null): self
     {
@@ -302,7 +315,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Get PckThuHrs value
+     * Get PckThuHrs value.
      */
     public function getPckThuHrs(): ?string
     {
@@ -310,7 +323,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Set PckThuHrs value
+     * Set PckThuHrs value.
      */
     public function setPckThuHrs(?string $pckThuHrs = null): self
     {
@@ -324,7 +337,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Get PckFriHrs value
+     * Get PckFriHrs value.
      */
     public function getPckFriHrs(): ?string
     {
@@ -332,7 +345,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Set PckFriHrs value
+     * Set PckFriHrs value.
      */
     public function setPckFriHrs(?string $pckFriHrs = null): self
     {
@@ -346,7 +359,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Get PckSatHrs value
+     * Get PckSatHrs value.
      */
     public function getPckSatHrs(): ?string
     {
@@ -354,7 +367,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Set PckSatHrs value
+     * Set PckSatHrs value.
      */
     public function setPckSatHrs(?string $pckSatHrs = null): self
     {
@@ -368,7 +381,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Get PckSunHrs value
+     * Get PckSunHrs value.
      */
     public function getPckSunHrs(): ?string
     {
@@ -376,7 +389,7 @@ class PickupPointObject extends AbstractStructBase
     }
 
     /**
-     * Set PckSunHrs value
+     * Set PckSunHrs value.
      */
     public function setPckSunHrs(?string $pckSunHrs = null): self
     {

@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for UpdateRdvShipmentDataForAgencyPickupRequest StructType
+ * This class stands for UpdateRdvShipmentDataForAgencyPickupRequest StructType.
  */
 #[\AllowDynamicProperties]
 class UpdateRdvShipmentDataForAgencyPickupRequest extends UpdateRdvShipmentData
@@ -12,19 +14,20 @@ class UpdateRdvShipmentDataForAgencyPickupRequest extends UpdateRdvShipmentData
      * The DeliveryDate
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DeliveryDate = null;
+
     /**
      * The EsnInfo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?RdvEsnInfo $EsnInfo = null;
 
     /**
-     * Constructor method for UpdateRdvShipmentDataForAgencyPickupRequest
+     * Constructor method for UpdateRdvShipmentDataForAgencyPickupRequest.
      *
      * @uses UpdateRdvShipmentDataForAgencyPickupRequest::setDeliveryDate()
      * @uses UpdateRdvShipmentDataForAgencyPickupRequest::setEsnInfo()
@@ -38,7 +41,7 @@ class UpdateRdvShipmentDataForAgencyPickupRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get DeliveryDate value
+     * Get DeliveryDate value.
      */
     public function getDeliveryDate(): ?string
     {
@@ -46,7 +49,7 @@ class UpdateRdvShipmentDataForAgencyPickupRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set DeliveryDate value
+     * Set DeliveryDate value.
      */
     public function setDeliveryDate(?string $deliveryDate = null): self
     {
@@ -60,7 +63,7 @@ class UpdateRdvShipmentDataForAgencyPickupRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Get EsnInfo value
+     * Get EsnInfo value.
      */
     public function getEsnInfo(): ?RdvEsnInfo
     {
@@ -68,7 +71,7 @@ class UpdateRdvShipmentDataForAgencyPickupRequest extends UpdateRdvShipmentData
     }
 
     /**
-     * Set EsnInfo value
+     * Set EsnInfo value.
      */
     public function setEsnInfo(?RdvEsnInfo $esnInfo = null): self
     {

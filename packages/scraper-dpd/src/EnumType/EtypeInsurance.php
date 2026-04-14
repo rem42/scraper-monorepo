@@ -1,29 +1,32 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 
 /**
- * This class stands for etypeInsurance EnumType
+ * This class stands for etypeInsurance EnumType.
  */
 class EtypeInsurance extends AbstractStructEnumBase
 {
     /**
-     * Constant for value 'byShipments'
+     * Constant for value 'byShipments'.
      *
      * @return string 'byShipments'
      */
     public const VALUE_BY_SHIPMENTS = 'byShipments';
+
     /**
-     * Constant for value 'byWeight'
+     * Constant for value 'byWeight'.
      *
      * @return string 'byWeight'
      */
     public const VALUE_BY_WEIGHT = 'byWeight';
 
     /**
-     * Return allowed values
+     * Return allowed values.
      *
      * @uses self::VALUE_BY_SHIPMENTS
      * @uses self::VALUE_BY_WEIGHT

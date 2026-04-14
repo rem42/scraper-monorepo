@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
  * This class stands for VerifyUserCredentials StructType
  * Meta information extracted from the WSDL
- * - type: tns:VerifyUserCredentials
+ * - type: tns:VerifyUserCredentials.
  */
 #[\AllowDynamicProperties]
 class VerifyUserCredentials extends UserCredentials
@@ -14,19 +16,20 @@ class VerifyUserCredentials extends UserCredentials
      * The Verify_userid
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Verify_userid = null;
+
     /**
      * The Verify_password
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Verify_password = null;
 
     /**
-     * Constructor method for VerifyUserCredentials
+     * Constructor method for VerifyUserCredentials.
      *
      * @uses VerifyUserCredentials::setVerify_userid()
      * @uses VerifyUserCredentials::setVerify_password()
@@ -40,7 +43,7 @@ class VerifyUserCredentials extends UserCredentials
     }
 
     /**
-     * Get Verify_userid value
+     * Get Verify_userid value.
      */
     public function getVerify_userid(): ?string
     {
@@ -48,7 +51,7 @@ class VerifyUserCredentials extends UserCredentials
     }
 
     /**
-     * Set Verify_userid value
+     * Set Verify_userid value.
      */
     public function setVerify_userid(?string $verify_userid = null): self
     {
@@ -62,7 +65,7 @@ class VerifyUserCredentials extends UserCredentials
     }
 
     /**
-     * Get Verify_password value
+     * Get Verify_password value.
      */
     public function getVerify_password(): ?string
     {
@@ -70,7 +73,7 @@ class VerifyUserCredentials extends UserCredentials
     }
 
     /**
-     * Set Verify_password value
+     * Set Verify_password value.
      */
     public function setVerify_password(?string $verify_password = null): self
     {

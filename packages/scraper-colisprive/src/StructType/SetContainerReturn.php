@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for SetContainerReturn StructType
+ * This class stands for SetContainerReturn StructType.
  */
 #[\AllowDynamicProperties]
 class SetContainerReturn extends AbstractStructBase
@@ -14,40 +16,44 @@ class SetContainerReturn extends AbstractStructBase
      * The WSResp
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ResponseObject $WSResp = null;
+
     /**
      * The CntrCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CntrCode = null;
+
     /**
      * The OrderID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $OrderID = null;
+
     /**
      * The LabelUrl
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $LabelUrl = null;
+
     /**
      * The CABCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CABCode = null;
 
     /**
-     * Constructor method for SetContainerReturn
+     * Constructor method for SetContainerReturn.
      *
      * @uses SetContainerReturn::setWSResp()
      * @uses SetContainerReturn::setCntrCode()
@@ -67,7 +73,7 @@ class SetContainerReturn extends AbstractStructBase
     }
 
     /**
-     * Get WSResp value
+     * Get WSResp value.
      */
     public function getWSResp(): ?ResponseObject
     {
@@ -75,7 +81,7 @@ class SetContainerReturn extends AbstractStructBase
     }
 
     /**
-     * Set WSResp value
+     * Set WSResp value.
      */
     public function setWSResp(?ResponseObject $wSResp = null): self
     {
@@ -85,7 +91,7 @@ class SetContainerReturn extends AbstractStructBase
     }
 
     /**
-     * Get CntrCode value
+     * Get CntrCode value.
      */
     public function getCntrCode(): ?string
     {
@@ -93,7 +99,7 @@ class SetContainerReturn extends AbstractStructBase
     }
 
     /**
-     * Set CntrCode value
+     * Set CntrCode value.
      */
     public function setCntrCode(?string $cntrCode = null): self
     {
@@ -107,7 +113,7 @@ class SetContainerReturn extends AbstractStructBase
     }
 
     /**
-     * Get OrderID value
+     * Get OrderID value.
      */
     public function getOrderID(): ?string
     {
@@ -115,7 +121,7 @@ class SetContainerReturn extends AbstractStructBase
     }
 
     /**
-     * Set OrderID value
+     * Set OrderID value.
      */
     public function setOrderID(?string $orderID = null): self
     {
@@ -129,7 +135,7 @@ class SetContainerReturn extends AbstractStructBase
     }
 
     /**
-     * Get LabelUrl value
+     * Get LabelUrl value.
      */
     public function getLabelUrl(): ?string
     {
@@ -137,7 +143,7 @@ class SetContainerReturn extends AbstractStructBase
     }
 
     /**
-     * Set LabelUrl value
+     * Set LabelUrl value.
      */
     public function setLabelUrl(?string $labelUrl = null): self
     {
@@ -151,7 +157,7 @@ class SetContainerReturn extends AbstractStructBase
     }
 
     /**
-     * Get CABCode value
+     * Get CABCode value.
      */
     public function getCABCode(): ?string
     {
@@ -159,7 +165,7 @@ class SetContainerReturn extends AbstractStructBase
     }
 
     /**
-     * Set CABCode value
+     * Set CABCode value.
      */
     public function setCABCode(?string $cABCode = null): self
     {

@@ -1,11 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ReverseInverseReturn StructType
+ * This class stands for ReverseInverseReturn StructType.
  */
 #[\AllowDynamicProperties]
-class ReverseInverseReturn extends ReverseReturn
-{
-}
+class ReverseInverseReturn extends ReverseReturn {}

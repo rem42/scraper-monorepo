@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Set2ndDeliveryResponse StructType
+ * This class stands for Set2ndDeliveryResponse StructType.
  */
 #[\AllowDynamicProperties]
 class Set2ndDeliveryResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class Set2ndDeliveryResponse extends AbstractStructBase
      * The Set2ndDeliveryResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Set2ndDeliveryReturn $Set2ndDeliveryResult = null;
 
     /**
-     * Constructor method for Set2ndDeliveryResponse
+     * Constructor method for Set2ndDeliveryResponse.
      *
      * @uses Set2ndDeliveryResponse::setSet2ndDeliveryResult()
      */
@@ -31,7 +33,7 @@ class Set2ndDeliveryResponse extends AbstractStructBase
     }
 
     /**
-     * Get Set2ndDeliveryResult value
+     * Get Set2ndDeliveryResult value.
      */
     public function getSet2ndDeliveryResult(): ?Set2ndDeliveryReturn
     {
@@ -39,7 +41,7 @@ class Set2ndDeliveryResponse extends AbstractStructBase
     }
 
     /**
-     * Set Set2ndDeliveryResult value
+     * Set Set2ndDeliveryResult value.
      */
     public function setSet2ndDeliveryResult(?Set2ndDeliveryReturn $set2ndDeliveryResult = null): self
     {

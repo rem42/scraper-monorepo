@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for RetourServices StructType
+ * This class stands for RetourServices StructType.
  */
 #[\AllowDynamicProperties]
 class RetourServices extends ServiceBaseList
@@ -12,12 +14,12 @@ class RetourServices extends ServiceBaseList
      * The expireOffset
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $expireOffset;
 
     /**
-     * Constructor method for RetourServices
+     * Constructor method for RetourServices.
      *
      * @uses RetourServices::setExpireOffset()
      */
@@ -29,7 +31,7 @@ class RetourServices extends ServiceBaseList
     }
 
     /**
-     * Get expireOffset value
+     * Get expireOffset value.
      */
     public function getExpireOffset(): int
     {
@@ -37,7 +39,7 @@ class RetourServices extends ServiceBaseList
     }
 
     /**
-     * Set expireOffset value
+     * Set expireOffset value.
      */
     public function setExpireOffset(int $expireOffset): self
     {

@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for NumberRangeResponse StructType
+ * This class stands for NumberRangeResponse StructType.
  */
 #[\AllowDynamicProperties]
 class NumberRangeResponse extends NumberRangeBaseResponse
@@ -12,19 +14,20 @@ class NumberRangeResponse extends NumberRangeBaseResponse
      * The CountryCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $CountryCode;
+
     /**
      * The CenterNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $CenterNumber;
 
     /**
-     * Constructor method for NumberRangeResponse
+     * Constructor method for NumberRangeResponse.
      *
      * @uses NumberRangeResponse::setCountryCode()
      * @uses NumberRangeResponse::setCenterNumber()
@@ -38,7 +41,7 @@ class NumberRangeResponse extends NumberRangeBaseResponse
     }
 
     /**
-     * Get CountryCode value
+     * Get CountryCode value.
      */
     public function getCountryCode(): int
     {
@@ -46,7 +49,7 @@ class NumberRangeResponse extends NumberRangeBaseResponse
     }
 
     /**
-     * Set CountryCode value
+     * Set CountryCode value.
      */
     public function setCountryCode(int $countryCode): self
     {
@@ -60,7 +63,7 @@ class NumberRangeResponse extends NumberRangeBaseResponse
     }
 
     /**
-     * Get CenterNumber value
+     * Get CenterNumber value.
      */
     public function getCenterNumber(): int
     {
@@ -68,7 +71,7 @@ class NumberRangeResponse extends NumberRangeBaseResponse
     }
 
     /**
-     * Set CenterNumber value
+     * Set CenterNumber value.
      */
     public function setCenterNumber(int $centerNumber): self
     {

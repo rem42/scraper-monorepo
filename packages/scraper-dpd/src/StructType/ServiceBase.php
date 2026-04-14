@@ -1,11 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ServiceBase StructType
+ * This class stands for ServiceBase StructType.
  */
 #[\AllowDynamicProperties]
-abstract class ServiceBase extends ServiceBaseList
-{
-}
+abstract class ServiceBase extends ServiceBaseList {}

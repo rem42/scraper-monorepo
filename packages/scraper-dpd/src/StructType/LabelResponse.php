@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for LabelResponse StructType
+ * This class stands for LabelResponse StructType.
  */
 #[\AllowDynamicProperties]
 class LabelResponse extends LabelBaseResponse
@@ -12,26 +14,28 @@ class LabelResponse extends LabelBaseResponse
      * The countrycode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $countrycode = null;
+
     /**
      * The centernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $centernumber = null;
+
     /**
      * The parcelnumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $parcelnumber = null;
 
     /**
-     * Constructor method for LabelResponse
+     * Constructor method for LabelResponse.
      *
      * @uses LabelResponse::setCountrycode()
      * @uses LabelResponse::setCenternumber()
@@ -47,7 +51,7 @@ class LabelResponse extends LabelBaseResponse
     }
 
     /**
-     * Get countrycode value
+     * Get countrycode value.
      */
     public function getCountrycode(): ?string
     {
@@ -55,7 +59,7 @@ class LabelResponse extends LabelBaseResponse
     }
 
     /**
-     * Set countrycode value
+     * Set countrycode value.
      */
     public function setCountrycode(?string $countrycode = null): self
     {
@@ -69,7 +73,7 @@ class LabelResponse extends LabelBaseResponse
     }
 
     /**
-     * Get centernumber value
+     * Get centernumber value.
      */
     public function getCenternumber(): ?string
     {
@@ -77,7 +81,7 @@ class LabelResponse extends LabelBaseResponse
     }
 
     /**
-     * Set centernumber value
+     * Set centernumber value.
      */
     public function setCenternumber(?string $centernumber = null): self
     {
@@ -91,7 +95,7 @@ class LabelResponse extends LabelBaseResponse
     }
 
     /**
-     * Get parcelnumber value
+     * Get parcelnumber value.
      */
     public function getParcelnumber(): ?string
     {
@@ -99,7 +103,7 @@ class LabelResponse extends LabelBaseResponse
     }
 
     /**
-     * Set parcelnumber value
+     * Set parcelnumber value.
      */
     public function setParcelnumber(?string $parcelnumber = null): self
     {

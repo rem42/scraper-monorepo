@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for getInfoResponse StructType
+ * This class stands for getInfoResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetInfoResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetInfoResponse extends AbstractStructBase
      * The getInfoResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $getInfoResult = null;
 
     /**
-     * Constructor method for getInfoResponse
+     * Constructor method for getInfoResponse.
      *
      * @uses GetInfoResponse::setGetInfoResult()
      */
@@ -31,7 +33,7 @@ class GetInfoResponse extends AbstractStructBase
     }
 
     /**
-     * Get getInfoResult value
+     * Get getInfoResult value.
      */
     public function getGetInfoResult(): ?string
     {
@@ -39,7 +41,7 @@ class GetInfoResponse extends AbstractStructBase
     }
 
     /**
-     * Set getInfoResult value
+     * Set getInfoResult value.
      */
     public function setGetInfoResult(?string $getInfoResult = null): self
     {

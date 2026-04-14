@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for DayRequestBase StructType
+ * This class stands for DayRequestBase StructType.
  */
 #[\AllowDynamicProperties]
 class DayRequestBase extends AbstractStructBase
@@ -14,19 +16,20 @@ class DayRequestBase extends AbstractStructBase
      * The address
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?AddressMini $address = null;
+
     /**
      * The date
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $date = null;
 
     /**
-     * Constructor method for DayRequestBase
+     * Constructor method for DayRequestBase.
      *
      * @uses DayRequestBase::setAddress()
      * @uses DayRequestBase::setDate()
@@ -40,7 +43,7 @@ class DayRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get address value
+     * Get address value.
      */
     public function getAddress(): ?AddressMini
     {
@@ -48,7 +51,7 @@ class DayRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set address value
+     * Set address value.
      */
     public function setAddress(?AddressMini $address = null): self
     {
@@ -58,7 +61,7 @@ class DayRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get date value
+     * Get date value.
      */
     public function getDate(): ?string
     {
@@ -66,7 +69,7 @@ class DayRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set date value
+     * Set date value.
      */
     public function setDate(?string $date = null): self
     {

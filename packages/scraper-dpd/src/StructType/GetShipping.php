@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetShipping StructType
+ * This class stands for GetShipping StructType.
  */
 #[\AllowDynamicProperties]
 class GetShipping extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetShipping extends AbstractStructBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetShippingRequest $request = null;
 
     /**
-     * Constructor method for GetShipping
+     * Constructor method for GetShipping.
      *
      * @uses GetShipping::setRequest()
      */
@@ -31,7 +33,7 @@ class GetShipping extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?GetShippingRequest
     {
@@ -39,7 +41,7 @@ class GetShipping extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?GetShippingRequest $request = null): self
     {

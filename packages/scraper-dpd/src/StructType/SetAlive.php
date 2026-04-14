@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for setAlive StructType
+ * This class stands for setAlive StructType.
  */
 #[\AllowDynamicProperties]
 class SetAlive extends AbstractStructBase
@@ -14,12 +16,12 @@ class SetAlive extends AbstractStructBase
      * The value
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $value;
 
     /**
-     * Constructor method for setAlive
+     * Constructor method for setAlive.
      *
      * @uses SetAlive::setValue()
      */
@@ -31,7 +33,7 @@ class SetAlive extends AbstractStructBase
     }
 
     /**
-     * Get value value
+     * Get value value.
      */
     public function getValue(): bool
     {
@@ -39,7 +41,7 @@ class SetAlive extends AbstractStructBase
     }
 
     /**
-     * Set value value
+     * Set value value.
      */
     public function setValue(bool $value): self
     {

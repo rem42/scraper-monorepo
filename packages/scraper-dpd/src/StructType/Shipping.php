@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Shipping StructType
+ * This class stands for Shipping StructType.
  */
 #[\AllowDynamicProperties]
 class Shipping extends AbstractStructBase
@@ -14,47 +16,52 @@ class Shipping extends AbstractStructBase
      * The barcodeSource
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $barcodeSource;
+
     /**
      * The weight
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected float $weight;
+
     /**
      * The shipment
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $shipment = null;
+
     /**
      * The barcodeId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $barcodeId = null;
+
     /**
      * The receiverAddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?AddressIso2Name $receiverAddress = null;
+
     /**
      * The reference
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $reference = null;
 
     /**
-     * Constructor method for Shipping
+     * Constructor method for Shipping.
      *
      * @uses Shipping::setBarcodeSource()
      * @uses Shipping::setWeight()
@@ -76,7 +83,7 @@ class Shipping extends AbstractStructBase
     }
 
     /**
-     * Get barcodeSource value
+     * Get barcodeSource value.
      */
     public function getBarcodeSource(): int
     {
@@ -84,7 +91,7 @@ class Shipping extends AbstractStructBase
     }
 
     /**
-     * Set barcodeSource value
+     * Set barcodeSource value.
      */
     public function setBarcodeSource(int $barcodeSource): self
     {
@@ -98,7 +105,7 @@ class Shipping extends AbstractStructBase
     }
 
     /**
-     * Get weight value
+     * Get weight value.
      */
     public function getWeight(): float
     {
@@ -106,7 +113,7 @@ class Shipping extends AbstractStructBase
     }
 
     /**
-     * Set weight value
+     * Set weight value.
      */
     public function setWeight(float $weight): self
     {
@@ -120,7 +127,7 @@ class Shipping extends AbstractStructBase
     }
 
     /**
-     * Get shipment value
+     * Get shipment value.
      */
     public function getShipment(): ?string
     {
@@ -128,7 +135,7 @@ class Shipping extends AbstractStructBase
     }
 
     /**
-     * Set shipment value
+     * Set shipment value.
      */
     public function setShipment(?string $shipment = null): self
     {
@@ -142,7 +149,7 @@ class Shipping extends AbstractStructBase
     }
 
     /**
-     * Get barcodeId value
+     * Get barcodeId value.
      */
     public function getBarcodeId(): ?string
     {
@@ -150,7 +157,7 @@ class Shipping extends AbstractStructBase
     }
 
     /**
-     * Set barcodeId value
+     * Set barcodeId value.
      */
     public function setBarcodeId(?string $barcodeId = null): self
     {
@@ -164,7 +171,7 @@ class Shipping extends AbstractStructBase
     }
 
     /**
-     * Get receiverAddress value
+     * Get receiverAddress value.
      */
     public function getReceiverAddress(): ?AddressIso2Name
     {
@@ -172,7 +179,7 @@ class Shipping extends AbstractStructBase
     }
 
     /**
-     * Set receiverAddress value
+     * Set receiverAddress value.
      */
     public function setReceiverAddress(?AddressIso2Name $receiverAddress = null): self
     {
@@ -182,7 +189,7 @@ class Shipping extends AbstractStructBase
     }
 
     /**
-     * Get reference value
+     * Get reference value.
      */
     public function getReference(): ?string
     {
@@ -190,7 +197,7 @@ class Shipping extends AbstractStructBase
     }
 
     /**
-     * Set reference value
+     * Set reference value.
      */
     public function setReference(?string $reference = null): self
     {

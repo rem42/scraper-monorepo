@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetOptionsRequest StructType
+ * This class stands for GetOptionsRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GetOptionsRequest extends AbstractStructBase
@@ -14,40 +16,44 @@ class GetOptionsRequest extends AbstractStructBase
      * The Customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $Customer = null;
+
     /**
      * The ProductType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ProductType = null;
+
     /**
      * The HardwareId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $HardwareId = null;
+
     /**
      * The Group
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Group = null;
+
     /**
      * The Options
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfString $Options = null;
 
     /**
-     * Constructor method for GetOptionsRequest
+     * Constructor method for GetOptionsRequest.
      *
      * @uses GetOptionsRequest::setCustomer()
      * @uses GetOptionsRequest::setProductType()
@@ -67,7 +73,7 @@ class GetOptionsRequest extends AbstractStructBase
     }
 
     /**
-     * Get Customer value
+     * Get Customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -75,7 +81,7 @@ class GetOptionsRequest extends AbstractStructBase
     }
 
     /**
-     * Set Customer value
+     * Set Customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {
@@ -85,7 +91,7 @@ class GetOptionsRequest extends AbstractStructBase
     }
 
     /**
-     * Get ProductType value
+     * Get ProductType value.
      */
     public function getProductType(): ?string
     {
@@ -93,7 +99,7 @@ class GetOptionsRequest extends AbstractStructBase
     }
 
     /**
-     * Set ProductType value
+     * Set ProductType value.
      */
     public function setProductType(?string $productType = null): self
     {
@@ -107,7 +113,7 @@ class GetOptionsRequest extends AbstractStructBase
     }
 
     /**
-     * Get HardwareId value
+     * Get HardwareId value.
      */
     public function getHardwareId(): ?string
     {
@@ -115,7 +121,7 @@ class GetOptionsRequest extends AbstractStructBase
     }
 
     /**
-     * Set HardwareId value
+     * Set HardwareId value.
      */
     public function setHardwareId(?string $hardwareId = null): self
     {
@@ -129,7 +135,7 @@ class GetOptionsRequest extends AbstractStructBase
     }
 
     /**
-     * Get Group value
+     * Get Group value.
      */
     public function getGroup(): ?string
     {
@@ -137,7 +143,7 @@ class GetOptionsRequest extends AbstractStructBase
     }
 
     /**
-     * Set Group value
+     * Set Group value.
      */
     public function setGroup(?string $group = null): self
     {
@@ -151,7 +157,7 @@ class GetOptionsRequest extends AbstractStructBase
     }
 
     /**
-     * Get Options value
+     * Get Options value.
      */
     public function getOptions(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfString
     {
@@ -159,7 +165,7 @@ class GetOptionsRequest extends AbstractStructBase
     }
 
     /**
-     * Set Options value
+     * Set Options value.
      */
     public function setOptions(?\Scraper\ScraperDPD\ArrayType\ArrayOfString $options = null): self
     {

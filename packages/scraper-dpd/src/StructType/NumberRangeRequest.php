@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for NumberRangeRequest StructType
+ * This class stands for NumberRangeRequest StructType.
  */
 #[\AllowDynamicProperties]
 class NumberRangeRequest extends NumberRangeBaseRequest
@@ -12,47 +14,52 @@ class NumberRangeRequest extends NumberRangeBaseRequest
      * The CountryCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $CountryCode;
+
     /**
      * The ShippingCenterNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ShippingCenterNumber = null;
+
     /**
      * The NumberRangeFrom
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $NumberRangeFrom = null;
+
     /**
      * The NumberRangeTo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $NumberRangeTo = null;
+
     /**
      * The NumberRangeFree
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $NumberRangeFree = null;
+
     /**
      * The NumberType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $NumberType = null;
 
     /**
-     * Constructor method for NumberRangeRequest
+     * Constructor method for NumberRangeRequest.
      *
      * @uses NumberRangeRequest::setCountryCode()
      * @uses NumberRangeRequest::setShippingCenterNumber()
@@ -74,7 +81,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     }
 
     /**
-     * Get CountryCode value
+     * Get CountryCode value.
      */
     public function getCountryCode(): int
     {
@@ -82,7 +89,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     }
 
     /**
-     * Set CountryCode value
+     * Set CountryCode value.
      */
     public function setCountryCode(int $countryCode): self
     {
@@ -96,7 +103,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     }
 
     /**
-     * Get ShippingCenterNumber value
+     * Get ShippingCenterNumber value.
      */
     public function getShippingCenterNumber(): ?string
     {
@@ -104,7 +111,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     }
 
     /**
-     * Set ShippingCenterNumber value
+     * Set ShippingCenterNumber value.
      */
     public function setShippingCenterNumber(?string $shippingCenterNumber = null): self
     {
@@ -118,7 +125,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     }
 
     /**
-     * Get NumberRangeFrom value
+     * Get NumberRangeFrom value.
      */
     public function getNumberRangeFrom(): ?string
     {
@@ -126,7 +133,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     }
 
     /**
-     * Set NumberRangeFrom value
+     * Set NumberRangeFrom value.
      */
     public function setNumberRangeFrom(?string $numberRangeFrom = null): self
     {
@@ -140,7 +147,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     }
 
     /**
-     * Get NumberRangeTo value
+     * Get NumberRangeTo value.
      */
     public function getNumberRangeTo(): ?string
     {
@@ -148,7 +155,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     }
 
     /**
-     * Set NumberRangeTo value
+     * Set NumberRangeTo value.
      */
     public function setNumberRangeTo(?string $numberRangeTo = null): self
     {
@@ -162,7 +169,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     }
 
     /**
-     * Get NumberRangeFree value
+     * Get NumberRangeFree value.
      */
     public function getNumberRangeFree(): ?string
     {
@@ -170,7 +177,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     }
 
     /**
-     * Set NumberRangeFree value
+     * Set NumberRangeFree value.
      */
     public function setNumberRangeFree(?string $numberRangeFree = null): self
     {
@@ -184,7 +191,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     }
 
     /**
-     * Get NumberType value
+     * Get NumberType value.
      */
     public function getNumberType(): ?string
     {
@@ -192,7 +199,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     }
 
     /**
-     * Set NumberType value
+     * Set NumberType value.
      */
     public function setNumberType(?string $numberType = null): self
     {

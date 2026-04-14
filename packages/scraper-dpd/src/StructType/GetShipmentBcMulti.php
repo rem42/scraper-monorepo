@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetShipmentBcMulti StructType
+ * This class stands for GetShipmentBcMulti StructType.
  */
 #[\AllowDynamicProperties]
 class GetShipmentBcMulti extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetShipmentBcMulti extends AbstractStructBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetShipmentBcMultiRequest $request = null;
 
     /**
-     * Constructor method for GetShipmentBcMulti
+     * Constructor method for GetShipmentBcMulti.
      *
      * @uses GetShipmentBcMulti::setRequest()
      */
@@ -31,7 +33,7 @@ class GetShipmentBcMulti extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?GetShipmentBcMultiRequest
     {
@@ -39,7 +41,7 @@ class GetShipmentBcMulti extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?GetShipmentBcMultiRequest $request = null): self
     {

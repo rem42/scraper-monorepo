@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\ArrayType;
 
 use WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
 /**
- * This class stands for ArrayOfPhoneCall ArrayType
+ * This class stands for ArrayOfPhoneCall ArrayType.
  */
 class ArrayOfPhoneCall extends AbstractStructArrayBase
 {
@@ -14,14 +16,14 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * - nillable: true
+     * - nillable: true.
      *
      * @var array<\Scraper\ScraperDPD\StructType\PhoneCall>
      */
     protected ?array $PhoneCall = null;
 
     /**
-     * Constructor method for ArrayOfPhoneCall
+     * Constructor method for ArrayOfPhoneCall.
      *
      * @uses ArrayOfPhoneCall::setPhoneCall()
      *
@@ -38,7 +40,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
      * Get PhoneCall value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
-     * removable from the request (nillable=true+minOccurs=0)
+     * removable from the request (nillable=true+minOccurs=0).
      *
      * @return array<\Scraper\ScraperDPD\StructType\PhoneCall>
      */
@@ -50,7 +52,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
     /**
      * This method is responsible for validating the value(s) passed to the setPhoneCall method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPhoneCall method
-     * This has to validate that each item contained by the array match the itemType constraint
+     * This has to validate that each item contained by the array match the itemType constraint.
      *
      * @return string A non-empty message if the values does not match the validation rules
      */
@@ -80,7 +82,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
     /**
      * Set PhoneCall value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
-     * if the value assigned to this property is null, it is removed from this object
+     * if the value assigned to this property is null, it is removed from this object.
      *
      * @param array<\Scraper\ScraperDPD\StructType\PhoneCall> $phoneCall
      *
@@ -103,7 +105,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the current element
+     * Returns the current element.
      *
      * @see AbstractStructArrayBase::current()
      */
@@ -113,7 +115,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the indexed element
+     * Returns the indexed element.
      *
      * @see AbstractStructArrayBase::item()
      *
@@ -125,7 +127,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the first element
+     * Returns the first element.
      *
      * @see AbstractStructArrayBase::first()
      */
@@ -135,7 +137,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the last element
+     * Returns the last element.
      *
      * @see AbstractStructArrayBase::last()
      */
@@ -145,7 +147,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the element at the offset
+     * Returns the element at the offset.
      *
      * @see AbstractStructArrayBase::offsetGet()
      *
@@ -157,7 +159,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
     }
 
     /**
-     * Add element to array
+     * Add element to array.
      *
      * @see AbstractStructArrayBase::add()
      *
@@ -171,11 +173,12 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
         if (!$item instanceof \Scraper\ScraperDPD\StructType\PhoneCall) {
             throw new \InvalidArgumentException(sprintf('The PhoneCall property can only contain items of type \Scraper\ScraperDPD\StructType\PhoneCall, %s given', \is_object($item) ? $item::class : (\is_array($item) ? implode(', ', $item) : \gettype($item))), __LINE__);
         }
+
         return parent::add($item);
     }
 
     /**
-     * Returns the attribute name
+     * Returns the attribute name.
      *
      * @see AbstractStructArrayBase::getAttributeName()
      *

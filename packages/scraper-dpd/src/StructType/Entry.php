@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Entry StructType
+ * This class stands for Entry StructType.
  */
 #[\AllowDynamicProperties]
 class Entry extends AbstractStructBase
@@ -14,35 +16,38 @@ class Entry extends AbstractStructBase
      * The BarcodeSource
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $BarcodeSource;
+
     /**
      * The Domain
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Domain = null;
+
     /**
      * The NumberFrom
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?int $NumberFrom;
+
     /**
      * The NumberTo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?int $NumberTo;
 
     /**
-     * Constructor method for Entry
+     * Constructor method for Entry.
      *
      * @uses Entry::setBarcodeSource()
      * @uses Entry::setDomain()
@@ -60,7 +65,7 @@ class Entry extends AbstractStructBase
     }
 
     /**
-     * Get BarcodeSource value
+     * Get BarcodeSource value.
      */
     public function getBarcodeSource(): int
     {
@@ -68,7 +73,7 @@ class Entry extends AbstractStructBase
     }
 
     /**
-     * Set BarcodeSource value
+     * Set BarcodeSource value.
      */
     public function setBarcodeSource(int $barcodeSource): self
     {
@@ -82,7 +87,7 @@ class Entry extends AbstractStructBase
     }
 
     /**
-     * Get Domain value
+     * Get Domain value.
      */
     public function getDomain(): ?string
     {
@@ -90,7 +95,7 @@ class Entry extends AbstractStructBase
     }
 
     /**
-     * Set Domain value
+     * Set Domain value.
      */
     public function setDomain(?string $domain = null): self
     {
@@ -104,7 +109,7 @@ class Entry extends AbstractStructBase
     }
 
     /**
-     * Get NumberFrom value
+     * Get NumberFrom value.
      */
     public function getNumberFrom(): int
     {
@@ -112,7 +117,7 @@ class Entry extends AbstractStructBase
     }
 
     /**
-     * Set NumberFrom value
+     * Set NumberFrom value.
      */
     public function setNumberFrom(?int $numberFrom): self
     {
@@ -126,7 +131,7 @@ class Entry extends AbstractStructBase
     }
 
     /**
-     * Get NumberTo value
+     * Get NumberTo value.
      */
     public function getNumberTo(): int
     {
@@ -134,7 +139,7 @@ class Entry extends AbstractStructBase
     }
 
     /**
-     * Set NumberTo value
+     * Set NumberTo value.
      */
     public function setNumberTo(?int $numberTo): self
     {

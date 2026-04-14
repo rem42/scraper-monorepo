@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for RdvDeliveryInfo StructType
+ * This class stands for RdvDeliveryInfo StructType.
  */
 #[\AllowDynamicProperties]
 class RdvDeliveryInfo extends RdvDeliveryInfoSmall
@@ -12,26 +14,28 @@ class RdvDeliveryInfo extends RdvDeliveryInfoSmall
      * The Date
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Date = null;
+
     /**
      * The TimeFrom
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TimeFrom = null;
+
     /**
      * The TimeTo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TimeTo = null;
 
     /**
-     * Constructor method for RdvDeliveryInfo
+     * Constructor method for RdvDeliveryInfo.
      *
      * @uses RdvDeliveryInfo::setDate()
      * @uses RdvDeliveryInfo::setTimeFrom()
@@ -47,7 +51,7 @@ class RdvDeliveryInfo extends RdvDeliveryInfoSmall
     }
 
     /**
-     * Get Date value
+     * Get Date value.
      */
     public function getDate(): ?string
     {
@@ -55,7 +59,7 @@ class RdvDeliveryInfo extends RdvDeliveryInfoSmall
     }
 
     /**
-     * Set Date value
+     * Set Date value.
      */
     public function setDate(?string $date = null): self
     {
@@ -69,7 +73,7 @@ class RdvDeliveryInfo extends RdvDeliveryInfoSmall
     }
 
     /**
-     * Get TimeFrom value
+     * Get TimeFrom value.
      */
     public function getTimeFrom(): ?string
     {
@@ -77,7 +81,7 @@ class RdvDeliveryInfo extends RdvDeliveryInfoSmall
     }
 
     /**
-     * Set TimeFrom value
+     * Set TimeFrom value.
      */
     public function setTimeFrom(?string $timeFrom = null): self
     {
@@ -91,7 +95,7 @@ class RdvDeliveryInfo extends RdvDeliveryInfoSmall
     }
 
     /**
-     * Get TimeTo value
+     * Get TimeTo value.
      */
     public function getTimeTo(): ?string
     {
@@ -99,7 +103,7 @@ class RdvDeliveryInfo extends RdvDeliveryInfoSmall
     }
 
     /**
-     * Set TimeTo value
+     * Set TimeTo value.
      */
     public function setTimeTo(?string $timeTo = null): self
     {

@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetParcel StructType
+ * This class stands for GetParcel StructType.
  */
 #[\AllowDynamicProperties]
 class GetParcel extends AbstractStructBase
@@ -15,12 +17,12 @@ class GetParcel extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?GetParcelRequest $GetParcelRequest;
 
     /**
-     * Constructor method for GetParcel
+     * Constructor method for GetParcel.
      *
      * @uses GetParcel::setGetParcelRequest()
      */
@@ -32,7 +34,7 @@ class GetParcel extends AbstractStructBase
     }
 
     /**
-     * Get GetParcelRequest value
+     * Get GetParcelRequest value.
      */
     public function getGetParcelRequest(): GetParcelRequest
     {
@@ -40,7 +42,7 @@ class GetParcel extends AbstractStructBase
     }
 
     /**
-     * Set GetParcelRequest value
+     * Set GetParcelRequest value.
      */
     public function setGetParcelRequest(?GetParcelRequest $getParcelRequest): self
     {

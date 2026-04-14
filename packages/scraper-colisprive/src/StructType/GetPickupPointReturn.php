@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetPickupPointReturn StructType
+ * This class stands for GetPickupPointReturn StructType.
  */
 #[\AllowDynamicProperties]
 class GetPickupPointReturn extends AbstractStructBase
@@ -14,19 +16,20 @@ class GetPickupPointReturn extends AbstractStructBase
      * The WSResp
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ResponseObject $WSResp = null;
+
     /**
      * The PckPoint
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?PickupPointObject $PckPoint = null;
 
     /**
-     * Constructor method for GetPickupPointReturn
+     * Constructor method for GetPickupPointReturn.
      *
      * @uses GetPickupPointReturn::setWSResp()
      * @uses GetPickupPointReturn::setPckPoint()
@@ -40,7 +43,7 @@ class GetPickupPointReturn extends AbstractStructBase
     }
 
     /**
-     * Get WSResp value
+     * Get WSResp value.
      */
     public function getWSResp(): ?ResponseObject
     {
@@ -48,7 +51,7 @@ class GetPickupPointReturn extends AbstractStructBase
     }
 
     /**
-     * Set WSResp value
+     * Set WSResp value.
      */
     public function setWSResp(?ResponseObject $wSResp = null): self
     {
@@ -58,7 +61,7 @@ class GetPickupPointReturn extends AbstractStructBase
     }
 
     /**
-     * Get PckPoint value
+     * Get PckPoint value.
      */
     public function getPckPoint(): ?PickupPointObject
     {
@@ -66,7 +69,7 @@ class GetPickupPointReturn extends AbstractStructBase
     }
 
     /**
-     * Set PckPoint value
+     * Set PckPoint value.
      */
     public function setPckPoint(?PickupPointObject $pckPoint = null): self
     {

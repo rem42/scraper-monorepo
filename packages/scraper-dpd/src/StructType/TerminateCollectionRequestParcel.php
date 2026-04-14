@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for TerminateCollectionRequestParcel StructType
+ * This class stands for TerminateCollectionRequestParcel StructType.
  */
 #[\AllowDynamicProperties]
 class TerminateCollectionRequestParcel extends TerminateCollectionRequestBase
@@ -12,12 +14,12 @@ class TerminateCollectionRequestParcel extends TerminateCollectionRequestBase
      * The parcel
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Parcel $parcel = null;
 
     /**
-     * Constructor method for TerminateCollectionRequestParcel
+     * Constructor method for TerminateCollectionRequestParcel.
      *
      * @uses TerminateCollectionRequestParcel::setParcel()
      */
@@ -29,7 +31,7 @@ class TerminateCollectionRequestParcel extends TerminateCollectionRequestBase
     }
 
     /**
-     * Get parcel value
+     * Get parcel value.
      */
     public function getParcel(): ?Parcel
     {
@@ -37,7 +39,7 @@ class TerminateCollectionRequestParcel extends TerminateCollectionRequestBase
     }
 
     /**
-     * Set parcel value
+     * Set parcel value.
      */
     public function setParcel(?Parcel $parcel = null): self
     {

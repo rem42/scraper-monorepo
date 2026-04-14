@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetBic3Request StructType
+ * This class stands for GetBic3Request StructType.
  */
 #[\AllowDynamicProperties]
 class GetBic3Request extends AbstractStructBase
@@ -14,19 +16,20 @@ class GetBic3Request extends AbstractStructBase
      * The centernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $centernumber;
+
     /**
      * The customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $customer = null;
 
     /**
-     * Constructor method for GetBic3Request
+     * Constructor method for GetBic3Request.
      *
      * @uses GetBic3Request::setCenternumber()
      * @uses GetBic3Request::setCustomer()
@@ -40,7 +43,7 @@ class GetBic3Request extends AbstractStructBase
     }
 
     /**
-     * Get centernumber value
+     * Get centernumber value.
      */
     public function getCenternumber(): int
     {
@@ -48,7 +51,7 @@ class GetBic3Request extends AbstractStructBase
     }
 
     /**
-     * Set centernumber value
+     * Set centernumber value.
      */
     public function setCenternumber(int $centernumber): self
     {
@@ -62,7 +65,7 @@ class GetBic3Request extends AbstractStructBase
     }
 
     /**
-     * Get customer value
+     * Get customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -70,7 +73,7 @@ class GetBic3Request extends AbstractStructBase
     }
 
     /**
-     * Set customer value
+     * Set customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {

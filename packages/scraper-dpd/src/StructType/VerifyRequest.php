@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for VerifyRequest StructType
+ * This class stands for VerifyRequest StructType.
  */
 #[\AllowDynamicProperties]
 class VerifyRequest extends AbstractStructBase
@@ -14,19 +16,20 @@ class VerifyRequest extends AbstractStructBase
      * The TimeStamp
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $TimeStamp;
+
     /**
      * The Customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $Customer = null;
 
     /**
-     * Constructor method for VerifyRequest
+     * Constructor method for VerifyRequest.
      *
      * @uses VerifyRequest::setTimeStamp()
      * @uses VerifyRequest::setCustomer()
@@ -40,7 +43,7 @@ class VerifyRequest extends AbstractStructBase
     }
 
     /**
-     * Get TimeStamp value
+     * Get TimeStamp value.
      */
     public function getTimeStamp(): int
     {
@@ -48,7 +51,7 @@ class VerifyRequest extends AbstractStructBase
     }
 
     /**
-     * Set TimeStamp value
+     * Set TimeStamp value.
      */
     public function setTimeStamp(int $timeStamp): self
     {
@@ -62,7 +65,7 @@ class VerifyRequest extends AbstractStructBase
     }
 
     /**
-     * Get Customer value
+     * Get Customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -70,7 +73,7 @@ class VerifyRequest extends AbstractStructBase
     }
 
     /**
-     * Set Customer value
+     * Set Customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {

@@ -1,16 +1,18 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\ServiceType;
 
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
 /**
- * This class stands for Terminate ServiceType
+ * This class stands for Terminate ServiceType.
  */
 class Terminate extends AbstractSoapClientBase
 {
     /**
-     * Sets the UserCredentials SoapHeader param
+     * Sets the UserCredentials SoapHeader param.
      *
      * @uses AbstractSoapClientBase::setSoapHeader()
      */
@@ -25,7 +27,7 @@ class Terminate extends AbstractSoapClientBase
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
      * - SOAPHeaderTypes: \Scraper\ScraperDPD\StructType\UserCredentials
-     * - SOAPHeaders: required
+     * - SOAPHeaders: required.
      *
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -54,7 +56,7 @@ class Terminate extends AbstractSoapClientBase
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
      * - SOAPHeaderTypes: \Scraper\ScraperDPD\StructType\UserCredentials
-     * - SOAPHeaders: required
+     * - SOAPHeaders: required.
      *
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -83,7 +85,7 @@ class Terminate extends AbstractSoapClientBase
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
      * - SOAPHeaderTypes: \Scraper\ScraperDPD\StructType\UserCredentials
-     * - SOAPHeaders: required
+     * - SOAPHeaders: required.
      *
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -112,7 +114,7 @@ class Terminate extends AbstractSoapClientBase
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
      * - SOAPHeaderTypes: \Scraper\ScraperDPD\StructType\UserCredentials
-     * - SOAPHeaders: required
+     * - SOAPHeaders: required.
      *
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -141,7 +143,7 @@ class Terminate extends AbstractSoapClientBase
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
      * - SOAPHeaderTypes: \Scraper\ScraperDPD\StructType\UserCredentials
-     * - SOAPHeaders: required
+     * - SOAPHeaders: required.
      *
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
@@ -165,7 +167,7 @@ class Terminate extends AbstractSoapClientBase
     }
 
     /**
-     * Returns the result
+     * Returns the result.
      *
      * @see AbstractSoapClientBase::getResult()
      *

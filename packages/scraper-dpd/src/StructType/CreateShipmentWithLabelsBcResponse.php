@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CreateShipmentWithLabelsBcResponse StructType
+ * This class stands for CreateShipmentWithLabelsBcResponse StructType.
  */
 #[\AllowDynamicProperties]
 class CreateShipmentWithLabelsBcResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class CreateShipmentWithLabelsBcResponse extends AbstractStructBase
      * The CreateShipmentWithLabelsBcResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ShipmentsWithLabelsBc $CreateShipmentWithLabelsBcResult = null;
 
     /**
-     * Constructor method for CreateShipmentWithLabelsBcResponse
+     * Constructor method for CreateShipmentWithLabelsBcResponse.
      *
      * @uses CreateShipmentWithLabelsBcResponse::setCreateShipmentWithLabelsBcResult()
      */
@@ -31,7 +33,7 @@ class CreateShipmentWithLabelsBcResponse extends AbstractStructBase
     }
 
     /**
-     * Get CreateShipmentWithLabelsBcResult value
+     * Get CreateShipmentWithLabelsBcResult value.
      */
     public function getCreateShipmentWithLabelsBcResult(): ?ShipmentsWithLabelsBc
     {
@@ -39,7 +41,7 @@ class CreateShipmentWithLabelsBcResponse extends AbstractStructBase
     }
 
     /**
-     * Set CreateShipmentWithLabelsBcResult value
+     * Set CreateShipmentWithLabelsBcResult value.
      */
     public function setCreateShipmentWithLabelsBcResult(?ShipmentsWithLabelsBc $createShipmentWithLabelsBcResult = null): self
     {

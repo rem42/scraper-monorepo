@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetCustomerProfile StructType
+ * This class stands for GetCustomerProfile StructType.
  */
 #[\AllowDynamicProperties]
 class GetCustomerProfile extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetCustomerProfile extends AbstractStructBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetCustomerProfileRequest $request = null;
 
     /**
-     * Constructor method for GetCustomerProfile
+     * Constructor method for GetCustomerProfile.
      *
      * @uses GetCustomerProfile::setRequest()
      */
@@ -31,7 +33,7 @@ class GetCustomerProfile extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?GetCustomerProfileRequest
     {
@@ -39,7 +41,7 @@ class GetCustomerProfile extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?GetCustomerProfileRequest $request = null): self
     {

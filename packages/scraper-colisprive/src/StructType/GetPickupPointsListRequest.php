@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetPickupPointsListRequest StructType
+ * This class stands for GetPickupPointsListRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GetPickupPointsListRequest extends AbstractStructBase
@@ -15,28 +17,30 @@ class GetPickupPointsListRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?IdentificationObject $SecurityID;
+
     /**
      * The CPPclCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CPPclCode;
+
     /**
      * The CsgZC
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CsgZC;
 
     /**
-     * Constructor method for GetPickupPointsListRequest
+     * Constructor method for GetPickupPointsListRequest.
      *
      * @uses GetPickupPointsListRequest::setSecurityID()
      * @uses GetPickupPointsListRequest::setCPPclCode()
@@ -52,7 +56,7 @@ class GetPickupPointsListRequest extends AbstractStructBase
     }
 
     /**
-     * Get SecurityID value
+     * Get SecurityID value.
      */
     public function getSecurityID(): IdentificationObject
     {
@@ -60,7 +64,7 @@ class GetPickupPointsListRequest extends AbstractStructBase
     }
 
     /**
-     * Set SecurityID value
+     * Set SecurityID value.
      */
     public function setSecurityID(?IdentificationObject $securityID): self
     {
@@ -70,7 +74,7 @@ class GetPickupPointsListRequest extends AbstractStructBase
     }
 
     /**
-     * Get CPPclCode value
+     * Get CPPclCode value.
      */
     public function getCPPclCode(): string
     {
@@ -78,7 +82,7 @@ class GetPickupPointsListRequest extends AbstractStructBase
     }
 
     /**
-     * Set CPPclCode value
+     * Set CPPclCode value.
      */
     public function setCPPclCode(?string $cPPclCode): self
     {
@@ -92,7 +96,7 @@ class GetPickupPointsListRequest extends AbstractStructBase
     }
 
     /**
-     * Get CsgZC value
+     * Get CsgZC value.
      */
     public function getCsgZC(): string
     {
@@ -100,7 +104,7 @@ class GetPickupPointsListRequest extends AbstractStructBase
     }
 
     /**
-     * Set CsgZC value
+     * Set CsgZC value.
      */
     public function setCsgZC(?string $csgZC): self
     {

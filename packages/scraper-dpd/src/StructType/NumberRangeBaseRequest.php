@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for NumberRangeBaseRequest StructType
+ * This class stands for NumberRangeBaseRequest StructType.
  */
 #[\AllowDynamicProperties]
 abstract class NumberRangeBaseRequest extends AbstractStructBase
@@ -14,33 +16,36 @@ abstract class NumberRangeBaseRequest extends AbstractStructBase
      * The CustomerCenterNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $CustomerCenterNumber;
+
     /**
      * The CustomerNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $CustomerNumber;
+
     /**
      * The ClientID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ClientID = null;
+
     /**
      * The NumberRangeType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $NumberRangeType = null;
 
     /**
-     * Constructor method for NumberRangeBaseRequest
+     * Constructor method for NumberRangeBaseRequest.
      *
      * @uses NumberRangeBaseRequest::setCustomerCenterNumber()
      * @uses NumberRangeBaseRequest::setCustomerNumber()
@@ -58,7 +63,7 @@ abstract class NumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get CustomerCenterNumber value
+     * Get CustomerCenterNumber value.
      */
     public function getCustomerCenterNumber(): int
     {
@@ -66,7 +71,7 @@ abstract class NumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set CustomerCenterNumber value
+     * Set CustomerCenterNumber value.
      */
     public function setCustomerCenterNumber(int $customerCenterNumber): self
     {
@@ -80,7 +85,7 @@ abstract class NumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get CustomerNumber value
+     * Get CustomerNumber value.
      */
     public function getCustomerNumber(): int
     {
@@ -88,7 +93,7 @@ abstract class NumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set CustomerNumber value
+     * Set CustomerNumber value.
      */
     public function setCustomerNumber(int $customerNumber): self
     {
@@ -102,7 +107,7 @@ abstract class NumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get ClientID value
+     * Get ClientID value.
      */
     public function getClientID(): ?string
     {
@@ -110,7 +115,7 @@ abstract class NumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set ClientID value
+     * Set ClientID value.
      */
     public function setClientID(?string $clientID = null): self
     {
@@ -124,7 +129,7 @@ abstract class NumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get NumberRangeType value
+     * Get NumberRangeType value.
      */
     public function getNumberRangeType(): ?string
     {
@@ -132,7 +137,7 @@ abstract class NumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set NumberRangeType value
+     * Set NumberRangeType value.
      */
     public function setNumberRangeType(?string $numberRangeType = null): self
     {

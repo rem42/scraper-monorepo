@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ServiceNoticeRequest StructType
+ * This class stands for ServiceNoticeRequest StructType.
  */
 #[\AllowDynamicProperties]
 class ServiceNoticeRequest extends AbstractStructBase
@@ -14,19 +16,20 @@ class ServiceNoticeRequest extends AbstractStructBase
      * The customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $customer = null;
+
     /**
      * The language
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $language = null;
 
     /**
-     * Constructor method for ServiceNoticeRequest
+     * Constructor method for ServiceNoticeRequest.
      *
      * @uses ServiceNoticeRequest::setCustomer()
      * @uses ServiceNoticeRequest::setLanguage()
@@ -40,7 +43,7 @@ class ServiceNoticeRequest extends AbstractStructBase
     }
 
     /**
-     * Get customer value
+     * Get customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -48,7 +51,7 @@ class ServiceNoticeRequest extends AbstractStructBase
     }
 
     /**
-     * Set customer value
+     * Set customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {
@@ -58,7 +61,7 @@ class ServiceNoticeRequest extends AbstractStructBase
     }
 
     /**
-     * Get language value
+     * Get language value.
      */
     public function getLanguage(): ?string
     {
@@ -66,7 +69,7 @@ class ServiceNoticeRequest extends AbstractStructBase
     }
 
     /**
-     * Set language value
+     * Set language value.
      */
     public function setLanguage(?string $language = null): self
     {

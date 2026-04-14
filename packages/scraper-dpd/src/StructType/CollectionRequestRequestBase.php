@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CollectionRequestRequestBase StructType
+ * This class stands for CollectionRequestRequestBase StructType.
  */
 #[\AllowDynamicProperties]
 abstract class CollectionRequestRequestBase extends AbstractStructBase
@@ -14,89 +16,100 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
      * The customer_countrycode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $customer_countrycode;
+
     /**
      * The customer_centernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $customer_centernumber;
+
     /**
      * The customer_number
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $customer_number;
+
     /**
      * The parcel_count
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $parcel_count;
+
     /**
      * The receiveraddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $receiveraddress = null;
+
     /**
      * The shipperaddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $shipperaddress = null;
+
     /**
      * The remark
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $remark = null;
+
     /**
      * The referencenumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $referencenumber = null;
+
     /**
      * The reference2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $reference2 = null;
+
     /**
      * The reference3
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $reference3 = null;
+
     /**
      * The reference4
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $reference4 = null;
+
     /**
      * The services
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?CollectionRequestServices $services = null;
 
     /**
-     * Constructor method for CollectionRequestRequestBase
+     * Constructor method for CollectionRequestRequestBase.
      *
      * @uses CollectionRequestRequestBase::setCustomer_countrycode()
      * @uses CollectionRequestRequestBase::setCustomer_centernumber()
@@ -130,7 +143,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get customer_countrycode value
+     * Get customer_countrycode value.
      */
     public function getCustomer_countrycode(): int
     {
@@ -138,7 +151,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set customer_countrycode value
+     * Set customer_countrycode value.
      */
     public function setCustomer_countrycode(int $customer_countrycode): self
     {
@@ -152,7 +165,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get customer_centernumber value
+     * Get customer_centernumber value.
      */
     public function getCustomer_centernumber(): int
     {
@@ -160,7 +173,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set customer_centernumber value
+     * Set customer_centernumber value.
      */
     public function setCustomer_centernumber(int $customer_centernumber): self
     {
@@ -174,7 +187,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get customer_number value
+     * Get customer_number value.
      */
     public function getCustomer_number(): int
     {
@@ -182,7 +195,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set customer_number value
+     * Set customer_number value.
      */
     public function setCustomer_number(int $customer_number): self
     {
@@ -196,7 +209,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get parcel_count value
+     * Get parcel_count value.
      */
     public function getParcel_count(): int
     {
@@ -204,7 +217,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set parcel_count value
+     * Set parcel_count value.
      */
     public function setParcel_count(int $parcel_count): self
     {
@@ -218,7 +231,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get receiveraddress value
+     * Get receiveraddress value.
      */
     public function getReceiveraddress(): ?Address
     {
@@ -226,7 +239,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set receiveraddress value
+     * Set receiveraddress value.
      */
     public function setReceiveraddress(?Address $receiveraddress = null): self
     {
@@ -236,7 +249,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get shipperaddress value
+     * Get shipperaddress value.
      */
     public function getShipperaddress(): ?Address
     {
@@ -244,7 +257,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set shipperaddress value
+     * Set shipperaddress value.
      */
     public function setShipperaddress(?Address $shipperaddress = null): self
     {
@@ -254,7 +267,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get remark value
+     * Get remark value.
      */
     public function getRemark(): ?string
     {
@@ -262,7 +275,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set remark value
+     * Set remark value.
      */
     public function setRemark(?string $remark = null): self
     {
@@ -276,7 +289,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get referencenumber value
+     * Get referencenumber value.
      */
     public function getReferencenumber(): ?string
     {
@@ -284,7 +297,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set referencenumber value
+     * Set referencenumber value.
      */
     public function setReferencenumber(?string $referencenumber = null): self
     {
@@ -298,7 +311,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get reference2 value
+     * Get reference2 value.
      */
     public function getReference2(): ?string
     {
@@ -306,7 +319,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set reference2 value
+     * Set reference2 value.
      */
     public function setReference2(?string $reference2 = null): self
     {
@@ -320,7 +333,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get reference3 value
+     * Get reference3 value.
      */
     public function getReference3(): ?string
     {
@@ -328,7 +341,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set reference3 value
+     * Set reference3 value.
      */
     public function setReference3(?string $reference3 = null): self
     {
@@ -342,7 +355,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get reference4 value
+     * Get reference4 value.
      */
     public function getReference4(): ?string
     {
@@ -350,7 +363,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set reference4 value
+     * Set reference4 value.
      */
     public function setReference4(?string $reference4 = null): self
     {
@@ -364,7 +377,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get services value
+     * Get services value.
      */
     public function getServices(): ?CollectionRequestServices
     {
@@ -372,7 +385,7 @@ abstract class CollectionRequestRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set services value
+     * Set services value.
      */
     public function setServices(?CollectionRequestServices $services = null): self
     {

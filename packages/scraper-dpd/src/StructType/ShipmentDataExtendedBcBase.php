@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ShipmentDataExtendedBcBase StructType
+ * This class stands for ShipmentDataExtendedBcBase StructType.
  */
 #[\AllowDynamicProperties]
 class ShipmentDataExtendedBcBase extends ShipmentDataExtendedBase
@@ -12,40 +14,44 @@ class ShipmentDataExtendedBcBase extends ShipmentDataExtendedBase
      * The Sin
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $Sin;
+
     /**
      * The Barcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Barcode = null;
+
     /**
      * The BarcodeSource
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BarcodeSource = null;
+
     /**
      * The BarcodeId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BarcodeId = null;
+
     /**
      * The Services
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfServiceEntry $Services = null;
 
     /**
-     * Constructor method for ShipmentDataExtendedBcBase
+     * Constructor method for ShipmentDataExtendedBcBase.
      *
      * @uses ShipmentDataExtendedBcBase::setSin()
      * @uses ShipmentDataExtendedBcBase::setBarcode()
@@ -65,7 +71,7 @@ class ShipmentDataExtendedBcBase extends ShipmentDataExtendedBase
     }
 
     /**
-     * Get Sin value
+     * Get Sin value.
      */
     public function getSin(): int
     {
@@ -73,7 +79,7 @@ class ShipmentDataExtendedBcBase extends ShipmentDataExtendedBase
     }
 
     /**
-     * Set Sin value
+     * Set Sin value.
      */
     public function setSin(int $sin): self
     {
@@ -87,7 +93,7 @@ class ShipmentDataExtendedBcBase extends ShipmentDataExtendedBase
     }
 
     /**
-     * Get Barcode value
+     * Get Barcode value.
      */
     public function getBarcode(): ?string
     {
@@ -95,7 +101,7 @@ class ShipmentDataExtendedBcBase extends ShipmentDataExtendedBase
     }
 
     /**
-     * Set Barcode value
+     * Set Barcode value.
      */
     public function setBarcode(?string $barcode = null): self
     {
@@ -109,7 +115,7 @@ class ShipmentDataExtendedBcBase extends ShipmentDataExtendedBase
     }
 
     /**
-     * Get BarcodeSource value
+     * Get BarcodeSource value.
      */
     public function getBarcodeSource(): ?string
     {
@@ -117,7 +123,7 @@ class ShipmentDataExtendedBcBase extends ShipmentDataExtendedBase
     }
 
     /**
-     * Set BarcodeSource value
+     * Set BarcodeSource value.
      */
     public function setBarcodeSource(?string $barcodeSource = null): self
     {
@@ -131,7 +137,7 @@ class ShipmentDataExtendedBcBase extends ShipmentDataExtendedBase
     }
 
     /**
-     * Get BarcodeId value
+     * Get BarcodeId value.
      */
     public function getBarcodeId(): ?string
     {
@@ -139,7 +145,7 @@ class ShipmentDataExtendedBcBase extends ShipmentDataExtendedBase
     }
 
     /**
-     * Set BarcodeId value
+     * Set BarcodeId value.
      */
     public function setBarcodeId(?string $barcodeId = null): self
     {
@@ -153,7 +159,7 @@ class ShipmentDataExtendedBcBase extends ShipmentDataExtendedBase
     }
 
     /**
-     * Get Services value
+     * Get Services value.
      */
     public function getServices(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfServiceEntry
     {
@@ -161,7 +167,7 @@ class ShipmentDataExtendedBcBase extends ShipmentDataExtendedBase
     }
 
     /**
-     * Set Services value
+     * Set Services value.
      */
     public function setServices(?\Scraper\ScraperDPD\ArrayType\ArrayOfServiceEntry $services = null): self
     {

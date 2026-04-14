@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for UpdateRdvShipmentData StructType
+ * This class stands for UpdateRdvShipmentData StructType.
  */
 #[\AllowDynamicProperties]
 class UpdateRdvShipmentData extends AbstractStructBase
@@ -14,33 +16,36 @@ class UpdateRdvShipmentData extends AbstractStructBase
      * The Sin
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Sin = null;
+
     /**
      * The Receiver_EmailAddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Receiver_EmailAddress = null;
+
     /**
      * The User
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $User = null;
+
     /**
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?UpdateRdvShipmentDataRequest $request = null;
 
     /**
-     * Constructor method for UpdateRdvShipmentData
+     * Constructor method for UpdateRdvShipmentData.
      *
      * @uses UpdateRdvShipmentData::setSin()
      * @uses UpdateRdvShipmentData::setReceiver_EmailAddress()
@@ -58,7 +63,7 @@ class UpdateRdvShipmentData extends AbstractStructBase
     }
 
     /**
-     * Get Sin value
+     * Get Sin value.
      */
     public function getSin(): ?string
     {
@@ -66,7 +71,7 @@ class UpdateRdvShipmentData extends AbstractStructBase
     }
 
     /**
-     * Set Sin value
+     * Set Sin value.
      */
     public function setSin(?string $sin = null): self
     {
@@ -80,7 +85,7 @@ class UpdateRdvShipmentData extends AbstractStructBase
     }
 
     /**
-     * Get Receiver_EmailAddress value
+     * Get Receiver_EmailAddress value.
      */
     public function getReceiver_EmailAddress(): ?string
     {
@@ -88,7 +93,7 @@ class UpdateRdvShipmentData extends AbstractStructBase
     }
 
     /**
-     * Set Receiver_EmailAddress value
+     * Set Receiver_EmailAddress value.
      */
     public function setReceiver_EmailAddress(?string $receiver_EmailAddress = null): self
     {
@@ -102,7 +107,7 @@ class UpdateRdvShipmentData extends AbstractStructBase
     }
 
     /**
-     * Get User value
+     * Get User value.
      */
     public function getUser(): ?string
     {
@@ -110,7 +115,7 @@ class UpdateRdvShipmentData extends AbstractStructBase
     }
 
     /**
-     * Set User value
+     * Set User value.
      */
     public function setUser(?string $user = null): self
     {
@@ -124,7 +129,7 @@ class UpdateRdvShipmentData extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?UpdateRdvShipmentDataRequest
     {
@@ -132,7 +137,7 @@ class UpdateRdvShipmentData extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?UpdateRdvShipmentDataRequest $request = null): self
     {

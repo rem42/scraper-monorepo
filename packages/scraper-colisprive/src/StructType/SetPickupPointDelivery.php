@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for SetPickupPointDelivery StructType
+ * This class stands for SetPickupPointDelivery StructType.
  */
 #[\AllowDynamicProperties]
 class SetPickupPointDelivery extends AbstractStructBase
@@ -15,12 +17,12 @@ class SetPickupPointDelivery extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?SetPickupPointDeliveryRequest $SetPickupPointDeliveryRequest;
 
     /**
-     * Constructor method for SetPickupPointDelivery
+     * Constructor method for SetPickupPointDelivery.
      *
      * @uses SetPickupPointDelivery::setSetPickupPointDeliveryRequest()
      */
@@ -32,7 +34,7 @@ class SetPickupPointDelivery extends AbstractStructBase
     }
 
     /**
-     * Get SetPickupPointDeliveryRequest value
+     * Get SetPickupPointDeliveryRequest value.
      */
     public function getSetPickupPointDeliveryRequest(): SetPickupPointDeliveryRequest
     {
@@ -40,7 +42,7 @@ class SetPickupPointDelivery extends AbstractStructBase
     }
 
     /**
-     * Set SetPickupPointDeliveryRequest value
+     * Set SetPickupPointDeliveryRequest value.
      */
     public function setSetPickupPointDeliveryRequest(?SetPickupPointDeliveryRequest $setPickupPointDeliveryRequest): self
     {

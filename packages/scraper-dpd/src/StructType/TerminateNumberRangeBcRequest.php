@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for TerminateNumberRangeBcRequest StructType
+ * This class stands for TerminateNumberRangeBcRequest StructType.
  */
 #[\AllowDynamicProperties]
 class TerminateNumberRangeBcRequest extends TerminateNumberRangeBaseRequest
@@ -12,19 +14,20 @@ class TerminateNumberRangeBcRequest extends TerminateNumberRangeBaseRequest
      * The BarcodecSource
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $BarcodecSource;
+
     /**
      * The Domain
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Domain = null;
 
     /**
-     * Constructor method for TerminateNumberRangeBcRequest
+     * Constructor method for TerminateNumberRangeBcRequest.
      *
      * @uses TerminateNumberRangeBcRequest::setBarcodecSource()
      * @uses TerminateNumberRangeBcRequest::setDomain()
@@ -38,7 +41,7 @@ class TerminateNumberRangeBcRequest extends TerminateNumberRangeBaseRequest
     }
 
     /**
-     * Get BarcodecSource value
+     * Get BarcodecSource value.
      */
     public function getBarcodecSource(): int
     {
@@ -46,7 +49,7 @@ class TerminateNumberRangeBcRequest extends TerminateNumberRangeBaseRequest
     }
 
     /**
-     * Set BarcodecSource value
+     * Set BarcodecSource value.
      */
     public function setBarcodecSource(int $barcodecSource): self
     {
@@ -60,7 +63,7 @@ class TerminateNumberRangeBcRequest extends TerminateNumberRangeBaseRequest
     }
 
     /**
-     * Get Domain value
+     * Get Domain value.
      */
     public function getDomain(): ?string
     {
@@ -68,7 +71,7 @@ class TerminateNumberRangeBcRequest extends TerminateNumberRangeBaseRequest
     }
 
     /**
-     * Set Domain value
+     * Set Domain value.
      */
     public function setDomain(?string $domain = null): self
     {

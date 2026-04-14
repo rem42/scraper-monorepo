@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetAllServiceNoticesResponse StructType
+ * This class stands for GetAllServiceNoticesResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetAllServiceNoticesResponse extends AbstractStructBase
@@ -14,33 +16,36 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
      * The DataComplete
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $DataComplete;
+
     /**
      * The GetAllServiceNoticesResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetAllServiceNoticesResponse $GetAllServiceNoticesResult = null;
+
     /**
      * The ServiceNotices
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfServiceNoticeEntry $ServiceNotices = null;
+
     /**
      * The LastKey
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $LastKey = null;
 
     /**
-     * Constructor method for GetAllServiceNoticesResponse
+     * Constructor method for GetAllServiceNoticesResponse.
      *
      * @uses GetAllServiceNoticesResponse::setDataComplete()
      * @uses GetAllServiceNoticesResponse::setGetAllServiceNoticesResult()
@@ -58,7 +63,7 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
     }
 
     /**
-     * Get DataComplete value
+     * Get DataComplete value.
      */
     public function getDataComplete(): bool
     {
@@ -66,7 +71,7 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
     }
 
     /**
-     * Set DataComplete value
+     * Set DataComplete value.
      */
     public function setDataComplete(bool $dataComplete): self
     {
@@ -80,7 +85,7 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
     }
 
     /**
-     * Get GetAllServiceNoticesResult value
+     * Get GetAllServiceNoticesResult value.
      */
     public function getGetAllServiceNoticesResult(): ?self
     {
@@ -88,7 +93,7 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
     }
 
     /**
-     * Set GetAllServiceNoticesResult value
+     * Set GetAllServiceNoticesResult value.
      */
     public function setGetAllServiceNoticesResult(?self $getAllServiceNoticesResult = null): self
     {
@@ -98,7 +103,7 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
     }
 
     /**
-     * Get ServiceNotices value
+     * Get ServiceNotices value.
      */
     public function getServiceNotices(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfServiceNoticeEntry
     {
@@ -106,7 +111,7 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
     }
 
     /**
-     * Set ServiceNotices value
+     * Set ServiceNotices value.
      */
     public function setServiceNotices(?\Scraper\ScraperDPD\ArrayType\ArrayOfServiceNoticeEntry $serviceNotices = null): self
     {
@@ -116,7 +121,7 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
     }
 
     /**
-     * Get LastKey value
+     * Get LastKey value.
      */
     public function getLastKey(): ?string
     {
@@ -124,7 +129,7 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
     }
 
     /**
-     * Set LastKey value
+     * Set LastKey value.
      */
     public function setLastKey(?string $lastKey = null): self
     {

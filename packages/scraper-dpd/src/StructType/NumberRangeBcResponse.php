@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for NumberRangeBcResponse StructType
+ * This class stands for NumberRangeBcResponse StructType.
  */
 #[\AllowDynamicProperties]
 class NumberRangeBcResponse extends NumberRangeBaseResponse
@@ -12,19 +14,20 @@ class NumberRangeBcResponse extends NumberRangeBaseResponse
      * The BarcodeSource
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $BarcodeSource;
+
     /**
      * The Domain
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Domain = null;
 
     /**
-     * Constructor method for NumberRangeBcResponse
+     * Constructor method for NumberRangeBcResponse.
      *
      * @uses NumberRangeBcResponse::setBarcodeSource()
      * @uses NumberRangeBcResponse::setDomain()
@@ -38,7 +41,7 @@ class NumberRangeBcResponse extends NumberRangeBaseResponse
     }
 
     /**
-     * Get BarcodeSource value
+     * Get BarcodeSource value.
      */
     public function getBarcodeSource(): int
     {
@@ -46,7 +49,7 @@ class NumberRangeBcResponse extends NumberRangeBaseResponse
     }
 
     /**
-     * Set BarcodeSource value
+     * Set BarcodeSource value.
      */
     public function setBarcodeSource(int $barcodeSource): self
     {
@@ -60,7 +63,7 @@ class NumberRangeBcResponse extends NumberRangeBaseResponse
     }
 
     /**
-     * Get Domain value
+     * Get Domain value.
      */
     public function getDomain(): ?string
     {
@@ -68,7 +71,7 @@ class NumberRangeBcResponse extends NumberRangeBaseResponse
     }
 
     /**
-     * Set Domain value
+     * Set Domain value.
      */
     public function setDomain(?string $domain = null): self
     {

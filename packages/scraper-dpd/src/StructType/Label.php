@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Label StructType
+ * This class stands for Label StructType.
  */
 #[\AllowDynamicProperties]
 class Label extends AbstractStructBase
@@ -14,19 +16,20 @@ class Label extends AbstractStructBase
      * The type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $type;
+
     /**
      * The label
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $label = null;
 
     /**
-     * Constructor method for Label
+     * Constructor method for Label.
      *
      * @uses Label::setType()
      * @uses Label::setLabel()
@@ -40,7 +43,7 @@ class Label extends AbstractStructBase
     }
 
     /**
-     * Get type value
+     * Get type value.
      */
     public function getType(): string
     {
@@ -48,7 +51,7 @@ class Label extends AbstractStructBase
     }
 
     /**
-     * Set type value
+     * Set type value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\Etype::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\Etype::getValidValues()
@@ -67,7 +70,7 @@ class Label extends AbstractStructBase
     }
 
     /**
-     * Get label value
+     * Get label value.
      */
     public function getLabel(): ?string
     {
@@ -75,7 +78,7 @@ class Label extends AbstractStructBase
     }
 
     /**
-     * Set label value
+     * Set label value.
      */
     public function setLabel(?string $label = null): self
     {

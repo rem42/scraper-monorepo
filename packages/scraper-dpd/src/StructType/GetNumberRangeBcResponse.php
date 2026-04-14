@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetNumberRangeBcResponse StructType
+ * This class stands for GetNumberRangeBcResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetNumberRangeBcResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetNumberRangeBcResponse extends AbstractStructBase
      * The GetNumberRangeBcResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?NumberRangeBcResponse $GetNumberRangeBcResult = null;
 
     /**
-     * Constructor method for GetNumberRangeBcResponse
+     * Constructor method for GetNumberRangeBcResponse.
      *
      * @uses GetNumberRangeBcResponse::setGetNumberRangeBcResult()
      */
@@ -31,7 +33,7 @@ class GetNumberRangeBcResponse extends AbstractStructBase
     }
 
     /**
-     * Get GetNumberRangeBcResult value
+     * Get GetNumberRangeBcResult value.
      */
     public function getGetNumberRangeBcResult(): ?NumberRangeBcResponse
     {
@@ -39,7 +41,7 @@ class GetNumberRangeBcResponse extends AbstractStructBase
     }
 
     /**
-     * Set GetNumberRangeBcResult value
+     * Set GetNumberRangeBcResult value.
      */
     public function setGetNumberRangeBcResult(?NumberRangeBcResponse $getNumberRangeBcResult = null): self
     {

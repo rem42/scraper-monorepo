@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for LightParcelObject StructType
+ * This class stands for LightParcelObject StructType.
  */
 #[\AllowDynamicProperties]
 class LightParcelObject extends AbstractStructBase
@@ -14,66 +16,73 @@ class LightParcelObject extends AbstractStructBase
      * The PclWeight
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $PclWeight;
+
     /**
      * The ChargeAmnt
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected float $ChargeAmnt;
+
     /**
      * The CPPrdCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CPPrdCode = null;
+
     /**
      * The CPPclCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CPPclCode;
+
     /**
      * The OrderID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $OrderID;
+
     /**
      * The DlvrName
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $DlvrName;
+
     /**
      * The PclAdd
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?AddressObject $PclAdd;
+
     /**
      * The PclShipDate
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $PclShipDate;
 
     /**
-     * Constructor method for LightParcelObject
+     * Constructor method for LightParcelObject.
      *
      * @uses LightParcelObject::setPclWeight()
      * @uses LightParcelObject::setChargeAmnt()
@@ -99,7 +108,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Get PclWeight value
+     * Get PclWeight value.
      */
     public function getPclWeight(): int
     {
@@ -107,7 +116,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Set PclWeight value
+     * Set PclWeight value.
      */
     public function setPclWeight(int $pclWeight): self
     {
@@ -121,7 +130,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Get ChargeAmnt value
+     * Get ChargeAmnt value.
      */
     public function getChargeAmnt(): float
     {
@@ -129,7 +138,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Set ChargeAmnt value
+     * Set ChargeAmnt value.
      */
     public function setChargeAmnt(float $chargeAmnt): self
     {
@@ -143,7 +152,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Get CPPrdCode value
+     * Get CPPrdCode value.
      */
     public function getCPPrdCode(): ?string
     {
@@ -151,7 +160,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Set CPPrdCode value
+     * Set CPPrdCode value.
      */
     public function setCPPrdCode(?string $cPPrdCode = null): self
     {
@@ -165,7 +174,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Get CPPclCode value
+     * Get CPPclCode value.
      */
     public function getCPPclCode(): string
     {
@@ -173,7 +182,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Set CPPclCode value
+     * Set CPPclCode value.
      */
     public function setCPPclCode(?string $cPPclCode): self
     {
@@ -187,7 +196,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Get OrderID value
+     * Get OrderID value.
      */
     public function getOrderID(): string
     {
@@ -195,7 +204,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Set OrderID value
+     * Set OrderID value.
      */
     public function setOrderID(?string $orderID): self
     {
@@ -209,7 +218,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Get DlvrName value
+     * Get DlvrName value.
      */
     public function getDlvrName(): string
     {
@@ -217,7 +226,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Set DlvrName value
+     * Set DlvrName value.
      */
     public function setDlvrName(?string $dlvrName): self
     {
@@ -231,7 +240,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Get PclAdd value
+     * Get PclAdd value.
      */
     public function getPclAdd(): AddressObject
     {
@@ -239,7 +248,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Set PclAdd value
+     * Set PclAdd value.
      */
     public function setPclAdd(?AddressObject $pclAdd): self
     {
@@ -249,7 +258,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Get PclShipDate value
+     * Get PclShipDate value.
      */
     public function getPclShipDate(): string
     {
@@ -257,7 +266,7 @@ class LightParcelObject extends AbstractStructBase
     }
 
     /**
-     * Set PclShipDate value
+     * Set PclShipDate value.
      */
     public function setPclShipDate(?string $pclShipDate): self
     {

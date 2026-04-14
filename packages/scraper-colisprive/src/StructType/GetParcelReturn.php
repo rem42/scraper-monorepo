@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetParcelReturn StructType
+ * This class stands for GetParcelReturn StructType.
  */
 #[\AllowDynamicProperties]
 class GetParcelReturn extends AbstractStructBase
@@ -14,205 +16,232 @@ class GetParcelReturn extends AbstractStructBase
      * The ChargeAmnt
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected float $ChargeAmnt;
+
     /**
      * The ValueAmnt
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected float $ValueAmnt;
+
     /**
      * The IsDlvrScheduleOk
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $IsDlvrScheduleOk;
+
     /**
      * The IsPclWithPOD
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $IsPclWithPOD;
+
     /**
      * The IsDlvr3PartyOk
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $IsDlvr3PartyOk;
+
     /**
      * The IsDlvrPckOk
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $IsDlvrPckOk;
+
     /**
      * The IsClaimOk
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $IsClaimOk;
+
     /**
      * The CmpyCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $CmpyCode;
+
     /**
      * The WSResp
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ResponseObject $WSResp = null;
+
     /**
      * The CPPclCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CPPclCode = null;
+
     /**
      * The CsgAdd
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?DeliveryAddressObject $CsgAdd = null;
+
     /**
      * The ThirdPartyAdd
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?DeliveryAddressObject $ThirdPartyAdd = null;
+
     /**
      * The DlvrPlnDate
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DlvrPlnDate = null;
+
     /**
      * The CustoName
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CustoName = null;
+
     /**
      * The CurrentStatusDate
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CurrentStatusDate = null;
+
     /**
      * The CurrentStatusCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CurrentStatusCode = null;
+
     /**
      * The CurrentStatusDesc
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CurrentStatusDesc = null;
+
     /**
      * The CPPrdCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CPPrdCode = null;
+
     /**
      * The CPPrdName
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CPPrdName = null;
+
     /**
      * The PckPoint
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?PickupPointObject $PckPoint = null;
+
     /**
      * The DlvrScheduleKoMsg
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DlvrScheduleKoMsg = null;
+
     /**
      * The ClaimKoMsg
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ClaimKoMsg = null;
+
     /**
      * The ShipModeCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ShipModeCode = null;
+
     /**
      * The PclStatusHisto
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * - minOccurs: 0
+     * - minOccurs: 0.
      *
-     * @var array<\Scraper\ScraperColisPrive\StructType\StatusObject>
+     * @var array<StatusObject>
      */
     protected ?array $PclStatusHisto = null;
+
     /**
      * The CustoCarePhoneNum
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CustoCarePhoneNum = null;
+
     /**
      * The CustoCareMention
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CustoCareMention = null;
+
     /**
      * The CitiesDlvr
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * - minOccurs: 0
+     * - minOccurs: 0.
      *
-     * @var array<\Scraper\ScraperColisPrive\StructType\CityObject>
+     * @var array<CityObject>
      */
     protected ?array $CitiesDlvr = null;
+
     /**
      * The CmpyPclCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CmpyPclCode = null;
 
     /**
-     * Constructor method for GetParcelReturn
+     * Constructor method for GetParcelReturn.
      *
      * @uses GetParcelReturn::setChargeAmnt()
      * @uses GetParcelReturn::setValueAmnt()
@@ -243,8 +272,8 @@ class GetParcelReturn extends AbstractStructBase
      * @uses GetParcelReturn::setCitiesDlvr()
      * @uses GetParcelReturn::setCmpyPclCode()
      *
-     * @param array<\Scraper\ScraperColisPrive\StructType\StatusObject> $pclStatusHisto
-     * @param array<\Scraper\ScraperColisPrive\StructType\CityObject>   $citiesDlvr
+     * @param array<StatusObject> $pclStatusHisto
+     * @param array<CityObject>   $citiesDlvr
      */
     public function __construct(float $chargeAmnt, float $valueAmnt, bool $isDlvrScheduleOk, bool $isPclWithPOD, bool $isDlvr3PartyOk, bool $isDlvrPckOk, bool $isClaimOk, string $cmpyCode, ?ResponseObject $wSResp = null, ?string $cPPclCode = null, ?DeliveryAddressObject $csgAdd = null, ?DeliveryAddressObject $thirdPartyAdd = null, ?string $dlvrPlnDate = null, ?string $custoName = null, ?string $currentStatusDate = null, ?string $currentStatusCode = null, ?string $currentStatusDesc = null, ?string $cPPrdCode = null, ?string $cPPrdName = null, ?PickupPointObject $pckPoint = null, ?string $dlvrScheduleKoMsg = null, ?string $claimKoMsg = null, ?string $shipModeCode = null, ?array $pclStatusHisto = null, ?string $custoCarePhoneNum = null, ?string $custoCareMention = null, ?array $citiesDlvr = null, ?string $cmpyPclCode = null)
     {
@@ -281,7 +310,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get ChargeAmnt value
+     * Get ChargeAmnt value.
      */
     public function getChargeAmnt(): float
     {
@@ -289,7 +318,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set ChargeAmnt value
+     * Set ChargeAmnt value.
      */
     public function setChargeAmnt(float $chargeAmnt): self
     {
@@ -303,7 +332,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get ValueAmnt value
+     * Get ValueAmnt value.
      */
     public function getValueAmnt(): float
     {
@@ -311,7 +340,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set ValueAmnt value
+     * Set ValueAmnt value.
      */
     public function setValueAmnt(float $valueAmnt): self
     {
@@ -325,7 +354,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get IsDlvrScheduleOk value
+     * Get IsDlvrScheduleOk value.
      */
     public function getIsDlvrScheduleOk(): bool
     {
@@ -333,7 +362,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set IsDlvrScheduleOk value
+     * Set IsDlvrScheduleOk value.
      */
     public function setIsDlvrScheduleOk(bool $isDlvrScheduleOk): self
     {
@@ -347,7 +376,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get IsPclWithPOD value
+     * Get IsPclWithPOD value.
      */
     public function getIsPclWithPOD(): bool
     {
@@ -355,7 +384,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set IsPclWithPOD value
+     * Set IsPclWithPOD value.
      */
     public function setIsPclWithPOD(bool $isPclWithPOD): self
     {
@@ -369,7 +398,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get IsDlvr3PartyOk value
+     * Get IsDlvr3PartyOk value.
      */
     public function getIsDlvr3PartyOk(): bool
     {
@@ -377,7 +406,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set IsDlvr3PartyOk value
+     * Set IsDlvr3PartyOk value.
      */
     public function setIsDlvr3PartyOk(bool $isDlvr3PartyOk): self
     {
@@ -391,7 +420,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get IsDlvrPckOk value
+     * Get IsDlvrPckOk value.
      */
     public function getIsDlvrPckOk(): bool
     {
@@ -399,7 +428,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set IsDlvrPckOk value
+     * Set IsDlvrPckOk value.
      */
     public function setIsDlvrPckOk(bool $isDlvrPckOk): self
     {
@@ -413,7 +442,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get IsClaimOk value
+     * Get IsClaimOk value.
      */
     public function getIsClaimOk(): bool
     {
@@ -421,7 +450,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set IsClaimOk value
+     * Set IsClaimOk value.
      */
     public function setIsClaimOk(bool $isClaimOk): self
     {
@@ -435,7 +464,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CmpyCode value
+     * Get CmpyCode value.
      */
     public function getCmpyCode(): string
     {
@@ -443,7 +472,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CmpyCode value
+     * Set CmpyCode value.
      *
      * @uses \Scraper\ScraperColisPrive\EnumType\EnumCompanyCode::valueIsValid()
      * @uses \Scraper\ScraperColisPrive\EnumType\EnumCompanyCode::getValidValues()
@@ -462,7 +491,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get WSResp value
+     * Get WSResp value.
      */
     public function getWSResp(): ?ResponseObject
     {
@@ -470,7 +499,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set WSResp value
+     * Set WSResp value.
      */
     public function setWSResp(?ResponseObject $wSResp = null): self
     {
@@ -480,7 +509,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CPPclCode value
+     * Get CPPclCode value.
      */
     public function getCPPclCode(): ?string
     {
@@ -488,7 +517,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CPPclCode value
+     * Set CPPclCode value.
      */
     public function setCPPclCode(?string $cPPclCode = null): self
     {
@@ -502,7 +531,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CsgAdd value
+     * Get CsgAdd value.
      */
     public function getCsgAdd(): ?DeliveryAddressObject
     {
@@ -510,7 +539,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CsgAdd value
+     * Set CsgAdd value.
      */
     public function setCsgAdd(?DeliveryAddressObject $csgAdd = null): self
     {
@@ -520,7 +549,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get ThirdPartyAdd value
+     * Get ThirdPartyAdd value.
      */
     public function getThirdPartyAdd(): ?DeliveryAddressObject
     {
@@ -528,7 +557,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set ThirdPartyAdd value
+     * Set ThirdPartyAdd value.
      */
     public function setThirdPartyAdd(?DeliveryAddressObject $thirdPartyAdd = null): self
     {
@@ -538,7 +567,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get DlvrPlnDate value
+     * Get DlvrPlnDate value.
      */
     public function getDlvrPlnDate(): ?string
     {
@@ -546,7 +575,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set DlvrPlnDate value
+     * Set DlvrPlnDate value.
      */
     public function setDlvrPlnDate(?string $dlvrPlnDate = null): self
     {
@@ -560,7 +589,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CustoName value
+     * Get CustoName value.
      */
     public function getCustoName(): ?string
     {
@@ -568,7 +597,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CustoName value
+     * Set CustoName value.
      */
     public function setCustoName(?string $custoName = null): self
     {
@@ -582,7 +611,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CurrentStatusDate value
+     * Get CurrentStatusDate value.
      */
     public function getCurrentStatusDate(): ?string
     {
@@ -590,7 +619,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CurrentStatusDate value
+     * Set CurrentStatusDate value.
      */
     public function setCurrentStatusDate(?string $currentStatusDate = null): self
     {
@@ -604,7 +633,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CurrentStatusCode value
+     * Get CurrentStatusCode value.
      */
     public function getCurrentStatusCode(): ?string
     {
@@ -612,7 +641,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CurrentStatusCode value
+     * Set CurrentStatusCode value.
      */
     public function setCurrentStatusCode(?string $currentStatusCode = null): self
     {
@@ -626,7 +655,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CurrentStatusDesc value
+     * Get CurrentStatusDesc value.
      */
     public function getCurrentStatusDesc(): ?string
     {
@@ -634,7 +663,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CurrentStatusDesc value
+     * Set CurrentStatusDesc value.
      */
     public function setCurrentStatusDesc(?string $currentStatusDesc = null): self
     {
@@ -648,7 +677,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CPPrdCode value
+     * Get CPPrdCode value.
      */
     public function getCPPrdCode(): ?string
     {
@@ -656,7 +685,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CPPrdCode value
+     * Set CPPrdCode value.
      */
     public function setCPPrdCode(?string $cPPrdCode = null): self
     {
@@ -670,7 +699,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CPPrdName value
+     * Get CPPrdName value.
      */
     public function getCPPrdName(): ?string
     {
@@ -678,7 +707,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CPPrdName value
+     * Set CPPrdName value.
      */
     public function setCPPrdName(?string $cPPrdName = null): self
     {
@@ -692,7 +721,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get PckPoint value
+     * Get PckPoint value.
      */
     public function getPckPoint(): ?PickupPointObject
     {
@@ -700,7 +729,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set PckPoint value
+     * Set PckPoint value.
      */
     public function setPckPoint(?PickupPointObject $pckPoint = null): self
     {
@@ -710,7 +739,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get DlvrScheduleKoMsg value
+     * Get DlvrScheduleKoMsg value.
      */
     public function getDlvrScheduleKoMsg(): ?string
     {
@@ -718,7 +747,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set DlvrScheduleKoMsg value
+     * Set DlvrScheduleKoMsg value.
      */
     public function setDlvrScheduleKoMsg(?string $dlvrScheduleKoMsg = null): self
     {
@@ -732,7 +761,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get ClaimKoMsg value
+     * Get ClaimKoMsg value.
      */
     public function getClaimKoMsg(): ?string
     {
@@ -740,7 +769,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set ClaimKoMsg value
+     * Set ClaimKoMsg value.
      */
     public function setClaimKoMsg(?string $claimKoMsg = null): self
     {
@@ -754,7 +783,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get ShipModeCode value
+     * Get ShipModeCode value.
      */
     public function getShipModeCode(): ?string
     {
@@ -762,7 +791,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set ShipModeCode value
+     * Set ShipModeCode value.
      */
     public function setShipModeCode(?string $shipModeCode = null): self
     {
@@ -776,9 +805,9 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get PclStatusHisto value
+     * Get PclStatusHisto value.
      *
-     * @return array<\Scraper\ScraperColisPrive\StructType\StatusObject>
+     * @return array<StatusObject>
      */
     public function getPclStatusHisto(): ?array
     {
@@ -788,7 +817,7 @@ class GetParcelReturn extends AbstractStructBase
     /**
      * This method is responsible for validating the value(s) passed to the setPclStatusHisto method
      * This method is willingly generated in order to preserve the one-line inline validation within the setPclStatusHisto method
-     * This has to validate that each item contained by the array match the itemType constraint
+     * This has to validate that each item contained by the array match the itemType constraint.
      *
      * @return string A non-empty message if the values does not match the validation rules
      */
@@ -816,9 +845,9 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set PclStatusHisto value
+     * Set PclStatusHisto value.
      *
-     * @param array<\Scraper\ScraperColisPrive\StructType\StatusObject> $pclStatusHisto
+     * @param array<StatusObject> $pclStatusHisto
      *
      * @throws \InvalidArgumentException
      */
@@ -834,7 +863,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Add item to PclStatusHisto value
+     * Add item to PclStatusHisto value.
      *
      * @throws \InvalidArgumentException
      */
@@ -850,7 +879,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CustoCarePhoneNum value
+     * Get CustoCarePhoneNum value.
      */
     public function getCustoCarePhoneNum(): ?string
     {
@@ -858,7 +887,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CustoCarePhoneNum value
+     * Set CustoCarePhoneNum value.
      */
     public function setCustoCarePhoneNum(?string $custoCarePhoneNum = null): self
     {
@@ -872,7 +901,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CustoCareMention value
+     * Get CustoCareMention value.
      */
     public function getCustoCareMention(): ?string
     {
@@ -880,7 +909,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CustoCareMention value
+     * Set CustoCareMention value.
      */
     public function setCustoCareMention(?string $custoCareMention = null): self
     {
@@ -894,9 +923,9 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CitiesDlvr value
+     * Get CitiesDlvr value.
      *
-     * @return array<\Scraper\ScraperColisPrive\StructType\CityObject>
+     * @return array<CityObject>
      */
     public function getCitiesDlvr(): ?array
     {
@@ -906,7 +935,7 @@ class GetParcelReturn extends AbstractStructBase
     /**
      * This method is responsible for validating the value(s) passed to the setCitiesDlvr method
      * This method is willingly generated in order to preserve the one-line inline validation within the setCitiesDlvr method
-     * This has to validate that each item contained by the array match the itemType constraint
+     * This has to validate that each item contained by the array match the itemType constraint.
      *
      * @return string A non-empty message if the values does not match the validation rules
      */
@@ -934,9 +963,9 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CitiesDlvr value
+     * Set CitiesDlvr value.
      *
-     * @param array<\Scraper\ScraperColisPrive\StructType\CityObject> $citiesDlvr
+     * @param array<CityObject> $citiesDlvr
      *
      * @throws \InvalidArgumentException
      */
@@ -952,7 +981,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Add item to CitiesDlvr value
+     * Add item to CitiesDlvr value.
      *
      * @throws \InvalidArgumentException
      */
@@ -968,7 +997,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Get CmpyPclCode value
+     * Get CmpyPclCode value.
      */
     public function getCmpyPclCode(): ?string
     {
@@ -976,7 +1005,7 @@ class GetParcelReturn extends AbstractStructBase
     }
 
     /**
-     * Set CmpyPclCode value
+     * Set CmpyPclCode value.
      */
     public function setCmpyPclCode(?string $cmpyPclCode = null): self
     {

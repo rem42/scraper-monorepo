@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for StdShipmentLabelRequest StructType
+ * This class stands for StdShipmentLabelRequest StructType.
  */
 #[\AllowDynamicProperties]
 class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
@@ -12,40 +14,44 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
      * The bic3data
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Bic3LabelData $bic3data = null;
+
     /**
      * The overrideShipperLabelAddress
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $overrideShipperLabelAddress = null;
+
     /**
      * The injectionHub
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $injectionHub = null;
+
     /**
      * The refnrasbarcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?bool $refnrasbarcode = null;
+
     /**
      * The referenceInBarcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ReferenceInBarcode $referenceInBarcode = null;
 
     /**
-     * Constructor method for StdShipmentLabelRequest
+     * Constructor method for StdShipmentLabelRequest.
      *
      * @uses StdShipmentLabelRequest::setBic3data()
      * @uses StdShipmentLabelRequest::setOverrideShipperLabelAddress()
@@ -65,7 +71,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
 
     /**
-     * Get bic3data value
+     * Get bic3data value.
      */
     public function getBic3data(): ?Bic3LabelData
     {
@@ -73,7 +79,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
 
     /**
-     * Set bic3data value
+     * Set bic3data value.
      */
     public function setBic3data(?Bic3LabelData $bic3data = null): self
     {
@@ -83,7 +89,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
 
     /**
-     * Get overrideShipperLabelAddress value
+     * Get overrideShipperLabelAddress value.
      */
     public function getOverrideShipperLabelAddress(): ?Address
     {
@@ -91,7 +97,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
 
     /**
-     * Set overrideShipperLabelAddress value
+     * Set overrideShipperLabelAddress value.
      */
     public function setOverrideShipperLabelAddress(?Address $overrideShipperLabelAddress = null): self
     {
@@ -101,7 +107,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
 
     /**
-     * Get injectionHub value
+     * Get injectionHub value.
      */
     public function getInjectionHub(): ?string
     {
@@ -109,7 +115,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
 
     /**
-     * Set injectionHub value
+     * Set injectionHub value.
      */
     public function setInjectionHub(?string $injectionHub = null): self
     {
@@ -123,7 +129,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
 
     /**
-     * Get refnrasbarcode value
+     * Get refnrasbarcode value.
      */
     public function getRefnrasbarcode(): ?bool
     {
@@ -131,7 +137,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
 
     /**
-     * Set refnrasbarcode value
+     * Set refnrasbarcode value.
      */
     public function setRefnrasbarcode(?bool $refnrasbarcode = null): self
     {
@@ -145,7 +151,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
 
     /**
-     * Get referenceInBarcode value
+     * Get referenceInBarcode value.
      */
     public function getReferenceInBarcode(): ?ReferenceInBarcode
     {
@@ -153,7 +159,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
 
     /**
-     * Set referenceInBarcode value
+     * Set referenceInBarcode value.
      */
     public function setReferenceInBarcode(?ReferenceInBarcode $referenceInBarcode = null): self
     {

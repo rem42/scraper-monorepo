@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Rendezvous StructType
+ * This class stands for Rendezvous StructType.
  */
 #[\AllowDynamicProperties]
 class Rendezvous extends AbstractStructBase
@@ -14,33 +16,36 @@ class Rendezvous extends AbstractStructBase
      * The Type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $Type;
+
     /**
      * The From
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $From;
+
     /**
      * The To
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $To;
+
     /**
      * The PredictChoice
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $PredictChoice;
 
     /**
-     * Constructor method for Rendezvous
+     * Constructor method for Rendezvous.
      *
      * @uses Rendezvous::setType()
      * @uses Rendezvous::setFrom()
@@ -58,7 +63,7 @@ class Rendezvous extends AbstractStructBase
     }
 
     /**
-     * Get Type value
+     * Get Type value.
      */
     public function getType(): string
     {
@@ -66,7 +71,7 @@ class Rendezvous extends AbstractStructBase
     }
 
     /**
-     * Set Type value
+     * Set Type value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\ERendezvousType::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\ERendezvousType::getValidValues()
@@ -85,7 +90,7 @@ class Rendezvous extends AbstractStructBase
     }
 
     /**
-     * Get From value
+     * Get From value.
      */
     public function getFrom(): string
     {
@@ -93,7 +98,7 @@ class Rendezvous extends AbstractStructBase
     }
 
     /**
-     * Set From value
+     * Set From value.
      */
     public function setFrom(string $from): self
     {
@@ -107,7 +112,7 @@ class Rendezvous extends AbstractStructBase
     }
 
     /**
-     * Get To value
+     * Get To value.
      */
     public function getTo(): string
     {
@@ -115,7 +120,7 @@ class Rendezvous extends AbstractStructBase
     }
 
     /**
-     * Set To value
+     * Set To value.
      */
     public function setTo(string $to): self
     {
@@ -129,7 +134,7 @@ class Rendezvous extends AbstractStructBase
     }
 
     /**
-     * Get PredictChoice value
+     * Get PredictChoice value.
      */
     public function getPredictChoice(): int
     {
@@ -137,7 +142,7 @@ class Rendezvous extends AbstractStructBase
     }
 
     /**
-     * Set PredictChoice value
+     * Set PredictChoice value.
      */
     public function setPredictChoice(int $predictChoice): self
     {

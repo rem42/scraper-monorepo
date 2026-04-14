@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for UpdateServiceNoticeRequestBase StructType
+ * This class stands for UpdateServiceNoticeRequestBase StructType.
  */
 #[\AllowDynamicProperties]
 class UpdateServiceNoticeRequestBase extends AbstractStructBase
@@ -14,26 +16,28 @@ class UpdateServiceNoticeRequestBase extends AbstractStructBase
      * The BarcodeId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BarcodeId = null;
+
     /**
      * The BarcodeSource
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BarcodeSource = null;
+
     /**
      * The customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $customer = null;
 
     /**
-     * Constructor method for UpdateServiceNoticeRequestBase
+     * Constructor method for UpdateServiceNoticeRequestBase.
      *
      * @uses UpdateServiceNoticeRequestBase::setBarcodeId()
      * @uses UpdateServiceNoticeRequestBase::setBarcodeSource()
@@ -49,7 +53,7 @@ class UpdateServiceNoticeRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get BarcodeId value
+     * Get BarcodeId value.
      */
     public function getBarcodeId(): ?string
     {
@@ -57,7 +61,7 @@ class UpdateServiceNoticeRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set BarcodeId value
+     * Set BarcodeId value.
      */
     public function setBarcodeId(?string $barcodeId = null): self
     {
@@ -71,7 +75,7 @@ class UpdateServiceNoticeRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get BarcodeSource value
+     * Get BarcodeSource value.
      */
     public function getBarcodeSource(): ?string
     {
@@ -79,7 +83,7 @@ class UpdateServiceNoticeRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set BarcodeSource value
+     * Set BarcodeSource value.
      */
     public function setBarcodeSource(?string $barcodeSource = null): self
     {
@@ -93,7 +97,7 @@ class UpdateServiceNoticeRequestBase extends AbstractStructBase
     }
 
     /**
-     * Get customer value
+     * Get customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -101,7 +105,7 @@ class UpdateServiceNoticeRequestBase extends AbstractStructBase
     }
 
     /**
-     * Set customer value
+     * Set customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {

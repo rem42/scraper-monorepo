@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ParcelDimension StructType
+ * This class stands for ParcelDimension StructType.
  */
 #[\AllowDynamicProperties]
 class ParcelDimension extends AbstractStructBase
@@ -14,33 +16,36 @@ class ParcelDimension extends AbstractStructBase
      * The Length
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Length = null;
+
     /**
      * The Width
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Width = null;
+
     /**
      * The Height
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Height = null;
+
     /**
      * The Girth
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Girth = null;
 
     /**
-     * Constructor method for ParcelDimension
+     * Constructor method for ParcelDimension.
      *
      * @uses ParcelDimension::setLength()
      * @uses ParcelDimension::setWidth()
@@ -58,7 +63,7 @@ class ParcelDimension extends AbstractStructBase
     }
 
     /**
-     * Get Length value
+     * Get Length value.
      */
     public function getLength(): ?string
     {
@@ -66,7 +71,7 @@ class ParcelDimension extends AbstractStructBase
     }
 
     /**
-     * Set Length value
+     * Set Length value.
      */
     public function setLength(?string $length = null): self
     {
@@ -80,7 +85,7 @@ class ParcelDimension extends AbstractStructBase
     }
 
     /**
-     * Get Width value
+     * Get Width value.
      */
     public function getWidth(): ?string
     {
@@ -88,7 +93,7 @@ class ParcelDimension extends AbstractStructBase
     }
 
     /**
-     * Set Width value
+     * Set Width value.
      */
     public function setWidth(?string $width = null): self
     {
@@ -102,7 +107,7 @@ class ParcelDimension extends AbstractStructBase
     }
 
     /**
-     * Get Height value
+     * Get Height value.
      */
     public function getHeight(): ?string
     {
@@ -110,7 +115,7 @@ class ParcelDimension extends AbstractStructBase
     }
 
     /**
-     * Set Height value
+     * Set Height value.
      */
     public function setHeight(?string $height = null): self
     {
@@ -124,7 +129,7 @@ class ParcelDimension extends AbstractStructBase
     }
 
     /**
-     * Get Girth value
+     * Get Girth value.
      */
     public function getGirth(): ?string
     {
@@ -132,7 +137,7 @@ class ParcelDimension extends AbstractStructBase
     }
 
     /**
-     * Set Girth value
+     * Set Girth value.
      */
     public function setGirth(?string $girth = null): self
     {

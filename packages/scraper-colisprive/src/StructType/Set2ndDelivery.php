@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Set2ndDelivery StructType
+ * This class stands for Set2ndDelivery StructType.
  */
 #[\AllowDynamicProperties]
 class Set2ndDelivery extends AbstractStructBase
@@ -15,12 +17,12 @@ class Set2ndDelivery extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?Set2ndDeliveryRequest $Set2ndDeliveryRequest;
 
     /**
-     * Constructor method for Set2ndDelivery
+     * Constructor method for Set2ndDelivery.
      *
      * @uses Set2ndDelivery::setSet2ndDeliveryRequest()
      */
@@ -32,7 +34,7 @@ class Set2ndDelivery extends AbstractStructBase
     }
 
     /**
-     * Get Set2ndDeliveryRequest value
+     * Get Set2ndDeliveryRequest value.
      */
     public function getSet2ndDeliveryRequest(): Set2ndDeliveryRequest
     {
@@ -40,7 +42,7 @@ class Set2ndDelivery extends AbstractStructBase
     }
 
     /**
-     * Set Set2ndDeliveryRequest value
+     * Set Set2ndDeliveryRequest value.
      */
     public function setSet2ndDeliveryRequest(?Set2ndDeliveryRequest $set2ndDeliveryRequest): self
     {

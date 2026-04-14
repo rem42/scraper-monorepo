@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Text StructType
+ * This class stands for Text StructType.
  */
 #[\AllowDynamicProperties]
 class Text extends AbstractStructBase
@@ -14,19 +16,20 @@ class Text extends AbstractStructBase
      * The id
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $id;
+
     /**
      * The text
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $text = null;
 
     /**
-     * Constructor method for Text
+     * Constructor method for Text.
      *
      * @uses Text::setId()
      * @uses Text::setText()
@@ -40,7 +43,7 @@ class Text extends AbstractStructBase
     }
 
     /**
-     * Get id value
+     * Get id value.
      */
     public function getId(): int
     {
@@ -48,7 +51,7 @@ class Text extends AbstractStructBase
     }
 
     /**
-     * Set id value
+     * Set id value.
      */
     public function setId(int $id): self
     {
@@ -62,7 +65,7 @@ class Text extends AbstractStructBase
     }
 
     /**
-     * Get text value
+     * Get text value.
      */
     public function getText(): ?string
     {
@@ -70,7 +73,7 @@ class Text extends AbstractStructBase
     }
 
     /**
-     * Set text value
+     * Set text value.
      */
     public function setText(?string $text = null): self
     {

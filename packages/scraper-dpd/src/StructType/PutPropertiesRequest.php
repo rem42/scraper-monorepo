@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for PutPropertiesRequest StructType
+ * This class stands for PutPropertiesRequest StructType.
  */
 #[\AllowDynamicProperties]
 class PutPropertiesRequest extends AbstractStructBase
@@ -14,47 +16,52 @@ class PutPropertiesRequest extends AbstractStructBase
      * The ShipperNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $ShipperNumber;
+
     /**
      * The Customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $Customer = null;
+
     /**
      * The HardwareId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $HardwareId = null;
+
     /**
      * The Options
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Options = null;
+
     /**
      * The Properties
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfPropertyEntry $Properties = null;
+
     /**
      * The Sum
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Sum = null;
 
     /**
-     * Constructor method for PutPropertiesRequest
+     * Constructor method for PutPropertiesRequest.
      *
      * @uses PutPropertiesRequest::setShipperNumber()
      * @uses PutPropertiesRequest::setCustomer()
@@ -76,7 +83,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Get ShipperNumber value
+     * Get ShipperNumber value.
      */
     public function getShipperNumber(): int
     {
@@ -84,7 +91,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Set ShipperNumber value
+     * Set ShipperNumber value.
      */
     public function setShipperNumber(int $shipperNumber): self
     {
@@ -98,7 +105,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Get Customer value
+     * Get Customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -106,7 +113,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Set Customer value
+     * Set Customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {
@@ -116,7 +123,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Get HardwareId value
+     * Get HardwareId value.
      */
     public function getHardwareId(): ?string
     {
@@ -124,7 +131,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Set HardwareId value
+     * Set HardwareId value.
      */
     public function setHardwareId(?string $hardwareId = null): self
     {
@@ -138,7 +145,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Get Options value
+     * Get Options value.
      */
     public function getOptions(): ?string
     {
@@ -146,7 +153,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Set Options value
+     * Set Options value.
      */
     public function setOptions(?string $options = null): self
     {
@@ -160,7 +167,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Get Properties value
+     * Get Properties value.
      */
     public function getProperties(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfPropertyEntry
     {
@@ -168,7 +175,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Set Properties value
+     * Set Properties value.
      */
     public function setProperties(?\Scraper\ScraperDPD\ArrayType\ArrayOfPropertyEntry $properties = null): self
     {
@@ -178,7 +185,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Get Sum value
+     * Get Sum value.
      */
     public function getSum(): ?string
     {
@@ -186,7 +193,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Set Sum value
+     * Set Sum value.
      */
     public function setSum(?string $sum = null): self
     {

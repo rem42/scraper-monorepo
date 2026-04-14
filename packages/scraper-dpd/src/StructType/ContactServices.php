@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ContactServices StructType
+ * This class stands for ContactServices StructType.
  */
 #[\AllowDynamicProperties]
 class ContactServices extends CreateServicesBase
@@ -12,12 +14,12 @@ class ContactServices extends CreateServicesBase
      * The contact
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Contact $contact = null;
 
     /**
-     * Constructor method for ContactServices
+     * Constructor method for ContactServices.
      *
      * @uses ContactServices::setContact()
      */
@@ -29,7 +31,7 @@ class ContactServices extends CreateServicesBase
     }
 
     /**
-     * Get contact value
+     * Get contact value.
      */
     public function getContact(): ?Contact
     {
@@ -37,7 +39,7 @@ class ContactServices extends CreateServicesBase
     }
 
     /**
-     * Set contact value
+     * Set contact value.
      */
     public function setContact(?Contact $contact = null): self
     {

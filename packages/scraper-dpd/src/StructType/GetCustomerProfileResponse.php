@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetCustomerProfileResponse StructType
+ * This class stands for GetCustomerProfileResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetCustomerProfileResponse extends AbstractStructBase
@@ -14,19 +16,20 @@ class GetCustomerProfileResponse extends AbstractStructBase
      * The GetCustomerProfileResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetCustomerProfileResponse $GetCustomerProfileResult = null;
+
     /**
      * The CustomerProfiles
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfCustomerProfile $CustomerProfiles = null;
 
     /**
-     * Constructor method for GetCustomerProfileResponse
+     * Constructor method for GetCustomerProfileResponse.
      *
      * @uses GetCustomerProfileResponse::setGetCustomerProfileResult()
      * @uses GetCustomerProfileResponse::setCustomerProfiles()
@@ -40,7 +43,7 @@ class GetCustomerProfileResponse extends AbstractStructBase
     }
 
     /**
-     * Get GetCustomerProfileResult value
+     * Get GetCustomerProfileResult value.
      */
     public function getGetCustomerProfileResult(): ?self
     {
@@ -48,7 +51,7 @@ class GetCustomerProfileResponse extends AbstractStructBase
     }
 
     /**
-     * Set GetCustomerProfileResult value
+     * Set GetCustomerProfileResult value.
      */
     public function setGetCustomerProfileResult(?self $getCustomerProfileResult = null): self
     {
@@ -58,7 +61,7 @@ class GetCustomerProfileResponse extends AbstractStructBase
     }
 
     /**
-     * Get CustomerProfiles value
+     * Get CustomerProfiles value.
      */
     public function getCustomerProfiles(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfCustomerProfile
     {
@@ -66,7 +69,7 @@ class GetCustomerProfileResponse extends AbstractStructBase
     }
 
     /**
-     * Set CustomerProfiles value
+     * Set CustomerProfiles value.
      */
     public function setCustomerProfiles(?\Scraper\ScraperDPD\ArrayType\ArrayOfCustomerProfile $customerProfiles = null): self
     {

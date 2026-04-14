@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetShippingRequest StructType
+ * This class stands for GetShippingRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GetShippingRequest extends AbstractStructBase
@@ -14,19 +16,20 @@ class GetShippingRequest extends AbstractStructBase
      * The date
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $date = null;
+
     /**
      * The customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $customer = null;
 
     /**
-     * Constructor method for GetShippingRequest
+     * Constructor method for GetShippingRequest.
      *
      * @uses GetShippingRequest::setDate()
      * @uses GetShippingRequest::setCustomer()
@@ -40,7 +43,7 @@ class GetShippingRequest extends AbstractStructBase
     }
 
     /**
-     * Get date value
+     * Get date value.
      */
     public function getDate(): ?string
     {
@@ -48,7 +51,7 @@ class GetShippingRequest extends AbstractStructBase
     }
 
     /**
-     * Set date value
+     * Set date value.
      */
     public function setDate(?string $date = null): self
     {
@@ -62,7 +65,7 @@ class GetShippingRequest extends AbstractStructBase
     }
 
     /**
-     * Get customer value
+     * Get customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -70,7 +73,7 @@ class GetShippingRequest extends AbstractStructBase
     }
 
     /**
-     * Set customer value
+     * Set customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {

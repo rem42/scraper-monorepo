@@ -1,16 +1,18 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\ServiceType;
 
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
 /**
- * This class stands for Set ServiceType
+ * This class stands for Set ServiceType.
  */
 class Set extends AbstractSoapClientBase
 {
     /**
-     * Sets the AuthenticationHeader SoapHeader param
+     * Sets the AuthenticationHeader SoapHeader param.
      *
      * @uses AbstractSoapClientBase::setSoapHeader()
      */
@@ -140,7 +142,7 @@ class Set extends AbstractSoapClientBase
     }
 
     /**
-     * Returns the result
+     * Returns the result.
      *
      * @see AbstractSoapClientBase::getResult()
      *

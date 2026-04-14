@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ReceiveLabelRequest StructType
+ * This class stands for ReceiveLabelRequest StructType.
  */
 #[\AllowDynamicProperties]
 class ReceiveLabelRequest extends ReceiveLabelRequestBase
@@ -12,26 +14,28 @@ class ReceiveLabelRequest extends ReceiveLabelRequestBase
      * The countrycode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $countrycode = null;
+
     /**
      * The centernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $centernumber = null;
+
     /**
      * The parcelnumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $parcelnumber = null;
 
     /**
-     * Constructor method for ReceiveLabelRequest
+     * Constructor method for ReceiveLabelRequest.
      *
      * @uses ReceiveLabelRequest::setCountrycode()
      * @uses ReceiveLabelRequest::setCenternumber()
@@ -47,7 +51,7 @@ class ReceiveLabelRequest extends ReceiveLabelRequestBase
     }
 
     /**
-     * Get countrycode value
+     * Get countrycode value.
      */
     public function getCountrycode(): ?string
     {
@@ -55,7 +59,7 @@ class ReceiveLabelRequest extends ReceiveLabelRequestBase
     }
 
     /**
-     * Set countrycode value
+     * Set countrycode value.
      */
     public function setCountrycode(?string $countrycode = null): self
     {
@@ -69,7 +73,7 @@ class ReceiveLabelRequest extends ReceiveLabelRequestBase
     }
 
     /**
-     * Get centernumber value
+     * Get centernumber value.
      */
     public function getCenternumber(): ?string
     {
@@ -77,7 +81,7 @@ class ReceiveLabelRequest extends ReceiveLabelRequestBase
     }
 
     /**
-     * Set centernumber value
+     * Set centernumber value.
      */
     public function setCenternumber(?string $centernumber = null): self
     {
@@ -91,7 +95,7 @@ class ReceiveLabelRequest extends ReceiveLabelRequestBase
     }
 
     /**
-     * Get parcelnumber value
+     * Get parcelnumber value.
      */
     public function getParcelnumber(): ?string
     {
@@ -99,7 +103,7 @@ class ReceiveLabelRequest extends ReceiveLabelRequestBase
     }
 
     /**
-     * Set parcelnumber value
+     * Set parcelnumber value.
      */
     public function setParcelnumber(?string $parcelnumber = null): self
     {

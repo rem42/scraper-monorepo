@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetGeoRouting StructType
+ * This class stands for GetGeoRouting StructType.
  */
 #[\AllowDynamicProperties]
 class GetGeoRouting extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetGeoRouting extends AbstractStructBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GeoRoutingRequest $request = null;
 
     /**
-     * Constructor method for GetGeoRouting
+     * Constructor method for GetGeoRouting.
      *
      * @uses GetGeoRouting::setRequest()
      */
@@ -31,7 +33,7 @@ class GetGeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?GeoRoutingRequest
     {
@@ -39,7 +41,7 @@ class GetGeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?GeoRoutingRequest $request = null): self
     {

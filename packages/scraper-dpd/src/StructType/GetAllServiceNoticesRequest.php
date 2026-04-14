@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetAllServiceNoticesRequest StructType
+ * This class stands for GetAllServiceNoticesRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GetAllServiceNoticesRequest extends AbstractStructBase
@@ -14,26 +16,28 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
      * The Customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $Customer = null;
+
     /**
      * The Languages
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfString $Languages = null;
+
     /**
      * The LastKey
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $LastKey = null;
 
     /**
-     * Constructor method for GetAllServiceNoticesRequest
+     * Constructor method for GetAllServiceNoticesRequest.
      *
      * @uses GetAllServiceNoticesRequest::setCustomer()
      * @uses GetAllServiceNoticesRequest::setLanguages()
@@ -49,7 +53,7 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
     }
 
     /**
-     * Get Customer value
+     * Get Customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -57,7 +61,7 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
     }
 
     /**
-     * Set Customer value
+     * Set Customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {
@@ -67,7 +71,7 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
     }
 
     /**
-     * Get Languages value
+     * Get Languages value.
      */
     public function getLanguages(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfString
     {
@@ -75,7 +79,7 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
     }
 
     /**
-     * Set Languages value
+     * Set Languages value.
      */
     public function setLanguages(?\Scraper\ScraperDPD\ArrayType\ArrayOfString $languages = null): self
     {
@@ -85,7 +89,7 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
     }
 
     /**
-     * Get LastKey value
+     * Get LastKey value.
      */
     public function getLastKey(): ?string
     {
@@ -93,7 +97,7 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
     }
 
     /**
-     * Set LastKey value
+     * Set LastKey value.
      */
     public function setLastKey(?string $lastKey = null): self
     {

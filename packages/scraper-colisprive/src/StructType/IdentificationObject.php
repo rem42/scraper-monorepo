@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for IdentificationObject StructType
+ * This class stands for IdentificationObject StructType.
  */
 #[\AllowDynamicProperties]
 class IdentificationObject extends AbstractStructBase
@@ -15,20 +17,21 @@ class IdentificationObject extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CPCustoID;
+
     /**
      * The AccountID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $AccountID;
 
     /**
-     * Constructor method for IdentificationObject
+     * Constructor method for IdentificationObject.
      *
      * @uses IdentificationObject::setCPCustoID()
      * @uses IdentificationObject::setAccountID()
@@ -42,7 +45,7 @@ class IdentificationObject extends AbstractStructBase
     }
 
     /**
-     * Get CPCustoID value
+     * Get CPCustoID value.
      */
     public function getCPCustoID(): string
     {
@@ -50,7 +53,7 @@ class IdentificationObject extends AbstractStructBase
     }
 
     /**
-     * Set CPCustoID value
+     * Set CPCustoID value.
      */
     public function setCPCustoID(?string $cPCustoID): self
     {
@@ -64,7 +67,7 @@ class IdentificationObject extends AbstractStructBase
     }
 
     /**
-     * Get AccountID value
+     * Get AccountID value.
      */
     public function getAccountID(): string
     {
@@ -72,7 +75,7 @@ class IdentificationObject extends AbstractStructBase
     }
 
     /**
-     * Set AccountID value
+     * Set AccountID value.
      */
     public function setAccountID(?string $accountID): self
     {

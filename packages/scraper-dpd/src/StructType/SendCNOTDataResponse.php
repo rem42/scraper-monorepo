@@ -1,13 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for SendCNOTDataResponse StructType
+ * This class stands for SendCNOTDataResponse StructType.
  */
 #[\AllowDynamicProperties]
-class SendCNOTDataResponse extends AbstractStructBase
-{
-}
+class SendCNOTDataResponse extends AbstractStructBase {}

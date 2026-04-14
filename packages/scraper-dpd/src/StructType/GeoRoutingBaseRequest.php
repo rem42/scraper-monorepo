@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GeoRoutingBaseRequest StructType
+ * This class stands for GeoRoutingBaseRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GeoRoutingBaseRequest extends AbstractStructBase
@@ -14,47 +16,52 @@ class GeoRoutingBaseRequest extends AbstractStructBase
      * The destinationDepot
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $destinationDepot;
+
     /**
      * The countryPrefix
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $countryPrefix = null;
+
     /**
      * The zipCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $zipCode = null;
+
     /**
      * The date
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $date = null;
+
     /**
      * The buCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $buCode = null;
+
     /**
      * The depotStr
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $depotStr = null;
 
     /**
-     * Constructor method for GeoRoutingBaseRequest
+     * Constructor method for GeoRoutingBaseRequest.
      *
      * @uses GeoRoutingBaseRequest::setDestinationDepot()
      * @uses GeoRoutingBaseRequest::setCountryPrefix()
@@ -76,7 +83,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get destinationDepot value
+     * Get destinationDepot value.
      */
     public function getDestinationDepot(): int
     {
@@ -84,7 +91,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set destinationDepot value
+     * Set destinationDepot value.
      */
     public function setDestinationDepot(int $destinationDepot): self
     {
@@ -98,7 +105,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get countryPrefix value
+     * Get countryPrefix value.
      */
     public function getCountryPrefix(): ?string
     {
@@ -106,7 +113,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set countryPrefix value
+     * Set countryPrefix value.
      */
     public function setCountryPrefix(?string $countryPrefix = null): self
     {
@@ -120,7 +127,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get zipCode value
+     * Get zipCode value.
      */
     public function getZipCode(): ?string
     {
@@ -128,7 +135,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set zipCode value
+     * Set zipCode value.
      */
     public function setZipCode(?string $zipCode = null): self
     {
@@ -142,7 +149,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get date value
+     * Get date value.
      */
     public function getDate(): ?string
     {
@@ -150,7 +157,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set date value
+     * Set date value.
      */
     public function setDate(?string $date = null): self
     {
@@ -164,7 +171,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get buCode value
+     * Get buCode value.
      */
     public function getBuCode(): ?string
     {
@@ -172,7 +179,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set buCode value
+     * Set buCode value.
      */
     public function setBuCode(?string $buCode = null): self
     {
@@ -186,7 +193,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get depotStr value
+     * Get depotStr value.
      */
     public function getDepotStr(): ?string
     {
@@ -194,7 +201,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set depotStr value
+     * Set depotStr value.
      */
     public function setDepotStr(?string $depotStr = null): self
     {

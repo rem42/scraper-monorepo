@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for RdvAddress StructType
+ * This class stands for RdvAddress StructType.
  */
 #[\AllowDynamicProperties]
 class RdvAddress extends AbstractStructBase
@@ -14,61 +16,68 @@ class RdvAddress extends AbstractStructBase
      * The Name
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Name = null;
+
     /**
      * The CountryPrefix
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CountryPrefix = null;
+
     /**
      * The ZipCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ZipCode = null;
+
     /**
      * The City
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $City = null;
+
     /**
      * The Street
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Street = null;
+
     /**
      * The PhoneNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PhoneNumber = null;
+
     /**
      * The GeoCoord_Y
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $GeoCoord_Y = null;
+
     /**
      * The GeoCoord_X
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $GeoCoord_X = null;
 
     /**
-     * Constructor method for RdvAddress
+     * Constructor method for RdvAddress.
      *
      * @uses RdvAddress::setName()
      * @uses RdvAddress::setCountryPrefix()
@@ -94,7 +103,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Get Name value
+     * Get Name value.
      */
     public function getName(): ?string
     {
@@ -102,7 +111,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Set Name value
+     * Set Name value.
      */
     public function setName(?string $name = null): self
     {
@@ -116,7 +125,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Get CountryPrefix value
+     * Get CountryPrefix value.
      */
     public function getCountryPrefix(): ?string
     {
@@ -124,7 +133,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Set CountryPrefix value
+     * Set CountryPrefix value.
      */
     public function setCountryPrefix(?string $countryPrefix = null): self
     {
@@ -138,7 +147,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Get ZipCode value
+     * Get ZipCode value.
      */
     public function getZipCode(): ?string
     {
@@ -146,7 +155,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Set ZipCode value
+     * Set ZipCode value.
      */
     public function setZipCode(?string $zipCode = null): self
     {
@@ -160,7 +169,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Get City value
+     * Get City value.
      */
     public function getCity(): ?string
     {
@@ -168,7 +177,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Set City value
+     * Set City value.
      */
     public function setCity(?string $city = null): self
     {
@@ -182,7 +191,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Get Street value
+     * Get Street value.
      */
     public function getStreet(): ?string
     {
@@ -190,7 +199,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Set Street value
+     * Set Street value.
      */
     public function setStreet(?string $street = null): self
     {
@@ -204,7 +213,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Get PhoneNumber value
+     * Get PhoneNumber value.
      */
     public function getPhoneNumber(): ?string
     {
@@ -212,7 +221,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Set PhoneNumber value
+     * Set PhoneNumber value.
      */
     public function setPhoneNumber(?string $phoneNumber = null): self
     {
@@ -226,7 +235,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Get GeoCoord_Y value
+     * Get GeoCoord_Y value.
      */
     public function getGeoCoord_Y(): ?string
     {
@@ -234,7 +243,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Set GeoCoord_Y value
+     * Set GeoCoord_Y value.
      */
     public function setGeoCoord_Y(?string $geoCoord_Y = null): self
     {
@@ -248,7 +257,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Get GeoCoord_X value
+     * Get GeoCoord_X value.
      */
     public function getGeoCoord_X(): ?string
     {
@@ -256,7 +265,7 @@ class RdvAddress extends AbstractStructBase
     }
 
     /**
-     * Set GeoCoord_X value
+     * Set GeoCoord_X value.
      */
     public function setGeoCoord_X(?string $geoCoord_X = null): self
     {

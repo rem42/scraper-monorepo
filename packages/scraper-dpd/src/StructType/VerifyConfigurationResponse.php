@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for VerifyConfigurationResponse StructType
+ * This class stands for VerifyConfigurationResponse StructType.
  */
 #[\AllowDynamicProperties]
 class VerifyConfigurationResponse extends AbstractStructBase
@@ -14,19 +16,20 @@ class VerifyConfigurationResponse extends AbstractStructBase
      * The Allowed
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $Allowed;
+
     /**
      * The VerifyConfigurationResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?VerifyConfigurationResponse $VerifyConfigurationResult = null;
 
     /**
-     * Constructor method for VerifyConfigurationResponse
+     * Constructor method for VerifyConfigurationResponse.
      *
      * @uses VerifyConfigurationResponse::setAllowed()
      * @uses VerifyConfigurationResponse::setVerifyConfigurationResult()
@@ -40,7 +43,7 @@ class VerifyConfigurationResponse extends AbstractStructBase
     }
 
     /**
-     * Get Allowed value
+     * Get Allowed value.
      */
     public function getAllowed(): bool
     {
@@ -48,7 +51,7 @@ class VerifyConfigurationResponse extends AbstractStructBase
     }
 
     /**
-     * Set Allowed value
+     * Set Allowed value.
      */
     public function setAllowed(bool $allowed): self
     {
@@ -62,7 +65,7 @@ class VerifyConfigurationResponse extends AbstractStructBase
     }
 
     /**
-     * Get VerifyConfigurationResult value
+     * Get VerifyConfigurationResult value.
      */
     public function getVerifyConfigurationResult(): ?self
     {
@@ -70,7 +73,7 @@ class VerifyConfigurationResponse extends AbstractStructBase
     }
 
     /**
-     * Set VerifyConfigurationResult value
+     * Set VerifyConfigurationResult value.
      */
     public function setVerifyConfigurationResult(?self $verifyConfigurationResult = null): self
     {

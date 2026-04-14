@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for BcDataExt StructType
+ * This class stands for BcDataExt StructType.
  */
 #[\AllowDynamicProperties]
 class BcDataExt extends BcData
@@ -12,12 +14,12 @@ class BcDataExt extends BcData
      * The BarCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $BarCode = null;
 
     /**
-     * Constructor method for BcDataExt
+     * Constructor method for BcDataExt.
      *
      * @uses BcDataExt::setBarCode()
      */
@@ -29,7 +31,7 @@ class BcDataExt extends BcData
     }
 
     /**
-     * Get BarCode value
+     * Get BarCode value.
      */
     public function getBarCode(): ?string
     {
@@ -37,7 +39,7 @@ class BcDataExt extends BcData
     }
 
     /**
-     * Set BarCode value
+     * Set BarCode value.
      */
     public function setBarCode(?string $barCode = null): self
     {

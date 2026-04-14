@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for LabelDataBase StructType
+ * This class stands for LabelDataBase StructType.
  */
 #[\AllowDynamicProperties]
 class LabelDataBase extends AbstractStructBase
@@ -14,40 +16,44 @@ class LabelDataBase extends AbstractStructBase
      * The ServiceCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ServiceCode = null;
+
     /**
      * The SSort
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $SSort = null;
+
     /**
      * The OSort
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $OSort = null;
+
     /**
      * The OSort2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $OSort2 = null;
+
     /**
      * The DSort
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DSort = null;
 
     /**
-     * Constructor method for LabelDataBase
+     * Constructor method for LabelDataBase.
      *
      * @uses LabelDataBase::setServiceCode()
      * @uses LabelDataBase::setSSort()
@@ -67,7 +73,7 @@ class LabelDataBase extends AbstractStructBase
     }
 
     /**
-     * Get ServiceCode value
+     * Get ServiceCode value.
      */
     public function getServiceCode(): ?string
     {
@@ -75,7 +81,7 @@ class LabelDataBase extends AbstractStructBase
     }
 
     /**
-     * Set ServiceCode value
+     * Set ServiceCode value.
      */
     public function setServiceCode(?string $serviceCode = null): self
     {
@@ -89,7 +95,7 @@ class LabelDataBase extends AbstractStructBase
     }
 
     /**
-     * Get SSort value
+     * Get SSort value.
      */
     public function getSSort(): ?string
     {
@@ -97,7 +103,7 @@ class LabelDataBase extends AbstractStructBase
     }
 
     /**
-     * Set SSort value
+     * Set SSort value.
      */
     public function setSSort(?string $sSort = null): self
     {
@@ -111,7 +117,7 @@ class LabelDataBase extends AbstractStructBase
     }
 
     /**
-     * Get OSort value
+     * Get OSort value.
      */
     public function getOSort(): ?string
     {
@@ -119,7 +125,7 @@ class LabelDataBase extends AbstractStructBase
     }
 
     /**
-     * Set OSort value
+     * Set OSort value.
      */
     public function setOSort(?string $oSort = null): self
     {
@@ -133,7 +139,7 @@ class LabelDataBase extends AbstractStructBase
     }
 
     /**
-     * Get OSort2 value
+     * Get OSort2 value.
      */
     public function getOSort2(): ?string
     {
@@ -141,7 +147,7 @@ class LabelDataBase extends AbstractStructBase
     }
 
     /**
-     * Set OSort2 value
+     * Set OSort2 value.
      */
     public function setOSort2(?string $oSort2 = null): self
     {
@@ -155,7 +161,7 @@ class LabelDataBase extends AbstractStructBase
     }
 
     /**
-     * Get DSort value
+     * Get DSort value.
      */
     public function getDSort(): ?string
     {
@@ -163,7 +169,7 @@ class LabelDataBase extends AbstractStructBase
     }
 
     /**
-     * Set DSort value
+     * Set DSort value.
      */
     public function setDSort(?string $dSort = null): self
     {

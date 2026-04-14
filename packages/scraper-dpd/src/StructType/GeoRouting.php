@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GeoRouting StructType
+ * This class stands for GeoRouting StructType.
  */
 #[\AllowDynamicProperties]
 class GeoRouting extends AbstractStructBase
@@ -14,138 +16,156 @@ class GeoRouting extends AbstractStructBase
      * The barcodeId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $barcodeId = null;
+
     /**
      * The barcodePostcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $barcodePostcode = null;
+
     /**
      * The buAlphaStr
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $buAlphaStr = null;
+
     /**
      * The buCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $buCode = null;
+
     /**
      * The cSort
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $cSort = null;
+
     /**
      * The dCountry
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $dCountry = null;
+
     /**
      * The dDepot
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $dDepot = null;
+
     /**
      * The dDepotCountry
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $dDepotCountry = null;
+
     /**
      * The dDepotStr
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $dDepotStr = null;
+
     /**
      * The dSort
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $dSort = null;
+
     /**
      * The networkCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $networkCode = null;
+
     /**
      * The oSort
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $oSort = null;
+
     /**
      * The partnerCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $partnerCode = null;
+
     /**
      * The routingText
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $routingText = null;
+
     /**
      * The sSort
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $sSort = null;
+
     /**
      * The serviceMark
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $serviceMark = null;
+
     /**
      * The serviceText
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $serviceText = null;
+
     /**
      * The version
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $version = null;
+
     /**
      * The soCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $soCode = null;
 
     /**
-     * Constructor method for GeoRouting
+     * Constructor method for GeoRouting.
      *
      * @uses GeoRouting::setBarcodeId()
      * @uses GeoRouting::setBarcodePostcode()
@@ -193,7 +213,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get barcodeId value
+     * Get barcodeId value.
      */
     public function getBarcodeId(): ?string
     {
@@ -201,7 +221,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set barcodeId value
+     * Set barcodeId value.
      */
     public function setBarcodeId(?string $barcodeId = null): self
     {
@@ -215,7 +235,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get barcodePostcode value
+     * Get barcodePostcode value.
      */
     public function getBarcodePostcode(): ?string
     {
@@ -223,7 +243,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set barcodePostcode value
+     * Set barcodePostcode value.
      */
     public function setBarcodePostcode(?string $barcodePostcode = null): self
     {
@@ -237,7 +257,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get buAlphaStr value
+     * Get buAlphaStr value.
      */
     public function getBuAlphaStr(): ?string
     {
@@ -245,7 +265,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set buAlphaStr value
+     * Set buAlphaStr value.
      */
     public function setBuAlphaStr(?string $buAlphaStr = null): self
     {
@@ -259,7 +279,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get buCode value
+     * Get buCode value.
      */
     public function getBuCode(): ?string
     {
@@ -267,7 +287,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set buCode value
+     * Set buCode value.
      */
     public function setBuCode(?string $buCode = null): self
     {
@@ -281,7 +301,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get cSort value
+     * Get cSort value.
      */
     public function getCSort(): ?string
     {
@@ -289,7 +309,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set cSort value
+     * Set cSort value.
      */
     public function setCSort(?string $cSort = null): self
     {
@@ -303,7 +323,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get dCountry value
+     * Get dCountry value.
      */
     public function getDCountry(): ?string
     {
@@ -311,7 +331,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set dCountry value
+     * Set dCountry value.
      */
     public function setDCountry(?string $dCountry = null): self
     {
@@ -325,7 +345,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get dDepot value
+     * Get dDepot value.
      */
     public function getDDepot(): ?string
     {
@@ -333,7 +353,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set dDepot value
+     * Set dDepot value.
      */
     public function setDDepot(?string $dDepot = null): self
     {
@@ -347,7 +367,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get dDepotCountry value
+     * Get dDepotCountry value.
      */
     public function getDDepotCountry(): ?string
     {
@@ -355,7 +375,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set dDepotCountry value
+     * Set dDepotCountry value.
      */
     public function setDDepotCountry(?string $dDepotCountry = null): self
     {
@@ -369,7 +389,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get dDepotStr value
+     * Get dDepotStr value.
      */
     public function getDDepotStr(): ?string
     {
@@ -377,7 +397,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set dDepotStr value
+     * Set dDepotStr value.
      */
     public function setDDepotStr(?string $dDepotStr = null): self
     {
@@ -391,7 +411,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get dSort value
+     * Get dSort value.
      */
     public function getDSort(): ?string
     {
@@ -399,7 +419,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set dSort value
+     * Set dSort value.
      */
     public function setDSort(?string $dSort = null): self
     {
@@ -413,7 +433,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get networkCode value
+     * Get networkCode value.
      */
     public function getNetworkCode(): ?string
     {
@@ -421,7 +441,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set networkCode value
+     * Set networkCode value.
      */
     public function setNetworkCode(?string $networkCode = null): self
     {
@@ -435,7 +455,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get oSort value
+     * Get oSort value.
      */
     public function getOSort(): ?string
     {
@@ -443,7 +463,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set oSort value
+     * Set oSort value.
      */
     public function setOSort(?string $oSort = null): self
     {
@@ -457,7 +477,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get partnerCode value
+     * Get partnerCode value.
      */
     public function getPartnerCode(): ?string
     {
@@ -465,7 +485,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set partnerCode value
+     * Set partnerCode value.
      */
     public function setPartnerCode(?string $partnerCode = null): self
     {
@@ -479,7 +499,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get routingText value
+     * Get routingText value.
      */
     public function getRoutingText(): ?string
     {
@@ -487,7 +507,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set routingText value
+     * Set routingText value.
      */
     public function setRoutingText(?string $routingText = null): self
     {
@@ -501,7 +521,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get sSort value
+     * Get sSort value.
      */
     public function getSSort(): ?string
     {
@@ -509,7 +529,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set sSort value
+     * Set sSort value.
      */
     public function setSSort(?string $sSort = null): self
     {
@@ -523,7 +543,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get serviceMark value
+     * Get serviceMark value.
      */
     public function getServiceMark(): ?string
     {
@@ -531,7 +551,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set serviceMark value
+     * Set serviceMark value.
      */
     public function setServiceMark(?string $serviceMark = null): self
     {
@@ -545,7 +565,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get serviceText value
+     * Get serviceText value.
      */
     public function getServiceText(): ?string
     {
@@ -553,7 +573,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set serviceText value
+     * Set serviceText value.
      */
     public function setServiceText(?string $serviceText = null): self
     {
@@ -567,7 +587,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get version value
+     * Get version value.
      */
     public function getVersion(): ?string
     {
@@ -575,7 +595,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set version value
+     * Set version value.
      */
     public function setVersion(?string $version = null): self
     {
@@ -589,7 +609,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Get soCode value
+     * Get soCode value.
      */
     public function getSoCode(): ?string
     {
@@ -597,7 +617,7 @@ class GeoRouting extends AbstractStructBase
     }
 
     /**
-     * Set soCode value
+     * Set soCode value.
      */
     public function setSoCode(?string $soCode = null): self
     {

@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetDeliveryCalendar StructType
+ * This class stands for GetDeliveryCalendar StructType.
  */
 #[\AllowDynamicProperties]
 class GetDeliveryCalendar extends AbstractStructBase
@@ -15,12 +17,12 @@ class GetDeliveryCalendar extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?GetDeliveryCalendarRequest $GetDeliveryCalendarRequest;
 
     /**
-     * Constructor method for GetDeliveryCalendar
+     * Constructor method for GetDeliveryCalendar.
      *
      * @uses GetDeliveryCalendar::setGetDeliveryCalendarRequest()
      */
@@ -32,7 +34,7 @@ class GetDeliveryCalendar extends AbstractStructBase
     }
 
     /**
-     * Get GetDeliveryCalendarRequest value
+     * Get GetDeliveryCalendarRequest value.
      */
     public function getGetDeliveryCalendarRequest(): GetDeliveryCalendarRequest
     {
@@ -40,7 +42,7 @@ class GetDeliveryCalendar extends AbstractStructBase
     }
 
     /**
-     * Set GetDeliveryCalendarRequest value
+     * Set GetDeliveryCalendarRequest value.
      */
     public function setGetDeliveryCalendarRequest(?GetDeliveryCalendarRequest $getDeliveryCalendarRequest): self
     {

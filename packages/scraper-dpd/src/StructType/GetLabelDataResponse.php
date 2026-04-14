@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetLabelDataResponse StructType
+ * This class stands for GetLabelDataResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetLabelDataResponse extends AbstractStructBase
@@ -14,26 +16,28 @@ class GetLabelDataResponse extends AbstractStructBase
      * The GetLabelDataResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetLabelDataResponse $GetLabelDataResult = null;
+
     /**
      * The Data
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?LabelData $Data = null;
+
     /**
      * The BarcodeData
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfBarcodeData $BarcodeData = null;
 
     /**
-     * Constructor method for GetLabelDataResponse
+     * Constructor method for GetLabelDataResponse.
      *
      * @uses GetLabelDataResponse::setGetLabelDataResult()
      * @uses GetLabelDataResponse::setData()
@@ -49,7 +53,7 @@ class GetLabelDataResponse extends AbstractStructBase
     }
 
     /**
-     * Get GetLabelDataResult value
+     * Get GetLabelDataResult value.
      */
     public function getGetLabelDataResult(): ?self
     {
@@ -57,7 +61,7 @@ class GetLabelDataResponse extends AbstractStructBase
     }
 
     /**
-     * Set GetLabelDataResult value
+     * Set GetLabelDataResult value.
      */
     public function setGetLabelDataResult(?self $getLabelDataResult = null): self
     {
@@ -67,7 +71,7 @@ class GetLabelDataResponse extends AbstractStructBase
     }
 
     /**
-     * Get Data value
+     * Get Data value.
      */
     public function getData(): ?LabelData
     {
@@ -75,7 +79,7 @@ class GetLabelDataResponse extends AbstractStructBase
     }
 
     /**
-     * Set Data value
+     * Set Data value.
      */
     public function setData(?LabelData $data = null): self
     {
@@ -85,7 +89,7 @@ class GetLabelDataResponse extends AbstractStructBase
     }
 
     /**
-     * Get BarcodeData value
+     * Get BarcodeData value.
      */
     public function getBarcodeData(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfBarcodeData
     {
@@ -93,7 +97,7 @@ class GetLabelDataResponse extends AbstractStructBase
     }
 
     /**
-     * Set BarcodeData value
+     * Set BarcodeData value.
      */
     public function setBarcodeData(?\Scraper\ScraperDPD\ArrayType\ArrayOfBarcodeData $barcodeData = null): self
     {

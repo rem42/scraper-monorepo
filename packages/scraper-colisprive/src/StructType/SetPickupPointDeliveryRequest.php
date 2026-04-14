@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for SetPickupPointDeliveryRequest StructType
+ * This class stands for SetPickupPointDeliveryRequest StructType.
  */
 #[\AllowDynamicProperties]
 class SetPickupPointDeliveryRequest extends AbstractStructBase
@@ -14,58 +16,64 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
      * The CsgEmail
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CsgEmail = null;
+
     /**
      * The CsgPhoneNum
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CsgPhoneNum = null;
+
     /**
      * The CsgGsmNum
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CsgGsmNum = null;
+
     /**
      * The SecurityID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?IdentificationObject $SecurityID;
+
     /**
      * The CPPclCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CPPclCode;
+
     /**
      * The CsgZC
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CsgZC;
+
     /**
      * The PckCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $PckCode;
 
     /**
-     * Constructor method for SetPickupPointDeliveryRequest
+     * Constructor method for SetPickupPointDeliveryRequest.
      *
      * @uses SetPickupPointDeliveryRequest::setCsgEmail()
      * @uses SetPickupPointDeliveryRequest::setCsgPhoneNum()
@@ -89,7 +97,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Get CsgEmail value
+     * Get CsgEmail value.
      */
     public function getCsgEmail(): ?string
     {
@@ -97,7 +105,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Set CsgEmail value
+     * Set CsgEmail value.
      */
     public function setCsgEmail(?string $csgEmail = null): self
     {
@@ -111,7 +119,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Get CsgPhoneNum value
+     * Get CsgPhoneNum value.
      */
     public function getCsgPhoneNum(): ?string
     {
@@ -119,7 +127,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Set CsgPhoneNum value
+     * Set CsgPhoneNum value.
      */
     public function setCsgPhoneNum(?string $csgPhoneNum = null): self
     {
@@ -133,7 +141,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Get CsgGsmNum value
+     * Get CsgGsmNum value.
      */
     public function getCsgGsmNum(): ?string
     {
@@ -141,7 +149,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Set CsgGsmNum value
+     * Set CsgGsmNum value.
      */
     public function setCsgGsmNum(?string $csgGsmNum = null): self
     {
@@ -155,7 +163,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Get SecurityID value
+     * Get SecurityID value.
      */
     public function getSecurityID(): IdentificationObject
     {
@@ -163,7 +171,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Set SecurityID value
+     * Set SecurityID value.
      */
     public function setSecurityID(?IdentificationObject $securityID): self
     {
@@ -173,7 +181,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Get CPPclCode value
+     * Get CPPclCode value.
      */
     public function getCPPclCode(): string
     {
@@ -181,7 +189,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Set CPPclCode value
+     * Set CPPclCode value.
      */
     public function setCPPclCode(?string $cPPclCode): self
     {
@@ -195,7 +203,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Get CsgZC value
+     * Get CsgZC value.
      */
     public function getCsgZC(): string
     {
@@ -203,7 +211,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Set CsgZC value
+     * Set CsgZC value.
      */
     public function setCsgZC(?string $csgZC): self
     {
@@ -217,7 +225,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Get PckCode value
+     * Get PckCode value.
      */
     public function getPckCode(): string
     {
@@ -225,7 +233,7 @@ class SetPickupPointDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Set PckCode value
+     * Set PckCode value.
      */
     public function setPckCode(?string $pckCode): self
     {

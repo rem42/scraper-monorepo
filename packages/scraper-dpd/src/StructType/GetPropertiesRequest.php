@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetPropertiesRequest StructType
+ * This class stands for GetPropertiesRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GetPropertiesRequest extends AbstractStructBase
@@ -14,26 +16,28 @@ class GetPropertiesRequest extends AbstractStructBase
      * The HardwareId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $HardwareId = null;
+
     /**
      * The Customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $Customer = null;
+
     /**
      * The Product
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Product = null;
 
     /**
-     * Constructor method for GetPropertiesRequest
+     * Constructor method for GetPropertiesRequest.
      *
      * @uses GetPropertiesRequest::setHardwareId()
      * @uses GetPropertiesRequest::setCustomer()
@@ -49,7 +53,7 @@ class GetPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Get HardwareId value
+     * Get HardwareId value.
      */
     public function getHardwareId(): ?string
     {
@@ -57,7 +61,7 @@ class GetPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Set HardwareId value
+     * Set HardwareId value.
      */
     public function setHardwareId(?string $hardwareId = null): self
     {
@@ -71,7 +75,7 @@ class GetPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Get Customer value
+     * Get Customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -79,7 +83,7 @@ class GetPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Set Customer value
+     * Set Customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {
@@ -89,7 +93,7 @@ class GetPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Get Product value
+     * Get Product value.
      */
     public function getProduct(): ?string
     {
@@ -97,7 +101,7 @@ class GetPropertiesRequest extends AbstractStructBase
     }
 
     /**
-     * Set Product value
+     * Set Product value.
      */
     public function setProduct(?string $product = null): self
     {

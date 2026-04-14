@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for Consolidation StructType
+ * This class stands for Consolidation StructType.
  */
 #[\AllowDynamicProperties]
 class Consolidation extends DefaultService
@@ -12,12 +14,12 @@ class Consolidation extends DefaultService
      * The type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $type;
 
     /**
-     * Constructor method for Consolidation
+     * Constructor method for Consolidation.
      *
      * @uses Consolidation::setType()
      */
@@ -29,7 +31,7 @@ class Consolidation extends DefaultService
     }
 
     /**
-     * Get type value
+     * Get type value.
      */
     public function getType(): string
     {
@@ -37,7 +39,7 @@ class Consolidation extends DefaultService
     }
 
     /**
-     * Set type value
+     * Set type value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\EtypeConsolidation::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\EtypeConsolidation::getValidValues()

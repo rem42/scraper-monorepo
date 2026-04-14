@@ -1,29 +1,32 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 
 /**
- * This class stands for ServiceNoticeType EnumType
+ * This class stands for ServiceNoticeType EnumType.
  */
 class ServiceNoticeType extends AbstractStructEnumBase
 {
     /**
-     * Constant for value 'pick'
+     * Constant for value 'pick'.
      *
      * @return string 'pick'
      */
     public const VALUE_PICK = 'pick';
+
     /**
-     * Constant for value 'dely'
+     * Constant for value 'dely'.
      *
      * @return string 'dely'
      */
     public const VALUE_DELY = 'dely';
 
     /**
-     * Return allowed values
+     * Return allowed values.
      *
      * @uses self::VALUE_PICK
      * @uses self::VALUE_DELY

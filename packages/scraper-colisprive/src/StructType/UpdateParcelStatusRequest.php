@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for UpdateParcelStatusRequest StructType
+ * This class stands for UpdateParcelStatusRequest StructType.
  */
 #[\AllowDynamicProperties]
 class UpdateParcelStatusRequest extends AbstractStructBase
@@ -14,84 +16,93 @@ class UpdateParcelStatusRequest extends AbstractStructBase
      * The ParcelSize
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ParcelSize = null;
+
     /**
      * The SecurityID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?IdentificationObject $SecurityID;
+
     /**
      * The CPPclCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CPPclCode;
+
     /**
      * The CsgZipCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CsgZipCode;
+
     /**
      * The DestType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $DestType;
+
     /**
      * The DestName
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $DestName;
+
     /**
      * The NewStatus
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $NewStatus;
+
     /**
      * The OldStatus
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $OldStatus;
+
     /**
      * The StatusChangeTime
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $StatusChangeTime;
+
     /**
      * The CourierIdCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CourierIdCode;
 
     /**
-     * Constructor method for UpdateParcelStatusRequest
+     * Constructor method for UpdateParcelStatusRequest.
      *
      * @uses UpdateParcelStatusRequest::setParcelSize()
      * @uses UpdateParcelStatusRequest::setSecurityID()
@@ -121,7 +132,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Get ParcelSize value
+     * Get ParcelSize value.
      */
     public function getParcelSize(): ?string
     {
@@ -129,7 +140,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Set ParcelSize value
+     * Set ParcelSize value.
      */
     public function setParcelSize(?string $parcelSize = null): self
     {
@@ -143,7 +154,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Get SecurityID value
+     * Get SecurityID value.
      */
     public function getSecurityID(): IdentificationObject
     {
@@ -151,7 +162,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Set SecurityID value
+     * Set SecurityID value.
      */
     public function setSecurityID(?IdentificationObject $securityID): self
     {
@@ -161,7 +172,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Get CPPclCode value
+     * Get CPPclCode value.
      */
     public function getCPPclCode(): string
     {
@@ -169,7 +180,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Set CPPclCode value
+     * Set CPPclCode value.
      */
     public function setCPPclCode(?string $cPPclCode): self
     {
@@ -183,7 +194,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Get CsgZipCode value
+     * Get CsgZipCode value.
      */
     public function getCsgZipCode(): string
     {
@@ -191,7 +202,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Set CsgZipCode value
+     * Set CsgZipCode value.
      */
     public function setCsgZipCode(?string $csgZipCode): self
     {
@@ -205,7 +216,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Get DestType value
+     * Get DestType value.
      */
     public function getDestType(): string
     {
@@ -213,7 +224,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Set DestType value
+     * Set DestType value.
      */
     public function setDestType(?string $destType): self
     {
@@ -227,7 +238,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Get DestName value
+     * Get DestName value.
      */
     public function getDestName(): string
     {
@@ -235,7 +246,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Set DestName value
+     * Set DestName value.
      */
     public function setDestName(?string $destName): self
     {
@@ -249,7 +260,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Get NewStatus value
+     * Get NewStatus value.
      */
     public function getNewStatus(): string
     {
@@ -257,7 +268,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Set NewStatus value
+     * Set NewStatus value.
      */
     public function setNewStatus(?string $newStatus): self
     {
@@ -271,7 +282,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Get OldStatus value
+     * Get OldStatus value.
      */
     public function getOldStatus(): string
     {
@@ -279,7 +290,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Set OldStatus value
+     * Set OldStatus value.
      */
     public function setOldStatus(?string $oldStatus): self
     {
@@ -293,7 +304,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Get StatusChangeTime value
+     * Get StatusChangeTime value.
      */
     public function getStatusChangeTime(): string
     {
@@ -301,7 +312,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Set StatusChangeTime value
+     * Set StatusChangeTime value.
      */
     public function setStatusChangeTime(?string $statusChangeTime): self
     {
@@ -315,7 +326,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Get CourierIdCode value
+     * Get CourierIdCode value.
      */
     public function getCourierIdCode(): string
     {
@@ -323,7 +334,7 @@ class UpdateParcelStatusRequest extends AbstractStructBase
     }
 
     /**
-     * Set CourierIdCode value
+     * Set CourierIdCode value.
      */
     public function setCourierIdCode(?string $courierIdCode): self
     {

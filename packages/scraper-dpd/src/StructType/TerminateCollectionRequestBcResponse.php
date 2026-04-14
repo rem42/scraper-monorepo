@@ -1,13 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for TerminateCollectionRequestBcResponse StructType
+ * This class stands for TerminateCollectionRequestBcResponse StructType.
  */
 #[\AllowDynamicProperties]
-class TerminateCollectionRequestBcResponse extends AbstractStructBase
-{
-}
+class TerminateCollectionRequestBcResponse extends AbstractStructBase {}

@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for Marketing StructType
+ * This class stands for Marketing StructType.
  */
 #[\AllowDynamicProperties]
 class Marketing extends NonService
@@ -12,12 +14,12 @@ class Marketing extends NonService
      * The name
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $name = null;
 
     /**
-     * Constructor method for Marketing
+     * Constructor method for Marketing.
      *
      * @uses Marketing::setName()
      */
@@ -29,7 +31,7 @@ class Marketing extends NonService
     }
 
     /**
-     * Get name value
+     * Get name value.
      */
     public function getName(): ?string
     {
@@ -37,7 +39,7 @@ class Marketing extends NonService
     }
 
     /**
-     * Set name value
+     * Set name value.
      */
     public function setName(?string $name = null): self
     {

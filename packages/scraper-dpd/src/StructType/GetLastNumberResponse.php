@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetLastNumberResponse StructType
+ * This class stands for GetLastNumberResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetLastNumberResponse extends AbstractStructBase
@@ -14,19 +16,20 @@ class GetLastNumberResponse extends AbstractStructBase
      * The GetLastNumberResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetLastNumberResponse $GetLastNumberResult = null;
+
     /**
      * The entries
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfLong $entries = null;
 
     /**
-     * Constructor method for GetLastNumberResponse
+     * Constructor method for GetLastNumberResponse.
      *
      * @uses GetLastNumberResponse::setGetLastNumberResult()
      * @uses GetLastNumberResponse::setEntries()
@@ -40,7 +43,7 @@ class GetLastNumberResponse extends AbstractStructBase
     }
 
     /**
-     * Get GetLastNumberResult value
+     * Get GetLastNumberResult value.
      */
     public function getGetLastNumberResult(): ?self
     {
@@ -48,7 +51,7 @@ class GetLastNumberResponse extends AbstractStructBase
     }
 
     /**
-     * Set GetLastNumberResult value
+     * Set GetLastNumberResult value.
      */
     public function setGetLastNumberResult(?self $getLastNumberResult = null): self
     {
@@ -58,7 +61,7 @@ class GetLastNumberResponse extends AbstractStructBase
     }
 
     /**
-     * Get entries value
+     * Get entries value.
      */
     public function getEntries(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfLong
     {
@@ -66,7 +69,7 @@ class GetLastNumberResponse extends AbstractStructBase
     }
 
     /**
-     * Set entries value
+     * Set entries value.
      */
     public function setEntries(?\Scraper\ScraperDPD\ArrayType\ArrayOfLong $entries = null): self
     {

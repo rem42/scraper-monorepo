@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CityObject StructType
+ * This class stands for CityObject StructType.
  */
 #[\AllowDynamicProperties]
 class CityObject extends AbstractStructBase
@@ -14,19 +16,20 @@ class CityObject extends AbstractStructBase
      * The ZC
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ZC = null;
+
     /**
      * The CityName
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CityName = null;
 
     /**
-     * Constructor method for CityObject
+     * Constructor method for CityObject.
      *
      * @uses CityObject::setZC()
      * @uses CityObject::setCityName()
@@ -40,7 +43,7 @@ class CityObject extends AbstractStructBase
     }
 
     /**
-     * Get ZC value
+     * Get ZC value.
      */
     public function getZC(): ?string
     {
@@ -48,7 +51,7 @@ class CityObject extends AbstractStructBase
     }
 
     /**
-     * Set ZC value
+     * Set ZC value.
      */
     public function setZC(?string $zC = null): self
     {
@@ -62,7 +65,7 @@ class CityObject extends AbstractStructBase
     }
 
     /**
-     * Get CityName value
+     * Get CityName value.
      */
     public function getCityName(): ?string
     {
@@ -70,7 +73,7 @@ class CityObject extends AbstractStructBase
     }
 
     /**
-     * Set CityName value
+     * Set CityName value.
      */
     public function setCityName(?string $cityName = null): self
     {

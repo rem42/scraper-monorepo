@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CreateReverseInverseShipmentWithLabelsResponse StructType
+ * This class stands for CreateReverseInverseShipmentWithLabelsResponse StructType.
  */
 #[\AllowDynamicProperties]
 class CreateReverseInverseShipmentWithLabelsResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class CreateReverseInverseShipmentWithLabelsResponse extends AbstractStructBase
      * The CreateReverseInverseShipmentWithLabelsResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ShipmentWithLabels $CreateReverseInverseShipmentWithLabelsResult = null;
 
     /**
-     * Constructor method for CreateReverseInverseShipmentWithLabelsResponse
+     * Constructor method for CreateReverseInverseShipmentWithLabelsResponse.
      *
      * @uses CreateReverseInverseShipmentWithLabelsResponse::setCreateReverseInverseShipmentWithLabelsResult()
      */
@@ -31,7 +33,7 @@ class CreateReverseInverseShipmentWithLabelsResponse extends AbstractStructBase
     }
 
     /**
-     * Get CreateReverseInverseShipmentWithLabelsResult value
+     * Get CreateReverseInverseShipmentWithLabelsResult value.
      */
     public function getCreateReverseInverseShipmentWithLabelsResult(): ?ShipmentWithLabels
     {
@@ -39,7 +41,7 @@ class CreateReverseInverseShipmentWithLabelsResponse extends AbstractStructBase
     }
 
     /**
-     * Set CreateReverseInverseShipmentWithLabelsResult value
+     * Set CreateReverseInverseShipmentWithLabelsResult value.
      */
     public function setCreateReverseInverseShipmentWithLabelsResult(?ShipmentWithLabels $createReverseInverseShipmentWithLabelsResult = null): self
     {

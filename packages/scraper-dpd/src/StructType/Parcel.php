@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Parcel StructType
+ * This class stands for Parcel StructType.
  */
 #[\AllowDynamicProperties]
 class Parcel extends AbstractStructBase
@@ -14,26 +16,28 @@ class Parcel extends AbstractStructBase
      * The countrycode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $countrycode;
+
     /**
      * The centernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $centernumber;
+
     /**
      * The parcelnumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $parcelnumber;
 
     /**
-     * Constructor method for Parcel
+     * Constructor method for Parcel.
      *
      * @uses Parcel::setCountrycode()
      * @uses Parcel::setCenternumber()
@@ -49,7 +53,7 @@ class Parcel extends AbstractStructBase
     }
 
     /**
-     * Get countrycode value
+     * Get countrycode value.
      */
     public function getCountrycode(): int
     {
@@ -57,7 +61,7 @@ class Parcel extends AbstractStructBase
     }
 
     /**
-     * Set countrycode value
+     * Set countrycode value.
      */
     public function setCountrycode(int $countrycode): self
     {
@@ -71,7 +75,7 @@ class Parcel extends AbstractStructBase
     }
 
     /**
-     * Get centernumber value
+     * Get centernumber value.
      */
     public function getCenternumber(): int
     {
@@ -79,7 +83,7 @@ class Parcel extends AbstractStructBase
     }
 
     /**
-     * Set centernumber value
+     * Set centernumber value.
      */
     public function setCenternumber(int $centernumber): self
     {
@@ -93,7 +97,7 @@ class Parcel extends AbstractStructBase
     }
 
     /**
-     * Get parcelnumber value
+     * Get parcelnumber value.
      */
     public function getParcelnumber(): int
     {
@@ -101,7 +105,7 @@ class Parcel extends AbstractStructBase
     }
 
     /**
-     * Set parcelnumber value
+     * Set parcelnumber value.
      */
     public function setParcelnumber(int $parcelnumber): self
     {

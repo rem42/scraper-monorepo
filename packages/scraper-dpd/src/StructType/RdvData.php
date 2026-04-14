@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for RdvData StructType
+ * This class stands for RdvData StructType.
  */
 #[\AllowDynamicProperties]
 class RdvData extends AbstractStructBase
@@ -14,12 +16,12 @@ class RdvData extends AbstractStructBase
      * The DayCheckDone
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $DayCheckDone;
 
     /**
-     * Constructor method for RdvData
+     * Constructor method for RdvData.
      *
      * @uses RdvData::setDayCheckDone()
      */
@@ -31,7 +33,7 @@ class RdvData extends AbstractStructBase
     }
 
     /**
-     * Get DayCheckDone value
+     * Get DayCheckDone value.
      */
     public function getDayCheckDone(): bool
     {
@@ -39,7 +41,7 @@ class RdvData extends AbstractStructBase
     }
 
     /**
-     * Set DayCheckDone value
+     * Set DayCheckDone value.
      */
     public function setDayCheckDone(bool $dayCheckDone): self
     {

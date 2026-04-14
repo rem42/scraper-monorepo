@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for PropertyDefinition StructType
+ * This class stands for PropertyDefinition StructType.
  */
 #[\AllowDynamicProperties]
 class PropertyDefinition extends AbstractStructBase
@@ -14,47 +16,52 @@ class PropertyDefinition extends AbstractStructBase
      * The Id
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $Id;
+
     /**
      * The PropertyType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PropertyType = null;
+
     /**
      * The DataType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $DataType = null;
+
     /**
      * The Property
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Property = null;
+
     /**
      * The Query
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Query = null;
+
     /**
      * The Options
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Options = null;
 
     /**
-     * Constructor method for PropertyDefinition
+     * Constructor method for PropertyDefinition.
      *
      * @uses PropertyDefinition::setId()
      * @uses PropertyDefinition::setPropertyType()
@@ -76,7 +83,7 @@ class PropertyDefinition extends AbstractStructBase
     }
 
     /**
-     * Get Id value
+     * Get Id value.
      */
     public function getId(): int
     {
@@ -84,7 +91,7 @@ class PropertyDefinition extends AbstractStructBase
     }
 
     /**
-     * Set Id value
+     * Set Id value.
      */
     public function setId(int $id): self
     {
@@ -98,7 +105,7 @@ class PropertyDefinition extends AbstractStructBase
     }
 
     /**
-     * Get PropertyType value
+     * Get PropertyType value.
      */
     public function getPropertyType(): ?string
     {
@@ -106,7 +113,7 @@ class PropertyDefinition extends AbstractStructBase
     }
 
     /**
-     * Set PropertyType value
+     * Set PropertyType value.
      */
     public function setPropertyType(?string $propertyType = null): self
     {
@@ -120,7 +127,7 @@ class PropertyDefinition extends AbstractStructBase
     }
 
     /**
-     * Get DataType value
+     * Get DataType value.
      */
     public function getDataType(): ?string
     {
@@ -128,7 +135,7 @@ class PropertyDefinition extends AbstractStructBase
     }
 
     /**
-     * Set DataType value
+     * Set DataType value.
      */
     public function setDataType(?string $dataType = null): self
     {
@@ -142,7 +149,7 @@ class PropertyDefinition extends AbstractStructBase
     }
 
     /**
-     * Get Property value
+     * Get Property value.
      */
     public function getProperty(): ?string
     {
@@ -150,7 +157,7 @@ class PropertyDefinition extends AbstractStructBase
     }
 
     /**
-     * Set Property value
+     * Set Property value.
      */
     public function setProperty(?string $property = null): self
     {
@@ -164,7 +171,7 @@ class PropertyDefinition extends AbstractStructBase
     }
 
     /**
-     * Get Query value
+     * Get Query value.
      */
     public function getQuery(): ?string
     {
@@ -172,7 +179,7 @@ class PropertyDefinition extends AbstractStructBase
     }
 
     /**
-     * Set Query value
+     * Set Query value.
      */
     public function setQuery(?string $query = null): self
     {
@@ -186,7 +193,7 @@ class PropertyDefinition extends AbstractStructBase
     }
 
     /**
-     * Get Options value
+     * Get Options value.
      */
     public function getOptions(): ?string
     {
@@ -194,7 +201,7 @@ class PropertyDefinition extends AbstractStructBase
     }
 
     /**
-     * Set Options value
+     * Set Options value.
      */
     public function setOptions(?string $options = null): self
     {

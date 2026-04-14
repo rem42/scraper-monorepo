@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetBic3RoutingResponse StructType
+ * This class stands for GetBic3RoutingResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetBic3RoutingResponse extends AbstractStructBase
@@ -14,26 +16,28 @@ class GetBic3RoutingResponse extends AbstractStructBase
      * The bic3
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $bic3;
+
     /**
      * The GetBic3RoutingResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetBic3RoutingResponse $GetBic3RoutingResult = null;
+
     /**
      * The route
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GeoRouting $route = null;
 
     /**
-     * Constructor method for GetBic3RoutingResponse
+     * Constructor method for GetBic3RoutingResponse.
      *
      * @uses GetBic3RoutingResponse::setBic3()
      * @uses GetBic3RoutingResponse::setGetBic3RoutingResult()
@@ -49,7 +53,7 @@ class GetBic3RoutingResponse extends AbstractStructBase
     }
 
     /**
-     * Get bic3 value
+     * Get bic3 value.
      */
     public function getBic3(): int
     {
@@ -57,7 +61,7 @@ class GetBic3RoutingResponse extends AbstractStructBase
     }
 
     /**
-     * Set bic3 value
+     * Set bic3 value.
      */
     public function setBic3(int $bic3): self
     {
@@ -71,7 +75,7 @@ class GetBic3RoutingResponse extends AbstractStructBase
     }
 
     /**
-     * Get GetBic3RoutingResult value
+     * Get GetBic3RoutingResult value.
      */
     public function getGetBic3RoutingResult(): ?self
     {
@@ -79,7 +83,7 @@ class GetBic3RoutingResponse extends AbstractStructBase
     }
 
     /**
-     * Set GetBic3RoutingResult value
+     * Set GetBic3RoutingResult value.
      */
     public function setGetBic3RoutingResult(?self $getBic3RoutingResult = null): self
     {
@@ -89,7 +93,7 @@ class GetBic3RoutingResponse extends AbstractStructBase
     }
 
     /**
-     * Get route value
+     * Get route value.
      */
     public function getRoute(): ?GeoRouting
     {
@@ -97,7 +101,7 @@ class GetBic3RoutingResponse extends AbstractStructBase
     }
 
     /**
-     * Set route value
+     * Set route value.
      */
     public function setRoute(?GeoRouting $route = null): self
     {

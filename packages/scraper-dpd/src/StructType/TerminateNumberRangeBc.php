@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for TerminateNumberRangeBc StructType
+ * This class stands for TerminateNumberRangeBc StructType.
  */
 #[\AllowDynamicProperties]
 class TerminateNumberRangeBc extends AbstractStructBase
@@ -14,12 +16,12 @@ class TerminateNumberRangeBc extends AbstractStructBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?TerminateNumberRangeBcRequest $request = null;
 
     /**
-     * Constructor method for TerminateNumberRangeBc
+     * Constructor method for TerminateNumberRangeBc.
      *
      * @uses TerminateNumberRangeBc::setRequest()
      */
@@ -31,7 +33,7 @@ class TerminateNumberRangeBc extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?TerminateNumberRangeBcRequest
     {
@@ -39,7 +41,7 @@ class TerminateNumberRangeBc extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?TerminateNumberRangeBcRequest $request = null): self
     {

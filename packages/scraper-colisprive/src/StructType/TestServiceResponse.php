@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for TestServiceResponse StructType
+ * This class stands for TestServiceResponse StructType.
  */
 #[\AllowDynamicProperties]
 class TestServiceResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class TestServiceResponse extends AbstractStructBase
      * The TestServiceResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ResponseObject $TestServiceResult = null;
 
     /**
-     * Constructor method for TestServiceResponse
+     * Constructor method for TestServiceResponse.
      *
      * @uses TestServiceResponse::setTestServiceResult()
      */
@@ -31,7 +33,7 @@ class TestServiceResponse extends AbstractStructBase
     }
 
     /**
-     * Get TestServiceResult value
+     * Get TestServiceResult value.
      */
     public function getTestServiceResult(): ?ResponseObject
     {
@@ -39,7 +41,7 @@ class TestServiceResponse extends AbstractStructBase
     }
 
     /**
-     * Set TestServiceResult value
+     * Set TestServiceResult value.
      */
     public function setTestServiceResult(?ResponseObject $testServiceResult = null): self
     {

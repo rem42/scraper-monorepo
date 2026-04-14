@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
@@ -7,7 +9,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 /**
  * This class stands for AuthenticationHeader StructType
  * Meta information extracted from the WSDL
- * - type: tns:AuthenticationHeader
+ * - type: tns:AuthenticationHeader.
  */
 #[\AllowDynamicProperties]
 class AuthenticationHeader extends AbstractStructBase
@@ -17,20 +19,21 @@ class AuthenticationHeader extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $UserName;
+
     /**
      * The Password
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $Password;
 
     /**
-     * Constructor method for AuthenticationHeader
+     * Constructor method for AuthenticationHeader.
      *
      * @uses AuthenticationHeader::setUserName()
      * @uses AuthenticationHeader::setPassword()
@@ -44,7 +47,7 @@ class AuthenticationHeader extends AbstractStructBase
     }
 
     /**
-     * Get UserName value
+     * Get UserName value.
      */
     public function getUserName(): string
     {
@@ -52,7 +55,7 @@ class AuthenticationHeader extends AbstractStructBase
     }
 
     /**
-     * Set UserName value
+     * Set UserName value.
      */
     public function setUserName(?string $userName): self
     {
@@ -66,7 +69,7 @@ class AuthenticationHeader extends AbstractStructBase
     }
 
     /**
-     * Get Password value
+     * Get Password value.
      */
     public function getPassword(): string
     {
@@ -74,7 +77,7 @@ class AuthenticationHeader extends AbstractStructBase
     }
 
     /**
-     * Set Password value
+     * Set Password value.
      */
     public function setPassword(?string $password): self
     {

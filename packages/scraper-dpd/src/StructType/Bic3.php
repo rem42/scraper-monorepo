@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for Bic3 StructType
+ * This class stands for Bic3 StructType.
  */
 #[\AllowDynamicProperties]
 class Bic3 extends AppendOptionsBase
@@ -12,12 +14,12 @@ class Bic3 extends AppendOptionsBase
      * The generateBic3
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected bool $generateBic3;
 
     /**
-     * Constructor method for Bic3
+     * Constructor method for Bic3.
      *
      * @uses Bic3::setGenerateBic3()
      */
@@ -29,7 +31,7 @@ class Bic3 extends AppendOptionsBase
     }
 
     /**
-     * Get generateBic3 value
+     * Get generateBic3 value.
      */
     public function getGenerateBic3(): bool
     {
@@ -37,7 +39,7 @@ class Bic3 extends AppendOptionsBase
     }
 
     /**
-     * Set generateBic3 value
+     * Set generateBic3 value.
      */
     public function setGenerateBic3(bool $generateBic3): self
     {

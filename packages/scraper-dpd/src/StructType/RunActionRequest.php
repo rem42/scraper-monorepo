@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for RunActionRequest StructType
+ * This class stands for RunActionRequest StructType.
  */
 #[\AllowDynamicProperties]
 class RunActionRequest extends AbstractStructBase
@@ -14,19 +16,20 @@ class RunActionRequest extends AbstractStructBase
      * The Action
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Action = null;
+
     /**
      * The Parameter
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Parameter = null;
 
     /**
-     * Constructor method for RunActionRequest
+     * Constructor method for RunActionRequest.
      *
      * @uses RunActionRequest::setAction()
      * @uses RunActionRequest::setParameter()
@@ -40,7 +43,7 @@ class RunActionRequest extends AbstractStructBase
     }
 
     /**
-     * Get Action value
+     * Get Action value.
      */
     public function getAction(): ?string
     {
@@ -48,7 +51,7 @@ class RunActionRequest extends AbstractStructBase
     }
 
     /**
-     * Set Action value
+     * Set Action value.
      */
     public function setAction(?string $action = null): self
     {
@@ -62,7 +65,7 @@ class RunActionRequest extends AbstractStructBase
     }
 
     /**
-     * Get Parameter value
+     * Get Parameter value.
      */
     public function getParameter(): ?string
     {
@@ -70,7 +73,7 @@ class RunActionRequest extends AbstractStructBase
     }
 
     /**
-     * Set Parameter value
+     * Set Parameter value.
      */
     public function setParameter(?string $parameter = null): self
     {

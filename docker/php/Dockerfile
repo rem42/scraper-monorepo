@@ -11,7 +11,10 @@ RUN apk add --no-cache \
     zip \
     intl \
     dom \
-    xml
+    soap \
+    xml \
+    && docker-php-ext-install \
+    soap
 
 # Installation de Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer

@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ShipmentsWithLabels StructType
+ * This class stands for ShipmentsWithLabels StructType.
  */
 #[\AllowDynamicProperties]
 class ShipmentsWithLabels extends AbstractStructBase
@@ -14,19 +16,20 @@ class ShipmentsWithLabels extends AbstractStructBase
      * The shipments
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfShipment $shipments = null;
+
     /**
      * The labels
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfLabel $labels = null;
 
     /**
-     * Constructor method for ShipmentsWithLabels
+     * Constructor method for ShipmentsWithLabels.
      *
      * @uses ShipmentsWithLabels::setShipments()
      * @uses ShipmentsWithLabels::setLabels()
@@ -40,7 +43,7 @@ class ShipmentsWithLabels extends AbstractStructBase
     }
 
     /**
-     * Get shipments value
+     * Get shipments value.
      */
     public function getShipments(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfShipment
     {
@@ -48,7 +51,7 @@ class ShipmentsWithLabels extends AbstractStructBase
     }
 
     /**
-     * Set shipments value
+     * Set shipments value.
      */
     public function setShipments(?\Scraper\ScraperDPD\ArrayType\ArrayOfShipment $shipments = null): self
     {
@@ -58,7 +61,7 @@ class ShipmentsWithLabels extends AbstractStructBase
     }
 
     /**
-     * Get labels value
+     * Get labels value.
      */
     public function getLabels(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfLabel
     {
@@ -66,7 +69,7 @@ class ShipmentsWithLabels extends AbstractStructBase
     }
 
     /**
-     * Set labels value
+     * Set labels value.
      */
     public function setLabels(?\Scraper\ScraperDPD\ArrayType\ArrayOfLabel $labels = null): self
     {

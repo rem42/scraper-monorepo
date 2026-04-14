@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetShipmentBcMultiResponse StructType
+ * This class stands for GetShipmentBcMultiResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetShipmentBcMultiResponse extends AbstractStructBase
@@ -14,19 +16,20 @@ class GetShipmentBcMultiResponse extends AbstractStructBase
      * The GetShipmentBcMultiResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetShipmentBcMultiResponse $GetShipmentBcMultiResult = null;
+
     /**
      * The Shipments
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfGetShipmentEntry $Shipments = null;
 
     /**
-     * Constructor method for GetShipmentBcMultiResponse
+     * Constructor method for GetShipmentBcMultiResponse.
      *
      * @uses GetShipmentBcMultiResponse::setGetShipmentBcMultiResult()
      * @uses GetShipmentBcMultiResponse::setShipments()
@@ -40,7 +43,7 @@ class GetShipmentBcMultiResponse extends AbstractStructBase
     }
 
     /**
-     * Get GetShipmentBcMultiResult value
+     * Get GetShipmentBcMultiResult value.
      */
     public function getGetShipmentBcMultiResult(): ?self
     {
@@ -48,7 +51,7 @@ class GetShipmentBcMultiResponse extends AbstractStructBase
     }
 
     /**
-     * Set GetShipmentBcMultiResult value
+     * Set GetShipmentBcMultiResult value.
      */
     public function setGetShipmentBcMultiResult(?self $getShipmentBcMultiResult = null): self
     {
@@ -58,7 +61,7 @@ class GetShipmentBcMultiResponse extends AbstractStructBase
     }
 
     /**
-     * Get Shipments value
+     * Get Shipments value.
      */
     public function getShipments(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfGetShipmentEntry
     {
@@ -66,7 +69,7 @@ class GetShipmentBcMultiResponse extends AbstractStructBase
     }
 
     /**
-     * Set Shipments value
+     * Set Shipments value.
      */
     public function setShipments(?\Scraper\ScraperDPD\ArrayType\ArrayOfGetShipmentEntry $shipments = null): self
     {

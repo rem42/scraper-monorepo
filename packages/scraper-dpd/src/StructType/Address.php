@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for Address StructType
+ * This class stands for Address StructType.
  */
 #[\AllowDynamicProperties]
 class Address extends AddressMini
@@ -12,40 +14,44 @@ class Address extends AddressMini
      * The name
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $name = null;
+
     /**
      * The phoneNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $phoneNumber = null;
+
     /**
      * The faxNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $faxNumber = null;
+
     /**
      * The geoX
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $geoX = null;
+
     /**
      * The geoY
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $geoY = null;
 
     /**
-     * Constructor method for Address
+     * Constructor method for Address.
      *
      * @uses Address::setName()
      * @uses Address::setPhoneNumber()
@@ -65,7 +71,7 @@ class Address extends AddressMini
     }
 
     /**
-     * Get name value
+     * Get name value.
      */
     public function getName(): ?string
     {
@@ -73,7 +79,7 @@ class Address extends AddressMini
     }
 
     /**
-     * Set name value
+     * Set name value.
      */
     public function setName(?string $name = null): self
     {
@@ -87,7 +93,7 @@ class Address extends AddressMini
     }
 
     /**
-     * Get phoneNumber value
+     * Get phoneNumber value.
      */
     public function getPhoneNumber(): ?string
     {
@@ -95,7 +101,7 @@ class Address extends AddressMini
     }
 
     /**
-     * Set phoneNumber value
+     * Set phoneNumber value.
      */
     public function setPhoneNumber(?string $phoneNumber = null): self
     {
@@ -109,7 +115,7 @@ class Address extends AddressMini
     }
 
     /**
-     * Get faxNumber value
+     * Get faxNumber value.
      */
     public function getFaxNumber(): ?string
     {
@@ -117,7 +123,7 @@ class Address extends AddressMini
     }
 
     /**
-     * Set faxNumber value
+     * Set faxNumber value.
      */
     public function setFaxNumber(?string $faxNumber = null): self
     {
@@ -131,7 +137,7 @@ class Address extends AddressMini
     }
 
     /**
-     * Get geoX value
+     * Get geoX value.
      */
     public function getGeoX(): ?string
     {
@@ -139,7 +145,7 @@ class Address extends AddressMini
     }
 
     /**
-     * Set geoX value
+     * Set geoX value.
      */
     public function setGeoX(?string $geoX = null): self
     {
@@ -153,7 +159,7 @@ class Address extends AddressMini
     }
 
     /**
-     * Get geoY value
+     * Get geoY value.
      */
     public function getGeoY(): ?string
     {
@@ -161,7 +167,7 @@ class Address extends AddressMini
     }
 
     /**
-     * Set geoY value
+     * Set geoY value.
      */
     public function setGeoY(?string $geoY = null): self
     {

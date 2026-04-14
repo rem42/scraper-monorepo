@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Set2ndDeliveryRequest StructType
+ * This class stands for Set2ndDeliveryRequest StructType.
  */
 #[\AllowDynamicProperties]
 class Set2ndDeliveryRequest extends AbstractStructBase
@@ -14,52 +16,57 @@ class Set2ndDeliveryRequest extends AbstractStructBase
      * The DlvrModeType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $DlvrModeType;
+
     /**
      * The SecurityID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?IdentificationObject $SecurityID;
+
     /**
      * The CPPclCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CPPclCode;
+
     /**
      * The CsgZC
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CsgZC;
+
     /**
      * The DlvrAdd
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?DeliveryAddressObject $DlvrAdd;
+
     /**
      * The DlvrDate
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $DlvrDate;
 
     /**
-     * Constructor method for Set2ndDeliveryRequest
+     * Constructor method for Set2ndDeliveryRequest.
      *
      * @uses Set2ndDeliveryRequest::setDlvrModeType()
      * @uses Set2ndDeliveryRequest::setSecurityID()
@@ -81,7 +88,7 @@ class Set2ndDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Get DlvrModeType value
+     * Get DlvrModeType value.
      */
     public function getDlvrModeType(): string
     {
@@ -89,7 +96,7 @@ class Set2ndDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Set DlvrModeType value
+     * Set DlvrModeType value.
      *
      * @uses \Scraper\ScraperColisPrive\EnumType\EnumDeliveryModeType::valueIsValid()
      * @uses \Scraper\ScraperColisPrive\EnumType\EnumDeliveryModeType::getValidValues()
@@ -108,7 +115,7 @@ class Set2ndDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Get SecurityID value
+     * Get SecurityID value.
      */
     public function getSecurityID(): IdentificationObject
     {
@@ -116,7 +123,7 @@ class Set2ndDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Set SecurityID value
+     * Set SecurityID value.
      */
     public function setSecurityID(?IdentificationObject $securityID): self
     {
@@ -126,7 +133,7 @@ class Set2ndDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Get CPPclCode value
+     * Get CPPclCode value.
      */
     public function getCPPclCode(): string
     {
@@ -134,7 +141,7 @@ class Set2ndDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Set CPPclCode value
+     * Set CPPclCode value.
      */
     public function setCPPclCode(?string $cPPclCode): self
     {
@@ -148,7 +155,7 @@ class Set2ndDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Get CsgZC value
+     * Get CsgZC value.
      */
     public function getCsgZC(): string
     {
@@ -156,7 +163,7 @@ class Set2ndDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Set CsgZC value
+     * Set CsgZC value.
      */
     public function setCsgZC(?string $csgZC): self
     {
@@ -170,7 +177,7 @@ class Set2ndDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Get DlvrAdd value
+     * Get DlvrAdd value.
      */
     public function getDlvrAdd(): DeliveryAddressObject
     {
@@ -178,7 +185,7 @@ class Set2ndDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Set DlvrAdd value
+     * Set DlvrAdd value.
      */
     public function setDlvrAdd(?DeliveryAddressObject $dlvrAdd): self
     {
@@ -188,7 +195,7 @@ class Set2ndDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Get DlvrDate value
+     * Get DlvrDate value.
      */
     public function getDlvrDate(): string
     {
@@ -196,7 +203,7 @@ class Set2ndDeliveryRequest extends AbstractStructBase
     }
 
     /**
-     * Set DlvrDate value
+     * Set DlvrDate value.
      */
     public function setDlvrDate(?string $dlvrDate): self
     {

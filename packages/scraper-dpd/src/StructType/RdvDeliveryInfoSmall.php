@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for RdvDeliveryInfoSmall StructType
+ * This class stands for RdvDeliveryInfoSmall StructType.
  */
 #[\AllowDynamicProperties]
 class RdvDeliveryInfoSmall extends AbstractStructBase
@@ -14,40 +16,44 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
      * The ContactName
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ContactName = null;
+
     /**
      * The Digicode1
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Digicode1 = null;
+
     /**
      * The Digicode2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Digicode2 = null;
+
     /**
      * The IntercomID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $IntercomID = null;
+
     /**
      * The Remark
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Remark = null;
 
     /**
-     * Constructor method for RdvDeliveryInfoSmall
+     * Constructor method for RdvDeliveryInfoSmall.
      *
      * @uses RdvDeliveryInfoSmall::setContactName()
      * @uses RdvDeliveryInfoSmall::setDigicode1()
@@ -67,7 +73,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     }
 
     /**
-     * Get ContactName value
+     * Get ContactName value.
      */
     public function getContactName(): ?string
     {
@@ -75,7 +81,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     }
 
     /**
-     * Set ContactName value
+     * Set ContactName value.
      */
     public function setContactName(?string $contactName = null): self
     {
@@ -89,7 +95,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     }
 
     /**
-     * Get Digicode1 value
+     * Get Digicode1 value.
      */
     public function getDigicode1(): ?string
     {
@@ -97,7 +103,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     }
 
     /**
-     * Set Digicode1 value
+     * Set Digicode1 value.
      */
     public function setDigicode1(?string $digicode1 = null): self
     {
@@ -111,7 +117,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     }
 
     /**
-     * Get Digicode2 value
+     * Get Digicode2 value.
      */
     public function getDigicode2(): ?string
     {
@@ -119,7 +125,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     }
 
     /**
-     * Set Digicode2 value
+     * Set Digicode2 value.
      */
     public function setDigicode2(?string $digicode2 = null): self
     {
@@ -133,7 +139,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     }
 
     /**
-     * Get IntercomID value
+     * Get IntercomID value.
      */
     public function getIntercomID(): ?string
     {
@@ -141,7 +147,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     }
 
     /**
-     * Set IntercomID value
+     * Set IntercomID value.
      */
     public function setIntercomID(?string $intercomID = null): self
     {
@@ -155,7 +161,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     }
 
     /**
-     * Get Remark value
+     * Get Remark value.
      */
     public function getRemark(): ?string
     {
@@ -163,7 +169,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     }
 
     /**
-     * Set Remark value
+     * Set Remark value.
      */
     public function setRemark(?string $remark = null): self
     {

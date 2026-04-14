@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for AddressObject StructType
+ * This class stands for AddressObject StructType.
  */
 #[\AllowDynamicProperties]
 class AddressObject extends AbstractStructBase
@@ -14,73 +16,81 @@ class AddressObject extends AbstractStructBase
      * The Add2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Add2 = null;
+
     /**
      * The Add3
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Add3 = null;
+
     /**
      * The Add4
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Add4 = null;
+
     /**
      * The GPSCoord
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?LocalizationObject $GPSCoord = null;
+
     /**
      * The Company
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $Company;
+
     /**
      * The Add1
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $Add1;
+
     /**
      * The ZC
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $ZC;
+
     /**
      * The City
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $City;
+
     /**
      * The Country
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $Country;
 
     /**
-     * Constructor method for AddressObject
+     * Constructor method for AddressObject.
      *
      * @uses AddressObject::setAdd2()
      * @uses AddressObject::setAdd3()
@@ -101,7 +111,7 @@ class AddressObject extends AbstractStructBase
         ?string $add1,
         ?string $zC,
         ?string $city,
-        ?string $country
+        ?string $country,
     ) {
         $this
             ->setAdd2($add2)
@@ -117,7 +127,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Get Add2 value
+     * Get Add2 value.
      */
     public function getAdd2(): ?string
     {
@@ -125,7 +135,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Set Add2 value
+     * Set Add2 value.
      */
     public function setAdd2(?string $add2 = null): self
     {
@@ -139,7 +149,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Get Add3 value
+     * Get Add3 value.
      */
     public function getAdd3(): ?string
     {
@@ -147,7 +157,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Set Add3 value
+     * Set Add3 value.
      */
     public function setAdd3(?string $add3 = null): self
     {
@@ -161,7 +171,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Get Add4 value
+     * Get Add4 value.
      */
     public function getAdd4(): ?string
     {
@@ -169,7 +179,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Set Add4 value
+     * Set Add4 value.
      */
     public function setAdd4(?string $add4 = null): self
     {
@@ -183,7 +193,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Get GPSCoord value
+     * Get GPSCoord value.
      */
     public function getGPSCoord(): ?LocalizationObject
     {
@@ -191,7 +201,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Set GPSCoord value
+     * Set GPSCoord value.
      */
     public function setGPSCoord(?LocalizationObject $gPSCoord = null): self
     {
@@ -201,7 +211,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Get Company value
+     * Get Company value.
      */
     public function getCompany(): string
     {
@@ -209,7 +219,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Set Company value
+     * Set Company value.
      */
     public function setCompany(?string $company): self
     {
@@ -223,7 +233,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Get Add1 value
+     * Get Add1 value.
      */
     public function getAdd1(): string
     {
@@ -231,7 +241,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Set Add1 value
+     * Set Add1 value.
      */
     public function setAdd1(?string $add1): self
     {
@@ -245,7 +255,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Get ZC value
+     * Get ZC value.
      */
     public function getZC(): string
     {
@@ -253,7 +263,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Set ZC value
+     * Set ZC value.
      */
     public function setZC(?string $zC): self
     {
@@ -267,7 +277,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Get City value
+     * Get City value.
      */
     public function getCity(): string
     {
@@ -275,7 +285,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Set City value
+     * Set City value.
      */
     public function setCity(?string $city): self
     {
@@ -289,7 +299,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Get Country value
+     * Get Country value.
      */
     public function getCountry(): string
     {
@@ -297,7 +307,7 @@ class AddressObject extends AbstractStructBase
     }
 
     /**
-     * Set Country value
+     * Set Country value.
      */
     public function setCountry(?string $country): self
     {

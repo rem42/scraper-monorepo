@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for Reverse StructType
+ * This class stands for Reverse StructType.
  */
 #[\AllowDynamicProperties]
 class Reverse extends DefaultService
@@ -12,26 +14,28 @@ class Reverse extends DefaultService
      * The expireOffset
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $expireOffset;
+
     /**
      * The type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $type;
+
     /**
      * The retour_receiver
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Address $retour_receiver = null;
 
     /**
-     * Constructor method for Reverse
+     * Constructor method for Reverse.
      *
      * @uses Reverse::setExpireOffset()
      * @uses Reverse::setType()
@@ -47,7 +51,7 @@ class Reverse extends DefaultService
     }
 
     /**
-     * Get expireOffset value
+     * Get expireOffset value.
      */
     public function getExpireOffset(): int
     {
@@ -55,7 +59,7 @@ class Reverse extends DefaultService
     }
 
     /**
-     * Set expireOffset value
+     * Set expireOffset value.
      */
     public function setExpireOffset(int $expireOffset): self
     {
@@ -69,7 +73,7 @@ class Reverse extends DefaultService
     }
 
     /**
-     * Get type value
+     * Get type value.
      */
     public function getType(): string
     {
@@ -77,7 +81,7 @@ class Reverse extends DefaultService
     }
 
     /**
-     * Set type value
+     * Set type value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\EtypeReverse::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\EtypeReverse::getValidValues()
@@ -96,7 +100,7 @@ class Reverse extends DefaultService
     }
 
     /**
-     * Get retour_receiver value
+     * Get retour_receiver value.
      */
     public function getRetour_receiver(): ?Address
     {
@@ -104,7 +108,7 @@ class Reverse extends DefaultService
     }
 
     /**
-     * Set retour_receiver value
+     * Set retour_receiver value.
      */
     public function setRetour_receiver(?Address $retour_receiver = null): self
     {

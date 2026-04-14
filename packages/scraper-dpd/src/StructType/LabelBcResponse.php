@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for LabelBcResponse StructType
+ * This class stands for LabelBcResponse StructType.
  */
 #[\AllowDynamicProperties]
 class LabelBcResponse extends LabelBaseResponse
@@ -12,12 +14,12 @@ class LabelBcResponse extends LabelBaseResponse
      * The shipment
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?BcDataExt $shipment = null;
 
     /**
-     * Constructor method for LabelBcResponse
+     * Constructor method for LabelBcResponse.
      *
      * @uses LabelBcResponse::setShipment()
      */
@@ -29,7 +31,7 @@ class LabelBcResponse extends LabelBaseResponse
     }
 
     /**
-     * Get shipment value
+     * Get shipment value.
      */
     public function getShipment(): ?BcDataExt
     {
@@ -37,7 +39,7 @@ class LabelBcResponse extends LabelBaseResponse
     }
 
     /**
-     * Set shipment value
+     * Set shipment value.
      */
     public function setShipment(?BcDataExt $shipment = null): self
     {

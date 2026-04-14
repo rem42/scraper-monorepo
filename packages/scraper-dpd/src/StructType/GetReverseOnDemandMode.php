@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetReverseOnDemandMode StructType
+ * This class stands for GetReverseOnDemandMode StructType.
  */
 #[\AllowDynamicProperties]
 class GetReverseOnDemandMode extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetReverseOnDemandMode extends AbstractStructBase
      * The customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $customer = null;
 
     /**
-     * Constructor method for GetReverseOnDemandMode
+     * Constructor method for GetReverseOnDemandMode.
      *
      * @uses GetReverseOnDemandMode::setCustomer()
      */
@@ -31,7 +33,7 @@ class GetReverseOnDemandMode extends AbstractStructBase
     }
 
     /**
-     * Get customer value
+     * Get customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -39,7 +41,7 @@ class GetReverseOnDemandMode extends AbstractStructBase
     }
 
     /**
-     * Set customer value
+     * Set customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {

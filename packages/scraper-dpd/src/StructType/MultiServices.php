@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for MultiServices StructType
+ * This class stands for MultiServices StructType.
  */
 #[\AllowDynamicProperties]
 class MultiServices extends ContactServices
@@ -12,19 +14,20 @@ class MultiServices extends ContactServices
      * The consolidation
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Consolidation $consolidation = null;
+
     /**
      * The pickupAtCustomer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?PickupData $pickupAtCustomer = null;
 
     /**
-     * Constructor method for MultiServices
+     * Constructor method for MultiServices.
      *
      * @uses MultiServices::setConsolidation()
      * @uses MultiServices::setPickupAtCustomer()
@@ -38,7 +41,7 @@ class MultiServices extends ContactServices
     }
 
     /**
-     * Get consolidation value
+     * Get consolidation value.
      */
     public function getConsolidation(): ?Consolidation
     {
@@ -46,7 +49,7 @@ class MultiServices extends ContactServices
     }
 
     /**
-     * Set consolidation value
+     * Set consolidation value.
      */
     public function setConsolidation(?Consolidation $consolidation = null): self
     {
@@ -56,7 +59,7 @@ class MultiServices extends ContactServices
     }
 
     /**
-     * Get pickupAtCustomer value
+     * Get pickupAtCustomer value.
      */
     public function getPickupAtCustomer(): ?PickupData
     {
@@ -64,7 +67,7 @@ class MultiServices extends ContactServices
     }
 
     /**
-     * Set pickupAtCustomer value
+     * Set pickupAtCustomer value.
      */
     public function setPickupAtCustomer(?PickupData $pickupAtCustomer = null): self
     {

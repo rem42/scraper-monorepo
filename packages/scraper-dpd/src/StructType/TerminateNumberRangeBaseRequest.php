@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for TerminateNumberRangeBaseRequest StructType
+ * This class stands for TerminateNumberRangeBaseRequest StructType.
  */
 #[\AllowDynamicProperties]
 abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
@@ -14,40 +16,44 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
      * The NumberRangeFrom
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $NumberRangeFrom;
+
     /**
      * The NumberRangeTo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $NumberRangeTo;
+
     /**
      * The CustomerCenterNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $CustomerCenterNumber;
+
     /**
      * The CustomerNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $CustomerNumber;
+
     /**
      * The ClientID
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ClientID = null;
 
     /**
-     * Constructor method for TerminateNumberRangeBaseRequest
+     * Constructor method for TerminateNumberRangeBaseRequest.
      *
      * @uses TerminateNumberRangeBaseRequest::setNumberRangeFrom()
      * @uses TerminateNumberRangeBaseRequest::setNumberRangeTo()
@@ -67,7 +73,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get NumberRangeFrom value
+     * Get NumberRangeFrom value.
      */
     public function getNumberRangeFrom(): int
     {
@@ -75,7 +81,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set NumberRangeFrom value
+     * Set NumberRangeFrom value.
      */
     public function setNumberRangeFrom(int $numberRangeFrom): self
     {
@@ -89,7 +95,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get NumberRangeTo value
+     * Get NumberRangeTo value.
      */
     public function getNumberRangeTo(): int
     {
@@ -97,7 +103,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set NumberRangeTo value
+     * Set NumberRangeTo value.
      */
     public function setNumberRangeTo(int $numberRangeTo): self
     {
@@ -111,7 +117,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get CustomerCenterNumber value
+     * Get CustomerCenterNumber value.
      */
     public function getCustomerCenterNumber(): int
     {
@@ -119,7 +125,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set CustomerCenterNumber value
+     * Set CustomerCenterNumber value.
      */
     public function setCustomerCenterNumber(int $customerCenterNumber): self
     {
@@ -133,7 +139,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get CustomerNumber value
+     * Get CustomerNumber value.
      */
     public function getCustomerNumber(): int
     {
@@ -141,7 +147,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set CustomerNumber value
+     * Set CustomerNumber value.
      */
     public function setCustomerNumber(int $customerNumber): self
     {
@@ -155,7 +161,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Get ClientID value
+     * Get ClientID value.
      */
     public function getClientID(): ?string
     {
@@ -163,7 +169,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     }
 
     /**
-     * Set ClientID value
+     * Set ClientID value.
      */
     public function setClientID(?string $clientID = null): self
     {

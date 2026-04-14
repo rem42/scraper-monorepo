@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for TerminateNumberRangeRequest StructType
+ * This class stands for TerminateNumberRangeRequest StructType.
  */
 #[\AllowDynamicProperties]
 class TerminateNumberRangeRequest extends TerminateNumberRangeBaseRequest
@@ -12,19 +14,20 @@ class TerminateNumberRangeRequest extends TerminateNumberRangeBaseRequest
      * The CountryCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $CountryCode;
+
     /**
      * The ShippingCenterNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $ShippingCenterNumber;
 
     /**
-     * Constructor method for TerminateNumberRangeRequest
+     * Constructor method for TerminateNumberRangeRequest.
      *
      * @uses TerminateNumberRangeRequest::setCountryCode()
      * @uses TerminateNumberRangeRequest::setShippingCenterNumber()
@@ -38,7 +41,7 @@ class TerminateNumberRangeRequest extends TerminateNumberRangeBaseRequest
     }
 
     /**
-     * Get CountryCode value
+     * Get CountryCode value.
      */
     public function getCountryCode(): int
     {
@@ -46,7 +49,7 @@ class TerminateNumberRangeRequest extends TerminateNumberRangeBaseRequest
     }
 
     /**
-     * Set CountryCode value
+     * Set CountryCode value.
      */
     public function setCountryCode(int $countryCode): self
     {
@@ -60,7 +63,7 @@ class TerminateNumberRangeRequest extends TerminateNumberRangeBaseRequest
     }
 
     /**
-     * Get ShippingCenterNumber value
+     * Get ShippingCenterNumber value.
      */
     public function getShippingCenterNumber(): int
     {
@@ -68,7 +71,7 @@ class TerminateNumberRangeRequest extends TerminateNumberRangeBaseRequest
     }
 
     /**
-     * Set ShippingCenterNumber value
+     * Set ShippingCenterNumber value.
      */
     public function setShippingCenterNumber(int $shippingCenterNumber): self
     {

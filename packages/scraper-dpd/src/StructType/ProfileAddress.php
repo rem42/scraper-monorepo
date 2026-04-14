@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for ProfileAddress StructType
+ * This class stands for ProfileAddress StructType.
  */
 #[\AllowDynamicProperties]
 class ProfileAddress extends AbstractStructBase
@@ -14,152 +16,172 @@ class ProfileAddress extends AbstractStructBase
      * The Type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $Type;
+
     /**
      * The Priority
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $Priority;
+
     /**
      * The Title
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Title = null;
+
     /**
      * The Name0
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Name0 = null;
+
     /**
      * The Name1
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Name1 = null;
+
     /**
      * The Name2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Name2 = null;
+
     /**
      * The Name3
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Name3 = null;
+
     /**
      * The CountryPrefix
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $CountryPrefix = null;
+
     /**
      * The ZipCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ZipCode = null;
+
     /**
      * The City
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $City = null;
+
     /**
      * The Street
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Street = null;
+
     /**
      * The HouseNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $HouseNumber = null;
+
     /**
      * The HouseNumberExtension
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $HouseNumberExtension = null;
+
     /**
      * The Floor
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Floor = null;
+
     /**
      * The PostOfficeBox
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PostOfficeBox = null;
+
     /**
      * The PhoneNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $PhoneNumber = null;
+
     /**
      * The FaxNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $FaxNumber = null;
+
     /**
      * The MobileNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $MobileNumber = null;
+
     /**
      * The Email
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Email = null;
+
     /**
      * The GeoX
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $GeoX = null;
+
     /**
      * The GeoY
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $GeoY = null;
 
     /**
-     * Constructor method for ProfileAddress
+     * Constructor method for ProfileAddress.
      *
      * @uses ProfileAddress::setType()
      * @uses ProfileAddress::setPriority()
@@ -211,7 +233,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get Type value
+     * Get Type value.
      */
     public function getType(): string
     {
@@ -219,7 +241,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set Type value
+     * Set Type value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\AddressType::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\AddressType::getValidValues()
@@ -238,7 +260,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get Priority value
+     * Get Priority value.
      */
     public function getPriority(): int
     {
@@ -246,7 +268,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set Priority value
+     * Set Priority value.
      */
     public function setPriority(int $priority): self
     {
@@ -260,7 +282,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get Title value
+     * Get Title value.
      */
     public function getTitle(): ?string
     {
@@ -268,7 +290,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set Title value
+     * Set Title value.
      */
     public function setTitle(?string $title = null): self
     {
@@ -282,7 +304,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get Name0 value
+     * Get Name0 value.
      */
     public function getName0(): ?string
     {
@@ -290,7 +312,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set Name0 value
+     * Set Name0 value.
      */
     public function setName0(?string $name0 = null): self
     {
@@ -304,7 +326,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get Name1 value
+     * Get Name1 value.
      */
     public function getName1(): ?string
     {
@@ -312,7 +334,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set Name1 value
+     * Set Name1 value.
      */
     public function setName1(?string $name1 = null): self
     {
@@ -326,7 +348,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get Name2 value
+     * Get Name2 value.
      */
     public function getName2(): ?string
     {
@@ -334,7 +356,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set Name2 value
+     * Set Name2 value.
      */
     public function setName2(?string $name2 = null): self
     {
@@ -348,7 +370,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get Name3 value
+     * Get Name3 value.
      */
     public function getName3(): ?string
     {
@@ -356,7 +378,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set Name3 value
+     * Set Name3 value.
      */
     public function setName3(?string $name3 = null): self
     {
@@ -370,7 +392,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get CountryPrefix value
+     * Get CountryPrefix value.
      */
     public function getCountryPrefix(): ?string
     {
@@ -378,7 +400,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set CountryPrefix value
+     * Set CountryPrefix value.
      */
     public function setCountryPrefix(?string $countryPrefix = null): self
     {
@@ -392,7 +414,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get ZipCode value
+     * Get ZipCode value.
      */
     public function getZipCode(): ?string
     {
@@ -400,7 +422,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set ZipCode value
+     * Set ZipCode value.
      */
     public function setZipCode(?string $zipCode = null): self
     {
@@ -414,7 +436,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get City value
+     * Get City value.
      */
     public function getCity(): ?string
     {
@@ -422,7 +444,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set City value
+     * Set City value.
      */
     public function setCity(?string $city = null): self
     {
@@ -436,7 +458,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get Street value
+     * Get Street value.
      */
     public function getStreet(): ?string
     {
@@ -444,7 +466,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set Street value
+     * Set Street value.
      */
     public function setStreet(?string $street = null): self
     {
@@ -458,7 +480,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get HouseNumber value
+     * Get HouseNumber value.
      */
     public function getHouseNumber(): ?string
     {
@@ -466,7 +488,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set HouseNumber value
+     * Set HouseNumber value.
      */
     public function setHouseNumber(?string $houseNumber = null): self
     {
@@ -480,7 +502,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get HouseNumberExtension value
+     * Get HouseNumberExtension value.
      */
     public function getHouseNumberExtension(): ?string
     {
@@ -488,7 +510,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set HouseNumberExtension value
+     * Set HouseNumberExtension value.
      */
     public function setHouseNumberExtension(?string $houseNumberExtension = null): self
     {
@@ -502,7 +524,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get Floor value
+     * Get Floor value.
      */
     public function getFloor(): ?string
     {
@@ -510,7 +532,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set Floor value
+     * Set Floor value.
      */
     public function setFloor(?string $floor = null): self
     {
@@ -524,7 +546,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get PostOfficeBox value
+     * Get PostOfficeBox value.
      */
     public function getPostOfficeBox(): ?string
     {
@@ -532,7 +554,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set PostOfficeBox value
+     * Set PostOfficeBox value.
      */
     public function setPostOfficeBox(?string $postOfficeBox = null): self
     {
@@ -546,7 +568,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get PhoneNumber value
+     * Get PhoneNumber value.
      */
     public function getPhoneNumber(): ?string
     {
@@ -554,7 +576,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set PhoneNumber value
+     * Set PhoneNumber value.
      */
     public function setPhoneNumber(?string $phoneNumber = null): self
     {
@@ -568,7 +590,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get FaxNumber value
+     * Get FaxNumber value.
      */
     public function getFaxNumber(): ?string
     {
@@ -576,7 +598,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set FaxNumber value
+     * Set FaxNumber value.
      */
     public function setFaxNumber(?string $faxNumber = null): self
     {
@@ -590,7 +612,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get MobileNumber value
+     * Get MobileNumber value.
      */
     public function getMobileNumber(): ?string
     {
@@ -598,7 +620,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set MobileNumber value
+     * Set MobileNumber value.
      */
     public function setMobileNumber(?string $mobileNumber = null): self
     {
@@ -612,7 +634,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get Email value
+     * Get Email value.
      */
     public function getEmail(): ?string
     {
@@ -620,7 +642,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set Email value
+     * Set Email value.
      */
     public function setEmail(?string $email = null): self
     {
@@ -634,7 +656,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get GeoX value
+     * Get GeoX value.
      */
     public function getGeoX(): ?string
     {
@@ -642,7 +664,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set GeoX value
+     * Set GeoX value.
      */
     public function setGeoX(?string $geoX = null): self
     {
@@ -656,7 +678,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Get GeoY value
+     * Get GeoY value.
      */
     public function getGeoY(): ?string
     {
@@ -664,7 +686,7 @@ class ProfileAddress extends AbstractStructBase
     }
 
     /**
-     * Set GeoY value
+     * Set GeoY value.
      */
     public function setGeoY(?string $geoY = null): self
     {

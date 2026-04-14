@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for CNOTData StructType
+ * This class stands for CNOTData StructType.
  */
 #[\AllowDynamicProperties]
 class CNOTData extends AbstractStructBase
@@ -14,61 +16,68 @@ class CNOTData extends AbstractStructBase
      * The Depot
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $Depot;
+
     /**
      * The TimeStamp
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $TimeStamp;
+
     /**
      * The HardwareId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $HardwareId = null;
+
     /**
      * The TourNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $TourNumber = null;
+
     /**
      * The Status
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Status = null;
+
     /**
      * The Tasks
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfTask $Tasks = null;
+
     /**
      * The Locations
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfLocation $Locations = null;
+
     /**
      * The PhoneCalls
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfPhoneCall $PhoneCalls = null;
 
     /**
-     * Constructor method for CNOTData
+     * Constructor method for CNOTData.
      *
      * @uses CNOTData::setDepot()
      * @uses CNOTData::setTimeStamp()
@@ -94,7 +103,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Get Depot value
+     * Get Depot value.
      */
     public function getDepot(): int
     {
@@ -102,7 +111,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Set Depot value
+     * Set Depot value.
      */
     public function setDepot(int $depot): self
     {
@@ -116,7 +125,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Get TimeStamp value
+     * Get TimeStamp value.
      */
     public function getTimeStamp(): string
     {
@@ -124,7 +133,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Set TimeStamp value
+     * Set TimeStamp value.
      */
     public function setTimeStamp(string $timeStamp): self
     {
@@ -138,7 +147,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Get HardwareId value
+     * Get HardwareId value.
      */
     public function getHardwareId(): ?string
     {
@@ -146,7 +155,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Set HardwareId value
+     * Set HardwareId value.
      */
     public function setHardwareId(?string $hardwareId = null): self
     {
@@ -160,7 +169,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Get TourNumber value
+     * Get TourNumber value.
      */
     public function getTourNumber(): ?string
     {
@@ -168,7 +177,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Set TourNumber value
+     * Set TourNumber value.
      */
     public function setTourNumber(?string $tourNumber = null): self
     {
@@ -182,7 +191,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Get Status value
+     * Get Status value.
      */
     public function getStatus(): ?string
     {
@@ -190,7 +199,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Set Status value
+     * Set Status value.
      */
     public function setStatus(?string $status = null): self
     {
@@ -204,7 +213,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Get Tasks value
+     * Get Tasks value.
      */
     public function getTasks(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfTask
     {
@@ -212,7 +221,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Set Tasks value
+     * Set Tasks value.
      */
     public function setTasks(?\Scraper\ScraperDPD\ArrayType\ArrayOfTask $tasks = null): self
     {
@@ -222,7 +231,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Get Locations value
+     * Get Locations value.
      */
     public function getLocations(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfLocation
     {
@@ -230,7 +239,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Set Locations value
+     * Set Locations value.
      */
     public function setLocations(?\Scraper\ScraperDPD\ArrayType\ArrayOfLocation $locations = null): self
     {
@@ -240,7 +249,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Get PhoneCalls value
+     * Get PhoneCalls value.
      */
     public function getPhoneCalls(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfPhoneCall
     {
@@ -248,7 +257,7 @@ class CNOTData extends AbstractStructBase
     }
 
     /**
-     * Set PhoneCalls value
+     * Set PhoneCalls value.
      */
     public function setPhoneCalls(?\Scraper\ScraperDPD\ArrayType\ArrayOfPhoneCall $phoneCalls = null): self
     {

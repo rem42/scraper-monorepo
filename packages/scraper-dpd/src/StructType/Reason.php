@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for Reason StructType
+ * This class stands for Reason StructType.
  */
 #[\AllowDynamicProperties]
 class Reason extends AbstractStructBase
@@ -14,19 +16,20 @@ class Reason extends AbstractStructBase
      * The Language
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Language = null;
+
     /**
      * The Text
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Text = null;
 
     /**
-     * Constructor method for Reason
+     * Constructor method for Reason.
      *
      * @uses Reason::setLanguage()
      * @uses Reason::setText()
@@ -40,7 +43,7 @@ class Reason extends AbstractStructBase
     }
 
     /**
-     * Get Language value
+     * Get Language value.
      */
     public function getLanguage(): ?string
     {
@@ -48,7 +51,7 @@ class Reason extends AbstractStructBase
     }
 
     /**
-     * Set Language value
+     * Set Language value.
      */
     public function setLanguage(?string $language = null): self
     {
@@ -62,7 +65,7 @@ class Reason extends AbstractStructBase
     }
 
     /**
-     * Get Text value
+     * Get Text value.
      */
     public function getText(): ?string
     {
@@ -70,7 +73,7 @@ class Reason extends AbstractStructBase
     }
 
     /**
-     * Set Text value
+     * Set Text value.
      */
     public function setText(?string $text = null): self
     {

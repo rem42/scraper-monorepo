@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for NumberRangeBaseResponse StructType
+ * This class stands for NumberRangeBaseResponse StructType.
  */
 #[\AllowDynamicProperties]
 abstract class NumberRangeBaseResponse extends AbstractStructBase
@@ -14,68 +16,76 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
      * The NumberRangeFrom
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $NumberRangeFrom;
+
     /**
      * The NumberRangeTo
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $NumberRangeTo;
+
     /**
      * The NumberRangeFree
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $NumberRangeFree;
+
     /**
      * The CustomerCenterNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $CustomerCenterNumber;
+
     /**
      * The CustomerNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $CustomerNumber;
+
     /**
      * The NumberRangeType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $NumberRangeType;
+
     /**
      * The NumberType
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $NumberType;
+
     /**
      * The ClientId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ClientId = null;
+
     /**
      * The ValidUntil
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ValidUntil = null;
 
     /**
-     * Constructor method for NumberRangeBaseResponse
+     * Constructor method for NumberRangeBaseResponse.
      *
      * @uses NumberRangeBaseResponse::setNumberRangeFrom()
      * @uses NumberRangeBaseResponse::setNumberRangeTo()
@@ -103,7 +113,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Get NumberRangeFrom value
+     * Get NumberRangeFrom value.
      */
     public function getNumberRangeFrom(): int
     {
@@ -111,7 +121,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Set NumberRangeFrom value
+     * Set NumberRangeFrom value.
      */
     public function setNumberRangeFrom(int $numberRangeFrom): self
     {
@@ -125,7 +135,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Get NumberRangeTo value
+     * Get NumberRangeTo value.
      */
     public function getNumberRangeTo(): int
     {
@@ -133,7 +143,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Set NumberRangeTo value
+     * Set NumberRangeTo value.
      */
     public function setNumberRangeTo(int $numberRangeTo): self
     {
@@ -147,7 +157,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Get NumberRangeFree value
+     * Get NumberRangeFree value.
      */
     public function getNumberRangeFree(): int
     {
@@ -155,7 +165,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Set NumberRangeFree value
+     * Set NumberRangeFree value.
      */
     public function setNumberRangeFree(int $numberRangeFree): self
     {
@@ -169,7 +179,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Get CustomerCenterNumber value
+     * Get CustomerCenterNumber value.
      */
     public function getCustomerCenterNumber(): int
     {
@@ -177,7 +187,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Set CustomerCenterNumber value
+     * Set CustomerCenterNumber value.
      */
     public function setCustomerCenterNumber(int $customerCenterNumber): self
     {
@@ -191,7 +201,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Get CustomerNumber value
+     * Get CustomerNumber value.
      */
     public function getCustomerNumber(): int
     {
@@ -199,7 +209,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Set CustomerNumber value
+     * Set CustomerNumber value.
      */
     public function setCustomerNumber(int $customerNumber): self
     {
@@ -213,7 +223,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Get NumberRangeType value
+     * Get NumberRangeType value.
      */
     public function getNumberRangeType(): int
     {
@@ -221,7 +231,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Set NumberRangeType value
+     * Set NumberRangeType value.
      */
     public function setNumberRangeType(int $numberRangeType): self
     {
@@ -235,7 +245,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Get NumberType value
+     * Get NumberType value.
      */
     public function getNumberType(): int
     {
@@ -243,7 +253,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Set NumberType value
+     * Set NumberType value.
      */
     public function setNumberType(int $numberType): self
     {
@@ -257,7 +267,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Get ClientId value
+     * Get ClientId value.
      */
     public function getClientId(): ?string
     {
@@ -265,7 +275,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Set ClientId value
+     * Set ClientId value.
      */
     public function setClientId(?string $clientId = null): self
     {
@@ -279,7 +289,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Get ValidUntil value
+     * Get ValidUntil value.
      */
     public function getValidUntil(): ?string
     {
@@ -287,7 +297,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     }
 
     /**
-     * Set ValidUntil value
+     * Set ValidUntil value.
      */
     public function setValidUntil(?string $validUntil = null): self
     {

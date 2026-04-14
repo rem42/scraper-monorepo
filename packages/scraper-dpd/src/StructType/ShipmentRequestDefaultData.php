@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ShipmentRequestDefaultData StructType
+ * This class stands for ShipmentRequestDefaultData StructType.
  */
 #[\AllowDynamicProperties]
 class ShipmentRequestDefaultData extends ShipmentRequestBase
@@ -12,12 +14,12 @@ class ShipmentRequestDefaultData extends ShipmentRequestBase
      * The services
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?StdServices $services = null;
 
     /**
-     * Constructor method for ShipmentRequestDefaultData
+     * Constructor method for ShipmentRequestDefaultData.
      *
      * @uses ShipmentRequestDefaultData::setServices()
      */
@@ -29,7 +31,7 @@ class ShipmentRequestDefaultData extends ShipmentRequestBase
     }
 
     /**
-     * Get services value
+     * Get services value.
      */
     public function getServices(): ?StdServices
     {
@@ -37,7 +39,7 @@ class ShipmentRequestDefaultData extends ShipmentRequestBase
     }
 
     /**
-     * Set services value
+     * Set services value.
      */
     public function setServices(?StdServices $services = null): self
     {

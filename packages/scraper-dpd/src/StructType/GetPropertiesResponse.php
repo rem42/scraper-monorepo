@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetPropertiesResponse StructType
+ * This class stands for GetPropertiesResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetPropertiesResponse extends AbstractStructBase
@@ -14,19 +16,20 @@ class GetPropertiesResponse extends AbstractStructBase
      * The GetPropertiesResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetPropertiesResponse $GetPropertiesResult = null;
+
     /**
      * The Properties
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfPropertyDefinition $Properties = null;
 
     /**
-     * Constructor method for GetPropertiesResponse
+     * Constructor method for GetPropertiesResponse.
      *
      * @uses GetPropertiesResponse::setGetPropertiesResult()
      * @uses GetPropertiesResponse::setProperties()
@@ -40,7 +43,7 @@ class GetPropertiesResponse extends AbstractStructBase
     }
 
     /**
-     * Get GetPropertiesResult value
+     * Get GetPropertiesResult value.
      */
     public function getGetPropertiesResult(): ?self
     {
@@ -48,7 +51,7 @@ class GetPropertiesResponse extends AbstractStructBase
     }
 
     /**
-     * Set GetPropertiesResult value
+     * Set GetPropertiesResult value.
      */
     public function setGetPropertiesResult(?self $getPropertiesResult = null): self
     {
@@ -58,7 +61,7 @@ class GetPropertiesResponse extends AbstractStructBase
     }
 
     /**
-     * Get Properties value
+     * Get Properties value.
      */
     public function getProperties(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfPropertyDefinition
     {
@@ -66,7 +69,7 @@ class GetPropertiesResponse extends AbstractStructBase
     }
 
     /**
-     * Set Properties value
+     * Set Properties value.
      */
     public function setProperties(?\Scraper\ScraperDPD\ArrayType\ArrayOfPropertyDefinition $properties = null): self
     {

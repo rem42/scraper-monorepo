@@ -1,11 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for CancelServiceNoticeRequest StructType
+ * This class stands for CancelServiceNoticeRequest StructType.
  */
 #[\AllowDynamicProperties]
-class CancelServiceNoticeRequest extends UpdateServiceNoticeRequestBase
-{
-}
+class CancelServiceNoticeRequest extends UpdateServiceNoticeRequestBase {}

@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for StdShipmentBaseRequest StructType
+ * This class stands for StdShipmentBaseRequest StructType.
  */
 #[\AllowDynamicProperties]
 class StdShipmentBaseRequest extends ShipmentRequestDefaultData
@@ -12,40 +14,44 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
      * The weight
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $weight = null;
+
     /**
      * The referencenumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $referencenumber = null;
+
     /**
      * The reference2
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $reference2 = null;
+
     /**
      * The reference3
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $reference3 = null;
+
     /**
      * The reference4
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $reference4 = null;
 
     /**
-     * Constructor method for StdShipmentBaseRequest
+     * Constructor method for StdShipmentBaseRequest.
      *
      * @uses StdShipmentBaseRequest::setWeight()
      * @uses StdShipmentBaseRequest::setReferencenumber()
@@ -65,7 +71,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     }
 
     /**
-     * Get weight value
+     * Get weight value.
      */
     public function getWeight(): ?string
     {
@@ -73,7 +79,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     }
 
     /**
-     * Set weight value
+     * Set weight value.
      */
     public function setWeight(?string $weight = null): self
     {
@@ -87,7 +93,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     }
 
     /**
-     * Get referencenumber value
+     * Get referencenumber value.
      */
     public function getReferencenumber(): ?string
     {
@@ -95,7 +101,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     }
 
     /**
-     * Set referencenumber value
+     * Set referencenumber value.
      */
     public function setReferencenumber(?string $referencenumber = null): self
     {
@@ -109,7 +115,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     }
 
     /**
-     * Get reference2 value
+     * Get reference2 value.
      */
     public function getReference2(): ?string
     {
@@ -117,7 +123,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     }
 
     /**
-     * Set reference2 value
+     * Set reference2 value.
      */
     public function setReference2(?string $reference2 = null): self
     {
@@ -131,7 +137,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     }
 
     /**
-     * Get reference3 value
+     * Get reference3 value.
      */
     public function getReference3(): ?string
     {
@@ -139,7 +145,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     }
 
     /**
-     * Set reference3 value
+     * Set reference3 value.
      */
     public function setReference3(?string $reference3 = null): self
     {
@@ -153,7 +159,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     }
 
     /**
-     * Get reference4 value
+     * Get reference4 value.
      */
     public function getReference4(): ?string
     {
@@ -161,7 +167,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     }
 
     /**
-     * Set reference4 value
+     * Set reference4 value.
      */
     public function setReference4(?string $reference4 = null): self
     {

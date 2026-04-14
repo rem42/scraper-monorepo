@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetServiceNoticeAnswersResponse StructType
+ * This class stands for GetServiceNoticeAnswersResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetServiceNoticeAnswersResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetServiceNoticeAnswersResponse extends AbstractStructBase
      * The GetServiceNoticeAnswersResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ServiceNoticeAnswersResponse $GetServiceNoticeAnswersResult = null;
 
     /**
-     * Constructor method for GetServiceNoticeAnswersResponse
+     * Constructor method for GetServiceNoticeAnswersResponse.
      *
      * @uses GetServiceNoticeAnswersResponse::setGetServiceNoticeAnswersResult()
      */
@@ -31,7 +33,7 @@ class GetServiceNoticeAnswersResponse extends AbstractStructBase
     }
 
     /**
-     * Get GetServiceNoticeAnswersResult value
+     * Get GetServiceNoticeAnswersResult value.
      */
     public function getGetServiceNoticeAnswersResult(): ?ServiceNoticeAnswersResponse
     {
@@ -39,7 +41,7 @@ class GetServiceNoticeAnswersResponse extends AbstractStructBase
     }
 
     /**
-     * Set GetServiceNoticeAnswersResult value
+     * Set GetServiceNoticeAnswersResult value.
      */
     public function setGetServiceNoticeAnswersResult(?ServiceNoticeAnswersResponse $getServiceNoticeAnswersResult = null): self
     {

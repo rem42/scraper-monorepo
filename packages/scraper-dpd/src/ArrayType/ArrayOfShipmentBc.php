@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\ArrayType;
 
 use WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
 /**
- * This class stands for ArrayOfShipmentBc ArrayType
+ * This class stands for ArrayOfShipmentBc ArrayType.
  */
 class ArrayOfShipmentBc extends AbstractStructArrayBase
 {
@@ -14,14 +16,14 @@ class ArrayOfShipmentBc extends AbstractStructArrayBase
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * - nillable: true
+     * - nillable: true.
      *
      * @var array<\Scraper\ScraperDPD\StructType\ShipmentBc>
      */
     protected ?array $ShipmentBc = null;
 
     /**
-     * Constructor method for ArrayOfShipmentBc
+     * Constructor method for ArrayOfShipmentBc.
      *
      * @uses ArrayOfShipmentBc::setShipmentBc()
      *
@@ -38,7 +40,7 @@ class ArrayOfShipmentBc extends AbstractStructArrayBase
      * Get ShipmentBc value
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
-     * removable from the request (nillable=true+minOccurs=0)
+     * removable from the request (nillable=true+minOccurs=0).
      *
      * @return array<\Scraper\ScraperDPD\StructType\ShipmentBc>
      */
@@ -50,7 +52,7 @@ class ArrayOfShipmentBc extends AbstractStructArrayBase
     /**
      * This method is responsible for validating the value(s) passed to the setShipmentBc method
      * This method is willingly generated in order to preserve the one-line inline validation within the setShipmentBc method
-     * This has to validate that each item contained by the array match the itemType constraint
+     * This has to validate that each item contained by the array match the itemType constraint.
      *
      * @return string A non-empty message if the values does not match the validation rules
      */
@@ -80,7 +82,7 @@ class ArrayOfShipmentBc extends AbstractStructArrayBase
     /**
      * Set ShipmentBc value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
-     * if the value assigned to this property is null, it is removed from this object
+     * if the value assigned to this property is null, it is removed from this object.
      *
      * @param array<\Scraper\ScraperDPD\StructType\ShipmentBc> $shipmentBc
      *
@@ -103,7 +105,7 @@ class ArrayOfShipmentBc extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the current element
+     * Returns the current element.
      *
      * @see AbstractStructArrayBase::current()
      */
@@ -113,7 +115,7 @@ class ArrayOfShipmentBc extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the indexed element
+     * Returns the indexed element.
      *
      * @see AbstractStructArrayBase::item()
      *
@@ -125,7 +127,7 @@ class ArrayOfShipmentBc extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the first element
+     * Returns the first element.
      *
      * @see AbstractStructArrayBase::first()
      */
@@ -135,7 +137,7 @@ class ArrayOfShipmentBc extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the last element
+     * Returns the last element.
      *
      * @see AbstractStructArrayBase::last()
      */
@@ -145,7 +147,7 @@ class ArrayOfShipmentBc extends AbstractStructArrayBase
     }
 
     /**
-     * Returns the element at the offset
+     * Returns the element at the offset.
      *
      * @see AbstractStructArrayBase::offsetGet()
      *
@@ -157,7 +159,7 @@ class ArrayOfShipmentBc extends AbstractStructArrayBase
     }
 
     /**
-     * Add element to array
+     * Add element to array.
      *
      * @see AbstractStructArrayBase::add()
      *
@@ -171,11 +173,12 @@ class ArrayOfShipmentBc extends AbstractStructArrayBase
         if (!$item instanceof \Scraper\ScraperDPD\StructType\ShipmentBc) {
             throw new \InvalidArgumentException(sprintf('The ShipmentBc property can only contain items of type \Scraper\ScraperDPD\StructType\ShipmentBc, %s given', \is_object($item) ? $item::class : (\is_array($item) ? implode(', ', $item) : \gettype($item))), __LINE__);
         }
+
         return parent::add($item);
     }
 
     /**
-     * Returns the attribute name
+     * Returns the attribute name.
      *
      * @see AbstractStructArrayBase::getAttributeName()
      *

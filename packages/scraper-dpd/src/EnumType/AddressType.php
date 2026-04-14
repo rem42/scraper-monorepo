@@ -1,35 +1,39 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 
 /**
- * This class stands for AddressType EnumType
+ * This class stands for AddressType EnumType.
  */
 class AddressType extends AbstractStructEnumBase
 {
     /**
-     * Constant for value 'StandardAddress'
+     * Constant for value 'StandardAddress'.
      *
      * @return string 'StandardAddress'
      */
     public const VALUE_STANDARD_ADDRESS = 'StandardAddress';
+
     /**
-     * Constant for value 'PickupAddress'
+     * Constant for value 'PickupAddress'.
      *
      * @return string 'PickupAddress'
      */
     public const VALUE_PICKUP_ADDRESS = 'PickupAddress';
+
     /**
-     * Constant for value 'ReturnAddress'
+     * Constant for value 'ReturnAddress'.
      *
      * @return string 'ReturnAddress'
      */
     public const VALUE_RETURN_ADDRESS = 'ReturnAddress';
 
     /**
-     * Return allowed values
+     * Return allowed values.
      *
      * @uses self::VALUE_STANDARD_ADDRESS
      * @uses self::VALUE_PICKUP_ADDRESS

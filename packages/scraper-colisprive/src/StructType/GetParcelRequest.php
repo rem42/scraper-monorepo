@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetParcelRequest StructType
+ * This class stands for GetParcelRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GetParcelRequest extends AbstractStructBase
@@ -15,28 +17,30 @@ class GetParcelRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?IdentificationObject $SecurityID;
+
     /**
      * The CPPclCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CPPclCode;
+
     /**
      * The CsgZipCode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 1
-     * - nillable: true
+     * - nillable: true.
      */
     protected ?string $CsgZipCode;
 
     /**
-     * Constructor method for GetParcelRequest
+     * Constructor method for GetParcelRequest.
      *
      * @uses GetParcelRequest::setSecurityID()
      * @uses GetParcelRequest::setCPPclCode()
@@ -52,7 +56,7 @@ class GetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get SecurityID value
+     * Get SecurityID value.
      */
     public function getSecurityID(): IdentificationObject
     {
@@ -60,7 +64,7 @@ class GetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set SecurityID value
+     * Set SecurityID value.
      */
     public function setSecurityID(?IdentificationObject $securityID): self
     {
@@ -70,7 +74,7 @@ class GetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get CPPclCode value
+     * Get CPPclCode value.
      */
     public function getCPPclCode(): string
     {
@@ -78,7 +82,7 @@ class GetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set CPPclCode value
+     * Set CPPclCode value.
      */
     public function setCPPclCode(?string $cPPclCode): self
     {
@@ -92,7 +96,7 @@ class GetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Get CsgZipCode value
+     * Get CsgZipCode value.
      */
     public function getCsgZipCode(): string
     {
@@ -100,7 +104,7 @@ class GetParcelRequest extends AbstractStructBase
     }
 
     /**
-     * Set CsgZipCode value
+     * Set CsgZipCode value.
      */
     public function setCsgZipCode(?string $csgZipCode): self
     {

@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ReverseShipmentRequest StructType
+ * This class stands for ReverseShipmentRequest StructType.
  */
 #[\AllowDynamicProperties]
 class ReverseShipmentRequest extends ShipmentRequestBase
@@ -12,33 +14,36 @@ class ReverseShipmentRequest extends ShipmentRequestBase
      * The expire_offset
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $expire_offset;
+
     /**
      * The weight
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $weight = null;
+
     /**
      * The referencenumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $referencenumber = null;
+
     /**
      * The services
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ReverseInverseServices $services = null;
 
     /**
-     * Constructor method for ReverseShipmentRequest
+     * Constructor method for ReverseShipmentRequest.
      *
      * @uses ReverseShipmentRequest::setExpire_offset()
      * @uses ReverseShipmentRequest::setWeight()
@@ -56,7 +61,7 @@ class ReverseShipmentRequest extends ShipmentRequestBase
     }
 
     /**
-     * Get expire_offset value
+     * Get expire_offset value.
      */
     public function getExpire_offset(): int
     {
@@ -64,7 +69,7 @@ class ReverseShipmentRequest extends ShipmentRequestBase
     }
 
     /**
-     * Set expire_offset value
+     * Set expire_offset value.
      */
     public function setExpire_offset(int $expire_offset): self
     {
@@ -78,7 +83,7 @@ class ReverseShipmentRequest extends ShipmentRequestBase
     }
 
     /**
-     * Get weight value
+     * Get weight value.
      */
     public function getWeight(): ?string
     {
@@ -86,7 +91,7 @@ class ReverseShipmentRequest extends ShipmentRequestBase
     }
 
     /**
-     * Set weight value
+     * Set weight value.
      */
     public function setWeight(?string $weight = null): self
     {
@@ -100,7 +105,7 @@ class ReverseShipmentRequest extends ShipmentRequestBase
     }
 
     /**
-     * Get referencenumber value
+     * Get referencenumber value.
      */
     public function getReferencenumber(): ?string
     {
@@ -108,7 +113,7 @@ class ReverseShipmentRequest extends ShipmentRequestBase
     }
 
     /**
-     * Set referencenumber value
+     * Set referencenumber value.
      */
     public function setReferencenumber(?string $referencenumber = null): self
     {
@@ -122,7 +127,7 @@ class ReverseShipmentRequest extends ShipmentRequestBase
     }
 
     /**
-     * Get services value
+     * Get services value.
      */
     public function getServices(): ?ReverseInverseServices
     {
@@ -130,7 +135,7 @@ class ReverseShipmentRequest extends ShipmentRequestBase
     }
 
     /**
-     * Set services value
+     * Set services value.
      */
     public function setServices(?ReverseInverseServices $services = null): self
     {

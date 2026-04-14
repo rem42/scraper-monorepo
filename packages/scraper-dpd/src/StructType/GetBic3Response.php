@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetBic3Response StructType
+ * This class stands for GetBic3Response StructType.
  */
 #[\AllowDynamicProperties]
 class GetBic3Response extends AbstractStructBase
@@ -14,12 +16,12 @@ class GetBic3Response extends AbstractStructBase
      * The GetBic3Result
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $GetBic3Result;
 
     /**
-     * Constructor method for GetBic3Response
+     * Constructor method for GetBic3Response.
      *
      * @uses GetBic3Response::setGetBic3Result()
      */
@@ -31,7 +33,7 @@ class GetBic3Response extends AbstractStructBase
     }
 
     /**
-     * Get GetBic3Result value
+     * Get GetBic3Result value.
      */
     public function getGetBic3Result(): int
     {
@@ -39,7 +41,7 @@ class GetBic3Response extends AbstractStructBase
     }
 
     /**
-     * Set GetBic3Result value
+     * Set GetBic3Result value.
      */
     public function setGetBic3Result(int $getBic3Result): self
     {

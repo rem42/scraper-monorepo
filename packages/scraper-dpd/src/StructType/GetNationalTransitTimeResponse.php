@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetNationalTransitTimeResponse StructType
+ * This class stands for GetNationalTransitTimeResponse StructType.
  */
 #[\AllowDynamicProperties]
 class GetNationalTransitTimeResponse extends AbstractStructBase
@@ -14,19 +16,20 @@ class GetNationalTransitTimeResponse extends AbstractStructBase
      * The TransitTime
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $TransitTime;
+
     /**
      * The GetNationalTransitTimeResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?GetNationalTransitTimeResponse $GetNationalTransitTimeResult = null;
 
     /**
-     * Constructor method for GetNationalTransitTimeResponse
+     * Constructor method for GetNationalTransitTimeResponse.
      *
      * @uses GetNationalTransitTimeResponse::setTransitTime()
      * @uses GetNationalTransitTimeResponse::setGetNationalTransitTimeResult()
@@ -40,7 +43,7 @@ class GetNationalTransitTimeResponse extends AbstractStructBase
     }
 
     /**
-     * Get TransitTime value
+     * Get TransitTime value.
      */
     public function getTransitTime(): int
     {
@@ -48,7 +51,7 @@ class GetNationalTransitTimeResponse extends AbstractStructBase
     }
 
     /**
-     * Set TransitTime value
+     * Set TransitTime value.
      */
     public function setTransitTime(int $transitTime): self
     {
@@ -62,7 +65,7 @@ class GetNationalTransitTimeResponse extends AbstractStructBase
     }
 
     /**
-     * Get GetNationalTransitTimeResult value
+     * Get GetNationalTransitTimeResult value.
      */
     public function getGetNationalTransitTimeResult(): ?self
     {
@@ -70,7 +73,7 @@ class GetNationalTransitTimeResponse extends AbstractStructBase
     }
 
     /**
-     * Set GetNationalTransitTimeResult value
+     * Set GetNationalTransitTimeResult value.
      */
     public function setGetNationalTransitTimeResult(?self $getNationalTransitTimeResult = null): self
     {

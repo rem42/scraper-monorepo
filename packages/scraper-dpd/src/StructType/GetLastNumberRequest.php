@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetLastNumberRequest StructType
+ * This class stands for GetLastNumberRequest StructType.
  */
 #[\AllowDynamicProperties]
 class GetLastNumberRequest extends AbstractStructBase
@@ -14,19 +16,20 @@ class GetLastNumberRequest extends AbstractStructBase
      * The Customer
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Customer $Customer = null;
+
     /**
      * The Entries
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?\Scraper\ScraperDPD\ArrayType\ArrayOfEntry $Entries = null;
 
     /**
-     * Constructor method for GetLastNumberRequest
+     * Constructor method for GetLastNumberRequest.
      *
      * @uses GetLastNumberRequest::setCustomer()
      * @uses GetLastNumberRequest::setEntries()
@@ -40,7 +43,7 @@ class GetLastNumberRequest extends AbstractStructBase
     }
 
     /**
-     * Get Customer value
+     * Get Customer value.
      */
     public function getCustomer(): ?Customer
     {
@@ -48,7 +51,7 @@ class GetLastNumberRequest extends AbstractStructBase
     }
 
     /**
-     * Set Customer value
+     * Set Customer value.
      */
     public function setCustomer(?Customer $customer = null): self
     {
@@ -58,7 +61,7 @@ class GetLastNumberRequest extends AbstractStructBase
     }
 
     /**
-     * Get Entries value
+     * Get Entries value.
      */
     public function getEntries(): ?\Scraper\ScraperDPD\ArrayType\ArrayOfEntry
     {
@@ -66,7 +69,7 @@ class GetLastNumberRequest extends AbstractStructBase
     }
 
     /**
-     * Set Entries value
+     * Set Entries value.
      */
     public function setEntries(?\Scraper\ScraperDPD\ArrayType\ArrayOfEntry $entries = null): self
     {

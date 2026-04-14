@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for ShipmentData StructType
+ * This class stands for ShipmentData StructType.
  */
 #[\AllowDynamicProperties]
 class ShipmentData extends ShipmentDataBase
@@ -12,47 +14,52 @@ class ShipmentData extends ShipmentDataBase
      * The countrycode
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $countrycode = null;
+
     /**
      * The centernumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $centernumber = null;
+
     /**
      * The parcelnumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $parcelnumber = null;
+
     /**
      * The countrycode_retour
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $countrycode_retour = null;
+
     /**
      * The centernumber_retour
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $centernumber_retour = null;
+
     /**
      * The parcelnumber_retour
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $parcelnumber_retour = null;
 
     /**
-     * Constructor method for ShipmentData
+     * Constructor method for ShipmentData.
      *
      * @uses ShipmentData::setCountrycode()
      * @uses ShipmentData::setCenternumber()
@@ -74,7 +81,7 @@ class ShipmentData extends ShipmentDataBase
     }
 
     /**
-     * Get countrycode value
+     * Get countrycode value.
      */
     public function getCountrycode(): ?string
     {
@@ -82,7 +89,7 @@ class ShipmentData extends ShipmentDataBase
     }
 
     /**
-     * Set countrycode value
+     * Set countrycode value.
      */
     public function setCountrycode(?string $countrycode = null): self
     {
@@ -96,7 +103,7 @@ class ShipmentData extends ShipmentDataBase
     }
 
     /**
-     * Get centernumber value
+     * Get centernumber value.
      */
     public function getCenternumber(): ?string
     {
@@ -104,7 +111,7 @@ class ShipmentData extends ShipmentDataBase
     }
 
     /**
-     * Set centernumber value
+     * Set centernumber value.
      */
     public function setCenternumber(?string $centernumber = null): self
     {
@@ -118,7 +125,7 @@ class ShipmentData extends ShipmentDataBase
     }
 
     /**
-     * Get parcelnumber value
+     * Get parcelnumber value.
      */
     public function getParcelnumber(): ?string
     {
@@ -126,7 +133,7 @@ class ShipmentData extends ShipmentDataBase
     }
 
     /**
-     * Set parcelnumber value
+     * Set parcelnumber value.
      */
     public function setParcelnumber(?string $parcelnumber = null): self
     {
@@ -140,7 +147,7 @@ class ShipmentData extends ShipmentDataBase
     }
 
     /**
-     * Get countrycode_retour value
+     * Get countrycode_retour value.
      */
     public function getCountrycode_retour(): ?string
     {
@@ -148,7 +155,7 @@ class ShipmentData extends ShipmentDataBase
     }
 
     /**
-     * Set countrycode_retour value
+     * Set countrycode_retour value.
      */
     public function setCountrycode_retour(?string $countrycode_retour = null): self
     {
@@ -162,7 +169,7 @@ class ShipmentData extends ShipmentDataBase
     }
 
     /**
-     * Get centernumber_retour value
+     * Get centernumber_retour value.
      */
     public function getCenternumber_retour(): ?string
     {
@@ -170,7 +177,7 @@ class ShipmentData extends ShipmentDataBase
     }
 
     /**
-     * Set centernumber_retour value
+     * Set centernumber_retour value.
      */
     public function setCenternumber_retour(?string $centernumber_retour = null): self
     {
@@ -184,7 +191,7 @@ class ShipmentData extends ShipmentDataBase
     }
 
     /**
-     * Get parcelnumber_retour value
+     * Get parcelnumber_retour value.
      */
     public function getParcelnumber_retour(): ?string
     {
@@ -192,7 +199,7 @@ class ShipmentData extends ShipmentDataBase
     }
 
     /**
-     * Set parcelnumber_retour value
+     * Set parcelnumber_retour value.
      */
     public function setParcelnumber_retour(?string $parcelnumber_retour = null): self
     {

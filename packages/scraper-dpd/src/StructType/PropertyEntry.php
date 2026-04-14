@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for PropertyEntry StructType
+ * This class stands for PropertyEntry StructType.
  */
 #[\AllowDynamicProperties]
 class PropertyEntry extends AbstractStructBase
@@ -14,19 +16,20 @@ class PropertyEntry extends AbstractStructBase
      * The PropertyId
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected int $PropertyId;
+
     /**
      * The Value
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Value = null;
 
     /**
-     * Constructor method for PropertyEntry
+     * Constructor method for PropertyEntry.
      *
      * @uses PropertyEntry::setPropertyId()
      * @uses PropertyEntry::setValue()
@@ -40,7 +43,7 @@ class PropertyEntry extends AbstractStructBase
     }
 
     /**
-     * Get PropertyId value
+     * Get PropertyId value.
      */
     public function getPropertyId(): int
     {
@@ -48,7 +51,7 @@ class PropertyEntry extends AbstractStructBase
     }
 
     /**
-     * Set PropertyId value
+     * Set PropertyId value.
      */
     public function setPropertyId(int $propertyId): self
     {
@@ -62,7 +65,7 @@ class PropertyEntry extends AbstractStructBase
     }
 
     /**
-     * Get Value value
+     * Get Value value.
      */
     public function getValue(): ?string
     {
@@ -70,7 +73,7 @@ class PropertyEntry extends AbstractStructBase
     }
 
     /**
-     * Set Value value
+     * Set Value value.
      */
     public function setValue(?string $value = null): self
     {

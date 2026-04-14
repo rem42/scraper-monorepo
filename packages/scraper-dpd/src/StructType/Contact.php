@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for Contact StructType
+ * This class stands for Contact StructType.
  */
 #[\AllowDynamicProperties]
 class Contact extends DefaultService
@@ -12,40 +14,44 @@ class Contact extends DefaultService
      * The type
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 1
+     * - minOccurs: 1.
      */
     protected string $type;
+
     /**
      * The sms
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $sms = null;
+
     /**
      * The email
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $email = null;
+
     /**
      * The autoText
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $autoText = null;
+
     /**
      * The secureService
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?Secure $secureService = null;
 
     /**
-     * Constructor method for Contact
+     * Constructor method for Contact.
      *
      * @uses Contact::setType()
      * @uses Contact::setSms()
@@ -65,7 +71,7 @@ class Contact extends DefaultService
     }
 
     /**
-     * Get type value
+     * Get type value.
      */
     public function getType(): string
     {
@@ -73,7 +79,7 @@ class Contact extends DefaultService
     }
 
     /**
-     * Set type value
+     * Set type value.
      *
      * @uses \Scraper\ScraperDPD\EnumType\EtypeContact::valueIsValid()
      * @uses \Scraper\ScraperDPD\EnumType\EtypeContact::getValidValues()
@@ -92,7 +98,7 @@ class Contact extends DefaultService
     }
 
     /**
-     * Get sms value
+     * Get sms value.
      */
     public function getSms(): ?string
     {
@@ -100,7 +106,7 @@ class Contact extends DefaultService
     }
 
     /**
-     * Set sms value
+     * Set sms value.
      */
     public function setSms(?string $sms = null): self
     {
@@ -114,7 +120,7 @@ class Contact extends DefaultService
     }
 
     /**
-     * Get email value
+     * Get email value.
      */
     public function getEmail(): ?string
     {
@@ -122,7 +128,7 @@ class Contact extends DefaultService
     }
 
     /**
-     * Set email value
+     * Set email value.
      */
     public function setEmail(?string $email = null): self
     {
@@ -136,7 +142,7 @@ class Contact extends DefaultService
     }
 
     /**
-     * Get autoText value
+     * Get autoText value.
      */
     public function getAutoText(): ?string
     {
@@ -144,7 +150,7 @@ class Contact extends DefaultService
     }
 
     /**
-     * Set autoText value
+     * Set autoText value.
      */
     public function setAutoText(?string $autoText = null): self
     {
@@ -158,7 +164,7 @@ class Contact extends DefaultService
     }
 
     /**
-     * Get secureService value
+     * Get secureService value.
      */
     public function getSecureService(): ?Secure
     {
@@ -166,7 +172,7 @@ class Contact extends DefaultService
     }
 
     /**
-     * Set secureService value
+     * Set secureService value.
      */
     public function setSecureService(?Secure $secureService = null): self
     {

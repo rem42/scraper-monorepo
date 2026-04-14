@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for TerminateShipmentRequest StructType
+ * This class stands for TerminateShipmentRequest StructType.
  */
 #[\AllowDynamicProperties]
 class TerminateShipmentRequest extends ShipmentRequestBcBase
@@ -12,12 +14,12 @@ class TerminateShipmentRequest extends ShipmentRequestBcBase
      * The Reason
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $Reason = null;
 
     /**
-     * Constructor method for TerminateShipmentRequest
+     * Constructor method for TerminateShipmentRequest.
      *
      * @uses TerminateShipmentRequest::setReason()
      */
@@ -29,7 +31,7 @@ class TerminateShipmentRequest extends ShipmentRequestBcBase
     }
 
     /**
-     * Get Reason value
+     * Get Reason value.
      */
     public function getReason(): ?string
     {
@@ -37,7 +39,7 @@ class TerminateShipmentRequest extends ShipmentRequestBcBase
     }
 
     /**
-     * Set Reason value
+     * Set Reason value.
      */
     public function setReason(?string $reason = null): self
     {

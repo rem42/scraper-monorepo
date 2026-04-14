@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for UpdateRdvShipmentDataForPredict StructType
+ * This class stands for UpdateRdvShipmentDataForPredict StructType.
  */
 #[\AllowDynamicProperties]
 class UpdateRdvShipmentDataForPredict extends AbstractStructBase
@@ -14,12 +16,12 @@ class UpdateRdvShipmentDataForPredict extends AbstractStructBase
      * The request
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?UpdateRdvShipmentDataPredictRequest $request = null;
 
     /**
-     * Constructor method for UpdateRdvShipmentDataForPredict
+     * Constructor method for UpdateRdvShipmentDataForPredict.
      *
      * @uses UpdateRdvShipmentDataForPredict::setRequest()
      */
@@ -31,7 +33,7 @@ class UpdateRdvShipmentDataForPredict extends AbstractStructBase
     }
 
     /**
-     * Get request value
+     * Get request value.
      */
     public function getRequest(): ?UpdateRdvShipmentDataPredictRequest
     {
@@ -39,7 +41,7 @@ class UpdateRdvShipmentDataForPredict extends AbstractStructBase
     }
 
     /**
-     * Set request value
+     * Set request value.
      */
     public function setRequest(?UpdateRdvShipmentDataPredictRequest $request = null): self
     {

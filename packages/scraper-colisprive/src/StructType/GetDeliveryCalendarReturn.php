@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for GetDeliveryCalendarReturn StructType
+ * This class stands for GetDeliveryCalendarReturn StructType.
  */
 #[\AllowDynamicProperties]
 class GetDeliveryCalendarReturn extends AbstractStructBase
@@ -14,26 +16,27 @@ class GetDeliveryCalendarReturn extends AbstractStructBase
      * The WSResp
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ResponseObject $WSResp = null;
+
     /**
      * The DlvrCalendar
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
-     * - minOccurs: 0
+     * - minOccurs: 0.
      *
-     * @var array<\Scraper\ScraperColisPrive\StructType\DeliveryDateObject>
+     * @var array<DeliveryDateObject>
      */
     protected ?array $DlvrCalendar = null;
 
     /**
-     * Constructor method for GetDeliveryCalendarReturn
+     * Constructor method for GetDeliveryCalendarReturn.
      *
      * @uses GetDeliveryCalendarReturn::setWSResp()
      * @uses GetDeliveryCalendarReturn::setDlvrCalendar()
      *
-     * @param array<\Scraper\ScraperColisPrive\StructType\DeliveryDateObject> $dlvrCalendar
+     * @param array<DeliveryDateObject> $dlvrCalendar
      */
     public function __construct(?ResponseObject $wSResp = null, ?array $dlvrCalendar = null)
     {
@@ -44,7 +47,7 @@ class GetDeliveryCalendarReturn extends AbstractStructBase
     }
 
     /**
-     * Get WSResp value
+     * Get WSResp value.
      */
     public function getWSResp(): ?ResponseObject
     {
@@ -52,7 +55,7 @@ class GetDeliveryCalendarReturn extends AbstractStructBase
     }
 
     /**
-     * Set WSResp value
+     * Set WSResp value.
      */
     public function setWSResp(?ResponseObject $wSResp = null): self
     {
@@ -62,9 +65,9 @@ class GetDeliveryCalendarReturn extends AbstractStructBase
     }
 
     /**
-     * Get DlvrCalendar value
+     * Get DlvrCalendar value.
      *
-     * @return array<\Scraper\ScraperColisPrive\StructType\DeliveryDateObject>
+     * @return array<DeliveryDateObject>
      */
     public function getDlvrCalendar(): ?array
     {
@@ -74,7 +77,7 @@ class GetDeliveryCalendarReturn extends AbstractStructBase
     /**
      * This method is responsible for validating the value(s) passed to the setDlvrCalendar method
      * This method is willingly generated in order to preserve the one-line inline validation within the setDlvrCalendar method
-     * This has to validate that each item contained by the array match the itemType constraint
+     * This has to validate that each item contained by the array match the itemType constraint.
      *
      * @return string A non-empty message if the values does not match the validation rules
      */
@@ -102,9 +105,9 @@ class GetDeliveryCalendarReturn extends AbstractStructBase
     }
 
     /**
-     * Set DlvrCalendar value
+     * Set DlvrCalendar value.
      *
-     * @param array<\Scraper\ScraperColisPrive\StructType\DeliveryDateObject> $dlvrCalendar
+     * @param array<DeliveryDateObject> $dlvrCalendar
      *
      * @throws \InvalidArgumentException
      */
@@ -120,7 +123,7 @@ class GetDeliveryCalendarReturn extends AbstractStructBase
     }
 
     /**
-     * Add item to DlvrCalendar value
+     * Add item to DlvrCalendar value.
      *
      * @throws \InvalidArgumentException
      */

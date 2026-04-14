@@ -1,11 +1,13 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperColisPrive\StructType;
 
 use WsdlToPhp\PackageBase\AbstractStructBase;
 
 /**
- * This class stands for UpdateParcelStatusResponse StructType
+ * This class stands for UpdateParcelStatusResponse StructType.
  */
 #[\AllowDynamicProperties]
 class UpdateParcelStatusResponse extends AbstractStructBase
@@ -14,12 +16,12 @@ class UpdateParcelStatusResponse extends AbstractStructBase
      * The UpdateParcelStatusResult
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?UpdateParcelStatusReturn $UpdateParcelStatusResult = null;
 
     /**
-     * Constructor method for UpdateParcelStatusResponse
+     * Constructor method for UpdateParcelStatusResponse.
      *
      * @uses UpdateParcelStatusResponse::setUpdateParcelStatusResult()
      */
@@ -31,7 +33,7 @@ class UpdateParcelStatusResponse extends AbstractStructBase
     }
 
     /**
-     * Get UpdateParcelStatusResult value
+     * Get UpdateParcelStatusResult value.
      */
     public function getUpdateParcelStatusResult(): ?UpdateParcelStatusReturn
     {
@@ -39,7 +41,7 @@ class UpdateParcelStatusResponse extends AbstractStructBase
     }
 
     /**
-     * Set UpdateParcelStatusResult value
+     * Set UpdateParcelStatusResult value.
      */
     public function setUpdateParcelStatusResult(?UpdateParcelStatusReturn $updateParcelStatusResult = null): self
     {

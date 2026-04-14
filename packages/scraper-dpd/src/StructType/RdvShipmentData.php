@@ -1,9 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperDPD\StructType;
 
 /**
- * This class stands for RdvShipmentData StructType
+ * This class stands for RdvShipmentData StructType.
  */
 #[\AllowDynamicProperties]
 class RdvShipmentData extends RdvShipmentDataBase
@@ -12,26 +14,28 @@ class RdvShipmentData extends RdvShipmentDataBase
      * The Parcel
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?ParcelInfoSin $Parcel = null;
+
     /**
      * The ShipmentSin
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $ShipmentSin = null;
+
     /**
      * The AvisDePassageSin
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * - minOccurs: 0
+     * - minOccurs: 0.
      */
     protected ?string $AvisDePassageSin = null;
 
     /**
-     * Constructor method for RdvShipmentData
+     * Constructor method for RdvShipmentData.
      *
      * @uses RdvShipmentData::setParcel()
      * @uses RdvShipmentData::setShipmentSin()
@@ -47,7 +51,7 @@ class RdvShipmentData extends RdvShipmentDataBase
     }
 
     /**
-     * Get Parcel value
+     * Get Parcel value.
      */
     public function getParcel(): ?ParcelInfoSin
     {
@@ -55,7 +59,7 @@ class RdvShipmentData extends RdvShipmentDataBase
     }
 
     /**
-     * Set Parcel value
+     * Set Parcel value.
      */
     public function setParcel(?ParcelInfoSin $parcel = null): self
     {
@@ -65,7 +69,7 @@ class RdvShipmentData extends RdvShipmentDataBase
     }
 
     /**
-     * Get ShipmentSin value
+     * Get ShipmentSin value.
      */
     public function getShipmentSin(): ?string
     {
@@ -73,7 +77,7 @@ class RdvShipmentData extends RdvShipmentDataBase
     }
 
     /**
-     * Set ShipmentSin value
+     * Set ShipmentSin value.
      */
     public function setShipmentSin(?string $shipmentSin = null): self
     {
@@ -87,7 +91,7 @@ class RdvShipmentData extends RdvShipmentDataBase
     }
 
     /**
-     * Get AvisDePassageSin value
+     * Get AvisDePassageSin value.
      */
     public function getAvisDePassageSin(): ?string
     {
@@ -95,7 +99,7 @@ class RdvShipmentData extends RdvShipmentDataBase
     }
 
     /**
-     * Set AvisDePassageSin value
+     * Set AvisDePassageSin value.
      */
     public function setAvisDePassageSin(?string $avisDePassageSin = null): self
     {
