@@ -40,6 +40,9 @@ test: ## Lance tous les tests de tous les packages
 cs-fix: ## Lance PHP-CS-Fixer sur tous les packages
 	$(PHP_CONT) vendor/bin/php-cs-fixer fix
 
+phpstan: ## Lance PHPStan sur tous les packages
+	$(PHP_CONT) vendor/bin/phpstan analyse -l max packages/scraper/src --memory-limit=2G
+
 ## --- GIT SUBTREE (Gestion des scrapers) ---
 # Usage: make add-scraper name=scraper-allocine url=https://github.com/rem42/scraper-allocine.git
 add-scraper: ## Ajoute un nouveau scraper via git subtree (name=... url=...)
@@ -49,3 +52,13 @@ add-scraper: ## Ajoute un nouveau scraper via git subtree (name=... url=...)
 
 split-dry: ## Simule le split pour voir ce qui serait envoyé
 	$(PHP_CONT) vendor/bin/monorepo-builder split-packages --dry-run
+
+
+PACKAGES_DIRS := $(wildcard packages/*)
+SKELETON_DIR := templates/package-skeleton
+
+sync-templates: ## Synchronise tous les fichiers de config (CS-Fixer, CI, etc.) vers les packages
+	@for dir in $(PACKAGES_DIRS); do \
+		cp -R $(SKELETON_DIR)/. $$dir/; \
+		echo "✅ Skeleton synchronisé pour $$dir"; \
+	done

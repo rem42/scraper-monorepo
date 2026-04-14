@@ -59,7 +59,7 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.4",
         "ext-dom": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
@@ -70,13 +70,13 @@
     },
     "replace": {
         "rem42/scraper": "self.version",
-        "rem42/scraper-colissimo": "self.version",
-        "rem42/scraper-prestashop": "self.version",
         "rem42/scraper-colisprive": "self.version",
+        "rem42/scraper-colissimo": "self.version",
         "rem42/scraper-delivengo": "self.version",
         "rem42/scraper-dpd": "self.version",
         "rem42/scraper-laposte-apim": "self.version",
         "rem42/scraper-laposte-postage": "self.version",
+        "rem42/scraper-prestashop": "self.version",
         "rem42/scraper-tnt": "self.version",
         "rem42/scraper-ups": "self.version",
         "rem42/scraper-zakeke": "self.version"
