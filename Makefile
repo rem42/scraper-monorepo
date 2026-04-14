@@ -35,7 +35,7 @@ propagate: ## Propage les versions de la racine vers les packages
 
 ## --- TESTS ---
 test: ## Lance tous les tests de tous les packages
-	$(PHP_CONT) vendor/bin/phpunit packages --colors=always
+	$(PHP_CONT) vendor/bin/phpunit --colors=always
 
 cs-fix: ## Lance PHP-CS-Fixer sur tous les packages
 	$(PHP_CONT) vendor/bin/php-cs-fixer fix
