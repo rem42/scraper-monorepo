@@ -1,0 +1,36 @@
+{
+  "name" : "rem42/scraper-prestashop",
+  "description" : "API Prestashop 1.7",
+  "license": "MIT",
+  "authors" : [{
+    "name" : "rem42",
+    "email" : "me@remy.ovh",
+    "homepage": "https://remy.ovh"
+  }],
+  "require" : {
+    "php": "^8.1",
+    "ext-json": "*",
+    "rem42/scraper": "^3.2"
+  },
+  "require-dev": {
+    "rem42/php-cs-fixer-config": "^3.6",
+    "phpstan/phpstan": "^1.11",
+    "phpunit/phpunit": "^9.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Scraper\\ScraperPrestashop\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Scraper\\ScraperPrestashop\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "static-analysis": "./vendor/bin/phpstan analyse src --level=max --no-progress -vvv",
+    "code-style-check": "./vendor/bin/php-cs-fixer fix --dry-run --verbose",
+    "code-style-fix": "./vendor/bin/php-cs-fixer fix --using-cache=no",
+    "unit-test": "./vendor/bin/phpunit"
+  }
+}
