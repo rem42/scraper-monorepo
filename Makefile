@@ -47,6 +47,5 @@ add-scraper: ## Ajoute un nouveau scraper via git subtree (name=... url=...)
 	git fetch origin-$(name)
 	git subtree add --prefix=packages/$(name) origin-$(name) main --squash
 
-push-all: ## Push les modifications vers les repos individuels (Split)
-	@echo "Début du split/push (Nécessite configuration de l'outil de split)"
-	$(PHP_CONT) vendor/bin/monorepo-builder release v1.0.0 # Exemple
+split-dry: ## Simule le split pour voir ce qui serait envoyé
+	$(PHP_CONT) vendor/bin/monorepo-builder split-packages --dry-run

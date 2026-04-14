@@ -1,0 +1,40 @@
+name: 'Monorepo Split'
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  # 1. for Github split
+  GITHUB_TOKEN: ${{ secrets.MONOREPO_SPLIT_TOKEN }}
+
+jobs:
+  split_packages:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Configuration de tes couples dossier <-> dépôt
+        package:
+          - { local: 'scraper', remote: 'scraper' }
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0 # Nécessaire pour reconstruire l'historique sur le miroir
+
+      - name: Split and Push ${{ matrix.package.local }}
+        uses: danharrin/monorepo-split-github-action@v2.4.4
+        with:
+          # ↓ split "packages/easy-coding-standard" directory
+          package_directory: 'packages/${{ matrix.package.local }}'
+
+          # ↓ into https://github.com/symplify/easy-coding-standard repository
+          repository_organization: 'rem42'
+          repository_name: '${{ matrix.package.remote }}'
+
+          # ↓ the user signed under the split commit
+          user_name: "rem42"
+          user_email: "me@remy.ovh"
