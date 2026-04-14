@@ -18,6 +18,16 @@ jobs:
         # Configuration de tes couples dossier <-> dépôt
         package:
           - { local: 'scraper', remote: 'scraper' }
+          - { local: 'scraper-colisprive', remote: 'scraper-colisprive' }
+          - { local: 'scraper-colissimo', remote: 'scraper-colissimo' }
+          - { local: 'scraper-dpd', remote: 'scraper-dpd' }
+          - { local: 'scraper-delivengo', remote: 'scraper-delivengo' }
+          - { local: 'scraper-laposte-apim', remote: 'scraper-laposte-apim' }
+          - { local: 'scraper-laposte-postage', remote: 'scraper-laposte-postage' }
+          - { local: 'scraper-prestashop', remote: 'scraper-prestashop' }
+          - { local: 'scraper-tnt', remote: 'scraper-tnt' }
+          - { local: 'scraper-ups', remote: 'scraper-ups' }
+          - { local: 'scraper-zakeke', remote: 'scraper-zakeke' }
 
     steps:
       - name: Check Token
