@@ -1,0 +1,4 @@
+{
+  "error_description": "A valid OAuth client could not be found for client_id: unicorn",
+  "error": "invalid_client"
+}
