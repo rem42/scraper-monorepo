@@ -7,7 +7,7 @@ on:
 
 env:
   # 1. for Github split
-  GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.MONOREPO_SPLIT_TOKEN }}
 
 jobs:
   split_packages:
@@ -20,6 +20,12 @@ jobs:
           - { local: 'scraper', remote: 'scraper' }
 
     steps:
+      - name: Check Token
+        run: |
+          if [ -z "${{ secrets.MONOREPO_SPLIT_TOKEN }}" ]; then
+            echo "Le secret MONOREPO_SPLIT_TOKEN est VIDE !"
+            exit 1
+          fi
       - name: Checkout Code
         uses: actions/checkout@v6
         with:
