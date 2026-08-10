@@ -51,7 +51,7 @@ class PrestashopStockAvailableApiTest extends AbstractPrestashopApiTestCase
 
     public function testPut(): void
     {
-        $responseInterface = $this->createMock(ResponseInterface::class);
+        $responseInterface = $this->createStub(ResponseInterface::class);
         $responseInterface
             ->method('getStatusCode')->willReturn(200)
         ;

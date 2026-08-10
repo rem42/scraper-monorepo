@@ -44,13 +44,13 @@ abstract class AbstractPrestashopApiTestCase extends TestCase
      */
     protected function executeGetApi($resource, $id = null, $statusCode, $fixture)
     {
-        $scraperRequest = $this->createMock(PrestashopGetRequest::class);
+        $scraperRequest = $this->createStub(PrestashopGetRequest::class);
         $scraperRequest->method('getResource')->willReturn($resource);
         $scraperRequest->method('getId')->willReturn($id);
 
         $scraper = new Scraper();
 
-        $responseInterface = $this->createMock(ResponseInterface::class);
+        $responseInterface = $this->createStub(ResponseInterface::class);
         $responseInterface
             ->method('getStatusCode')->willReturn($statusCode)
         ;
