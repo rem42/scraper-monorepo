@@ -33,6 +33,7 @@
             "Scraper\\ScraperJeudiMerci\\": "packages/scraper-jeudimerci/src/",
             "Scraper\\ScraperLaPosteApim\\": "packages/scraper-laposte-apim/src/",
             "Scraper\\ScraperLaPostePostage\\": "packages/scraper-laposte-postage/src/",
+            "Scraper\\ScraperNoGrad\\": "packages/scraper-nograd/src/",
             "Scraper\\ScraperPrestashop\\": "packages/scraper-prestashop/src/",
             "Scraper\\ScraperTnt\\": "packages/scraper-tnt/src/",
             "Scraper\\ScraperUPS\\": "packages/scraper-ups/src/",
@@ -48,6 +49,7 @@
             "Scraper\\ScraperJeudiMerci\\Tests\\": "packages/scraper-jeudimerci/tests/",
             "Scraper\\ScraperLaPosteApim\\Tests\\": "packages/scraper-laposte-apim/tests/",
             "Scraper\\ScraperLaPostePostage\\Tests\\": "packages/scraper-laposte-postage/tests/",
+            "Scraper\\ScraperNoGrad\\Tests\\": "packages/scraper-nograd/tests/",
             "Scraper\\ScraperPrestashop\\Tests\\": "packages/scraper-prestashop/tests/",
             "Scraper\\ScraperTnt\\Tests\\": "packages/scraper-tnt/tests/",
             "Scraper\\ScraperUPS\\Tests\\": "packages/scraper-ups/tests/",
@@ -79,12 +81,13 @@
         "rem42/scraper-compagnie-deboucheurs": "self.version",
         "rem42/scraper-delivengo": "self.version",
         "rem42/scraper-dpd": "self.version",
+        "rem42/scraper-jeudimerci": "self.version",
         "rem42/scraper-laposte-apim": "self.version",
         "rem42/scraper-laposte-postage": "self.version",
         "rem42/scraper-prestashop": "self.version",
         "rem42/scraper-tnt": "self.version",
         "rem42/scraper-ups": "self.version",
         "rem42/scraper-zakeke": "self.version",
-        "rem42/scraper-jeudimerci": "self.version"
+        "rem42/scraper-nograd": "self.version"
     }
 }

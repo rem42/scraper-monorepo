@@ -31,6 +31,7 @@ jobs:
           - { local: 'scraper-zakeke', remote: 'scraper-zakeke' }
           - { local: 'scraper-compagnie-deboucheurs', remote: 'scraper-compagnie-deboucheurs' }
           - { local: 'scraper-jeudimerci', remote: 'scraper-jeudimerci' }
+          - { local: 'scraper-nograd', remote: 'scraper-nograd' }
 
     steps:
       - name: Check Token

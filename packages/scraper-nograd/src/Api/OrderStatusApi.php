@@ -1,0 +1,13 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Scraper\ScraperNoGrad\Api;
+
+class OrderStatusApi extends NoGradApi
+{
+    public function execute(): object|array|bool|string
+    {
+        return 204 === $this->response->getStatusCode();
+    }
+}
