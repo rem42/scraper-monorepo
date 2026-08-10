@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperCompagnieDeboucheurs\Model;
 
@@ -9,6 +11,7 @@ class Order
     public ?ShippingAddress $shippingAddress = null;
     public ?int $id = null;
     public ?BillingAddress $billingAddress = null;
+
     /** @var array<int, ProductsOrdered> */
     public array $productsOrdered = [];
     public ?User $user = null;
@@ -17,6 +20,7 @@ class Order
     public function addProductsOrdered(ProductsOrdered $productsOrdered): self
     {
         $this->productsOrdered[] = $productsOrdered;
+
         return $this;
     }
 }

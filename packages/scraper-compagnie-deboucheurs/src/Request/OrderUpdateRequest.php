@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperCompagnieDeboucheurs\Request;
 
@@ -14,7 +16,7 @@ class OrderUpdateRequest extends CompagnieDeboucheursRequest implements RequestQ
         private readonly int $id,
         private readonly string $status,
         private readonly ?string $trackingNumber = null,
-        private readonly ?string $carrier = null
+        private readonly ?string $carrier = null,
     ) {
         parent::__construct($auth);
     }

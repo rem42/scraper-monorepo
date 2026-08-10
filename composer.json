@@ -27,6 +27,7 @@
         "psr-4": {
             "Scraper\\ScraperColisPrive\\": "packages/scraper-colisprive/src/",
             "Scraper\\ScraperColissimo\\": "packages/scraper-colissimo/src/",
+            "Scraper\\ScraperCompagnieDeboucheurs\\": "packages/scraper-compagnie-deboucheurs/src/",
             "Scraper\\ScraperDPD\\": "packages/scraper-dpd/src/",
             "Scraper\\ScraperDelivengo\\": "packages/scraper-delivengo/src/",
             "Scraper\\ScraperLaPosteApim\\": "packages/scraper-laposte-apim/src/",
@@ -41,6 +42,7 @@
     "autoload-dev": {
         "psr-4": {
             "Scraper\\ScraperColissimo\\Tests\\": "packages/scraper-colissimo/tests/",
+            "Scraper\\ScraperCompagnieDeboucheurs\\Tests\\": "packages/scraper-compagnie-deboucheurs/tests/",
             "Scraper\\ScraperDelivengo\\Tests\\": "packages/scraper-delivengo/tests/",
             "Scraper\\ScraperLaPosteApim\\Tests\\": "packages/scraper-laposte-apim/tests/",
             "Scraper\\ScraperLaPostePostage\\Tests\\": "packages/scraper-laposte-postage/tests/",
@@ -79,6 +81,7 @@
         "rem42/scraper-prestashop": "self.version",
         "rem42/scraper-tnt": "self.version",
         "rem42/scraper-ups": "self.version",
-        "rem42/scraper-zakeke": "self.version"
+        "rem42/scraper-zakeke": "self.version",
+        "rem42/scraper-compagnie-deboucheurs": "self.version"
     }
 }

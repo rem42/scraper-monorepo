@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperCompagnieDeboucheurs\Request;
 
@@ -12,7 +14,7 @@ class ProductStockRequest extends CompagnieDeboucheursRequest implements Request
     public function __construct(
         string $auth,
         private readonly int $id,
-        private readonly int $quantity
+        private readonly int $quantity,
     ) {
         parent::__construct($auth);
     }

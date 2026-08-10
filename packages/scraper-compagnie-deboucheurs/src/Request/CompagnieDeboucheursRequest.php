@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperCompagnieDeboucheurs\Request;
 
@@ -11,7 +13,7 @@ use Scraper\Scraper\Request\ScraperRequest;
 abstract class CompagnieDeboucheursRequest extends ScraperRequest implements RequestHeaders
 {
     public function __construct(
-        private readonly string $auth
+        private readonly string $auth,
     ) {}
 
     public function getHeaders(): array

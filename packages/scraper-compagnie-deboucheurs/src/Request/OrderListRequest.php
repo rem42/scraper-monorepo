@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Scraper\ScraperCompagnieDeboucheurs\Request;
 
@@ -14,7 +16,7 @@ class OrderListRequest extends CompagnieDeboucheursRequest implements RequestQue
         private readonly string $status,
         private readonly int $limit = 10,
         private readonly int $offset = 0,
-        private readonly ?string $orderBy = null
+        private readonly ?string $orderBy = null,
     ) {
         parent::__construct($auth);
     }
