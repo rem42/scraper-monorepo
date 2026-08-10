@@ -20,6 +20,7 @@ class Order
 
     /** @var array<int, OrderLine> */
     public array $orderLines = [];
+
     /** @var array<int, Document> */
     public array $documents = [];
     public ?Buyer $buyer = null;
