@@ -20,6 +20,7 @@ abstract class PrestashopRequest extends ScraperRequest implements RequestAuthBa
     private string $host;
 
     private string $key;
+    /** @var array<string, string> */
     private array $query = [];
 
     public function __construct(string $host, string $key, string $resource)
@@ -44,6 +45,9 @@ abstract class PrestashopRequest extends ScraperRequest implements RequestAuthBa
         return $this->key . ':';
     }
 
+    /**
+     * @return array<int|string, int|string>
+     */
     public function getQuery(): array
     {
         return $this->query;

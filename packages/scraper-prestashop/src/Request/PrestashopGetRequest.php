@@ -15,11 +15,14 @@ class PrestashopGetRequest extends PrestashopRequest
     /** @var array<string> */
     private array $display = [];
 
-    /** @var array<string, string> */
+    /** @var array<string, string|int> */
     private array $filter = [];
 
     private bool $isDisplayFull = false;
 
+    /**
+     * @return array<int|string, int|string>
+     */
     public function getQuery(): array
     {
         return array_merge(
@@ -98,7 +101,7 @@ class PrestashopGetRequest extends PrestashopRequest
     }
 
     /**
-     * @return array<string, string>
+     * @return array<string, string|int>
      */
     private function getFilter(): array
     {
