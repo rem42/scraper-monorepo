@@ -22,7 +22,7 @@ composer require rem42/scraper-prestashop
 Requirement
 -----------
 
-- PHP >= 8.1
+- PHP >= 8.4
 
 Usage
 -----
