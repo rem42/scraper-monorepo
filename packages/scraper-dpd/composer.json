@@ -9,6 +9,8 @@
         "wsdltophp/packagebase": "~5.0"
     },
     "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^13.1",
         "rem42/php-cs-fixer-config": "^4.1"
     },
     "autoload": {
@@ -17,7 +19,9 @@
         }
     },
     "scripts": {
+        "static-analysis": "./vendor/bin/phpstan analyse src --level=max --no-progress -vvv",
         "code-style-check": "./vendor/bin/php-cs-fixer fix --dry-run --verbose",
-        "code-style-fix": "./vendor/bin/php-cs-fixer fix --using-cache=no"
+        "code-style-fix": "./vendor/bin/php-cs-fixer fix --using-cache=no",
+        "unit-test": "./vendor/bin/phpunit"
     }
 }
