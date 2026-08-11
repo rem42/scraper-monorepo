@@ -14,6 +14,8 @@ class ListRequest extends NoGradRequest implements RequestQuery
     protected int $page = 1;
     protected int $limit = 50;
 
+    protected array $query = [];
+
     public function __construct(
         string $key,
         protected string $object,
@@ -29,6 +31,7 @@ class ListRequest extends NoGradRequest implements RequestQuery
     public function getQuery(): array
     {
         return [
+            ...$this->query,
             'page' => $this->page,
             'limit' => $this->limit,
         ];
@@ -44,6 +47,13 @@ class ListRequest extends NoGradRequest implements RequestQuery
     public function setLimit(int $limit): self
     {
         $this->limit = $limit;
+
+        return $this;
+    }
+
+    public function addQuery(string $key, string $value): self
+    {
+        $this->query[$key] = $value;
 
         return $this;
     }
