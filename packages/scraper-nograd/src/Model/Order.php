@@ -17,7 +17,9 @@ class Order
     /** @var array<int, Item> */
     public array $items = [];
     public ?string $orderNumber = null;
+    public ?string $sentAt = null;
     public ?Address $shippingAddress = null;
+    public ?int $shippingHt = null;
     public ?string $source = null;
     public ?string $statusCode = null;
 

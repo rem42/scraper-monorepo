@@ -6,6 +6,7 @@ namespace Scraper\ScraperNoGrad\Model;
 
 class Customer
 {
+    public ?string $company = null;
     public ?string $email = null;
     public ?string $firstname = null;
     public ?string $id = null;
