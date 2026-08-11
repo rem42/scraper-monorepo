@@ -19,7 +19,7 @@ class Order
     public ?string $orderNumber = null;
     public ?string $sentAt = null;
     public ?Address $shippingAddress = null;
-    public ?int $shippingHt = null;
+    public int|float|null $shippingHt = null;
     public ?string $source = null;
     public ?string $statusCode = null;
 
