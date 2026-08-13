@@ -6,4 +6,6 @@ namespace Scraper\ScraperOdoo\Exception;
 
 use Scraper\Scraper\Exception\ScraperException;
 
-class OdooScraperException extends ScraperException {}
+class OdooScraperException extends ScraperException
+{
+}

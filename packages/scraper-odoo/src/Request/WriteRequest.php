@@ -32,21 +32,16 @@ abstract class WriteRequest extends OdooRequest
         return $this;
     }
 
-    protected function getOdooMethod(): string
+    public function getOdooMethod(): string
     {
         return 'write';
     }
 
-    protected function getOdooArgs(): array
-    {
-        return [
-            $this->ids,
-            $this->values,
-        ];
-    }
-
     protected function getOdooKwargs(): array
     {
-        return [];
+        return [
+            'ids' => $this->ids,
+            'vals' => $this->values,
+        ];
     }
 }

@@ -12,10 +12,8 @@ class Address
     public ?string $street2 = null;
     public ?string $city = null;
     public ?string $zip = null;
-
     /** @var array<int, mixed>|bool|null */
     public array|bool|null $state_id = null;
-
     /** @var array<int, mixed>|bool|null */
     public array|bool|null $country_id = null;
     public ?string $type = null;

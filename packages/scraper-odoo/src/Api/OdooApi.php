@@ -45,11 +45,13 @@ abstract class OdooApi extends AbstractApi
         $jsonResult = json_encode($result, \JSON_THROW_ON_ERROR);
 
         /** @var object|array<object> $deserialized */
-        return $this->serializer->deserialize(
+        $deserialized = $this->serializer->deserialize(
             $jsonResult,
             $this->getType(),
             'json'
         );
+
+        return $deserialized;
     }
 
     /**
