@@ -11,7 +11,7 @@ use Symfony\Contracts\HttpClient\ResponseInterface;
 
 abstract class AbstractOdooApiTestCase extends TestCase
 {
-    protected function getResponseMock(string $fixture): ResponseInterface
+    protected function getResponseMock(string $fixture, int $statusCode = 200): ResponseInterface
     {
         $response = $this->createMock(ResponseInterface::class);
         $content = file_get_contents(__DIR__ . '/../Fixtures/' . $fixture);
@@ -21,6 +21,7 @@ abstract class AbstractOdooApiTestCase extends TestCase
         }
 
         $response->method('getContent')->willReturn($content);
+        $response->method('getStatusCode')->willReturn($statusCode);
 
         return $response;
     }

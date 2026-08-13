@@ -49,21 +49,17 @@ abstract class SearchReadRequest extends OdooRequest
         return $this;
     }
 
-    protected function getOdooMethod(): string
+    public function getOdooMethod(): string
     {
         return 'search_read';
     }
 
-    protected function getOdooArgs(): array
-    {
-        return [
-            $this->domain,
-        ];
-    }
-
     protected function getOdooKwargs(): array
     {
-        $kwargs = [];
+        $kwargs = [
+            'domain' => $this->domain,
+        ];
+
         if ([] !== $this->fields) {
             $kwargs['fields'] = $this->fields;
         }

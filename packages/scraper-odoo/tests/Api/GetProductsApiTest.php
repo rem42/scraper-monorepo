@@ -12,7 +12,7 @@ class GetProductsApiTest extends AbstractOdooApiTestCase
 {
     public function testGetProductsSuccess(): void
     {
-        $request = new GetProductsRequest('odoo.example.com', 'db_name', 1, 'api_key');
+        $request = new GetProductsRequest('odoo.example.com', 'db_name', 'api_key');
 
         $api = new GetProductsApi($request, $this->getScraperAttribute(), $this->getResponseMock('products.json'));
 
