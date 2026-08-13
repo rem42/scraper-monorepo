@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Scraper\ScraperOdoo\Request;
 
-class GetProductsRequest extends SearchReadRequest
+class ProductListRequest extends SearchReadRequest
 {
+    /** @var array<string> */
+    protected array $fields = ['id'];
+
     public function getModel(): string
     {
         return 'product.product';

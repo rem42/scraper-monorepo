@@ -6,7 +6,7 @@ namespace Scraper\ScraperOdoo\Request;
 
 class GetCustomersRequest extends SearchReadRequest
 {
-    public function getOdooModel(): string
+    public function getModel(): string
     {
         return 'res.partner';
     }

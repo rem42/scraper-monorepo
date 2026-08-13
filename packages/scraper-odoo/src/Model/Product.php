@@ -7,11 +7,14 @@ namespace Scraper\ScraperOdoo\Model;
 class Product
 {
     public ?int $id = null;
+    public ?string $code = null;
+    public ?string $displayName = null;
     public ?string $name = null;
-    public ?string $default_code = null;
+    public ?string $weight = null;
     public ?string $barcode = null;
-    public ?float $list_price = null;
-    public ?float $qty_available = null;
-    public ?float $weight = null;
-    public ?bool $active = null;
+    public ?string $hsCode = null;
+    public ?string $countryOfOrigin = null;
+    public ?float $listPrice = null;
+    public ?\DateTime $createDate = null;
+    public ?\DateTime $writeDate = null;
 }

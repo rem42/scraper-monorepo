@@ -6,23 +6,17 @@ namespace Scraper\ScraperOdoo\Request;
 
 abstract class SearchReadRequest extends OdooRequest
 {
-    /** @var array<mixed> */
-    protected array $domain = [];
-
     /** @var array<string> */
     protected array $fields = [];
 
-    protected ?int $limit = null;
-    protected ?int $offset = null;
-
-    /**
-     * @param array<mixed> $domain
-     */
-    public function setDomain(array $domain): self
-    {
-        $this->domain = $domain;
-
-        return $this;
+    public function __construct(
+        string $host,
+        string $apiKey,
+        private readonly array $domain,
+        private readonly ?int $limit = null,
+        private readonly ?int $offset = null,
+    ) {
+        parent::__construct($host, $apiKey);
     }
 
     /**
@@ -35,43 +29,29 @@ abstract class SearchReadRequest extends OdooRequest
         return $this;
     }
 
-    public function setLimit(?int $limit): self
-    {
-        $this->limit = $limit;
-
-        return $this;
-    }
-
-    public function setOffset(?int $offset): self
-    {
-        $this->offset = $offset;
-
-        return $this;
-    }
-
-    public function getOdooMethod(): string
+    public function getMethod(): string
     {
         return 'search_read';
     }
 
-    protected function getOdooKwargs(): array
+    public function getJson(): array|object
     {
-        $kwargs = [
+        $args = [
             'domain' => $this->domain,
         ];
 
         if ([] !== $this->fields) {
-            $kwargs['fields'] = $this->fields;
+            $args['fields'] = $this->fields;
         }
 
         if (null !== $this->limit) {
-            $kwargs['limit'] = $this->limit;
+            $args['limit'] = $this->limit;
         }
 
         if (null !== $this->offset) {
-            $kwargs['offset'] = $this->offset;
+            $args['offset'] = $this->offset;
         }
 
-        return $kwargs;
+        return $args;
     }
 }

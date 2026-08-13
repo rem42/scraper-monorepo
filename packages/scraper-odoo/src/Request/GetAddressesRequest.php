@@ -6,7 +6,7 @@ namespace Scraper\ScraperOdoo\Request;
 
 class GetAddressesRequest extends SearchReadRequest
 {
-    public function getOdooModel(): string
+    public function getModel(): string
     {
         return 'res.partner'; // Addresses and customers are mostly the same model in Odoo
     }

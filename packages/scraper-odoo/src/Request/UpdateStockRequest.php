@@ -6,7 +6,7 @@ namespace Scraper\ScraperOdoo\Request;
 
 class UpdateStockRequest extends WriteRequest
 {
-    public function getOdooModel(): string
+    public function getModel(): string
     {
         // En Odoo, le stock d'un produit spécifique est souvent mis à jour via product.product ou stock.quant
         return 'product.product';

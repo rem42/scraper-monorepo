@@ -6,7 +6,7 @@ namespace Scraper\ScraperOdoo\Request;
 
 class UpdateOrderStatusRequest extends WriteRequest
 {
-    public function getOdooModel(): string
+    public function getModel(): string
     {
         return 'sale.order';
     }

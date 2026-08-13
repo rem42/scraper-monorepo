@@ -6,7 +6,7 @@ namespace Scraper\ScraperOdoo\Request;
 
 class GetOrderStatusesRequest extends SearchReadRequest
 {
-    public function getOdooModel(): string
+    public function getModel(): string
     {
         return 'sale.order';
     }

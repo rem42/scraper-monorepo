@@ -11,12 +11,11 @@ use Scraper\Scraper\Request\RequestBodyJson;
 use Scraper\Scraper\Request\RequestHeaders;
 use Scraper\Scraper\Request\ScraperRequest;
 
-#[Scraper(method: Method::POST, scheme: Scheme::HTTPS, host: '{host}', path: '/json/2/{odooModel}/{odooMethod}')]
+#[Scraper(method: Method::POST, scheme: Scheme::HTTPS, host: '{host}', path: '/json/2/{model}/{method}')]
 abstract class OdooRequest extends ScraperRequest implements RequestBodyJson, RequestHeaders
 {
     public function __construct(
         protected string $host,
-        protected string $db,
         protected string $apiKey,
     ) {}
 
@@ -32,24 +31,10 @@ abstract class OdooRequest extends ScraperRequest implements RequestBodyJson, Re
     {
         return [
             'Authorization' => 'Bearer ' . $this->apiKey,
-            'X-Odoo-Database' => $this->db,
         ];
     }
 
-    /**
-     * @return array<string, mixed>
-     */
-    public function getJson(): array
-    {
-        return $this->getOdooKwargs();
-    }
+    abstract public function getModel(): string;
 
-    abstract public function getOdooModel(): string;
-
-    abstract public function getOdooMethod(): string;
-
-    /**
-     * @return array<string, mixed>
-     */
-    abstract protected function getOdooKwargs(): array;
+    abstract public function getMethod(): string;
 }
