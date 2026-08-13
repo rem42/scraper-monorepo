@@ -11,7 +11,7 @@ class Product
     public ?string $displayName = null;
     public ?string $name = null;
     public ?float $weight = null;
-    public ?string $barcode = null;
+    public bool|string|null $barcode = null;
     public ?string $hsCode = null;
 
     /** @var array<int|string> */
