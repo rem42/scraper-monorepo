@@ -34,6 +34,7 @@
             "Scraper\\ScraperLaPosteApim\\": "packages/scraper-laposte-apim/src/",
             "Scraper\\ScraperLaPostePostage\\": "packages/scraper-laposte-postage/src/",
             "Scraper\\ScraperNoGrad\\": "packages/scraper-nograd/src/",
+            "Scraper\\ScraperOdoo\\": "packages/scraper-odoo/src/",
             "Scraper\\ScraperPrestashop\\": "packages/scraper-prestashop/src/",
             "Scraper\\ScraperTnt\\": "packages/scraper-tnt/src/",
             "Scraper\\ScraperUPS\\": "packages/scraper-ups/src/",
@@ -50,6 +51,7 @@
             "Scraper\\ScraperLaPosteApim\\Tests\\": "packages/scraper-laposte-apim/tests/",
             "Scraper\\ScraperLaPostePostage\\Tests\\": "packages/scraper-laposte-postage/tests/",
             "Scraper\\ScraperNoGrad\\Tests\\": "packages/scraper-nograd/tests/",
+            "Scraper\\ScraperOdoo\\Tests\\": "packages/scraper-odoo/tests/",
             "Scraper\\ScraperPrestashop\\Tests\\": "packages/scraper-prestashop/tests/",
             "Scraper\\ScraperTnt\\Tests\\": "packages/scraper-tnt/tests/",
             "Scraper\\ScraperUPS\\Tests\\": "packages/scraper-ups/tests/",
@@ -84,10 +86,11 @@
         "rem42/scraper-jeudimerci": "self.version",
         "rem42/scraper-laposte-apim": "self.version",
         "rem42/scraper-laposte-postage": "self.version",
+        "rem42/scraper-nograd": "self.version",
         "rem42/scraper-prestashop": "self.version",
         "rem42/scraper-tnt": "self.version",
         "rem42/scraper-ups": "self.version",
         "rem42/scraper-zakeke": "self.version",
-        "rem42/scraper-nograd": "self.version"
+        "rem42/scraper-odoo": "self.version"
     }
 }

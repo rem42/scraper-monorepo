@@ -1,0 +1,13 @@
+{
+    "jsonrpc": "2.0",
+    "id": 12345,
+    "error": {
+        "code": 200,
+        "message": "Odoo Server Error",
+        "data": {
+            "name": "odoo.exceptions.AccessError",
+            "debug": "Traceback...",
+            "message": "You are not allowed to access 'Product' (product.product) records."
+        }
+    }
+}
