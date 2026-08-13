@@ -63,9 +63,11 @@ abstract class SearchReadRequest extends OdooRequest
         if ([] !== $this->fields) {
             $kwargs['fields'] = $this->fields;
         }
+
         if (null !== $this->limit) {
             $kwargs['limit'] = $this->limit;
         }
+
         if (null !== $this->offset) {
             $kwargs['offset'] = $this->offset;
         }

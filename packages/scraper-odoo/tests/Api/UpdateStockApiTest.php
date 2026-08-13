@@ -7,6 +7,9 @@ namespace Scraper\ScraperOdoo\Tests\Api;
 use Scraper\ScraperOdoo\Api\UpdateStockApi;
 use Scraper\ScraperOdoo\Request\UpdateStockRequest;
 
+/**
+ * @internal
+ */
 class UpdateStockApiTest extends AbstractOdooApiTestCase
 {
     public function testUpdateStockSuccess(): void

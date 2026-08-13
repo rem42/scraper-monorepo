@@ -8,6 +8,9 @@ use Scraper\ScraperOdoo\Api\GetProductsApi;
 use Scraper\ScraperOdoo\Exception\OdooScraperException;
 use Scraper\ScraperOdoo\Request\GetProductsRequest;
 
+/**
+ * @internal
+ */
 class OdooApiErrorTest extends AbstractOdooApiTestCase
 {
     public function testOdooErrorResponse(): void

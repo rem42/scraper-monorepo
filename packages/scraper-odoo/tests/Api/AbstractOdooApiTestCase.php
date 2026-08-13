@@ -6,7 +6,6 @@ namespace Scraper\ScraperOdoo\Tests\Api;
 
 use PHPUnit\Framework\TestCase;
 use Scraper\Scraper\Attribute\Scraper;
-use Scraper\Scraper\Request\ScraperRequest;
 use Symfony\Contracts\HttpClient\ResponseInterface;
 
 abstract class AbstractOdooApiTestCase extends TestCase

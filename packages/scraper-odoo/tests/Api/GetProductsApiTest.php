@@ -8,6 +8,9 @@ use Scraper\ScraperOdoo\Api\GetProductsApi;
 use Scraper\ScraperOdoo\Model\Product;
 use Scraper\ScraperOdoo\Request\GetProductsRequest;
 
+/**
+ * @internal
+ */
 class GetProductsApiTest extends AbstractOdooApiTestCase
 {
     public function testGetProductsSuccess(): void
