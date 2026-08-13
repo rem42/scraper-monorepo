@@ -10,11 +10,20 @@ class Product
     public ?string $code = null;
     public ?string $displayName = null;
     public ?string $name = null;
-    public ?string $weight = null;
+    public ?float $weight = null;
     public ?string $barcode = null;
     public ?string $hsCode = null;
-    public ?string $countryOfOrigin = null;
-    public ?float $listPrice = null;
-    public ?\DateTime $createDate = null;
-    public ?\DateTime $writeDate = null;
+
+    /** @var array<int|string> */
+    public array $countryOfOrigin = [];
+    public ?float $lstPrice = null;
+    public ?string $createDate = null;
+    public ?string $writeDate = null;
+
+    public function addCountryOfOrigin($countryOfOrigin): self
+    {
+        $this->countryOfOrigin[] = $countryOfOrigin;
+
+        return $this;
+    }
 }

@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Scraper\ScraperOdoo\Api;
 
-use Scraper\ScraperOdoo\Model\Country;
+use Scraper\ScraperOdoo\Model\Carrier;
 
-class GetCountriesApi extends OdooApi
+class CarrierListApi extends OdooApi
 {
     protected function getType(): string
     {
-        return Country::class . '[]';
+        return Carrier::class . '[]';
     }
 }

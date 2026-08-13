@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Scraper\ScraperOdoo\Api;
 
-use Scraper\ScraperOdoo\Model\Product;
+use Scraper\ScraperOdoo\Model\Country;
 
-class GetProductsApi extends OdooApi
+class CountryListApi extends OdooApi
 {
     protected function getType(): string
     {
-        return Product::class . '[]';
+        return Country::class . '[]';
     }
 }
