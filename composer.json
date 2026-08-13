@@ -15,12 +15,19 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "packages/*"
         }
     ],
     "config": {
         "sort-packages": true,
         "allow-plugins": {
             "symfony/flex": true
+        },
+        "platform": {
+            "php": "8.4.1"
         }
     },
     "autoload": {
