@@ -1,0 +1,26 @@
+{
+    "jsonrpc": "2.0",
+    "id": 12345,
+    "result": [
+        {
+            "id": 1,
+            "name": "Product A",
+            "default_code": "PROD-A",
+            "barcode": "1234567890123",
+            "list_price": 99.99,
+            "qty_available": 50,
+            "weight": 1.5,
+            "active": true
+        },
+        {
+            "id": 2,
+            "name": "Product B",
+            "default_code": "PROD-B",
+            "barcode": "9876543210987",
+            "list_price": 149.99,
+            "qty_available": 10,
+            "weight": 2.0,
+            "active": false
+        }
+    ]
+}
