@@ -11,6 +11,7 @@ class StockMoveRequest extends ReadRequest
         'display_name',
         'product_id',
         'product_qty',
+        'price_unit',
     ];
 
     public function getModel(): string
