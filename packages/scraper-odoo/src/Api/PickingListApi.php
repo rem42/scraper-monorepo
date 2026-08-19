@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Scraper\ScraperOdoo\Api;
 
-use Scraper\ScraperOdoo\Model\Order;
+use Scraper\ScraperOdoo\Model\Id;
 
-class GetOrdersApi extends OdooApi
+class PickingListApi extends OdooApi
 {
     protected function getType(): string
     {
-        return Order::class . '[]';
+        return Id::class . '[]';
     }
 }
