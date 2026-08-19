@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Scraper\ScraperOdoo\Api;
 
-use Scraper\ScraperOdoo\Model\Customer;
+use Scraper\ScraperOdoo\Model\Partner;
 
-class GetCustomersApi extends OdooApi
+class PartnerApi extends OdooApi
 {
     protected function getType(): string
     {
-        return Customer::class . '[]';
+        return Partner::class . '[]';
     }
 }

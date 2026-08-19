@@ -17,6 +17,7 @@ class PickingRequest extends ReadRequest
         'delivery_type',
         'carrier_price',
         'move_ids',
+        'partner_id',
     ];
 
     public function getModel(): string
