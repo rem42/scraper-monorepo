@@ -11,6 +11,7 @@ class PickingRequest extends ReadRequest
         'name',
         'state',
         'x_wms_status',
+        'sale_id',
         'location_id',
         'location_dest_id',
         'carrier_id',

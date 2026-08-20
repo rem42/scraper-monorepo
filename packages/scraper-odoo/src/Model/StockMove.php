@@ -11,8 +11,8 @@ class StockMove
 
     /** @var array<int|string> */
     public array $productId = [];
-    public ?int $productQty = null;
-    public ?int $priceUnit = null;
+    public int|float|null $productQty = null;
+    public int|float|null $priceUnit = null;
 
     public function addProductId($productId): self
     {
