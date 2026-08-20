@@ -9,7 +9,7 @@ class Picking
     public ?int $id = null;
     public ?string $name = null;
     public ?string $state = null;
-    public ?bool $xWmsStatus = null;
+    public bool|string|null $xWmsStatus = null;
 
     /** @var array<int|string> */
     public array $saleId = [];

@@ -7,15 +7,15 @@ namespace Scraper\ScraperOdoo\Model;
 class Product
 {
     public ?int $id = null;
-    public ?string $code = null;
+    public string|bool|null $code = null;
     public ?string $displayName = null;
     public ?string $name = null;
     public ?float $weight = null;
     public bool|string|null $barcode = null;
-    public ?string $hsCode = null;
+    public bool|string|null $hsCode = null;
 
     /** @var array<int|string> */
-    public array $countryOfOrigin = [];
+    public array|bool|null $countryOfOrigin = [];
     public ?float $lstPrice = null;
     public ?string $createDate = null;
     public ?string $writeDate = null;

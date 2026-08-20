@@ -4,19 +4,18 @@ declare(strict_types=1);
 
 namespace Scraper\ScraperOdoo\Request;
 
-class StockMoveRequest extends ReadRequest
+class OrderLineRequest extends ReadRequest
 {
     /** @var array<string> */
     protected array $fields = [
-        'display_name',
+        'id',
         'product_id',
-        'product_qty',
         'price_unit',
-        'sale_line_id',
+        'price_reduce_taxexcl',
     ];
 
     public function getModel(): string
     {
-        return 'stock.move';
+        return 'sale.order.line';
     }
 }

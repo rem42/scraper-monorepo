@@ -4,29 +4,18 @@ declare(strict_types=1);
 
 namespace Scraper\ScraperOdoo\Model;
 
-class StockMove
+class OrderLine
 {
     public ?int $id = null;
-    public ?string $displayName = null;
 
     /** @var array<int|string> */
     public array $productId = [];
-    public int|float|null $productQty = null;
     public int|float|null $priceUnit = null;
-
-    /** @var array<int|string> */
-    public array $saleLineId = [];
+    public int|float|null $priceReduceTaxexcl = null;
 
     public function addProductId($productId): self
     {
         $this->productId[] = $productId;
-
-        return $this;
-    }
-
-    public function addSaleLineId($saleLineId): self
-    {
-        $this->saleLineId[] = $saleLineId;
 
         return $this;
     }
