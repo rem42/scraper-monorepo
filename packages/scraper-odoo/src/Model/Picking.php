@@ -16,9 +16,7 @@ class Picking
 
     /** @var array<int|string> */
     public array $locationId = [];
-
-    /** @var array<int|string> */
-    public array $carrierId = [];
+    public array|bool|null $carrierId = [];
     public int|float|null $carrierPrice = null;
 
     /** @var array<int, int> */

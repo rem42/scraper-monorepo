@@ -13,8 +13,6 @@ class Product
     public ?float $weight = null;
     public bool|string|null $barcode = null;
     public bool|string|null $hsCode = null;
-
-    /** @var array<int|string> */
     public array|bool|null $countryOfOrigin = [];
     public ?float $lstPrice = null;
     public ?string $createDate = null;
