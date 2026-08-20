@@ -19,7 +19,7 @@ class Picking
 
     /** @var array<int|string> */
     public array $carrierId = [];
-    public ?int $carrierPrice = null;
+    public int|float|null $carrierPrice = null;
 
     /** @var array<int, int> */
     public array $moveIds = [];
