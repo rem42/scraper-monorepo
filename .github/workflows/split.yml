@@ -46,6 +46,10 @@ jobs:
         with:
           fetch-depth: 0 # Nécessaire pour reconstruire l'historique sur le miroir
 
+      - name: Configure git auth for split pushes
+        run: |
+          git config --global url."https://x-access-token:${{ secrets.MONOREPO_SPLIT_TOKEN }}@github.com/".insteadOf "https://github.com/"
+
       - name: Split and Push ${{ matrix.package.local }}
         uses: danharrin/monorepo-split-github-action@v2.4.5
         with:
