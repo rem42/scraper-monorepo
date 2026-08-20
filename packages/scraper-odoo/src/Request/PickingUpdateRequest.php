@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Scraper\ScraperOdoo\Request;
 
-class StockUpdateRequest extends WriteRequest
+class PickingUpdateRequest extends WriteRequest
 {
     public function getModel(): string
     {
-        return 'stock.quant';
+        return 'stock.picking';
     }
 }
